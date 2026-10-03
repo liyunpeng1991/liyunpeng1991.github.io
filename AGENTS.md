@@ -9,15 +9,18 @@ When the user asks to publish or revise a paper:
 
 1. Fetch or inspect the current remote `main` before editing, and preserve
    changes the user may have made on GitHub.
-2. Copy the supplied PDF into `papers/` using a versioned filename. Keep older
-   versions accessible. Edit `index.html` under the appropriate topic section
-   (or add one) with the exact title, a concise factual description, PDF link,
-   and any separately identified arXiv version.
+2. Copy the supplied PDF into `papers/` using a versioned filename. Never
+   overwrite or remove earlier PDFs; the existing unnumbered filenames are
+   website version 1 for their papers. Edit `index.html` under the appropriate
+   topic section (or add one) with the exact title, a concise factual
+   description, a dated PDF row for each website version, and any separately
+   identified arXiv version.
 3. Publish the PDF and homepage together to `main`, using Git or the connected
    GitHub add-on. Verify the remote file and the live URL.
-4. Record the public commit time with its timezone as “PDF posted,” and link to
-   that commit. Do not present this time as when the author wrote or discovered
-   the proof. Add a separate completion date only if the user supplies one.
+4. Record the public commit time with its timezone as the new version's upload
+   date and link to that commit. Keep earlier version dates and links intact.
+   Do not present an upload time as when the author wrote or discovered the
+   proof. Add a separate completion date only if the user supplies one.
 
 Keep the static site simple and maintain its existing academic style. The
 README gives the human publishing workflow.
