@@ -14,7 +14,8 @@ no build step.
    never overwrite or remove an earlier PDF. The two existing unnumbered PDFs
    are their papers' website version 1 and must remain at their current paths.
 2. Add the paper under the appropriate topic heading in `index.html`, or add
-   a new topic section: title, short factual description, and a link to the
+   a new topic section: title, one plain-language sentence saying what problem
+   the paper addresses and what it does, and a link to the
    PDF. Add a row to that paper's website PDF version list, with the newest
    version first, and remove “current” from its previous version. Update the
    displayed paper count for a new paper. If appropriate, link to an arXiv

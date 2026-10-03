@@ -12,8 +12,9 @@ When the user asks to publish or revise a paper:
 2. Copy the supplied PDF into `papers/` using a versioned filename. Never
    overwrite or remove earlier PDFs; the existing unnumbered filenames are
    website version 1 for their papers. Edit `index.html` under the appropriate
-   topic section (or add one) with the exact title, a concise factual
-   description, a dated PDF row for each website version, and any separately
+   topic section (or add one) with the exact title, a single plain-language
+   sentence stating the problem and result, a dated PDF row for each website
+   version, and any separately
    identified arXiv version.
 3. Publish the PDF and homepage together to `main`, using Git or the connected
    GitHub add-on. Verify the remote file and the live URL.
