@@ -1,0 +1,22 @@
+# Website maintenance instructions
+
+This repository is the source for https://liyunpeng1991.github.io/.
+The public GitHub repository is `liyunpeng1991/liyunpeng1991.github.io`.
+The live site is served from the root of `main`; do not create a nested
+`research-page/` directory.
+
+When the user asks to publish or revise a paper:
+
+1. Fetch or inspect the current remote `main` before editing, and preserve
+   changes the user may have made on GitHub.
+2. Copy the supplied PDF into `papers/` using a versioned filename. Keep older
+   versions accessible. Edit `index.html` with the exact title, a concise
+   factual description, PDF link, and any separately identified arXiv version.
+3. Publish the PDF and homepage together to `main`, using Git or the connected
+   GitHub add-on. Verify the remote file and the live URL.
+4. Record the public commit time with its timezone as “PDF posted,” and link to
+   that commit. Do not present this time as when the author wrote or discovered
+   the proof. Add a separate completion date only if the user supplies one.
+
+Keep the static site simple and maintain its existing academic style. The
+README gives the human publishing workflow.
