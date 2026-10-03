@@ -10,8 +10,9 @@ When the user asks to publish or revise a paper:
 1. Fetch or inspect the current remote `main` before editing, and preserve
    changes the user may have made on GitHub.
 2. Copy the supplied PDF into `papers/` using a versioned filename. Keep older
-   versions accessible. Edit `index.html` with the exact title, a concise
-   factual description, PDF link, and any separately identified arXiv version.
+   versions accessible. Edit `index.html` under the appropriate topic section
+   (or add one) with the exact title, a concise factual description, PDF link,
+   and any separately identified arXiv version.
 3. Publish the PDF and homepage together to `main`, using Git or the connected
    GitHub add-on. Verify the remote file and the live URL.
 4. Record the public commit time with its timezone as “PDF posted,” and link to
