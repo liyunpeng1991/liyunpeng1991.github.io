@@ -51,6 +51,8 @@ h1 { margin-bottom: 6px; font-size: clamp(48px, 6vw, 66px); line-height: 1.08; l
 .section-heading .eyebrow { margin-bottom: 5px; }
 h2 { margin: 0; font-size: clamp(27px, 3.5vw, 34px); line-height: 1.2; letter-spacing: -0.025em; }
 .section-count { padding-bottom: 4px; color: var(--muted); font-size: 11px; white-space: nowrap; }
+.topic-line { margin: 0 0 8px; color: var(--muted); font-size: 13px; }
+.topic-line strong { color: var(--ink); font-weight: 600; }
 .date-note { max-width: 680px; margin: 0 0 4px; color: var(--muted); font-size: 12px; }
 .paper { display: grid; grid-template-columns: 32px minmax(0, 1fr); gap: 13px; padding: 21px 0 23px; border-top: 1px solid var(--line); }
 .paper-number { padding-top: 3px; color: var(--accent); font-size: 12px; }

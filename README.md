@@ -13,8 +13,8 @@ no build step.
    as `papers/my-result-v1.pdf`. Keep prior versions when you revise a paper,
    and use `v2.pdf`, `v3.pdf`, etc. for the new files.
 2. Add a paper entry to `index.html`: title, short factual description, and a
-   link to that PDF. Increase the displayed paper count. If appropriate, link
-   to an arXiv version separately and identify its version.
+   link to that PDF. Update the topic line and displayed paper count as needed.
+   If appropriate, link to an arXiv version separately and identify its version.
 3. Publish the PDF and HTML together in one commit on `main`. In Codex, you can
    simply give the PDF path and say “Publish this paper on my website”; the
    connected GitHub add-on can make the commit. From a terminal with GitHub
