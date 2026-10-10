@@ -1,0 +1,13 @@
+{
+  "command": [
+    "lake",
+    "exe",
+    "cache",
+    "get",
+    "Mathlib.Analysis.Complex.OpenMapping"
+  ],
+  "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+  "started_utc": "2026-10-10T18:21:02.493120+00:00",
+  "exit_code": 0,
+  "elapsed_seconds": 9.087660249788314
+}

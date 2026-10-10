@@ -1,0 +1,371 @@
+{
+  "created_utc": "2026-10-10T20:30:50.983798+00:00",
+  "collection_scope": "read-only actual copied dependency Git metadata, trusted tool hashes, OS metadata; no Lake/Lean proof execution",
+  "os": {
+    "argv": [
+      "/usr/bin/sw_vers"
+    ],
+    "cwd": null,
+    "exit_code": 0,
+    "stdout": "ProductName:\t\tmacOS\nProductVersion:\t\t15.5\nBuildVersion:\t\t24F74\n",
+    "stderr": ""
+  },
+  "uname": {
+    "argv": [
+      "/usr/bin/uname",
+      "-a"
+    ],
+    "cwd": null,
+    "exit_code": 0,
+    "stdout": "Darwin GluondeMac-mini.local 24.5.0 Darwin Kernel Version 24.5.0: Tue Apr 22 19:54:43 PDT 2025; root:xnu-11417.121.6~2/RELEASE_ARM64_T8132 arm64\n",
+    "stderr": ""
+  },
+  "platform": "macOS-15.5-arm64-arm-64bit-Mach-O",
+  "architecture": "arm64",
+  "python": {
+    "executable": "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3.13",
+    "version": "3.13.7"
+  },
+  "elan_in_sanitized_path": null,
+  "toolchain": "leanprover/lean4:v4.35.0-rc4",
+  "lake_manifest_sha256": "cb333575666396aefa2ed281978edc586f0535a0079b76012f32db0f18052b38",
+  "dependencies": [
+    {
+      "name": "mathlib",
+      "url": "https://github.com/leanprover-community/mathlib4.git",
+      "manifest_revision": "81d17696471311f5e3e2f034236df7a781449f7e",
+      "checkout": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean/.lake/packages/mathlib",
+      "actual_revision": "81d17696471311f5e3e2f034236df7a781449f7e",
+      "revision_matches": true,
+      "head_command": {
+        "argv": [
+          "/usr/bin/git",
+          "rev-parse",
+          "HEAD"
+        ],
+        "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean/.lake/packages/mathlib",
+        "exit_code": 0,
+        "stdout": "81d17696471311f5e3e2f034236df7a781449f7e\n",
+        "stderr": "git: error: couldn't create cache file '/var/folders/79/vg1hhkl54ln4sbxmwfwgjj880000gn/T/xcrun_db-RqhgiJIO' (errno=Operation not permitted)\ngit: error: couldn't create cache file '/var/folders/79/vg1hhkl54ln4sbxmwfwgjj880000gn/T/xcrun_db-h5NaRRXi' (errno=Operation not permitted)\n"
+      },
+      "status_command": {
+        "argv": [
+          "/usr/bin/git",
+          "status",
+          "--porcelain=v1",
+          "--untracked-files=normal"
+        ],
+        "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean/.lake/packages/mathlib",
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": "git: error: couldn't create cache file '/var/folders/79/vg1hhkl54ln4sbxmwfwgjj880000gn/T/xcrun_db-6WoVXCNc' (errno=Operation not permitted)\ngit: error: couldn't create cache file '/var/folders/79/vg1hhkl54ln4sbxmwfwgjj880000gn/T/xcrun_db-wdoozZ1V' (errno=Operation not permitted)\n"
+      }
+    },
+    {
+      "name": "plausible",
+      "url": "https://github.com/leanprover-community/plausible",
+      "manifest_revision": "aef59637faa9e85fa2486acaaf906ce3f572af7c",
+      "checkout": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean/.lake/packages/plausible",
+      "actual_revision": "aef59637faa9e85fa2486acaaf906ce3f572af7c",
+      "revision_matches": true,
+      "head_command": {
+        "argv": [
+          "/usr/bin/git",
+          "rev-parse",
+          "HEAD"
+        ],
+        "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean/.lake/packages/plausible",
+        "exit_code": 0,
+        "stdout": "aef59637faa9e85fa2486acaaf906ce3f572af7c\n",
+        "stderr": "git: error: couldn't create cache file '/var/folders/79/vg1hhkl54ln4sbxmwfwgjj880000gn/T/xcrun_db-NWS4wlI3' (errno=Operation not permitted)\ngit: error: couldn't create cache file '/var/folders/79/vg1hhkl54ln4sbxmwfwgjj880000gn/T/xcrun_db-ZOqTseZj' (errno=Operation not permitted)\n"
+      },
+      "status_command": {
+        "argv": [
+          "/usr/bin/git",
+          "status",
+          "--porcelain=v1",
+          "--untracked-files=normal"
+        ],
+        "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean/.lake/packages/plausible",
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": "git: error: couldn't create cache file '/var/folders/79/vg1hhkl54ln4sbxmwfwgjj880000gn/T/xcrun_db-bb09l3HT' (errno=Operation not permitted)\ngit: error: couldn't create cache file '/var/folders/79/vg1hhkl54ln4sbxmwfwgjj880000gn/T/xcrun_db-JVwOfAaM' (errno=Operation not permitted)\n"
+      }
+    },
+    {
+      "name": "LeanSearchClient",
+      "url": "https://github.com/leanprover-community/LeanSearchClient",
+      "manifest_revision": "234d9e074fbd6e911b920baf32db5291c3125be0",
+      "checkout": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean/.lake/packages/LeanSearchClient",
+      "actual_revision": "234d9e074fbd6e911b920baf32db5291c3125be0",
+      "revision_matches": true,
+      "head_command": {
+        "argv": [
+          "/usr/bin/git",
+          "rev-parse",
+          "HEAD"
+        ],
+        "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean/.lake/packages/LeanSearchClient",
+        "exit_code": 0,
+        "stdout": "234d9e074fbd6e911b920baf32db5291c3125be0\n",
+        "stderr": "git: error: couldn't create cache file '/var/folders/79/vg1hhkl54ln4sbxmwfwgjj880000gn/T/xcrun_db-W91EZYjG' (errno=Operation not permitted)\ngit: error: couldn't create cache file '/var/folders/79/vg1hhkl54ln4sbxmwfwgjj880000gn/T/xcrun_db-KWe7hYbt' (errno=Operation not permitted)\n"
+      },
+      "status_command": {
+        "argv": [
+          "/usr/bin/git",
+          "status",
+          "--porcelain=v1",
+          "--untracked-files=normal"
+        ],
+        "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean/.lake/packages/LeanSearchClient",
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": "git: error: couldn't create cache file '/var/folders/79/vg1hhkl54ln4sbxmwfwgjj880000gn/T/xcrun_db-itau7hsY' (errno=Operation not permitted)\ngit: error: couldn't create cache file '/var/folders/79/vg1hhkl54ln4sbxmwfwgjj880000gn/T/xcrun_db-B7WvzmXC' (errno=Operation not permitted)\n"
+      }
+    },
+    {
+      "name": "importGraph",
+      "url": "https://github.com/leanprover-community/import-graph",
+      "manifest_revision": "579f558774c4ac6840e715ba60dabf3030619349",
+      "checkout": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean/.lake/packages/importGraph",
+      "actual_revision": "579f558774c4ac6840e715ba60dabf3030619349",
+      "revision_matches": true,
+      "head_command": {
+        "argv": [
+          "/usr/bin/git",
+          "rev-parse",
+          "HEAD"
+        ],
+        "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean/.lake/packages/importGraph",
+        "exit_code": 0,
+        "stdout": "579f558774c4ac6840e715ba60dabf3030619349\n",
+        "stderr": "git: error: couldn't create cache file '/var/folders/79/vg1hhkl54ln4sbxmwfwgjj880000gn/T/xcrun_db-mxUYoKau' (errno=Operation not permitted)\ngit: error: couldn't create cache file '/var/folders/79/vg1hhkl54ln4sbxmwfwgjj880000gn/T/xcrun_db-KeMwX9fc' (errno=Operation not permitted)\n"
+      },
+      "status_command": {
+        "argv": [
+          "/usr/bin/git",
+          "status",
+          "--porcelain=v1",
+          "--untracked-files=normal"
+        ],
+        "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean/.lake/packages/importGraph",
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": "git: error: couldn't create cache file '/var/folders/79/vg1hhkl54ln4sbxmwfwgjj880000gn/T/xcrun_db-E3FYyjhQ' (errno=Operation not permitted)\ngit: error: couldn't create cache file '/var/folders/79/vg1hhkl54ln4sbxmwfwgjj880000gn/T/xcrun_db-lpVe52oC' (errno=Operation not permitted)\n"
+      }
+    },
+    {
+      "name": "proofwidgets",
+      "url": "https://github.com/leanprover-community/ProofWidgets4",
+      "manifest_revision": "d5ad4a0b79fa7f9818fe1380d05a3f6143823c09",
+      "checkout": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean/.lake/packages/proofwidgets",
+      "actual_revision": "d5ad4a0b79fa7f9818fe1380d05a3f6143823c09",
+      "revision_matches": true,
+      "head_command": {
+        "argv": [
+          "/usr/bin/git",
+          "rev-parse",
+          "HEAD"
+        ],
+        "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean/.lake/packages/proofwidgets",
+        "exit_code": 0,
+        "stdout": "d5ad4a0b79fa7f9818fe1380d05a3f6143823c09\n",
+        "stderr": "git: error: couldn't create cache file '/var/folders/79/vg1hhkl54ln4sbxmwfwgjj880000gn/T/xcrun_db-4K6TxjoQ' (errno=Operation not permitted)\ngit: error: couldn't create cache file '/var/folders/79/vg1hhkl54ln4sbxmwfwgjj880000gn/T/xcrun_db-sfGDEAha' (errno=Operation not permitted)\n"
+      },
+      "status_command": {
+        "argv": [
+          "/usr/bin/git",
+          "status",
+          "--porcelain=v1",
+          "--untracked-files=normal"
+        ],
+        "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean/.lake/packages/proofwidgets",
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": "git: error: couldn't create cache file '/var/folders/79/vg1hhkl54ln4sbxmwfwgjj880000gn/T/xcrun_db-ijJ9iHuQ' (errno=Operation not permitted)\ngit: error: couldn't create cache file '/var/folders/79/vg1hhkl54ln4sbxmwfwgjj880000gn/T/xcrun_db-tEFoY9Zk' (errno=Operation not permitted)\n"
+      }
+    },
+    {
+      "name": "aesop",
+      "url": "https://github.com/leanprover-community/aesop",
+      "manifest_revision": "04879b1e1de744d5c9777c8cf63fa55a8f652e5e",
+      "checkout": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean/.lake/packages/aesop",
+      "actual_revision": "04879b1e1de744d5c9777c8cf63fa55a8f652e5e",
+      "revision_matches": true,
+      "head_command": {
+        "argv": [
+          "/usr/bin/git",
+          "rev-parse",
+          "HEAD"
+        ],
+        "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean/.lake/packages/aesop",
+        "exit_code": 0,
+        "stdout": "04879b1e1de744d5c9777c8cf63fa55a8f652e5e\n",
+        "stderr": "git: error: couldn't create cache file '/var/folders/79/vg1hhkl54ln4sbxmwfwgjj880000gn/T/xcrun_db-NiEJT9Gv' (errno=Operation not permitted)\ngit: error: couldn't create cache file '/var/folders/79/vg1hhkl54ln4sbxmwfwgjj880000gn/T/xcrun_db-YUnEn6cl' (errno=Operation not permitted)\n"
+      },
+      "status_command": {
+        "argv": [
+          "/usr/bin/git",
+          "status",
+          "--porcelain=v1",
+          "--untracked-files=normal"
+        ],
+        "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean/.lake/packages/aesop",
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": "git: error: couldn't create cache file '/var/folders/79/vg1hhkl54ln4sbxmwfwgjj880000gn/T/xcrun_db-9k4Mntxu' (errno=Operation not permitted)\ngit: error: couldn't create cache file '/var/folders/79/vg1hhkl54ln4sbxmwfwgjj880000gn/T/xcrun_db-NOH5Ppmg' (errno=Operation not permitted)\n"
+      }
+    },
+    {
+      "name": "Qq",
+      "url": "https://github.com/leanprover-community/quote4",
+      "manifest_revision": "e7c4cdd2f1bf9df361ef7f621b4d6867012ab65e",
+      "checkout": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean/.lake/packages/Qq",
+      "actual_revision": "e7c4cdd2f1bf9df361ef7f621b4d6867012ab65e",
+      "revision_matches": true,
+      "head_command": {
+        "argv": [
+          "/usr/bin/git",
+          "rev-parse",
+          "HEAD"
+        ],
+        "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean/.lake/packages/Qq",
+        "exit_code": 0,
+        "stdout": "e7c4cdd2f1bf9df361ef7f621b4d6867012ab65e\n",
+        "stderr": "git: error: couldn't create cache file '/var/folders/79/vg1hhkl54ln4sbxmwfwgjj880000gn/T/xcrun_db-Bk3n8GzH' (errno=Operation not permitted)\ngit: error: couldn't create cache file '/var/folders/79/vg1hhkl54ln4sbxmwfwgjj880000gn/T/xcrun_db-TJRr7v5b' (errno=Operation not permitted)\n"
+      },
+      "status_command": {
+        "argv": [
+          "/usr/bin/git",
+          "status",
+          "--porcelain=v1",
+          "--untracked-files=normal"
+        ],
+        "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean/.lake/packages/Qq",
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": "git: error: couldn't create cache file '/var/folders/79/vg1hhkl54ln4sbxmwfwgjj880000gn/T/xcrun_db-BNr7iiVV' (errno=Operation not permitted)\ngit: error: couldn't create cache file '/var/folders/79/vg1hhkl54ln4sbxmwfwgjj880000gn/T/xcrun_db-tsQEoSyA' (errno=Operation not permitted)\n"
+      }
+    },
+    {
+      "name": "batteries",
+      "url": "https://github.com/leanprover-community/batteries",
+      "manifest_revision": "b71aaf60877e673fdb921f06f20987d12ee8a290",
+      "checkout": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean/.lake/packages/batteries",
+      "actual_revision": "b71aaf60877e673fdb921f06f20987d12ee8a290",
+      "revision_matches": true,
+      "head_command": {
+        "argv": [
+          "/usr/bin/git",
+          "rev-parse",
+          "HEAD"
+        ],
+        "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean/.lake/packages/batteries",
+        "exit_code": 0,
+        "stdout": "b71aaf60877e673fdb921f06f20987d12ee8a290\n",
+        "stderr": "git: error: couldn't create cache file '/var/folders/79/vg1hhkl54ln4sbxmwfwgjj880000gn/T/xcrun_db-7s0TKvLE' (errno=Operation not permitted)\ngit: error: couldn't create cache file '/var/folders/79/vg1hhkl54ln4sbxmwfwgjj880000gn/T/xcrun_db-TMbbOtqO' (errno=Operation not permitted)\n"
+      },
+      "status_command": {
+        "argv": [
+          "/usr/bin/git",
+          "status",
+          "--porcelain=v1",
+          "--untracked-files=normal"
+        ],
+        "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean/.lake/packages/batteries",
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": "git: error: couldn't create cache file '/var/folders/79/vg1hhkl54ln4sbxmwfwgjj880000gn/T/xcrun_db-AgpoPafp' (errno=Operation not permitted)\ngit: error: couldn't create cache file '/var/folders/79/vg1hhkl54ln4sbxmwfwgjj880000gn/T/xcrun_db-WxuwYRX0' (errno=Operation not permitted)\n"
+      }
+    },
+    {
+      "name": "Cli",
+      "url": "https://github.com/leanprover/lean4-cli",
+      "manifest_revision": "82c11b9717083154aefc5fe8d4cba4bbf046298f",
+      "checkout": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean/.lake/packages/Cli",
+      "actual_revision": "82c11b9717083154aefc5fe8d4cba4bbf046298f",
+      "revision_matches": true,
+      "head_command": {
+        "argv": [
+          "/usr/bin/git",
+          "rev-parse",
+          "HEAD"
+        ],
+        "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean/.lake/packages/Cli",
+        "exit_code": 0,
+        "stdout": "82c11b9717083154aefc5fe8d4cba4bbf046298f\n",
+        "stderr": "git: error: couldn't create cache file '/var/folders/79/vg1hhkl54ln4sbxmwfwgjj880000gn/T/xcrun_db-qixCzEGo' (errno=Operation not permitted)\ngit: error: couldn't create cache file '/var/folders/79/vg1hhkl54ln4sbxmwfwgjj880000gn/T/xcrun_db-mSUdnoEE' (errno=Operation not permitted)\n"
+      },
+      "status_command": {
+        "argv": [
+          "/usr/bin/git",
+          "status",
+          "--porcelain=v1",
+          "--untracked-files=normal"
+        ],
+        "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean/.lake/packages/Cli",
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": "git: error: couldn't create cache file '/var/folders/79/vg1hhkl54ln4sbxmwfwgjj880000gn/T/xcrun_db-zTHE9Dqw' (errno=Operation not permitted)\ngit: error: couldn't create cache file '/var/folders/79/vg1hhkl54ln4sbxmwfwgjj880000gn/T/xcrun_db-spuKnF6v' (errno=Operation not permitted)\n"
+      }
+    }
+  ],
+  "tools": {
+    "lean": {
+      "path": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/.tools/lean-4.35.0-rc4-darwin_aarch64/bin/lean",
+      "exists": true,
+      "sha256": "d1d9c26a539f54fe839d2aa7760bf1ac1dd76a30b26e2c9684bebf2900038fcf"
+    },
+    "lake": {
+      "path": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/.tools/lean-4.35.0-rc4-darwin_aarch64/bin/lake",
+      "exists": true,
+      "sha256": "d2d63c80ca10bd2cc9557d11d59221b95c6eefb078c9652a11ef887ab8a068a5"
+    },
+    "leanchecker": {
+      "path": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/.tools/lean-4.35.0-rc4-darwin_aarch64/bin/leanchecker",
+      "exists": true,
+      "sha256": "d70e645ea2b0e597d0ff4cf67aa0c268483fac0b5b2b991ca2d4cd7fb78ab73c"
+    },
+    "leanchecker-paranoid": {
+      "path": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/.tools/lean-4.35.0-rc4-darwin_aarch64/bin/leanchecker-paranoid",
+      "exists": true,
+      "sha256": "3dd0d281eb2a38ad2bee03add1bd0718ae026fedeb288a2032d4e442d6dcfaf8"
+    },
+    "lean4lean": {
+      "path": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/.tools/lean-4.35.0-rc4-darwin_aarch64/bin/lean4lean",
+      "exists": true,
+      "sha256": "5d9522abac7f701e7b5324c96b0be5b0091d5d557b558d2a023d950688eccdea"
+    },
+    "nanoda_bin": {
+      "path": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/.tools/lean-4.35.0-rc4-darwin_aarch64/bin/nanoda_bin",
+      "exists": true,
+      "sha256": "b5a75a50d07b06a25b3ddb9519144ebdeed8e0f3489222c88ba4049dfe8ce627"
+    },
+    "con-leche": {
+      "path": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/.tools/lean-4.35.0-rc4-darwin_aarch64/bin/con-leche",
+      "exists": true,
+      "sha256": "4dc91239adc01a07a8d974bad720d68a316ed21aef73847bb74a191696304e34"
+    },
+    "con-ron": {
+      "path": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/.tools/lean-4.35.0-rc4-darwin_aarch64/bin/con-ron",
+      "exists": true,
+      "sha256": "5d2a39e47a7e61b569906f66d1ee3d7f760315b73b0fcae1660c848ffaacd2e7"
+    },
+    "leanexport": {
+      "path": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/.tools/lean-4.35.0-rc4-darwin_aarch64/bin/leanexport",
+      "exists": true,
+      "sha256": "92104293b343d52046207d46427d6fa42043166dd79282d7c1e2825e61857427"
+    }
+  },
+  "source_state": {
+    "argv": [
+      "/usr/bin/git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+    "exit_code": 0,
+    "stdout": "?? proofs/maximum-modulus/lean/MaximumModulus/Audit/\n",
+    "stderr": "git: error: couldn't create cache file '/var/folders/79/vg1hhkl54ln4sbxmwfwgjj880000gn/T/xcrun_db-3s5okEB7' (errno=Operation not permitted)\ngit: error: couldn't create cache file '/var/folders/79/vg1hhkl54ln4sbxmwfwgjj880000gn/T/xcrun_db-v0kjqCwq' (errno=Operation not permitted)\n"
+  }
+}

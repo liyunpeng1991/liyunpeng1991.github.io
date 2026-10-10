@@ -1,0 +1,7 @@
+import MaximumModulus.Audit.OriginalProblem
+
+set_option pp.all true
+#check @IndependentOriginal.original_count_not_tendsto_atTop
+#print IndependentOriginal.original_count_not_tendsto_atTop
+set_option pp.universes false in
+#print axioms IndependentOriginal.original_count_not_tendsto_atTop

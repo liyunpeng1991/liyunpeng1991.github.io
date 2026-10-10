@@ -1,0 +1,24 @@
+{
+  "created_utc": "2026-10-10T20:32:21.358505+00:00",
+  "changes": [
+    {
+      "path": "audit/probe_isolation.py",
+      "before_sha256": "44440cef12d93547809de8fe2ff1410ee1a55a4378d605b8948868597ec21ca7",
+      "after_sha256": "50e7d2231152fba3e382416e3b4b9c51d73fb703f4b732b8bc0440ba9df3f3ea",
+      "reason": "Initial DNS resolution diagnostic did not directly confirm network denial; changed only trusted probe to literal socket connect, which freshly returned EPERM. Both attempts retained. No Lean source or workflow script changed."
+    }
+  ],
+  "current_auditor_hashes": {
+    "audit/ComparatorChallenge.lean": "b51e5b557b2c057251c00629b327ca5417ecf91bc6319464c3097eece0c634bf",
+    "audit/OriginalProblem.lean": "4be4fb7093e9dd1176de51aed1b3a755507c14ea7ac60e236c7e122e3fc992e7",
+    "audit/check_public_sources.py": "2fb2557c05dae66baa8c36fd1ac59e4a072431e3d539338ed43afbc4657079ac",
+    "audit/collect_provenance.py": "7cedb503c50651da174c687968f13b48d2b2ae82f6d6c65a31238db8a73098f7",
+    "audit/comparator.json": "264ba026cc3b363eb8141dac7715dc66d47ede31c4d14eeae20e07ff05e11b3d",
+    "audit/export_proof.py": "c40e5dc80c54613c10c9893933ce84c31477aea46374640335ea507aa6f36bf6",
+    "audit/fetch_public.py": "e5c8b20e0a0828c5d41f34edf2895b62c6734b57acf94d17f3d4597a42bffc97",
+    "audit/isolation.sb": "5ad952904a0f11da5076eb61118da8aad4cf2fa6ffe76a6f2e6ccc0edf957589",
+    "audit/probe_isolation.py": "50e7d2231152fba3e382416e3b4b9c51d73fb703f4b732b8bc0440ba9df3f3ea",
+    "audit/run_isolated.py": "cab627068389a73a5d8f898a9a9d91f93c5e73766db19eebdb65c84e47435024",
+    "audit/targets.json": "cb3524161b84975ea9bde91f4e8948740fbb9cd126971ba3f5c28c1e2cf1f4c0"
+  }
+}

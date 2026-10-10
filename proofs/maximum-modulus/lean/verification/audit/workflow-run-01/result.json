@@ -1,0 +1,859 @@
+{
+  "scope": "target_checks_only",
+  "semantic_verdict": "not_determined",
+  "preflight": {
+    "ready_for_target_checks": true,
+    "issues": [],
+    "head": "8b731b51dcb0ed3d7e8c6463b6266c35d8099c85",
+    "git_status": "?? MaximumModulus/Audit/ComparatorChallenge.lean\n?? MaximumModulus/Audit/OriginalProblem.lean",
+    "toolchain_file": "leanprover/lean4:v4.35.0-rc4",
+    "file_sha256": {
+      "MaximumModulus/AllRadii.lean": "6a16ff9d2c62449f637d0eb727d3605b26f37744eb4eb46f7b2fe771c497a9d7",
+      "MaximumModulus/Audit/OriginalProblem.lean": "4be4fb7093e9dd1176de51aed1b3a755507c14ea7ac60e236c7e122e3fc992e7",
+      "MaximumModulus/Finiteness.lean": "990b92706af6a1eb75f3758b32ea36f16cd1781d6748145fd5c050916409dcfb",
+      "lake-manifest.json": "cb333575666396aefa2ed281978edc586f0535a0079b76012f32db0f18052b38",
+      "lakefile.lean": null,
+      "lakefile.toml": "5d8ab5b472f35876f885594bf3cb7b4986303d0f7212593ecb63cef865baea39",
+      "lean-toolchain": "8f89aa44fccdb1a0b6cc768c7c9f54b94cd40e47a08d582f82d1235f13075cf7"
+    },
+    "manual_preconditions": [
+      "isolation and resource limits established",
+      "clean source build and trusted cache provenance recorded",
+      "actual dependency SHAs match fixed evidence",
+      "tool binaries are trusted and match the pinned toolchain",
+      "all untracked inputs and module/source mappings reviewed"
+    ],
+    "checker_compatibility": "not_probed; inspect pinned checker separately"
+  },
+  "commands": [
+    {
+      "argv": [
+        "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/.tools/lean-4.35.0-rc4-darwin_aarch64/bin/lake",
+        "--version"
+      ],
+      "cwd": "/private/tmp/mm-lean-verify-20261010/sources/proof",
+      "log": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/version-0.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 0.038,
+      "log_sha256": "85c4a74d99df1f2b94e3de89999f0133ea6f72cf4b24a5475869cc1ff26278cc"
+    },
+    {
+      "argv": [
+        "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/.tools/lean-4.35.0-rc4-darwin_aarch64/bin/lake",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "cwd": "/private/tmp/mm-lean-verify-20261010/sources/proof",
+      "log": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/version-1.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 2.693,
+      "log_sha256": "06dac795e3a83abe1b556342ba68992a46b3992e7d3f888fa4a59eb65a2f4fe6"
+    },
+    {
+      "argv": [
+        "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/.tools/lean-4.35.0-rc4-darwin_aarch64/bin/lake",
+        "build",
+        "+MaximumModulus.AllRadii"
+      ],
+      "cwd": "/private/tmp/mm-lean-verify-20261010/sources/proof",
+      "log": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0000-0.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 3.656,
+      "log_sha256": "478f6c60461fec07c0690d88db30bf23b6c2c76eae38d6d39c74e42b062529a5"
+    },
+    {
+      "argv": [
+        "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/.tools/lean-4.35.0-rc4-darwin_aarch64/bin/lake",
+        "env",
+        "lean",
+        "/private/tmp/mm-lean-verify-20261010/sources/proof/MaximumModulus/AllRadii.lean"
+      ],
+      "cwd": "/private/tmp/mm-lean-verify-20261010/sources/proof",
+      "log": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0000-1.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 10.194,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/.tools/lean-4.35.0-rc4-darwin_aarch64/bin/lake",
+        "env",
+        "lean",
+        "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/Audit0000.lean"
+      ],
+      "cwd": "/private/tmp/mm-lean-verify-20261010/sources/proof",
+      "log": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0000-2.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 11.629,
+      "log_sha256": "6a84e6415f5f8b053c7dfba6f346893168273cf59c0b1b46e497fef345d91a3e"
+    },
+    {
+      "argv": [
+        "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/.tools/lean-4.35.0-rc4-darwin_aarch64/bin/lake",
+        "build",
+        "+MaximumModulus.AllRadii"
+      ],
+      "cwd": "/private/tmp/mm-lean-verify-20261010/sources/proof",
+      "log": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0001-0.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 3.746,
+      "log_sha256": "478f6c60461fec07c0690d88db30bf23b6c2c76eae38d6d39c74e42b062529a5"
+    },
+    {
+      "argv": [
+        "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/.tools/lean-4.35.0-rc4-darwin_aarch64/bin/lake",
+        "env",
+        "lean",
+        "/private/tmp/mm-lean-verify-20261010/sources/proof/MaximumModulus/AllRadii.lean"
+      ],
+      "cwd": "/private/tmp/mm-lean-verify-20261010/sources/proof",
+      "log": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0001-1.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 5.113,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/.tools/lean-4.35.0-rc4-darwin_aarch64/bin/lake",
+        "env",
+        "lean",
+        "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/Audit0001.lean"
+      ],
+      "cwd": "/private/tmp/mm-lean-verify-20261010/sources/proof",
+      "log": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0001-2.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 8.854,
+      "log_sha256": "427de9583c6dbf54d6e677d488d9f0cb361e5535b5ec409f86d3f96c3fd5f7bd"
+    },
+    {
+      "argv": [
+        "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/.tools/lean-4.35.0-rc4-darwin_aarch64/bin/lake",
+        "build",
+        "+MaximumModulus.AllRadii"
+      ],
+      "cwd": "/private/tmp/mm-lean-verify-20261010/sources/proof",
+      "log": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0002-0.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 3.695,
+      "log_sha256": "478f6c60461fec07c0690d88db30bf23b6c2c76eae38d6d39c74e42b062529a5"
+    },
+    {
+      "argv": [
+        "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/.tools/lean-4.35.0-rc4-darwin_aarch64/bin/lake",
+        "env",
+        "lean",
+        "/private/tmp/mm-lean-verify-20261010/sources/proof/MaximumModulus/AllRadii.lean"
+      ],
+      "cwd": "/private/tmp/mm-lean-verify-20261010/sources/proof",
+      "log": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0002-1.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 6.183,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/.tools/lean-4.35.0-rc4-darwin_aarch64/bin/lake",
+        "env",
+        "lean",
+        "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/Audit0002.lean"
+      ],
+      "cwd": "/private/tmp/mm-lean-verify-20261010/sources/proof",
+      "log": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0002-2.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 7.31,
+      "log_sha256": "cab2d3ee8741543926f2cd24d1c6a62163ac959817c914d7cbc35031dfebf48c"
+    },
+    {
+      "argv": [
+        "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/.tools/lean-4.35.0-rc4-darwin_aarch64/bin/lake",
+        "build",
+        "+MaximumModulus.Finiteness"
+      ],
+      "cwd": "/private/tmp/mm-lean-verify-20261010/sources/proof",
+      "log": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0003-0.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 3.549,
+      "log_sha256": "03bd0d7c9ccb211fd6da896d781d28a197b3348bee6752dc107e92e91a396da2"
+    },
+    {
+      "argv": [
+        "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/.tools/lean-4.35.0-rc4-darwin_aarch64/bin/lake",
+        "env",
+        "lean",
+        "/private/tmp/mm-lean-verify-20261010/sources/proof/MaximumModulus/Finiteness.lean"
+      ],
+      "cwd": "/private/tmp/mm-lean-verify-20261010/sources/proof",
+      "log": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0003-1.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 6.923,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/.tools/lean-4.35.0-rc4-darwin_aarch64/bin/lake",
+        "env",
+        "lean",
+        "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/Audit0003.lean"
+      ],
+      "cwd": "/private/tmp/mm-lean-verify-20261010/sources/proof",
+      "log": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0003-2.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 7.0,
+      "log_sha256": "ad9dc72afef31b529f97fd4a5a38dc209cccf1298514e4b9887d687812a77764"
+    },
+    {
+      "argv": [
+        "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/.tools/lean-4.35.0-rc4-darwin_aarch64/bin/lake",
+        "build",
+        "+MaximumModulus.Audit.OriginalProblem"
+      ],
+      "cwd": "/private/tmp/mm-lean-verify-20261010/sources/proof",
+      "log": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0004-0.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 6.719,
+      "log_sha256": "fd1fd07c8e1c43887b7aa47f25cdc50ead0d2eedc9424814a35fcc9d69773b44"
+    },
+    {
+      "argv": [
+        "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/.tools/lean-4.35.0-rc4-darwin_aarch64/bin/lake",
+        "env",
+        "lean",
+        "/private/tmp/mm-lean-verify-20261010/sources/proof/MaximumModulus/Audit/OriginalProblem.lean"
+      ],
+      "cwd": "/private/tmp/mm-lean-verify-20261010/sources/proof",
+      "log": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0004-1.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 5.88,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/.tools/lean-4.35.0-rc4-darwin_aarch64/bin/lake",
+        "env",
+        "lean",
+        "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/Audit0004.lean"
+      ],
+      "cwd": "/private/tmp/mm-lean-verify-20261010/sources/proof",
+      "log": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0004-2.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 8.91,
+      "log_sha256": "fea5a6dca800baa633f8bd8067b3417dd5e61351daefd7ad2d0ac022dbebe18c"
+    },
+    {
+      "argv": [
+        "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/.tools/lean-4.35.0-rc4-darwin_aarch64/bin/lake",
+        "build",
+        "+MaximumModulus.Audit.OriginalProblem"
+      ],
+      "cwd": "/private/tmp/mm-lean-verify-20261010/sources/proof",
+      "log": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0005-0.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 3.472,
+      "log_sha256": "ef658f54d57ead7f2b935e230986377b53e9db9e2660e648b5df1539d28b1b09"
+    },
+    {
+      "argv": [
+        "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/.tools/lean-4.35.0-rc4-darwin_aarch64/bin/lake",
+        "env",
+        "lean",
+        "/private/tmp/mm-lean-verify-20261010/sources/proof/MaximumModulus/Audit/OriginalProblem.lean"
+      ],
+      "cwd": "/private/tmp/mm-lean-verify-20261010/sources/proof",
+      "log": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0005-1.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 5.032,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/.tools/lean-4.35.0-rc4-darwin_aarch64/bin/lake",
+        "env",
+        "lean",
+        "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/Audit0005.lean"
+      ],
+      "cwd": "/private/tmp/mm-lean-verify-20261010/sources/proof",
+      "log": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0005-2.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 8.043,
+      "log_sha256": "6c6bc9d41af8bacf85782539a24e3c77ccde8f8e66419be22b12f4c63c6a595d"
+    },
+    {
+      "argv": [
+        "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/.tools/lean-4.35.0-rc4-darwin_aarch64/bin/lake",
+        "build",
+        "+MaximumModulus.Audit.OriginalProblem"
+      ],
+      "cwd": "/private/tmp/mm-lean-verify-20261010/sources/proof",
+      "log": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0006-0.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 3.537,
+      "log_sha256": "ef658f54d57ead7f2b935e230986377b53e9db9e2660e648b5df1539d28b1b09"
+    },
+    {
+      "argv": [
+        "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/.tools/lean-4.35.0-rc4-darwin_aarch64/bin/lake",
+        "env",
+        "lean",
+        "/private/tmp/mm-lean-verify-20261010/sources/proof/MaximumModulus/Audit/OriginalProblem.lean"
+      ],
+      "cwd": "/private/tmp/mm-lean-verify-20261010/sources/proof",
+      "log": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0006-1.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 5.847,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/.tools/lean-4.35.0-rc4-darwin_aarch64/bin/lake",
+        "env",
+        "lean",
+        "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/Audit0006.lean"
+      ],
+      "cwd": "/private/tmp/mm-lean-verify-20261010/sources/proof",
+      "log": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0006-2.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 8.156,
+      "log_sha256": "641c4422044e1b4d1eeac0f5eb723327c7f0652b76f9511ff0e5bdde747eef4b"
+    },
+    {
+      "argv": [
+        "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/.tools/lean-4.35.0-rc4-darwin_aarch64/bin/lake",
+        "build",
+        "+MaximumModulus.Audit.OriginalProblem"
+      ],
+      "cwd": "/private/tmp/mm-lean-verify-20261010/sources/proof",
+      "log": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0007-0.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 3.938,
+      "log_sha256": "ef658f54d57ead7f2b935e230986377b53e9db9e2660e648b5df1539d28b1b09"
+    },
+    {
+      "argv": [
+        "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/.tools/lean-4.35.0-rc4-darwin_aarch64/bin/lake",
+        "env",
+        "lean",
+        "/private/tmp/mm-lean-verify-20261010/sources/proof/MaximumModulus/Audit/OriginalProblem.lean"
+      ],
+      "cwd": "/private/tmp/mm-lean-verify-20261010/sources/proof",
+      "log": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0007-1.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 7.444,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/.tools/lean-4.35.0-rc4-darwin_aarch64/bin/lake",
+        "env",
+        "lean",
+        "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/Audit0007.lean"
+      ],
+      "cwd": "/private/tmp/mm-lean-verify-20261010/sources/proof",
+      "log": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0007-2.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 8.476,
+      "log_sha256": "2c916e505e5143d2a18bb7e611d1805b7b5b4195ea33caf9f3fca9d5bdfde61b"
+    }
+  ],
+  "targets": [
+    {
+      "id": "literal-cofinal",
+      "declaration": "MaximumModulus.bounded_maxPoints_at_arbitrarily_large_radii",
+      "audit_file": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/Audit0000.lean",
+      "audit_sha256": "137c8d805a889aca605bd26d6c99cdb09292b23a262cae1a3d361b1a723cfd10",
+      "status": "standard_axioms_only",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "commands": [
+        {
+          "argv": [
+            "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/.tools/lean-4.35.0-rc4-darwin_aarch64/bin/lake",
+            "build",
+            "+MaximumModulus.AllRadii"
+          ],
+          "cwd": "/private/tmp/mm-lean-verify-20261010/sources/proof",
+          "log": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0000-0.log",
+          "exit_code": 0,
+          "status": "ok",
+          "seconds": 3.656,
+          "log_sha256": "478f6c60461fec07c0690d88db30bf23b6c2c76eae38d6d39c74e42b062529a5"
+        },
+        {
+          "argv": [
+            "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/.tools/lean-4.35.0-rc4-darwin_aarch64/bin/lake",
+            "env",
+            "lean",
+            "/private/tmp/mm-lean-verify-20261010/sources/proof/MaximumModulus/AllRadii.lean"
+          ],
+          "cwd": "/private/tmp/mm-lean-verify-20261010/sources/proof",
+          "log": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0000-1.log",
+          "exit_code": 0,
+          "status": "ok",
+          "seconds": 10.194,
+          "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "argv": [
+            "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/.tools/lean-4.35.0-rc4-darwin_aarch64/bin/lake",
+            "env",
+            "lean",
+            "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/Audit0000.lean"
+          ],
+          "cwd": "/private/tmp/mm-lean-verify-20261010/sources/proof",
+          "log": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0000-2.log",
+          "exit_code": 0,
+          "status": "ok",
+          "seconds": 11.629,
+          "log_sha256": "6a84e6415f5f8b053c7dfba6f346893168273cf59c0b1b46e497fef345d91a3e"
+        }
+      ]
+    },
+    {
+      "id": "cofinal-statement",
+      "declaration": "MaximumModulus.allRadiiStatement",
+      "audit_file": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/Audit0001.lean",
+      "audit_sha256": "89f0bff0dd5f8b783cd1704574afda6ecf1ec142e0ce2c2847a0486514a6b9ea",
+      "status": "standard_axioms_only",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "commands": [
+        {
+          "argv": [
+            "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/.tools/lean-4.35.0-rc4-darwin_aarch64/bin/lake",
+            "build",
+            "+MaximumModulus.AllRadii"
+          ],
+          "cwd": "/private/tmp/mm-lean-verify-20261010/sources/proof",
+          "log": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0001-0.log",
+          "exit_code": 0,
+          "status": "ok",
+          "seconds": 3.746,
+          "log_sha256": "478f6c60461fec07c0690d88db30bf23b6c2c76eae38d6d39c74e42b062529a5"
+        },
+        {
+          "argv": [
+            "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/.tools/lean-4.35.0-rc4-darwin_aarch64/bin/lake",
+            "env",
+            "lean",
+            "/private/tmp/mm-lean-verify-20261010/sources/proof/MaximumModulus/AllRadii.lean"
+          ],
+          "cwd": "/private/tmp/mm-lean-verify-20261010/sources/proof",
+          "log": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0001-1.log",
+          "exit_code": 0,
+          "status": "ok",
+          "seconds": 5.113,
+          "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "argv": [
+            "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/.tools/lean-4.35.0-rc4-darwin_aarch64/bin/lake",
+            "env",
+            "lean",
+            "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/Audit0001.lean"
+          ],
+          "cwd": "/private/tmp/mm-lean-verify-20261010/sources/proof",
+          "log": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0001-2.log",
+          "exit_code": 0,
+          "status": "ok",
+          "seconds": 8.854,
+          "log_sha256": "427de9583c6dbf54d6e677d488d9f0cb361e5535b5ec409f86d3f96c3fd5f7bd"
+        }
+      ]
+    },
+    {
+      "id": "negative-all-radii",
+      "declaration": "MaximumModulus.all_radii_growth_impossible",
+      "audit_file": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/Audit0002.lean",
+      "audit_sha256": "f2133c1706c128292fba2c5d65c330be08c82c33a14639f79f10b122db6edec7",
+      "status": "standard_axioms_only",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "commands": [
+        {
+          "argv": [
+            "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/.tools/lean-4.35.0-rc4-darwin_aarch64/bin/lake",
+            "build",
+            "+MaximumModulus.AllRadii"
+          ],
+          "cwd": "/private/tmp/mm-lean-verify-20261010/sources/proof",
+          "log": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0002-0.log",
+          "exit_code": 0,
+          "status": "ok",
+          "seconds": 3.695,
+          "log_sha256": "478f6c60461fec07c0690d88db30bf23b6c2c76eae38d6d39c74e42b062529a5"
+        },
+        {
+          "argv": [
+            "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/.tools/lean-4.35.0-rc4-darwin_aarch64/bin/lake",
+            "env",
+            "lean",
+            "/private/tmp/mm-lean-verify-20261010/sources/proof/MaximumModulus/AllRadii.lean"
+          ],
+          "cwd": "/private/tmp/mm-lean-verify-20261010/sources/proof",
+          "log": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0002-1.log",
+          "exit_code": 0,
+          "status": "ok",
+          "seconds": 6.183,
+          "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "argv": [
+            "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/.tools/lean-4.35.0-rc4-darwin_aarch64/bin/lake",
+            "env",
+            "lean",
+            "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/Audit0002.lean"
+          ],
+          "cwd": "/private/tmp/mm-lean-verify-20261010/sources/proof",
+          "log": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0002-2.log",
+          "exit_code": 0,
+          "status": "ok",
+          "seconds": 7.31,
+          "log_sha256": "cab2d3ee8741543926f2cd24d1c6a62163ac959817c914d7cbc35031dfebf48c"
+        }
+      ]
+    },
+    {
+      "id": "positive-finiteness",
+      "declaration": "MaximumModulus.finite_maxPoints",
+      "audit_file": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/Audit0003.lean",
+      "audit_sha256": "a97615f955855ebe4634043b031564efb89ed5d3ba857cee9a14fe77757d51db",
+      "status": "standard_axioms_only",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "commands": [
+        {
+          "argv": [
+            "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/.tools/lean-4.35.0-rc4-darwin_aarch64/bin/lake",
+            "build",
+            "+MaximumModulus.Finiteness"
+          ],
+          "cwd": "/private/tmp/mm-lean-verify-20261010/sources/proof",
+          "log": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0003-0.log",
+          "exit_code": 0,
+          "status": "ok",
+          "seconds": 3.549,
+          "log_sha256": "03bd0d7c9ccb211fd6da896d781d28a197b3348bee6752dc107e92e91a396da2"
+        },
+        {
+          "argv": [
+            "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/.tools/lean-4.35.0-rc4-darwin_aarch64/bin/lake",
+            "env",
+            "lean",
+            "/private/tmp/mm-lean-verify-20261010/sources/proof/MaximumModulus/Finiteness.lean"
+          ],
+          "cwd": "/private/tmp/mm-lean-verify-20261010/sources/proof",
+          "log": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0003-1.log",
+          "exit_code": 0,
+          "status": "ok",
+          "seconds": 6.923,
+          "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "argv": [
+            "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/.tools/lean-4.35.0-rc4-darwin_aarch64/bin/lake",
+            "env",
+            "lean",
+            "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/Audit0003.lean"
+          ],
+          "cwd": "/private/tmp/mm-lean-verify-20261010/sources/proof",
+          "log": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0003-2.log",
+          "exit_code": 0,
+          "status": "ok",
+          "seconds": 7.0,
+          "log_sha256": "ad9dc72afef31b529f97fd4a5a38dc209cccf1298514e4b9887d687812a77764"
+        }
+      ]
+    },
+    {
+      "id": "independent-cofinal",
+      "declaration": "IndependentOriginal.original_problem_solved",
+      "audit_file": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/Audit0004.lean",
+      "audit_sha256": "4b71d71dc06ff167efe37889f45ba412ecb79366d982a3dc19509afb55b8967b",
+      "status": "standard_axioms_only",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "commands": [
+        {
+          "argv": [
+            "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/.tools/lean-4.35.0-rc4-darwin_aarch64/bin/lake",
+            "build",
+            "+MaximumModulus.Audit.OriginalProblem"
+          ],
+          "cwd": "/private/tmp/mm-lean-verify-20261010/sources/proof",
+          "log": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0004-0.log",
+          "exit_code": 0,
+          "status": "ok",
+          "seconds": 6.719,
+          "log_sha256": "fd1fd07c8e1c43887b7aa47f25cdc50ead0d2eedc9424814a35fcc9d69773b44"
+        },
+        {
+          "argv": [
+            "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/.tools/lean-4.35.0-rc4-darwin_aarch64/bin/lake",
+            "env",
+            "lean",
+            "/private/tmp/mm-lean-verify-20261010/sources/proof/MaximumModulus/Audit/OriginalProblem.lean"
+          ],
+          "cwd": "/private/tmp/mm-lean-verify-20261010/sources/proof",
+          "log": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0004-1.log",
+          "exit_code": 0,
+          "status": "ok",
+          "seconds": 5.88,
+          "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "argv": [
+            "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/.tools/lean-4.35.0-rc4-darwin_aarch64/bin/lake",
+            "env",
+            "lean",
+            "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/Audit0004.lean"
+          ],
+          "cwd": "/private/tmp/mm-lean-verify-20261010/sources/proof",
+          "log": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0004-2.log",
+          "exit_code": 0,
+          "status": "ok",
+          "seconds": 8.91,
+          "log_sha256": "fea5a6dca800baa633f8bd8067b3417dd5e61351daefd7ad2d0ac022dbebe18c"
+        }
+      ]
+    },
+    {
+      "id": "independent-negative",
+      "declaration": "IndependentOriginal.original_all_radii_growth_impossible",
+      "audit_file": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/Audit0005.lean",
+      "audit_sha256": "8d198f0c15f67df6158a8bec90e9fa8bd43661009c7e4d56f771866c21133562",
+      "status": "standard_axioms_only",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "commands": [
+        {
+          "argv": [
+            "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/.tools/lean-4.35.0-rc4-darwin_aarch64/bin/lake",
+            "build",
+            "+MaximumModulus.Audit.OriginalProblem"
+          ],
+          "cwd": "/private/tmp/mm-lean-verify-20261010/sources/proof",
+          "log": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0005-0.log",
+          "exit_code": 0,
+          "status": "ok",
+          "seconds": 3.472,
+          "log_sha256": "ef658f54d57ead7f2b935e230986377b53e9db9e2660e648b5df1539d28b1b09"
+        },
+        {
+          "argv": [
+            "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/.tools/lean-4.35.0-rc4-darwin_aarch64/bin/lake",
+            "env",
+            "lean",
+            "/private/tmp/mm-lean-verify-20261010/sources/proof/MaximumModulus/Audit/OriginalProblem.lean"
+          ],
+          "cwd": "/private/tmp/mm-lean-verify-20261010/sources/proof",
+          "log": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0005-1.log",
+          "exit_code": 0,
+          "status": "ok",
+          "seconds": 5.032,
+          "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "argv": [
+            "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/.tools/lean-4.35.0-rc4-darwin_aarch64/bin/lake",
+            "env",
+            "lean",
+            "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/Audit0005.lean"
+          ],
+          "cwd": "/private/tmp/mm-lean-verify-20261010/sources/proof",
+          "log": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0005-2.log",
+          "exit_code": 0,
+          "status": "ok",
+          "seconds": 8.043,
+          "log_sha256": "6c6bc9d41af8bacf85782539a24e3c77ccde8f8e66419be22b12f4c63c6a595d"
+        }
+      ]
+    },
+    {
+      "id": "independent-tendsto",
+      "declaration": "IndependentOriginal.original_count_not_tendsto_atTop",
+      "audit_file": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/Audit0006.lean",
+      "audit_sha256": "4c0ef73858938fda53aa48746964a1cc19dc57d1a35326b0f87b1a7f1c72a4f5",
+      "status": "standard_axioms_only",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "commands": [
+        {
+          "argv": [
+            "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/.tools/lean-4.35.0-rc4-darwin_aarch64/bin/lake",
+            "build",
+            "+MaximumModulus.Audit.OriginalProblem"
+          ],
+          "cwd": "/private/tmp/mm-lean-verify-20261010/sources/proof",
+          "log": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0006-0.log",
+          "exit_code": 0,
+          "status": "ok",
+          "seconds": 3.537,
+          "log_sha256": "ef658f54d57ead7f2b935e230986377b53e9db9e2660e648b5df1539d28b1b09"
+        },
+        {
+          "argv": [
+            "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/.tools/lean-4.35.0-rc4-darwin_aarch64/bin/lake",
+            "env",
+            "lean",
+            "/private/tmp/mm-lean-verify-20261010/sources/proof/MaximumModulus/Audit/OriginalProblem.lean"
+          ],
+          "cwd": "/private/tmp/mm-lean-verify-20261010/sources/proof",
+          "log": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0006-1.log",
+          "exit_code": 0,
+          "status": "ok",
+          "seconds": 5.847,
+          "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "argv": [
+            "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/.tools/lean-4.35.0-rc4-darwin_aarch64/bin/lake",
+            "env",
+            "lean",
+            "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/Audit0006.lean"
+          ],
+          "cwd": "/private/tmp/mm-lean-verify-20261010/sources/proof",
+          "log": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0006-2.log",
+          "exit_code": 0,
+          "status": "ok",
+          "seconds": 8.156,
+          "log_sha256": "641c4422044e1b4d1eeac0f5eb723327c7f0652b76f9511ff0e5bdde747eef4b"
+        }
+      ]
+    },
+    {
+      "id": "independent-finiteness",
+      "declaration": "IndependentOriginal.original_positive_circle_finiteness",
+      "audit_file": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/Audit0007.lean",
+      "audit_sha256": "1eb7f97f5d8dd64e0a22c84eba266a806b311d9589f1ba222b4476a4201ca81b",
+      "status": "standard_axioms_only",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "commands": [
+        {
+          "argv": [
+            "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/.tools/lean-4.35.0-rc4-darwin_aarch64/bin/lake",
+            "build",
+            "+MaximumModulus.Audit.OriginalProblem"
+          ],
+          "cwd": "/private/tmp/mm-lean-verify-20261010/sources/proof",
+          "log": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0007-0.log",
+          "exit_code": 0,
+          "status": "ok",
+          "seconds": 3.938,
+          "log_sha256": "ef658f54d57ead7f2b935e230986377b53e9db9e2660e648b5df1539d28b1b09"
+        },
+        {
+          "argv": [
+            "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/.tools/lean-4.35.0-rc4-darwin_aarch64/bin/lake",
+            "env",
+            "lean",
+            "/private/tmp/mm-lean-verify-20261010/sources/proof/MaximumModulus/Audit/OriginalProblem.lean"
+          ],
+          "cwd": "/private/tmp/mm-lean-verify-20261010/sources/proof",
+          "log": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0007-1.log",
+          "exit_code": 0,
+          "status": "ok",
+          "seconds": 7.444,
+          "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "argv": [
+            "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/.tools/lean-4.35.0-rc4-darwin_aarch64/bin/lake",
+            "env",
+            "lean",
+            "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/Audit0007.lean"
+          ],
+          "cwd": "/private/tmp/mm-lean-verify-20261010/sources/proof",
+          "log": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0007-2.log",
+          "exit_code": 0,
+          "status": "ok",
+          "seconds": 8.476,
+          "log_sha256": "2c916e505e5143d2a18bb7e611d1805b7b5b4195ea33caf9f3fca9d5bdfde61b"
+        }
+      ]
+    }
+  ],
+  "mechanical_status": "standard_axioms_only",
+  "tool_versions": [
+    "Lake version 5.0.0-src+c29b6dd (Lean version 4.35.0-rc4)\n",
+    "Lean (version 4.35.0-rc4, arm64-apple-darwin24.6.0, commit c29b6dda4f7c20e3eeaa717c4e565663c5cfa364, Release)\n"
+  ],
+  "after": {
+    "ready_for_target_checks": true,
+    "issues": [],
+    "head": "8b731b51dcb0ed3d7e8c6463b6266c35d8099c85",
+    "git_status": "?? MaximumModulus/Audit/ComparatorChallenge.lean\n?? MaximumModulus/Audit/OriginalProblem.lean",
+    "toolchain_file": "leanprover/lean4:v4.35.0-rc4",
+    "file_sha256": {
+      "MaximumModulus/AllRadii.lean": "6a16ff9d2c62449f637d0eb727d3605b26f37744eb4eb46f7b2fe771c497a9d7",
+      "MaximumModulus/Audit/OriginalProblem.lean": "4be4fb7093e9dd1176de51aed1b3a755507c14ea7ac60e236c7e122e3fc992e7",
+      "MaximumModulus/Finiteness.lean": "990b92706af6a1eb75f3758b32ea36f16cd1781d6748145fd5c050916409dcfb",
+      "lake-manifest.json": "cb333575666396aefa2ed281978edc586f0535a0079b76012f32db0f18052b38",
+      "lakefile.lean": null,
+      "lakefile.toml": "5d8ab5b472f35876f885594bf3cb7b4986303d0f7212593ecb63cef865baea39",
+      "lean-toolchain": "8f89aa44fccdb1a0b6cc768c7c9f54b94cd40e47a08d582f82d1235f13075cf7"
+    },
+    "manual_preconditions": [
+      "isolation and resource limits established",
+      "clean source build and trusted cache provenance recorded",
+      "actual dependency SHAs match fixed evidence",
+      "tool binaries are trusted and match the pinned toolchain",
+      "all untracked inputs and module/source mappings reviewed"
+    ],
+    "checker_compatibility": "not_probed; inspect pinned checker separately"
+  },
+  "inputs_stable": true,
+  "manifest_sha256": "ff4f6eac020fcbe484fee97c64fda93eb14822f8a1ead5fc6f9b9b9c81e22eb5",
+  "script_sha256": "5db45dddcb4d588bc27e7c7161fbca5cedaa3e73e1c40843d21f5a214323cd07",
+  "exit_code": 0
+}

@@ -1,0 +1,13 @@
+{
+  "command": [
+    "lake",
+    "env",
+    "leanchecker",
+    "--verbose",
+    "MaximumModulus.FiberCapture"
+  ],
+  "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+  "started_utc": "2026-10-10T20:37:49.481749+00:00",
+  "exit_code": 0,
+  "elapsed_seconds": 6.400161583907902
+}

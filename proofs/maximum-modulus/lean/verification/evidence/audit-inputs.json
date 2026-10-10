@@ -1,0 +1,13 @@
+{
+  "proof_commit": "8b731b51dcb0ed3d7e8c6463b6266c35d8099c85",
+  "source_snapshot_type": "temporary local audit Git snapshot; no author-submitted repository revision exists",
+  "harness_files": {
+    "MaximumModulus/Audit/OriginalProblem.lean": "4be4fb7093e9dd1176de51aed1b3a755507c14ea7ac60e236c7e122e3fc992e7",
+    "MaximumModulus/Audit/ComparatorChallenge.lean": "b51e5b557b2c057251c00629b327ca5417ecf91bc6319464c3097eece0c634bf"
+  },
+  "targets_manifest_sha256": "ff4f6eac020fcbe484fee97c64fda93eb14822f8a1ead5fc6f9b9b9c81e22eb5",
+  "targets": 8,
+  "requirements": 7,
+  "workflow_commit": "16877004910734cecca83cc5af0fec2f5a4125b3",
+  "execution": "not yet executed; awaits root OS sandbox confirmation"
+}

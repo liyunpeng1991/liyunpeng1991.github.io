@@ -1,0 +1,199 @@
+MaximumModulus.bounded_maxPoints_at_arbitrarily_large_radii : ∀ (f : Complex → Complex)
+  (hf :
+    @Differentiable.{0, 0, 0} Complex
+      (@DenselyNormedField.toNontriviallyNormedField.{0} Complex Complex.instDenselyNormedField) Complex
+      Complex.addCommGroup
+      (@Semiring.toModule.{0} Complex
+        (@CommSemiring.toSemiring.{0} Complex
+          (@Semifield.toCommSemiring.{0} Complex
+            (@Field.toSemifield.{0} Complex
+              (@NormedField.toField.{0} Complex
+                (@NontriviallyNormedField.toNormedField.{0} Complex
+                  (@DenselyNormedField.toNontriviallyNormedField.{0} Complex Complex.instDenselyNormedField)))))))
+      (@UniformSpace.toTopologicalSpace.{0} Complex
+        (@PseudoMetricSpace.toUniformSpace.{0} Complex
+          (@SeminormedRing.toPseudoMetricSpace.{0} Complex
+            (@SeminormedCommRing.toSeminormedRing.{0} Complex
+              (@NormedCommRing.toSeminormedCommRing.{0} Complex
+                (@NormedField.toNormedCommRing.{0} Complex Complex.instNormedField))))))
+      Complex Complex.addCommGroup
+      (@Semiring.toModule.{0} Complex
+        (@CommSemiring.toSemiring.{0} Complex
+          (@Semifield.toCommSemiring.{0} Complex
+            (@Field.toSemifield.{0} Complex
+              (@NormedField.toField.{0} Complex
+                (@NontriviallyNormedField.toNormedField.{0} Complex
+                  (@DenselyNormedField.toNontriviallyNormedField.{0} Complex Complex.instDenselyNormedField)))))))
+      (@UniformSpace.toTopologicalSpace.{0} Complex
+        (@PseudoMetricSpace.toUniformSpace.{0} Complex
+          (@SeminormedRing.toPseudoMetricSpace.{0} Complex
+            (@SeminormedCommRing.toSeminormedRing.{0} Complex
+              (@NormedCommRing.toSeminormedCommRing.{0} Complex
+                (@NormedField.toNormedCommRing.{0} Complex Complex.instNormedField))))))
+      f)
+  (hne :
+    @Ne.{1} (Complex → Complex) f
+      (@OfNat.ofNat.{0} (Complex → Complex) (nat_lit 0)
+        (@Zero.toOfNat0.{0} (Complex → Complex)
+          (@Pi.instZero.{0, 0} Complex (fun (a : Complex) => Complex) fun (i : Complex) => Complex.instZero))))
+  (hnm :
+    Not
+      (@Exists.{1} Complex fun (c : Complex) =>
+        @Exists.{1} Nat fun (m : Nat) =>
+          And (@Ne.{1} Complex c (@OfNat.ofNat.{0} Complex (nat_lit 0) (@Zero.toOfNat0.{0} Complex Complex.instZero)))
+            (∀ (z : Complex),
+              @Eq.{1} Complex (f z)
+                (@HMul.hMul.{0, 0, 0} Complex Complex Complex (@instHMul.{0} Complex Complex.instMul) c
+                  (@HPow.hPow.{0, 0, 0} Complex Nat Complex
+                    (@instHPow.{0, 0} Complex Nat
+                      (@NPow.toPow.{0} Complex
+                        (@Monoid.toNPow.{0} Complex (@Semiring.toMonoid.{0} Complex Complex.instSemiring))))
+                    z m))))),
+  @Exists.{1} Nat fun (B : Nat) =>
+    ∀ (R : Real),
+      @LT.lt.{0} Real Real.instLT (@OfNat.ofNat.{0} Real (nat_lit 0) (@Zero.toOfNat0.{0} Real Real.instZero)) R →
+        @Exists.{1} Real fun (r : Real) =>
+          And (@LT.lt.{0} Real Real.instLT R r)
+            (And
+              (@Set.Finite.{0} Complex
+                (@Set.ofPred.{0} Complex fun (z : Complex) =>
+                  And (@Eq.{1} Real (@Norm.norm.{0} Complex Complex.instNorm z) r)
+                    (∀ (w : Complex),
+                      @Eq.{1} Real (@Norm.norm.{0} Complex Complex.instNorm w) r →
+                        @LE.le.{0} Real Real.instLE (@Norm.norm.{0} Complex Complex.instNorm (f w))
+                          (@Norm.norm.{0} Complex Complex.instNorm (f z)))))
+              (@LE.le.{0} Nat instLENat
+                (@Set.ncard.{0} Complex
+                  (@Set.ofPred.{0} Complex fun (z : Complex) =>
+                    And (@Eq.{1} Real (@Norm.norm.{0} Complex Complex.instNorm z) r)
+                      (∀ (w : Complex),
+                        @Eq.{1} Real (@Norm.norm.{0} Complex Complex.instNorm w) r →
+                          @LE.le.{0} Real Real.instLE (@Norm.norm.{0} Complex Complex.instNorm (f w))
+                            (@Norm.norm.{0} Complex Complex.instNorm (f z)))))
+                B))
+theorem MaximumModulus.bounded_maxPoints_at_arbitrarily_large_radii : ∀ (f : Complex → Complex)
+  (hf :
+    @Differentiable.{0, 0, 0} Complex
+      (@DenselyNormedField.toNontriviallyNormedField.{0} Complex Complex.instDenselyNormedField) Complex
+      Complex.addCommGroup
+      (@Semiring.toModule.{0} Complex
+        (@CommSemiring.toSemiring.{0} Complex
+          (@Semifield.toCommSemiring.{0} Complex
+            (@Field.toSemifield.{0} Complex
+              (@NormedField.toField.{0} Complex
+                (@NontriviallyNormedField.toNormedField.{0} Complex
+                  (@DenselyNormedField.toNontriviallyNormedField.{0} Complex Complex.instDenselyNormedField)))))))
+      (@UniformSpace.toTopologicalSpace.{0} Complex
+        (@PseudoMetricSpace.toUniformSpace.{0} Complex
+          (@SeminormedRing.toPseudoMetricSpace.{0} Complex
+            (@SeminormedCommRing.toSeminormedRing.{0} Complex
+              (@NormedCommRing.toSeminormedCommRing.{0} Complex
+                (@NormedField.toNormedCommRing.{0} Complex Complex.instNormedField))))))
+      Complex Complex.addCommGroup
+      (@Semiring.toModule.{0} Complex
+        (@CommSemiring.toSemiring.{0} Complex
+          (@Semifield.toCommSemiring.{0} Complex
+            (@Field.toSemifield.{0} Complex
+              (@NormedField.toField.{0} Complex
+                (@NontriviallyNormedField.toNormedField.{0} Complex
+                  (@DenselyNormedField.toNontriviallyNormedField.{0} Complex Complex.instDenselyNormedField)))))))
+      (@UniformSpace.toTopologicalSpace.{0} Complex
+        (@PseudoMetricSpace.toUniformSpace.{0} Complex
+          (@SeminormedRing.toPseudoMetricSpace.{0} Complex
+            (@SeminormedCommRing.toSeminormedRing.{0} Complex
+              (@NormedCommRing.toSeminormedCommRing.{0} Complex
+                (@NormedField.toNormedCommRing.{0} Complex Complex.instNormedField))))))
+      f)
+  (hne :
+    @Ne.{1} (Complex → Complex) f
+      (@OfNat.ofNat.{0} (Complex → Complex) (nat_lit 0)
+        (@Zero.toOfNat0.{0} (Complex → Complex)
+          (@Pi.instZero.{0, 0} Complex (fun (a : Complex) => Complex) fun (i : Complex) => Complex.instZero))))
+  (hnm :
+    Not
+      (@Exists.{1} Complex fun (c : Complex) =>
+        @Exists.{1} Nat fun (m : Nat) =>
+          And (@Ne.{1} Complex c (@OfNat.ofNat.{0} Complex (nat_lit 0) (@Zero.toOfNat0.{0} Complex Complex.instZero)))
+            (∀ (z : Complex),
+              @Eq.{1} Complex (f z)
+                (@HMul.hMul.{0, 0, 0} Complex Complex Complex (@instHMul.{0} Complex Complex.instMul) c
+                  (@HPow.hPow.{0, 0, 0} Complex Nat Complex
+                    (@instHPow.{0, 0} Complex Nat
+                      (@NPow.toPow.{0} Complex
+                        (@Monoid.toNPow.{0} Complex (@Semiring.toMonoid.{0} Complex Complex.instSemiring))))
+                    z m))))),
+  @Exists.{1} Nat fun (B : Nat) =>
+    ∀ (R : Real),
+      @LT.lt.{0} Real Real.instLT (@OfNat.ofNat.{0} Real (nat_lit 0) (@Zero.toOfNat0.{0} Real Real.instZero)) R →
+        @Exists.{1} Real fun (r : Real) =>
+          And (@LT.lt.{0} Real Real.instLT R r)
+            (And
+              (@Set.Finite.{0} Complex
+                (@Set.ofPred.{0} Complex fun (z : Complex) =>
+                  And (@Eq.{1} Real (@Norm.norm.{0} Complex Complex.instNorm z) r)
+                    (∀ (w : Complex),
+                      @Eq.{1} Real (@Norm.norm.{0} Complex Complex.instNorm w) r →
+                        @LE.le.{0} Real Real.instLE (@Norm.norm.{0} Complex Complex.instNorm (f w))
+                          (@Norm.norm.{0} Complex Complex.instNorm (f z)))))
+              (@LE.le.{0} Nat instLENat
+                (@Set.ncard.{0} Complex
+                  (@Set.ofPred.{0} Complex fun (z : Complex) =>
+                    And (@Eq.{1} Real (@Norm.norm.{0} Complex Complex.instNorm z) r)
+                      (∀ (w : Complex),
+                        @Eq.{1} Real (@Norm.norm.{0} Complex Complex.instNorm w) r →
+                          @LE.le.{0} Real Real.instLE (@Norm.norm.{0} Complex Complex.instNorm (f w))
+                            (@Norm.norm.{0} Complex Complex.instNorm (f z)))))
+                B)) :=
+fun (f : Complex → Complex)
+    (hf :
+      @Differentiable.{0, 0, 0} Complex
+        (@DenselyNormedField.toNontriviallyNormedField.{0} Complex Complex.instDenselyNormedField) Complex
+        Complex.addCommGroup
+        (@Semiring.toModule.{0} Complex
+          (@CommSemiring.toSemiring.{0} Complex
+            (@Semifield.toCommSemiring.{0} Complex
+              (@Field.toSemifield.{0} Complex
+                (@NormedField.toField.{0} Complex
+                  (@NontriviallyNormedField.toNormedField.{0} Complex
+                    (@DenselyNormedField.toNontriviallyNormedField.{0} Complex Complex.instDenselyNormedField)))))))
+        (@UniformSpace.toTopologicalSpace.{0} Complex
+          (@PseudoMetricSpace.toUniformSpace.{0} Complex
+            (@SeminormedRing.toPseudoMetricSpace.{0} Complex
+              (@SeminormedCommRing.toSeminormedRing.{0} Complex
+                (@NormedCommRing.toSeminormedCommRing.{0} Complex
+                  (@NormedField.toNormedCommRing.{0} Complex Complex.instNormedField))))))
+        Complex Complex.addCommGroup
+        (@Semiring.toModule.{0} Complex
+          (@CommSemiring.toSemiring.{0} Complex
+            (@Semifield.toCommSemiring.{0} Complex
+              (@Field.toSemifield.{0} Complex
+                (@NormedField.toField.{0} Complex
+                  (@NontriviallyNormedField.toNormedField.{0} Complex
+                    (@DenselyNormedField.toNontriviallyNormedField.{0} Complex Complex.instDenselyNormedField)))))))
+        (@UniformSpace.toTopologicalSpace.{0} Complex
+          (@PseudoMetricSpace.toUniformSpace.{0} Complex
+            (@SeminormedRing.toPseudoMetricSpace.{0} Complex
+              (@SeminormedCommRing.toSeminormedRing.{0} Complex
+                (@NormedCommRing.toSeminormedCommRing.{0} Complex
+                  (@NormedField.toNormedCommRing.{0} Complex Complex.instNormedField))))))
+        f)
+    (hne :
+      @Ne.{1} (Complex → Complex) f
+        (@OfNat.ofNat.{0} (Complex → Complex) (nat_lit 0)
+          (@Zero.toOfNat0.{0} (Complex → Complex)
+            (@Pi.instZero.{0, 0} Complex (fun (a : Complex) => Complex) fun (i : Complex) => Complex.instZero))))
+    (hnm :
+      Not
+        (@Exists.{1} Complex fun (c : Complex) =>
+          @Exists.{1} Nat fun (m : Nat) =>
+            And (@Ne.{1} Complex c (@OfNat.ofNat.{0} Complex (nat_lit 0) (@Zero.toOfNat0.{0} Complex Complex.instZero)))
+              (∀ (z : Complex),
+                @Eq.{1} Complex (f z)
+                  (@HMul.hMul.{0, 0, 0} Complex Complex Complex (@instHMul.{0} Complex Complex.instMul) c
+                    (@HPow.hPow.{0, 0, 0} Complex Nat Complex
+                      (@instHPow.{0, 0} Complex Nat
+                        (@NPow.toPow.{0} Complex
+                          (@Monoid.toNPow.{0} Complex (@Semiring.toMonoid.{0} Complex Complex.instSemiring))))
+                      z m))))) =>
+  MaximumModulus.allRadiiStatement f hf hne hnm
+'MaximumModulus.bounded_maxPoints_at_arbitrarily_large_radii' depends on axioms: [propext, Classical.choice, Quot.sound]

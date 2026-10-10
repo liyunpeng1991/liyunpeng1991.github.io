@@ -1,0 +1,13 @@
+{
+  "command": [
+    "lake",
+    "env",
+    "leanchecker",
+    "--verbose",
+    "MaximumModulus.BranchContinuation"
+  ],
+  "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+  "started_utc": "2026-10-10T19:29:58.539119+00:00",
+  "exit_code": 0,
+  "elapsed_seconds": 8.673588417004794
+}

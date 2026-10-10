@@ -1,0 +1,7 @@
+{
+  "checked_utc": "2026-10-10T20:50:01.072686+00:00",
+  "status": "one incorrect artifact link caught before archive",
+  "incorrect": "published-commit/project-logs/check-axioms.log",
+  "actual": "published-commit/project-logs/axioms.log",
+  "repair": "report link corrected only; proof, harness, workflow and actual axiom output unchanged"
+}

@@ -1,0 +1,7 @@
+import MaximumModulus.Audit.OriginalProblem
+
+set_option pp.all true
+#check @IndependentOriginal.original_all_radii_growth_impossible
+#print IndependentOriginal.original_all_radii_growth_impossible
+set_option pp.universes false in
+#print axioms IndependentOriginal.original_all_radii_growth_impossible

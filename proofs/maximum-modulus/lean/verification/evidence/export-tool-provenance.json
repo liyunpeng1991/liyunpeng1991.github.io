@@ -1,0 +1,9 @@
+{
+  "created_utc": "2026-10-10T19:42:43.208620+00:00",
+  "scope": "Read-only executable hashing after export and comparison",
+  "path": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/.tools/lean-4.35.0-rc4-darwin_aarch64/bin/leanexport",
+  "sha256": "92104293b343d52046207d46427d6fa42043166dd79282d7c1e2825e61857427",
+  "bytes": 570576,
+  "toolchain_commit": "c29b6dda4f7c20e3eeaa717c4e565663c5cfa364",
+  "export_command_provenance": "/private/tmp/mm-lean-verify-20261010/audit/exports/commands.json"
+}

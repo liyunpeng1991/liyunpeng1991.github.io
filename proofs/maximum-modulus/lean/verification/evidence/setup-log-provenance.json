@@ -1,0 +1,136 @@
+{
+  "created_utc": "2026-10-10T19:33:12.621873+00:00",
+  "scope": "Copies of actual original-project setup/version/cache logs; not new executions",
+  "files": [
+    {
+      "source": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/logs/verification-lean-version.json",
+      "copy": "/private/tmp/mm-lean-verify-20261010/evidence/setup-logs/verification-lean-version.json",
+      "sha256": "0ed7834f812425b76b4698a20749a462f8a76a0b67e526cfa975589f34aa58a2"
+    },
+    {
+      "source": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/logs/verification-lean-version.log",
+      "copy": "/private/tmp/mm-lean-verify-20261010/evidence/setup-logs/verification-lean-version.log",
+      "sha256": "06dac795e3a83abe1b556342ba68992a46b3992e7d3f888fa4a59eb65a2f4fe6"
+    },
+    {
+      "source": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/logs/verification-lake-version.json",
+      "copy": "/private/tmp/mm-lean-verify-20261010/evidence/setup-logs/verification-lake-version.json",
+      "sha256": "012d163377f381e88f09f5d4ee218027128730adbc1b8e2ff302b8e38c10b2df"
+    },
+    {
+      "source": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/logs/verification-lake-version.log",
+      "copy": "/private/tmp/mm-lean-verify-20261010/evidence/setup-logs/verification-lake-version.log",
+      "sha256": "85c4a74d99df1f2b94e3de89999f0133ea6f72cf4b24a5475869cc1ff26278cc"
+    },
+    {
+      "source": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/logs/versions.json",
+      "copy": "/private/tmp/mm-lean-verify-20261010/evidence/setup-logs/versions.json",
+      "sha256": "f8ff1e09d2b1ceb0782ad46c04d59d67f0e737f3e58bf67e93e5ab36ea7ba532"
+    },
+    {
+      "source": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/logs/versions.log",
+      "copy": "/private/tmp/mm-lean-verify-20261010/evidence/setup-logs/versions.log",
+      "sha256": "06dac795e3a83abe1b556342ba68992a46b3992e7d3f888fa4a59eb65a2f4fe6"
+    },
+    {
+      "source": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/logs/cache-get.json",
+      "copy": "/private/tmp/mm-lean-verify-20261010/evidence/setup-logs/cache-get.json",
+      "sha256": "742ff717c89b7a129a8de79c272421039604f2c2c0df0ddbc0d6843a222db0c8"
+    },
+    {
+      "source": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/logs/cache-get.log",
+      "copy": "/private/tmp/mm-lean-verify-20261010/evidence/setup-logs/cache-get.log",
+      "sha256": "3327ce49faf7240f470d0af5746f95ada563e9832d0bfde1789f1a0075fa27a9"
+    },
+    {
+      "source": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/logs/cache-get-azure.json",
+      "copy": "/private/tmp/mm-lean-verify-20261010/evidence/setup-logs/cache-get-azure.json",
+      "sha256": "4761b6889d8d538bee3d56d658de2b9d80363a6b20af362faf5d6c0e61d5ee49"
+    },
+    {
+      "source": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/logs/cache-get-azure.log",
+      "copy": "/private/tmp/mm-lean-verify-20261010/evidence/setup-logs/cache-get-azure.log",
+      "sha256": "c65a5d06f4f261de902d9753402da8d9d48a2b30efa1a8fdf8fde2fbf3f99f56"
+    },
+    {
+      "source": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/logs/proper-cache.json",
+      "copy": "/private/tmp/mm-lean-verify-20261010/evidence/setup-logs/proper-cache.json",
+      "sha256": "a501a72953189675f3e5f2339ba857928a3e32fc317de18a4c3e38dfe084b81c"
+    },
+    {
+      "source": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/logs/proper-cache.log",
+      "copy": "/private/tmp/mm-lean-verify-20261010/evidence/setup-logs/proper-cache.log",
+      "sha256": "8ddb1232b75a4137da8c1ed34ff80e5f930ec77eaa278087bb764b953264f83e"
+    },
+    {
+      "source": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/logs/followup-cache.json",
+      "copy": "/private/tmp/mm-lean-verify-20261010/evidence/setup-logs/followup-cache.json",
+      "sha256": "93dfcb620ceeffc6da6b3799b876980a2005593f3050fbe2c8e0fee17f15bea5"
+    },
+    {
+      "source": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/logs/followup-cache.log",
+      "copy": "/private/tmp/mm-lean-verify-20261010/evidence/setup-logs/followup-cache.log",
+      "sha256": "bfcd916e6389e4aa413681b5cbcf23c2f32132e88cd3df15af78cb24c921a85f"
+    },
+    {
+      "source": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/logs/onepoint-cache.json",
+      "copy": "/private/tmp/mm-lean-verify-20261010/evidence/setup-logs/onepoint-cache.json",
+      "sha256": "0d29eaa5a9b70659705bc548d62a6b22535a4f5f6ae51a9cb392e8ac6048a186"
+    },
+    {
+      "source": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/logs/onepoint-cache.log",
+      "copy": "/private/tmp/mm-lean-verify-20261010/evidence/setup-logs/onepoint-cache.log",
+      "sha256": "e2cf4d0bd16b5b995802631cdd0c112b87298ce9876cc57e8709497afe4f9816"
+    },
+    {
+      "source": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/logs/meromorphic-cache.json",
+      "copy": "/private/tmp/mm-lean-verify-20261010/evidence/setup-logs/meromorphic-cache.json",
+      "sha256": "29c5081b9e7e89899e65986696c31ab04c057e63a24706c3e57507e86197cac0"
+    },
+    {
+      "source": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/logs/meromorphic-cache.log",
+      "copy": "/private/tmp/mm-lean-verify-20261010/evidence/setup-logs/meromorphic-cache.log",
+      "sha256": "9bbd7a1ca90ac3cd4953bbb1bedec06fb16505a93d204007bfa7db3c1b59228a"
+    },
+    {
+      "source": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/logs/envelope-cache.json",
+      "copy": "/private/tmp/mm-lean-verify-20261010/evidence/setup-logs/envelope-cache.json",
+      "sha256": "fcbf9eef8e9a4a9e07e3db0a0bb013fa854fbb1467f2eb5235f86e65e03f88c8"
+    },
+    {
+      "source": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/logs/envelope-cache.log",
+      "copy": "/private/tmp/mm-lean-verify-20261010/evidence/setup-logs/envelope-cache.log",
+      "sha256": "5b1eb8b72868520904f0024119e4baddcd061bf6a85b7455251501bebba6510c"
+    },
+    {
+      "source": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/logs/meromorphic-order-cache.json",
+      "copy": "/private/tmp/mm-lean-verify-20261010/evidence/setup-logs/meromorphic-order-cache.json",
+      "sha256": "0cbd48019014cc5031b93dc11bfa1a995047ced27a8f976468ffb5da1fbd5734"
+    },
+    {
+      "source": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/logs/meromorphic-order-cache.log",
+      "copy": "/private/tmp/mm-lean-verify-20261010/evidence/setup-logs/meromorphic-order-cache.log",
+      "sha256": "443ed4917e6655c962f16f1e0319117b42423513ba48feb68e685f1d05050778"
+    },
+    {
+      "source": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/logs/local-image-topology-cache-20261011.json",
+      "copy": "/private/tmp/mm-lean-verify-20261010/evidence/setup-logs/local-image-topology-cache-20261011.json",
+      "sha256": "14cfae077965753d0bb5b64d99a56158ffcc1331f2d93b59d099c72c3f9dcd56"
+    },
+    {
+      "source": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/logs/local-image-topology-cache-20261011.log",
+      "copy": "/private/tmp/mm-lean-verify-20261010/evidence/setup-logs/local-image-topology-cache-20261011.log",
+      "sha256": "29171f52f6cba63ec123e795fa6bd482cbe44c5d38a0f5072500147b909aa7ea"
+    },
+    {
+      "source": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/logs/toolchain-direct-download.log",
+      "copy": "/private/tmp/mm-lean-verify-20261010/evidence/setup-logs/toolchain-direct-download.log",
+      "sha256": "735e329cbd83e84bfc582900add559e56bd775e9e09ba11cfb949c28ffcf56dc"
+    },
+    {
+      "source": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/logs/toolchain-install.log",
+      "copy": "/private/tmp/mm-lean-verify-20261010/evidence/setup-logs/toolchain-install.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

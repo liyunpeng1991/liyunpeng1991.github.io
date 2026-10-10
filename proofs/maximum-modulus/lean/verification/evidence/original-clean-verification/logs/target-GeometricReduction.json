@@ -1,0 +1,12 @@
+{
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "MaximumModulus/GeometricReduction.lean"
+  ],
+  "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+  "started_utc": "2026-10-10T19:26:59.962681+00:00",
+  "exit_code": 0,
+  "elapsed_seconds": 4.99686595890671
+}

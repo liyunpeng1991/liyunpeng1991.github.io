@@ -1,0 +1,7 @@
+(version 1)
+(allow default)
+(deny network*)
+(deny file-read-data (require-all (subpath "/Users") (require-not (subpath "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/.tools/lean-4.35.0-rc4-darwin_aarch64"))))
+(deny file-read-data (require-all (subpath "/private/tmp") (require-not (subpath "/private/tmp/mm-lean-published-20261011")) (require-not (subpath "/private/tmp/mm-lean-verify-workflow-20261010"))))
+(deny file-read-data (subpath "/private/var/root") (subpath "/Library/Keychains") (subpath "/private/var/folders"))
+(deny file-write* (require-all (require-not (subpath "/private/tmp/mm-lean-published-20261011")) (require-not (literal "/dev/null"))))

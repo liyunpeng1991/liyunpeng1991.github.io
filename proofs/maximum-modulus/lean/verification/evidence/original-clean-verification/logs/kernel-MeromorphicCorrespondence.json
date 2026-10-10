@@ -1,0 +1,13 @@
+{
+  "command": [
+    "lake",
+    "env",
+    "leanchecker",
+    "--verbose",
+    "MaximumModulus.MeromorphicCorrespondence"
+  ],
+  "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+  "started_utc": "2026-10-10T19:34:43.718739+00:00",
+  "exit_code": 0,
+  "elapsed_seconds": 9.69560404215008
+}

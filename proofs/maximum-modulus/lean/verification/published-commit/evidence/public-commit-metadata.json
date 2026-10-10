@@ -1,0 +1,43 @@
+{
+  "created_utc": "2026-10-10T20:32:21.357942+00:00",
+  "selected_commit": "c063e5f83dfa71c97871eabc8b70cf8a8c1e0bc9",
+  "commands": [
+    {
+      "argv": [
+        "/usr/bin/git",
+        "cat-file",
+        "-p",
+        "c063e5f83dfa71c97871eabc8b70cf8a8c1e0bc9"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site",
+      "exit_code": 0,
+      "stdout": "tree f65b9f1a4865840f9aba4b17f2b2cad9c08dbd43\nparent b7ac532823d25f92d7740f2141cc053a8dc2a850\nauthor liyunpeng1991 <liyunpengcn1991@gmail.com> 1791664177 +0800\ncommitter liyunpeng1991 <liyunpengcn1991@gmail.com> 1791664177 +0800\n\nPublish maximum-modulus paper v2 and complete cofinal Lean proof",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "rev-parse",
+        "refs/remotes/origin/main"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site",
+      "exit_code": 0,
+      "stdout": "c063e5f83dfa71c97871eabc8b70cf8a8c1e0bc9\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "merge-base",
+        "--is-ancestor",
+        "c063e5f83dfa71c97871eabc8b70cf8a8c1e0bc9",
+        "refs/remotes/origin/main"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "membership_scope": "Selected public commit belongs to origin/main as fetched by this initial shallow clone; no deeper historical membership is inferred."
+}

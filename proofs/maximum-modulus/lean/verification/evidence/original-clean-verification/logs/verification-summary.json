@@ -1,0 +1,1888 @@
+{
+  "verdict": "All project checks passed; unconditional theorem checked",
+  "full_original_problem_solved": true,
+  "unconditional_AllRadiiStatement_proof_exists": true,
+  "checks": {
+    "verification-lean-version": {
+      "command": [
+        "lean",
+        "--version"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:25:23.547271+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 0.02827400015667081
+    },
+    "verification-lake-version": {
+      "command": [
+        "lake",
+        "--version"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:25:23.602870+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 0.029963958077132702
+    },
+    "clean-project": {
+      "command": [
+        "python3",
+        "-c",
+        "import shutil; shutil.rmtree(\".lake/build\", ignore_errors=True)"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:25:23.661468+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 0.055739417206496
+    },
+    "clean-build": {
+      "command": [
+        "lake",
+        "build"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:25:23.742304+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 29.704059124924242
+    },
+    "target-AEBridge": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/AEBridge.lean"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:25:53.486745+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 5.483448542188853
+    },
+    "target-AllRadii": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/AllRadii.lean"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:25:58.996393+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4.357400625012815
+    },
+    "target-Basic": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/Basic.lean"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:26:03.380122+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 3.844773625023663
+    },
+    "target-BoundaryCharts": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/BoundaryCharts.lean"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:26:07.252858+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4.364712750073522
+    },
+    "target-BranchCollision": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/BranchCollision.lean"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:26:11.643864+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4.214349249843508
+    },
+    "target-BranchContinuation": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/BranchContinuation.lean"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:26:15.885174+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 5.3792105838656425
+    },
+    "target-Definitions": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/Definitions.lean"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:26:21.293514+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4.158099165651947
+    },
+    "target-DuplicateSafeCount": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/DuplicateSafeCount.lean"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:26:25.479611+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4.260509541723877
+    },
+    "target-ExceptionalRadii": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/ExceptionalRadii.lean"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:26:29.768179+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4.288841124624014
+    },
+    "target-FiberCapture": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/FiberCapture.lean"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:26:34.084021+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 3.1746659162454307
+    },
+    "target-FiniteExceptionalSet": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/FiniteExceptionalSet.lean"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:26:37.286311+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4.322654709219933
+    },
+    "target-FiniteImageGraphs": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/FiniteImageGraphs.lean"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:26:41.637145+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4.367349207866937
+    },
+    "target-FiniteTargetCover": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/FiniteTargetCover.lean"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:26:46.030727+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4.4598406669683754
+    },
+    "target-FiniteValueCoordinates": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/FiniteValueCoordinates.lean"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:26:50.516830+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4.514871582854539
+    },
+    "target-Finiteness": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/Finiteness.lean"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:26:55.061892+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4.873451250139624
+    },
+    "target-GeometricReduction": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/GeometricReduction.lean"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:26:59.962681+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4.99686595890671
+    },
+    "target-GlobalCharts": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/GlobalCharts.lean"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:27:04.995711+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 5.275338291656226
+    },
+    "target-GlobalDegreeAux": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/GlobalDegreeAux.lean"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:27:10.302238+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 3.282066124957055
+    },
+    "target-HighCountCapture": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/HighCountCapture.lean"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:27:13.611370+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4.450114999897778
+    },
+    "target-HighCountGlobal": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/HighCountGlobal.lean"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:27:18.094613+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 5.266338875051588
+    },
+    "target-HighCountInterior": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/HighCountInterior.lean"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:27:23.397075+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4.836575000081211
+    },
+    "target-HighCountLocus": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/HighCountLocus.lean"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:27:28.260449+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4.292589250020683
+    },
+    "target-InfinityCharts": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/InfinityCharts.lean"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:27:32.585075+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4.587173458188772
+    },
+    "target-InfinityInterior": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/InfinityInterior.lean"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:27:37.200043+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4.743381541222334
+    },
+    "target-InversePairFamily": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/InversePairFamily.lean"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:27:42.006792+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4.530975125264376
+    },
+    "target-InverseRootChart": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/InverseRootChart.lean"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:27:46.567570+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4.595103541854769
+    },
+    "target-LocalImageTopology": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/LocalImageTopology.lean"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:27:51.193839+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4.517867709044367
+    },
+    "target-LocalReciprocal": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/LocalReciprocal.lean"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:27:55.739053+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4.323371957987547
+    },
+    "target-LocalValence": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/LocalValence.lean"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:28:00.093449+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 5.151513583026826
+    },
+    "target-LogDerivative": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/LogDerivative.lean"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:28:05.271622+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4.552141583058983
+    },
+    "target-MaximaToFibers": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/MaximaToFibers.lean"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:28:09.854303+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4.168169375043362
+    },
+    "target-MaximumEnvelope": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/MaximumEnvelope.lean"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:28:14.050856+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4.338426083792001
+    },
+    "target-MaximumStationarity": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/MaximumStationarity.lean"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:28:18.418228+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4.403823666274548
+    },
+    "target-MeromorphicCorrespondence": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/MeromorphicCorrespondence.lean"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:28:22.849615+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4.319550875108689
+    },
+    "target-OmittedTargetCover": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/OmittedTargetCover.lean"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:28:27.195350+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4.538782333955169
+    },
+    "target-PairNonvertical": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/PairNonvertical.lean"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:28:31.764144+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4.275521041825414
+    },
+    "target-PoleChart": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/PoleChart.lean"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:28:36.067396+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4.143467499874532
+    },
+    "target-ProductNonconstant": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/ProductNonconstant.lean"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:28:40.236514+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4.187900833319873
+    },
+    "target-Reductions": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/Reductions.lean"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:28:44.454658+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4.171992833726108
+    },
+    "target-SmallFibers": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/SmallFibers.lean"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:28:48.667678+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 3.7346758325584233
+    },
+    "target-SphereSmallFibers": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/SphereSmallFibers.lean"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:28:52.428458+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4.173070082906634
+    },
+    "target-StatementAudit": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/StatementAudit.lean"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:28:56.627892+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4.183419625274837
+    },
+    "target-MaximumModulus": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus.lean"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:29:00.841807+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4.285108458250761
+    },
+    "axioms": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "CheckAxioms.lean"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:29:05.154017+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4.321677167434245
+    },
+    "kernel-AEBridge": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.AEBridge"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:29:09.506937+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 13.250460249837488
+    },
+    "kernel-AllRadii": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.AllRadii"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:29:22.797367+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 9.24962650006637
+    },
+    "kernel-Basic": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.Basic"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:29:32.079531+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 7.934080292005092
+    },
+    "kernel-BoundaryCharts": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.BoundaryCharts"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:29:40.045217+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 9.589707292150706
+    },
+    "kernel-BranchCollision": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.BranchCollision"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:29:49.666787+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 8.84109712485224
+    },
+    "kernel-BranchContinuation": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.BranchContinuation"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:29:58.539119+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 8.673588417004794
+    },
+    "kernel-Definitions": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.Definitions"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:30:07.240904+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 9.913501124829054
+    },
+    "kernel-DuplicateSafeCount": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.DuplicateSafeCount"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:30:17.185564+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 9.293413458857685
+    },
+    "kernel-ExceptionalRadii": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.ExceptionalRadii"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:30:26.510327+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 8.56272091716528
+    },
+    "kernel-FiberCapture": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.FiberCapture"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:30:35.104343+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 7.730910667218268
+    },
+    "kernel-FiniteExceptionalSet": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.FiniteExceptionalSet"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:30:42.874391+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 18.405317291151732
+    },
+    "kernel-FiniteImageGraphs": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.FiniteImageGraphs"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:31:01.339926+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 11.514623416122049
+    },
+    "kernel-FiniteTargetCover": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.FiniteTargetCover"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:31:12.882512+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 9.000747375190258
+    },
+    "kernel-FiniteValueCoordinates": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.FiniteValueCoordinates"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:31:21.913273+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 8.870622124988586
+    },
+    "kernel-Finiteness": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.Finiteness"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:31:30.813152+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 8.80743504082784
+    },
+    "kernel-GeometricReduction": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.GeometricReduction"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:31:39.653686+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 9.866899416781962
+    },
+    "kernel-GlobalCharts": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.GlobalCharts"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:31:49.556812+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 9.056756084319204
+    },
+    "kernel-GlobalDegreeAux": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.GlobalDegreeAux"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:31:58.651575+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 7.149150209035724
+    },
+    "kernel-HighCountCapture": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.HighCountCapture"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:32:05.831350+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 8.785625624936074
+    },
+    "kernel-HighCountGlobal": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.HighCountGlobal"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:32:14.647914+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 9.505640749819577
+    },
+    "kernel-HighCountInterior": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.HighCountInterior"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:32:24.187693+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 9.101325958035886
+    },
+    "kernel-HighCountLocus": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.HighCountLocus"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:32:33.317996+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 8.831907874904573
+    },
+    "kernel-InfinityCharts": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.InfinityCharts"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:32:42.181690+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 10.071885874960572
+    },
+    "kernel-InfinityInterior": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.InfinityInterior"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:32:52.285606+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 11.33461295813322
+    },
+    "kernel-InversePairFamily": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.InversePairFamily"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:33:03.659688+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 14.158193791750818
+    },
+    "kernel-InverseRootChart": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.InverseRootChart"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:33:17.861817+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 9.353506791871041
+    },
+    "kernel-LocalImageTopology": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.LocalImageTopology"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:33:27.257532+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 12.810258542187512
+    },
+    "kernel-LocalReciprocal": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.LocalReciprocal"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:33:40.109920+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 9.974265291821212
+    },
+    "kernel-LocalValence": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.LocalValence"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:33:50.122195+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 10.565006334334612
+    },
+    "kernel-LogDerivative": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.LogDerivative"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:34:00.727125+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 11.07318841619417
+    },
+    "kernel-MaximaToFibers": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.MaximaToFibers"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:34:11.843491+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 9.892542332876474
+    },
+    "kernel-MaximumEnvelope": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.MaximumEnvelope"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:34:21.775692+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 11.601902457885444
+    },
+    "kernel-MaximumStationarity": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.MaximumStationarity"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:34:33.416177+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 10.262240500189364
+    },
+    "kernel-MeromorphicCorrespondence": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.MeromorphicCorrespondence"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:34:43.718739+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 9.69560404215008
+    },
+    "kernel-OmittedTargetCover": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.OmittedTargetCover"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:34:53.456930+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 18.157260624691844
+    },
+    "kernel-PairNonvertical": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.PairNonvertical"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:35:11.646459+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 12.835286166053265
+    },
+    "kernel-PoleChart": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.PoleChart"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:35:24.520720+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 13.406637916807085
+    },
+    "kernel-ProductNonconstant": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.ProductNonconstant"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:35:37.975073+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 11.839322124607861
+    },
+    "kernel-Reductions": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.Reductions"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:35:49.854187+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 8.58501779101789
+    },
+    "kernel-SmallFibers": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.SmallFibers"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:35:58.479095+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 7.8444069577381015
+    },
+    "kernel-SphereSmallFibers": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.SphereSmallFibers"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:36:06.353944+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 8.707211457658559
+    },
+    "kernel-StatementAudit": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.StatementAudit"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:36:15.094765+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 8.670190332923084
+    },
+    "source-integrity": {
+      "command": [
+        "python3",
+        "scripts/source_integrity.py"
+      ],
+      "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+      "started_utc": "2026-10-10T19:36:23.794400+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 0.17594133270904422
+    }
+  },
+  "axiom_report": "logs/axioms.log",
+  "observed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "actual_target_axiom_reports": {
+    "MaximumModulus.allRadiiStatement": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.bounded_maxPoints_at_arbitrarily_large_radii": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.all_radii_growth_impossible": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.regularLogDerivativeHighCount_open_closure_projection": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.regularLogDerivativeHighCount_empty": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.omittedHighCountBranchCover_exists": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.OmittedHighCountBranchCover.actual_closure_branches": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.regular_high_count_closure_omitted_local_projection_isOpen": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.InfinityTargetBranchCover.product_germ_nonconstant": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.InfinityTargetBranchCover.high_count_selected_sandwich": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.regularLogDerivativeHighCount_open_local_projection_at_infinity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.maxPoints_nonempty": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.closure_continues_through_finite_imageBranches": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.finite_imageBranches_local_projection_isOpen": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.finiteValueEmbedding_preimage_closure": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.logarithmic_pair_product_germ_nonconstant": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.finiteTargetBranchCover_exists": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.FiniteTargetBranchCover.regular_at_punctured_branch": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.FiniteTargetBranchCover.physical_count_radius": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.finiteSingularTargets_locally_finite": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.finiteSingularTargets_countable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.finiteSingularSquareRadii_countable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.positiveProductFiberBound_of_regular_high_count_empty": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.logDerivative_high_count_omitted_finite_image_cover": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.FiniteTargetBranchCover.central_fiber_count_le_branch": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.FiniteTargetBranchCover.high_count_selected_sandwich": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.finite_regular_high_count_closure_contains_analytic_branch": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.regular_high_count_closure_finite_local_projection_isOpen": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.infinityValueEmbedding_preimage_closure": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.infinityTargetBranchCover_exists": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.regularLogDerivativeHighCount_closure_product_ne_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.maxPoints_eq_norm_level": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.entire_reflection": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.analyticOnNhd_reflectionProduct": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.reflectionProduct_eq_sq_norm": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.reflectionProduct_constant_of_infinite_maxPoints": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.entire_factor_at_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.eq_zero_value_of_reflectionProduct_constant": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.isMonomial_of_reflectionProduct_constant": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.finite_maxPoints": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.cofinalBound_not_growth": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.cofinalBound_not_tendsto": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.cofinalBound_of_ae": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.cofinalBound_of_locallyFinite_exceptions": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.allRadiiStatement_implies_negative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.cofinalBound_of_ae_ncard": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.almostEverywhereStatement_implies_allRadiiStatement": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.small_inverse_pairs_finite_ncard_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.inverse_pairs_eq_small_of_norm_lt_sq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.inverse_pairs_finite_ncard_le_of_norm_lt_sq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.power_fiber_finite_ncard_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.analytic_germ_root": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.local_power_coordinate_valence": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.analytic_local_valence": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.maxPoints_mapsTo_inversePairs": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.maxPoints_finite_ncard_le_inversePairs": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.StatementAudit.statement_correspondence": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.StatementAudit.original_finiteness": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.imageBranch_fibers_radius": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.finite_imageBranch_comparisons_radius": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.analytic_inverseRoot_chart": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.analytic_inverseRoot_capture": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.analytic_inverseRoot_family": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.analytic_inverseRoot_pair_family": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.analytic_inverseRoot_local_fiber_count": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.weightedLogDerivative_factor": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.normalizedLogDerivative_finite_order": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.normalizedLogDerivative_no_reciprocal_symmetry": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.normalizedLogDerivative_small_product_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.no_local_normalized_reciprocity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.continuous_sphereLogDerivative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.normalizedLogDerivative_finite_inverse_pairs": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.compact_sphereLogDerivative_inverse_image": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.isProperMap_sphereCorrespondenceMap": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.sphereCorrespondenceMap_finite_fiber": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.angular_stationarity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.value_ne_zero_of_maxPoint": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.common_logarithmic_derivative_at_maxPoints": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.actual_maxPoints_mapsTo_inversePairs": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.squaredMaximum_strictMonoOn": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.squaredMaximum_lipschitzOn_Icc": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.exists_positive_envelope_derivative_off_countable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.cofinalBound_of_positiveProductFiberBound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.bad_locus_empty_of_open_closure_projection": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.analytic_imageBranch_locally_closed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.imageBranch_full_branch_of_clopen_membership": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.isOpen_product_projection_of_analytic_charts": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.compact_fiber_capture": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.closedMap_fiber_capture": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.normalizedLogDerivative_finite_order_regular": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.reciprocalSphereLogDerivative_pole_germ": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.sphereLogDerivative_pole_inverse_chart": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.sphereLogDerivative_regular_inverse_chart": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.finite_entire_zeros_in_compact_of_ne_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.finite_sphereLogDerivative_omitted_roots_in_compact": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.sphereLogDerivative_small_product_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.imageBranch_noncentral_image_is_graph": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.selected_imageBranches_punctured_closure": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.imageBranch_full_branch_of_captured_subbranches": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.closure_of_local_selected_imageBranches": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.local_selected_imageBranches_closure_projection_isOpen": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.logDerivative_high_count_has_bounded_survivor": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.logDerivative_high_count_omitted_value_capture": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.finite_omitted_roots_in_coordinate_annulus": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.imageBranches_eq_or_disjoint_of_stable_comparisons": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.finite_imageBranches_noncentral_image_is_graph": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.inverseRoot_branch_germ_nonconstant": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.no_constant_product_regular_pair_germ": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.no_constant_product_spherical_regular_pair_germ": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.sphereCorrespondence_regular_chart_capture": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.finite_orders_common_power": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.RegularSpherePairChart.capture_rootPair": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.sphereCorrespondence_regular_root_capture": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.RegularSpherePairChart.rootPair_values_radius": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.regularSphereRootFamily_values_radius": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.regularSphereRootPair_analytic": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.sphereCorrespondence_regular_finite_family": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.countable_exceptional_sphere_targets": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.countable_exceptional_sphere_radii": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.regularLogDerivativeHighCount_closure_avoids_small_products": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.regularLogDerivativeHighCount_empty_of_open_closure_projection": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.sphere_inversePairs_eq_normalized": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.normalized_inversePairs_bound_at_regular_target": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.finite_analytic_physical_inversePairs_count_radius": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.productGermClass_eq_univ_of_total_graph": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.central_fiber_count_le_of_total_graph": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "source_and_dependency_integrity": {
+    "dependencies": [
+      {
+        "name": "mathlib",
+        "revision": "81d17696471311f5e3e2f034236df7a781449f7e",
+        "url": "https://github.com/leanprover-community/mathlib4.git",
+        "tracked_tree": "clean"
+      },
+      {
+        "name": "plausible",
+        "revision": "aef59637faa9e85fa2486acaaf906ce3f572af7c",
+        "url": "https://github.com/leanprover-community/plausible",
+        "tracked_tree": "clean"
+      },
+      {
+        "name": "LeanSearchClient",
+        "revision": "234d9e074fbd6e911b920baf32db5291c3125be0",
+        "url": "https://github.com/leanprover-community/LeanSearchClient",
+        "tracked_tree": "clean"
+      },
+      {
+        "name": "importGraph",
+        "revision": "579f558774c4ac6840e715ba60dabf3030619349",
+        "url": "https://github.com/leanprover-community/import-graph",
+        "tracked_tree": "clean"
+      },
+      {
+        "name": "proofwidgets",
+        "revision": "d5ad4a0b79fa7f9818fe1380d05a3f6143823c09",
+        "url": "https://github.com/leanprover-community/ProofWidgets4",
+        "tracked_tree": "clean"
+      },
+      {
+        "name": "aesop",
+        "revision": "04879b1e1de744d5c9777c8cf63fa55a8f652e5e",
+        "url": "https://github.com/leanprover-community/aesop",
+        "tracked_tree": "clean"
+      },
+      {
+        "name": "Qq",
+        "revision": "e7c4cdd2f1bf9df361ef7f621b4d6867012ab65e",
+        "url": "https://github.com/leanprover-community/quote4",
+        "tracked_tree": "clean"
+      },
+      {
+        "name": "batteries",
+        "revision": "b71aaf60877e673fdb921f06f20987d12ee8a290",
+        "url": "https://github.com/leanprover-community/batteries",
+        "tracked_tree": "clean"
+      },
+      {
+        "name": "Cli",
+        "revision": "82c11b9717083154aefc5fe8d4cba4bbf046298f",
+        "url": "https://github.com/leanprover/lean4-cli",
+        "tracked_tree": "clean"
+      }
+    ],
+    "source_sha256": {
+      "MaximumModulus.lean": "7711659c615b8d2de7c6eac37b04486ebf620ffafdcced996c491a3ba0151067",
+      "CheckAxioms.lean": "4fac820aede4bffa94634b16655a822e52975354a2797c1aa8be3bdde3496afa",
+      "MaximumModulus/AEBridge.lean": "ceeb0a8e8c405504b28b0d9669626532170f6b10b967be171dddebfe8ea67fb3",
+      "MaximumModulus/AllRadii.lean": "6a16ff9d2c62449f637d0eb727d3605b26f37744eb4eb46f7b2fe771c497a9d7",
+      "MaximumModulus/Basic.lean": "d5630a0d8ff56b433b25051db69a807df6ee1bb2ab0ea4085417e785bcca045c",
+      "MaximumModulus/BoundaryCharts.lean": "337e660ab7b136734531c6cbaf782c3353294b6da69bed62e2a9d7023be87ac4",
+      "MaximumModulus/BranchCollision.lean": "7be2e6b7d143154440a27fcef427dbd05bcd38604fe78c75614633d05b7d5fda",
+      "MaximumModulus/BranchContinuation.lean": "f83f736cb203ab7a7c8fcd4db9a23ee0348183f38bdb373ad3873f45773553d7",
+      "MaximumModulus/Definitions.lean": "773671cd9bb474371afb63263c2b4975341ecb6c8bab43894c281bbfd31a7e7d",
+      "MaximumModulus/DuplicateSafeCount.lean": "19ce299de1437bdb19d9e786c82088f27b27967e0a901853cb10365e29522534",
+      "MaximumModulus/ExceptionalRadii.lean": "9daba9dc313c1c781c27c3ceb5dfa716ed7aa706d407df0b9a4f7bf9b27db356",
+      "MaximumModulus/FiberCapture.lean": "329432a68505235a62ca16ac7f9cb96ef8f699d8ba8e61eb630e0b7c518fe958",
+      "MaximumModulus/FiniteExceptionalSet.lean": "c7722d63191e6a1bc3173aaf5d7ffbfe4c23c0398d403eb079ea9c42468140d6",
+      "MaximumModulus/FiniteImageGraphs.lean": "e0e8b33e9b0d2e06abd7b711e22b98f4eb0268468428b525306cc5abb2a27376",
+      "MaximumModulus/FiniteTargetCover.lean": "de0c276e63ed5201b191f77d0d8f461b87ccf273186c935ee4156bee23f97563",
+      "MaximumModulus/FiniteValueCoordinates.lean": "ff2c819ab02822e64a727b44426456cfd569f4ea70a4763de38ebdc322851183",
+      "MaximumModulus/Finiteness.lean": "990b92706af6a1eb75f3758b32ea36f16cd1781d6748145fd5c050916409dcfb",
+      "MaximumModulus/GeometricReduction.lean": "0614e85cb9417f9544134fc0a2fa27c497c7ce23145fcbcf66c75497594e7113",
+      "MaximumModulus/GlobalCharts.lean": "07d536809cf97043678f89af214f598793b521c3ff897b414d517b403dbcad6b",
+      "MaximumModulus/GlobalDegreeAux.lean": "bb9d9fad1ffc1b00e1bda5e02a1c3b96d161ddea2d55c7d224584d6630388d7c",
+      "MaximumModulus/HighCountCapture.lean": "dcca257d6e722145357260aed1acdf58b21929f2d8161eec3c7220b58abf94cc",
+      "MaximumModulus/HighCountGlobal.lean": "4484fc5ece2548ae58c786fecc5bd6bee10b25a7d456775ae3f860025b7bce71",
+      "MaximumModulus/HighCountInterior.lean": "d41d90b40201a0b465c8949db489f99b848ae6e1cfe2711158e59b8b7c7fb9ec",
+      "MaximumModulus/HighCountLocus.lean": "db7fb34afd4fc0a2b1a852394ee1bb448eca69902bc01f0497c82e0dd6bfb144",
+      "MaximumModulus/InfinityCharts.lean": "0e364eaa4e737a7ccdafeaeedf89b22fe8b793e4d7de8fe4b1ca61214f205f0e",
+      "MaximumModulus/InfinityInterior.lean": "db687965a8163bd7f45c0e40b7ea66b9ce7c840432f3231818ea383f91eaedc0",
+      "MaximumModulus/InversePairFamily.lean": "e13cc2e39498732ba5caa56a3233ebf5545576235a1bdf5beaf9b95e7dd556f0",
+      "MaximumModulus/InverseRootChart.lean": "4f45d67d8b5b72829593638aa833a09bb3fb3a16163d12cbd58492fb7ce9b43f",
+      "MaximumModulus/LocalImageTopology.lean": "5048616e61e9e068f25862923a99be5f067c6a953f1ff6223a2e170acd3d024e",
+      "MaximumModulus/LocalReciprocal.lean": "b480a9d5123c14b8afa5967aba4c560dbc176311ac30f175856ee81d7170cbf1",
+      "MaximumModulus/LocalValence.lean": "1bc714f213b1a51760d18cf3f71e21ae56db8d3a30dd5e27112a29277425718a",
+      "MaximumModulus/LogDerivative.lean": "276604496051dc14d6944a9c0c44010355ecdec077c30064d76346104ac3825e",
+      "MaximumModulus/MaximaToFibers.lean": "1d6545874af6c1b07f64520fcc90969475df6d6a7df21504a05abea8ac87c743",
+      "MaximumModulus/MaximumEnvelope.lean": "dfbc0c1bf985fa8f4e4476bfc90e2b2657819aa1ed907360c5ce0ed1c5cdbe2f",
+      "MaximumModulus/MaximumStationarity.lean": "08e7c781b9565dbf8ccddf63f2b22827aee3a04fbba860db98d03ad4d3e093b3",
+      "MaximumModulus/MeromorphicCorrespondence.lean": "fb958b7065c45328a074315baa544df054330434cda908de390667ac74605ea7",
+      "MaximumModulus/OmittedTargetCover.lean": "92c4880890a9dd7be8d157ea8754704349c727c729a2bdbabc7d6cfcd48c9aa9",
+      "MaximumModulus/PairNonvertical.lean": "f9606ec4951b64f1959ded8a9fd53e272f24ea5da3bd0c10583bc2e7d5d73690",
+      "MaximumModulus/PoleChart.lean": "55b48efcb4db00e4436344340e440758d51d4ad4d7797e3db14d25e17d450dd0",
+      "MaximumModulus/ProductNonconstant.lean": "b9fc1ba4687c7aaf2073413344b6de0d30b0908b58ec382d34db1dbaf6223c1f",
+      "MaximumModulus/Reductions.lean": "81095abc9340c0a5ca229f539eca282b85ecfdbd6e07a2f49b6be927f8d4ff76",
+      "MaximumModulus/SmallFibers.lean": "4c979b871a67cac79515d9f389550f11f2996fe8f431a36d8f93039c11068848",
+      "MaximumModulus/SphereSmallFibers.lean": "cd9945df30d39c17d20540402f141bc621cf1ab886d1cae29ca0122fd0fdcf55",
+      "MaximumModulus/StatementAudit.lean": "bb4ae82fa516d338263d4ce361522c4a012ebcf8507064c2d1148edbffcf0cbe",
+      "lean-toolchain": "8f89aa44fccdb1a0b6cc768c7c9f54b94cd40e47a08d582f82d1235f13075cf7",
+      "lakefile.toml": "5d8ab5b472f35876f885594bf3cb7b4986303d0f7212593ecb63cef865baea39",
+      "lake-manifest.json": "cb333575666396aefa2ed281978edc586f0535a0079b76012f32db0f18052b38",
+      "scripts/audit-mathlib.py": "da835bc0272e50ee0c902cdbf0595ef81c294d310e004dc67b3d7478a4569a6d",
+      "scripts/fetch_cache.py": "42327e06bbca544fc620c6e29c30648c2306bd879378cf7e7f817754ed88ba13",
+      "scripts/run_logged.py": "f2b253d125b1c49ba1554096a4a423fdffcff8268011445f66f0e04a9052eb6e",
+      "scripts/source_integrity.py": "6ab892c4e81d1103f4ac6e58259e2a953b591f0b599509acbe0e6e2c84ad07b3",
+      "scripts/summarize_verification.py": "31aa021db27f03b39d17882826cf27388c80e13d7e25b0906034fecd8a5fc473",
+      "scripts/verify.sh": "bf0aec9545c27fda02d61be6421fc4b1b4d17565c9821831ff5a1a0279b148a3"
+    },
+    "manuscript_sha256": "bc951c3ffa7d3579b2f39a0949e38db27338ac32ac050e3f5359d4452573a7b1",
+    "scan": "No prohibited placeholder/custom-axiom/native-computation/kernel-skip keywords in project Lean code after removing comments."
+  },
+  "kernel_replay_scope": "Each project module sequentially, relative to pinned imports; no fresh replay of all mathlib or independent external checker claimed.",
+  "interrupted_attempt": "logs/kernel-replay.json; explained in logs/kernel-replay-resource-note.txt; excluded from successes.",
+  "prize_verification_workflow": "Separate frozen-source audit; consult verification/prize-report.md for its actual scope and results."
+}

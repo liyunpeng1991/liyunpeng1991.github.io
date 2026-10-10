@@ -1,0 +1,1888 @@
+{
+  "verdict": "All project checks passed; unconditional theorem checked",
+  "full_original_problem_solved": true,
+  "unconditional_AllRadiiStatement_proof_exists": true,
+  "checks": {
+    "verification-lean-version": {
+      "command": [
+        "lean",
+        "--version"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:31:14.502953+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 0.2593683749437332
+    },
+    "verification-lake-version": {
+      "command": [
+        "lake",
+        "--version"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:31:14.786655+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 0.06839354196563363
+    },
+    "clean-project": {
+      "command": [
+        "python3",
+        "-c",
+        "import shutil; shutil.rmtree(\".lake/build\", ignore_errors=True)"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:31:14.880748+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 0.020527500193566084
+    },
+    "clean-build": {
+      "command": [
+        "lake",
+        "build"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:31:14.935391+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 38.69134950032458
+    },
+    "target-AEBridge": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/AEBridge.lean"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:31:53.673246+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 6.421323416754603
+    },
+    "target-AllRadii": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/AllRadii.lean"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:32:00.129794+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4.980786708183587
+    },
+    "target-Basic": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/Basic.lean"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:32:05.151283+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4.102151208091527
+    },
+    "target-BoundaryCharts": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/BoundaryCharts.lean"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:32:09.281880+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4.544639624655247
+    },
+    "target-BranchCollision": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/BranchCollision.lean"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:32:13.857767+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4.331696083303541
+    },
+    "target-BranchContinuation": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/BranchContinuation.lean"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:32:18.218383+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4.880847207736224
+    },
+    "target-Definitions": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/Definitions.lean"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:32:23.127555+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 3.782398625276983
+    },
+    "target-DuplicateSafeCount": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/DuplicateSafeCount.lean"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:32:26.937490+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4.330644375178963
+    },
+    "target-ExceptionalRadii": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/ExceptionalRadii.lean"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:32:31.298171+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4.2850221251137555
+    },
+    "target-FiberCapture": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/FiberCapture.lean"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:32:35.609856+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 3.188130958005786
+    },
+    "target-FiniteExceptionalSet": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/FiniteExceptionalSet.lean"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:32:38.824705+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4.553606000263244
+    },
+    "target-FiniteImageGraphs": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/FiniteImageGraphs.lean"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:32:43.408179+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4.585584499873221
+    },
+    "target-FiniteTargetCover": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/FiniteTargetCover.lean"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:32:48.023832+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4.636139957699925
+    },
+    "target-FiniteValueCoordinates": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/FiniteValueCoordinates.lean"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:32:52.689014+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4.311025709379464
+    },
+    "target-Finiteness": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/Finiteness.lean"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:32:57.029128+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4.503248416818678
+    },
+    "target-GeometricReduction": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/GeometricReduction.lean"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:33:01.562136+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4.3663555001839995
+    },
+    "target-GlobalCharts": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/GlobalCharts.lean"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:33:05.956797+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4.495994667056948
+    },
+    "target-GlobalDegreeAux": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/GlobalDegreeAux.lean"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:33:10.481966+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 3.1460448750294745
+    },
+    "target-HighCountCapture": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/HighCountCapture.lean"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:33:13.655322+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4.237031833268702
+    },
+    "target-HighCountGlobal": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/HighCountGlobal.lean"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:33:17.920608+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4.452727542258799
+    },
+    "target-HighCountInterior": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/HighCountInterior.lean"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:33:22.399865+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4.4250130844302475
+    },
+    "target-HighCountLocus": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/HighCountLocus.lean"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:33:26.854467+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4.48147041676566
+    },
+    "target-InfinityCharts": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/InfinityCharts.lean"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:33:31.367158+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 5.180606542155147
+    },
+    "target-InfinityInterior": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/InfinityInterior.lean"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:33:36.577017+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4.433900624979287
+    },
+    "target-InversePairFamily": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/InversePairFamily.lean"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:33:41.043031+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4.350206166971475
+    },
+    "target-InverseRootChart": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/InverseRootChart.lean"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:33:45.424014+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4.628797375131398
+    },
+    "target-LocalImageTopology": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/LocalImageTopology.lean"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:33:50.080683+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4.498430334031582
+    },
+    "target-LocalReciprocal": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/LocalReciprocal.lean"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:33:54.608757+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4.362942582927644
+    },
+    "target-LocalValence": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/LocalValence.lean"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:33:58.998622+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4.268308583181351
+    },
+    "target-LogDerivative": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/LogDerivative.lean"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:34:03.297089+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4.507049416191876
+    },
+    "target-MaximaToFibers": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/MaximaToFibers.lean"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:34:07.830701+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4.159857584163547
+    },
+    "target-MaximumEnvelope": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/MaximumEnvelope.lean"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:34:12.022256+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4.457268790807575
+    },
+    "target-MaximumStationarity": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/MaximumStationarity.lean"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:34:16.507070+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4.733244625385851
+    },
+    "target-MeromorphicCorrespondence": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/MeromorphicCorrespondence.lean"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:34:21.269140+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 5.327565584331751
+    },
+    "target-OmittedTargetCover": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/OmittedTargetCover.lean"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:34:26.628469+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4.962556249927729
+    },
+    "target-PairNonvertical": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/PairNonvertical.lean"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:34:31.621388+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4.627383000217378
+    },
+    "target-PoleChart": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/PoleChart.lean"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:34:36.277999+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4.547548917122185
+    },
+    "target-ProductNonconstant": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/ProductNonconstant.lean"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:34:40.863502+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4.390886374749243
+    },
+    "target-Reductions": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/Reductions.lean"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:34:45.283335+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4.289573958609253
+    },
+    "target-SmallFibers": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/SmallFibers.lean"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:34:49.604593+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4.079101333860308
+    },
+    "target-SphereSmallFibers": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/SphereSmallFibers.lean"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:34:53.711963+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4.79011245816946
+    },
+    "target-StatementAudit": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus/StatementAudit.lean"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:34:58.537142+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4.979737584013492
+    },
+    "target-MaximumModulus": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "MaximumModulus.lean"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:35:03.546652+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 5.3873979998752475
+    },
+    "axioms": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "CheckAxioms.lean"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:35:08.984371+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 6.535261208191514
+    },
+    "kernel-AEBridge": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.AEBridge"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:35:15.560988+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 19.846913957968354
+    },
+    "kernel-AllRadii": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.AllRadii"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:35:35.448969+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 15.095306292176247
+    },
+    "kernel-Basic": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.Basic"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:35:50.602494+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 7.857781667262316
+    },
+    "kernel-BoundaryCharts": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.BoundaryCharts"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:35:58.501158+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 14.876676582731307
+    },
+    "kernel-BranchCollision": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.BranchCollision"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:36:13.428271+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 25.63234883407131
+    },
+    "kernel-BranchContinuation": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.BranchContinuation"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:36:39.122866+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 29.549661957658827
+    },
+    "kernel-Definitions": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.Definitions"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:37:08.734505+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 13.923164166044444
+    },
+    "kernel-DuplicateSafeCount": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.DuplicateSafeCount"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:37:22.865666+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 15.270785667002201
+    },
+    "kernel-ExceptionalRadii": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.ExceptionalRadii"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:37:38.179981+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 11.263340041972697
+    },
+    "kernel-FiberCapture": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.FiberCapture"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:37:49.481749+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 6.400161583907902
+    },
+    "kernel-FiniteExceptionalSet": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.FiniteExceptionalSet"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:37:55.914048+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 10.991873249877244
+    },
+    "kernel-FiniteImageGraphs": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.FiniteImageGraphs"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:38:06.939596+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 7.576399042271078
+    },
+    "kernel-FiniteTargetCover": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.FiniteTargetCover"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:38:14.548369+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 9.256681500002742
+    },
+    "kernel-FiniteValueCoordinates": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.FiniteValueCoordinates"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:38:23.837281+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 8.487835499923676
+    },
+    "kernel-Finiteness": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.Finiteness"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:38:32.363226+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 9.789594541769475
+    },
+    "kernel-GeometricReduction": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.GeometricReduction"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:38:42.185034+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 7.458795165643096
+    },
+    "kernel-GlobalCharts": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.GlobalCharts"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:38:49.676191+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 8.220108457840979
+    },
+    "kernel-GlobalDegreeAux": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.GlobalDegreeAux"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:38:57.930554+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 5.786650583148003
+    },
+    "kernel-HighCountCapture": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.HighCountCapture"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:39:03.747782+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 12.908423541579396
+    },
+    "kernel-HighCountGlobal": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.HighCountGlobal"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:39:16.700342+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 8.016992499586195
+    },
+    "kernel-HighCountInterior": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.HighCountInterior"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:39:24.747259+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 13.167864624876529
+    },
+    "kernel-HighCountLocus": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.HighCountLocus"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:39:37.954430+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 10.2470365408808
+    },
+    "kernel-InfinityCharts": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.InfinityCharts"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:39:48.239149+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 8.42747366707772
+    },
+    "kernel-InfinityInterior": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.InfinityInterior"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:39:56.708976+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 7.550184749998152
+    },
+    "kernel-InversePairFamily": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.InversePairFamily"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:40:04.294936+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 7.556564625352621
+    },
+    "kernel-InverseRootChart": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.InverseRootChart"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:40:11.883938+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 8.892950500361621
+    },
+    "kernel-LocalImageTopology": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.LocalImageTopology"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:40:20.822157+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 10.370690916664898
+    },
+    "kernel-LocalReciprocal": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.LocalReciprocal"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:40:31.232550+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 7.355720459017903
+    },
+    "kernel-LocalValence": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.LocalValence"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:40:38.624780+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 7.649031958077103
+    },
+    "kernel-LogDerivative": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.LogDerivative"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:40:46.310470+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 7.271366874687374
+    },
+    "kernel-MaximaToFibers": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.MaximaToFibers"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:40:53.617929+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 7.606840833090246
+    },
+    "kernel-MaximumEnvelope": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.MaximumEnvelope"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:41:01.261063+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 10.276304374914616
+    },
+    "kernel-MaximumStationarity": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.MaximumStationarity"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:41:11.574653+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 7.3547535836696625
+    },
+    "kernel-MeromorphicCorrespondence": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.MeromorphicCorrespondence"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:41:18.965821+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 8.64034583279863
+    },
+    "kernel-OmittedTargetCover": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.OmittedTargetCover"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:41:27.642106+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 8.001287291757762
+    },
+    "kernel-PairNonvertical": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.PairNonvertical"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:41:35.678925+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 7.39544350001961
+    },
+    "kernel-PoleChart": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.PoleChart"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:41:43.112517+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 7.339892333839089
+    },
+    "kernel-ProductNonconstant": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.ProductNonconstant"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:41:50.488379+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 7.484621666837484
+    },
+    "kernel-Reductions": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.Reductions"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:41:58.016884+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 7.443030999973416
+    },
+    "kernel-SmallFibers": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.SmallFibers"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:42:05.496034+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 6.418963250238448
+    },
+    "kernel-SphereSmallFibers": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.SphereSmallFibers"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:42:11.951104+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 8.098779167048633
+    },
+    "kernel-StatementAudit": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "MaximumModulus.StatementAudit"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:42:20.085951+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 7.480034708045423
+    },
+    "source-integrity": {
+      "command": [
+        "python3",
+        "scripts/source_integrity.py"
+      ],
+      "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+      "started_utc": "2026-10-10T20:42:27.600843+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 0.18609929224476218
+    }
+  },
+  "axiom_report": "logs/axioms.log",
+  "observed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "actual_target_axiom_reports": {
+    "MaximumModulus.allRadiiStatement": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.bounded_maxPoints_at_arbitrarily_large_radii": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.all_radii_growth_impossible": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.regularLogDerivativeHighCount_open_closure_projection": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.regularLogDerivativeHighCount_empty": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.omittedHighCountBranchCover_exists": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.OmittedHighCountBranchCover.actual_closure_branches": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.regular_high_count_closure_omitted_local_projection_isOpen": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.InfinityTargetBranchCover.product_germ_nonconstant": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.InfinityTargetBranchCover.high_count_selected_sandwich": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.regularLogDerivativeHighCount_open_local_projection_at_infinity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.maxPoints_nonempty": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.closure_continues_through_finite_imageBranches": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.finite_imageBranches_local_projection_isOpen": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.finiteValueEmbedding_preimage_closure": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.logarithmic_pair_product_germ_nonconstant": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.finiteTargetBranchCover_exists": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.FiniteTargetBranchCover.regular_at_punctured_branch": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.FiniteTargetBranchCover.physical_count_radius": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.finiteSingularTargets_locally_finite": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.finiteSingularTargets_countable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.finiteSingularSquareRadii_countable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.positiveProductFiberBound_of_regular_high_count_empty": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.logDerivative_high_count_omitted_finite_image_cover": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.FiniteTargetBranchCover.central_fiber_count_le_branch": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.FiniteTargetBranchCover.high_count_selected_sandwich": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.finite_regular_high_count_closure_contains_analytic_branch": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.regular_high_count_closure_finite_local_projection_isOpen": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.infinityValueEmbedding_preimage_closure": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.infinityTargetBranchCover_exists": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.regularLogDerivativeHighCount_closure_product_ne_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.maxPoints_eq_norm_level": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.entire_reflection": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.analyticOnNhd_reflectionProduct": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.reflectionProduct_eq_sq_norm": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.reflectionProduct_constant_of_infinite_maxPoints": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.entire_factor_at_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.eq_zero_value_of_reflectionProduct_constant": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.isMonomial_of_reflectionProduct_constant": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.finite_maxPoints": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.cofinalBound_not_growth": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.cofinalBound_not_tendsto": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.cofinalBound_of_ae": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.cofinalBound_of_locallyFinite_exceptions": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.allRadiiStatement_implies_negative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.cofinalBound_of_ae_ncard": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.almostEverywhereStatement_implies_allRadiiStatement": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.small_inverse_pairs_finite_ncard_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.inverse_pairs_eq_small_of_norm_lt_sq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.inverse_pairs_finite_ncard_le_of_norm_lt_sq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.power_fiber_finite_ncard_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.analytic_germ_root": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.local_power_coordinate_valence": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.analytic_local_valence": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.maxPoints_mapsTo_inversePairs": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.maxPoints_finite_ncard_le_inversePairs": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.StatementAudit.statement_correspondence": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.StatementAudit.original_finiteness": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.imageBranch_fibers_radius": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.finite_imageBranch_comparisons_radius": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.analytic_inverseRoot_chart": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.analytic_inverseRoot_capture": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.analytic_inverseRoot_family": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.analytic_inverseRoot_pair_family": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.analytic_inverseRoot_local_fiber_count": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.weightedLogDerivative_factor": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.normalizedLogDerivative_finite_order": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.normalizedLogDerivative_no_reciprocal_symmetry": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.normalizedLogDerivative_small_product_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.no_local_normalized_reciprocity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.continuous_sphereLogDerivative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.normalizedLogDerivative_finite_inverse_pairs": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.compact_sphereLogDerivative_inverse_image": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.isProperMap_sphereCorrespondenceMap": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.sphereCorrespondenceMap_finite_fiber": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.angular_stationarity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.value_ne_zero_of_maxPoint": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.common_logarithmic_derivative_at_maxPoints": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.actual_maxPoints_mapsTo_inversePairs": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.squaredMaximum_strictMonoOn": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.squaredMaximum_lipschitzOn_Icc": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.exists_positive_envelope_derivative_off_countable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.cofinalBound_of_positiveProductFiberBound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.bad_locus_empty_of_open_closure_projection": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.analytic_imageBranch_locally_closed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.imageBranch_full_branch_of_clopen_membership": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.isOpen_product_projection_of_analytic_charts": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.compact_fiber_capture": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.closedMap_fiber_capture": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.normalizedLogDerivative_finite_order_regular": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.reciprocalSphereLogDerivative_pole_germ": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.sphereLogDerivative_pole_inverse_chart": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.sphereLogDerivative_regular_inverse_chart": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.finite_entire_zeros_in_compact_of_ne_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.finite_sphereLogDerivative_omitted_roots_in_compact": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.sphereLogDerivative_small_product_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.imageBranch_noncentral_image_is_graph": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.selected_imageBranches_punctured_closure": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.imageBranch_full_branch_of_captured_subbranches": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.closure_of_local_selected_imageBranches": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.local_selected_imageBranches_closure_projection_isOpen": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.logDerivative_high_count_has_bounded_survivor": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.logDerivative_high_count_omitted_value_capture": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.finite_omitted_roots_in_coordinate_annulus": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.imageBranches_eq_or_disjoint_of_stable_comparisons": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.finite_imageBranches_noncentral_image_is_graph": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.inverseRoot_branch_germ_nonconstant": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.no_constant_product_regular_pair_germ": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.no_constant_product_spherical_regular_pair_germ": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.sphereCorrespondence_regular_chart_capture": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.finite_orders_common_power": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.RegularSpherePairChart.capture_rootPair": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.sphereCorrespondence_regular_root_capture": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.RegularSpherePairChart.rootPair_values_radius": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.regularSphereRootFamily_values_radius": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.regularSphereRootPair_analytic": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.sphereCorrespondence_regular_finite_family": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.countable_exceptional_sphere_targets": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.countable_exceptional_sphere_radii": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.regularLogDerivativeHighCount_closure_avoids_small_products": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.regularLogDerivativeHighCount_empty_of_open_closure_projection": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.sphere_inversePairs_eq_normalized": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.normalized_inversePairs_bound_at_regular_target": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.finite_analytic_physical_inversePairs_count_radius": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.productGermClass_eq_univ_of_total_graph": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MaximumModulus.central_fiber_count_le_of_total_graph": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "source_and_dependency_integrity": {
+    "dependencies": [
+      {
+        "name": "mathlib",
+        "revision": "81d17696471311f5e3e2f034236df7a781449f7e",
+        "url": "https://github.com/leanprover-community/mathlib4.git",
+        "tracked_tree": "clean"
+      },
+      {
+        "name": "plausible",
+        "revision": "aef59637faa9e85fa2486acaaf906ce3f572af7c",
+        "url": "https://github.com/leanprover-community/plausible",
+        "tracked_tree": "clean"
+      },
+      {
+        "name": "LeanSearchClient",
+        "revision": "234d9e074fbd6e911b920baf32db5291c3125be0",
+        "url": "https://github.com/leanprover-community/LeanSearchClient",
+        "tracked_tree": "clean"
+      },
+      {
+        "name": "importGraph",
+        "revision": "579f558774c4ac6840e715ba60dabf3030619349",
+        "url": "https://github.com/leanprover-community/import-graph",
+        "tracked_tree": "clean"
+      },
+      {
+        "name": "proofwidgets",
+        "revision": "d5ad4a0b79fa7f9818fe1380d05a3f6143823c09",
+        "url": "https://github.com/leanprover-community/ProofWidgets4",
+        "tracked_tree": "clean"
+      },
+      {
+        "name": "aesop",
+        "revision": "04879b1e1de744d5c9777c8cf63fa55a8f652e5e",
+        "url": "https://github.com/leanprover-community/aesop",
+        "tracked_tree": "clean"
+      },
+      {
+        "name": "Qq",
+        "revision": "e7c4cdd2f1bf9df361ef7f621b4d6867012ab65e",
+        "url": "https://github.com/leanprover-community/quote4",
+        "tracked_tree": "clean"
+      },
+      {
+        "name": "batteries",
+        "revision": "b71aaf60877e673fdb921f06f20987d12ee8a290",
+        "url": "https://github.com/leanprover-community/batteries",
+        "tracked_tree": "clean"
+      },
+      {
+        "name": "Cli",
+        "revision": "82c11b9717083154aefc5fe8d4cba4bbf046298f",
+        "url": "https://github.com/leanprover/lean4-cli",
+        "tracked_tree": "clean"
+      }
+    ],
+    "source_sha256": {
+      "MaximumModulus.lean": "7711659c615b8d2de7c6eac37b04486ebf620ffafdcced996c491a3ba0151067",
+      "CheckAxioms.lean": "4fac820aede4bffa94634b16655a822e52975354a2797c1aa8be3bdde3496afa",
+      "MaximumModulus/AEBridge.lean": "ceeb0a8e8c405504b28b0d9669626532170f6b10b967be171dddebfe8ea67fb3",
+      "MaximumModulus/AllRadii.lean": "6a16ff9d2c62449f637d0eb727d3605b26f37744eb4eb46f7b2fe771c497a9d7",
+      "MaximumModulus/Basic.lean": "d5630a0d8ff56b433b25051db69a807df6ee1bb2ab0ea4085417e785bcca045c",
+      "MaximumModulus/BoundaryCharts.lean": "337e660ab7b136734531c6cbaf782c3353294b6da69bed62e2a9d7023be87ac4",
+      "MaximumModulus/BranchCollision.lean": "7be2e6b7d143154440a27fcef427dbd05bcd38604fe78c75614633d05b7d5fda",
+      "MaximumModulus/BranchContinuation.lean": "f83f736cb203ab7a7c8fcd4db9a23ee0348183f38bdb373ad3873f45773553d7",
+      "MaximumModulus/Definitions.lean": "773671cd9bb474371afb63263c2b4975341ecb6c8bab43894c281bbfd31a7e7d",
+      "MaximumModulus/DuplicateSafeCount.lean": "19ce299de1437bdb19d9e786c82088f27b27967e0a901853cb10365e29522534",
+      "MaximumModulus/ExceptionalRadii.lean": "9daba9dc313c1c781c27c3ceb5dfa716ed7aa706d407df0b9a4f7bf9b27db356",
+      "MaximumModulus/FiberCapture.lean": "329432a68505235a62ca16ac7f9cb96ef8f699d8ba8e61eb630e0b7c518fe958",
+      "MaximumModulus/FiniteExceptionalSet.lean": "c7722d63191e6a1bc3173aaf5d7ffbfe4c23c0398d403eb079ea9c42468140d6",
+      "MaximumModulus/FiniteImageGraphs.lean": "e0e8b33e9b0d2e06abd7b711e22b98f4eb0268468428b525306cc5abb2a27376",
+      "MaximumModulus/FiniteTargetCover.lean": "de0c276e63ed5201b191f77d0d8f461b87ccf273186c935ee4156bee23f97563",
+      "MaximumModulus/FiniteValueCoordinates.lean": "ff2c819ab02822e64a727b44426456cfd569f4ea70a4763de38ebdc322851183",
+      "MaximumModulus/Finiteness.lean": "990b92706af6a1eb75f3758b32ea36f16cd1781d6748145fd5c050916409dcfb",
+      "MaximumModulus/GeometricReduction.lean": "0614e85cb9417f9544134fc0a2fa27c497c7ce23145fcbcf66c75497594e7113",
+      "MaximumModulus/GlobalCharts.lean": "07d536809cf97043678f89af214f598793b521c3ff897b414d517b403dbcad6b",
+      "MaximumModulus/GlobalDegreeAux.lean": "bb9d9fad1ffc1b00e1bda5e02a1c3b96d161ddea2d55c7d224584d6630388d7c",
+      "MaximumModulus/HighCountCapture.lean": "dcca257d6e722145357260aed1acdf58b21929f2d8161eec3c7220b58abf94cc",
+      "MaximumModulus/HighCountGlobal.lean": "4484fc5ece2548ae58c786fecc5bd6bee10b25a7d456775ae3f860025b7bce71",
+      "MaximumModulus/HighCountInterior.lean": "d41d90b40201a0b465c8949db489f99b848ae6e1cfe2711158e59b8b7c7fb9ec",
+      "MaximumModulus/HighCountLocus.lean": "db7fb34afd4fc0a2b1a852394ee1bb448eca69902bc01f0497c82e0dd6bfb144",
+      "MaximumModulus/InfinityCharts.lean": "0e364eaa4e737a7ccdafeaeedf89b22fe8b793e4d7de8fe4b1ca61214f205f0e",
+      "MaximumModulus/InfinityInterior.lean": "db687965a8163bd7f45c0e40b7ea66b9ce7c840432f3231818ea383f91eaedc0",
+      "MaximumModulus/InversePairFamily.lean": "e13cc2e39498732ba5caa56a3233ebf5545576235a1bdf5beaf9b95e7dd556f0",
+      "MaximumModulus/InverseRootChart.lean": "4f45d67d8b5b72829593638aa833a09bb3fb3a16163d12cbd58492fb7ce9b43f",
+      "MaximumModulus/LocalImageTopology.lean": "5048616e61e9e068f25862923a99be5f067c6a953f1ff6223a2e170acd3d024e",
+      "MaximumModulus/LocalReciprocal.lean": "b480a9d5123c14b8afa5967aba4c560dbc176311ac30f175856ee81d7170cbf1",
+      "MaximumModulus/LocalValence.lean": "1bc714f213b1a51760d18cf3f71e21ae56db8d3a30dd5e27112a29277425718a",
+      "MaximumModulus/LogDerivative.lean": "276604496051dc14d6944a9c0c44010355ecdec077c30064d76346104ac3825e",
+      "MaximumModulus/MaximaToFibers.lean": "1d6545874af6c1b07f64520fcc90969475df6d6a7df21504a05abea8ac87c743",
+      "MaximumModulus/MaximumEnvelope.lean": "dfbc0c1bf985fa8f4e4476bfc90e2b2657819aa1ed907360c5ce0ed1c5cdbe2f",
+      "MaximumModulus/MaximumStationarity.lean": "08e7c781b9565dbf8ccddf63f2b22827aee3a04fbba860db98d03ad4d3e093b3",
+      "MaximumModulus/MeromorphicCorrespondence.lean": "fb958b7065c45328a074315baa544df054330434cda908de390667ac74605ea7",
+      "MaximumModulus/OmittedTargetCover.lean": "92c4880890a9dd7be8d157ea8754704349c727c729a2bdbabc7d6cfcd48c9aa9",
+      "MaximumModulus/PairNonvertical.lean": "f9606ec4951b64f1959ded8a9fd53e272f24ea5da3bd0c10583bc2e7d5d73690",
+      "MaximumModulus/PoleChart.lean": "55b48efcb4db00e4436344340e440758d51d4ad4d7797e3db14d25e17d450dd0",
+      "MaximumModulus/ProductNonconstant.lean": "b9fc1ba4687c7aaf2073413344b6de0d30b0908b58ec382d34db1dbaf6223c1f",
+      "MaximumModulus/Reductions.lean": "81095abc9340c0a5ca229f539eca282b85ecfdbd6e07a2f49b6be927f8d4ff76",
+      "MaximumModulus/SmallFibers.lean": "4c979b871a67cac79515d9f389550f11f2996fe8f431a36d8f93039c11068848",
+      "MaximumModulus/SphereSmallFibers.lean": "cd9945df30d39c17d20540402f141bc621cf1ab886d1cae29ca0122fd0fdcf55",
+      "MaximumModulus/StatementAudit.lean": "bb4ae82fa516d338263d4ce361522c4a012ebcf8507064c2d1148edbffcf0cbe",
+      "lean-toolchain": "8f89aa44fccdb1a0b6cc768c7c9f54b94cd40e47a08d582f82d1235f13075cf7",
+      "lakefile.toml": "5d8ab5b472f35876f885594bf3cb7b4986303d0f7212593ecb63cef865baea39",
+      "lake-manifest.json": "cb333575666396aefa2ed281978edc586f0535a0079b76012f32db0f18052b38",
+      "scripts/audit-mathlib.py": "da835bc0272e50ee0c902cdbf0595ef81c294d310e004dc67b3d7478a4569a6d",
+      "scripts/fetch_cache.py": "42327e06bbca544fc620c6e29c30648c2306bd879378cf7e7f817754ed88ba13",
+      "scripts/run_logged.py": "f2b253d125b1c49ba1554096a4a423fdffcff8268011445f66f0e04a9052eb6e",
+      "scripts/source_integrity.py": "6ab892c4e81d1103f4ac6e58259e2a953b591f0b599509acbe0e6e2c84ad07b3",
+      "scripts/summarize_verification.py": "31aa021db27f03b39d17882826cf27388c80e13d7e25b0906034fecd8a5fc473",
+      "scripts/verify.sh": "bf0aec9545c27fda02d61be6421fc4b1b4d17565c9821831ff5a1a0279b148a3"
+    },
+    "manuscript_sha256": "bc951c3ffa7d3579b2f39a0949e38db27338ac32ac050e3f5359d4452573a7b1",
+    "scan": "No prohibited placeholder/custom-axiom/native-computation/kernel-skip keywords in project Lean code after removing comments."
+  },
+  "kernel_replay_scope": "Each project module sequentially, relative to pinned imports; no fresh replay of all mathlib or independent external checker claimed.",
+  "interrupted_attempt": "logs/kernel-replay.json; explained in logs/kernel-replay-resource-note.txt; excluded from successes.",
+  "prize_verification_workflow": "Separate frozen-source audit; consult verification/prize-report.md for its actual scope and results."
+}

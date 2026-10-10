@@ -1,0 +1,27 @@
+{
+  "ready_for_target_checks": true,
+  "issues": [],
+  "head": "8b731b51dcb0ed3d7e8c6463b6266c35d8099c85",
+  "git_status": "?? MaximumModulus/Audit/ComparatorChallenge.lean\n?? MaximumModulus/Audit/OriginalProblem.lean",
+  "toolchain_file": "leanprover/lean4:v4.35.0-rc4",
+  "file_sha256": {
+    "MaximumModulus/AllRadii.lean": "6a16ff9d2c62449f637d0eb727d3605b26f37744eb4eb46f7b2fe771c497a9d7",
+    "MaximumModulus/Audit/OriginalProblem.lean": "4be4fb7093e9dd1176de51aed1b3a755507c14ea7ac60e236c7e122e3fc992e7",
+    "MaximumModulus/Finiteness.lean": "990b92706af6a1eb75f3758b32ea36f16cd1781d6748145fd5c050916409dcfb",
+    "lake-manifest.json": "cb333575666396aefa2ed281978edc586f0535a0079b76012f32db0f18052b38",
+    "lakefile.lean": null,
+    "lakefile.toml": "5d8ab5b472f35876f885594bf3cb7b4986303d0f7212593ecb63cef865baea39",
+    "lean-toolchain": "8f89aa44fccdb1a0b6cc768c7c9f54b94cd40e47a08d582f82d1235f13075cf7"
+  },
+  "manual_preconditions": [
+    "isolation and resource limits established",
+    "clean source build and trusted cache provenance recorded",
+    "actual dependency SHAs match fixed evidence",
+    "tool binaries are trusted and match the pinned toolchain",
+    "all untracked inputs and module/source mappings reviewed"
+  ],
+  "checker_compatibility": "not_probed; inspect pinned checker separately",
+  "manifest_sha256": "ff4f6eac020fcbe484fee97c64fda93eb14822f8a1ead5fc6f9b9b9c81e22eb5",
+  "script_sha256": "5db45dddcb4d588bc27e7c7161fbca5cedaa3e73e1c40843d21f5a214323cd07",
+  "exit_code": 0
+}

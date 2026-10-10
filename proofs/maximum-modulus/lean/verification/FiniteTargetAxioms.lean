@@ -1,0 +1,9 @@
+module
+import MaximumModulus.FiniteExceptionalSet
+#print axioms MaximumModulus.finiteTargetBranchCover_exists
+#print axioms MaximumModulus.FiniteTargetBranchCover.regular_at_punctured_branch
+#print axioms MaximumModulus.FiniteTargetBranchCover.physical_count_radius
+#print axioms MaximumModulus.finiteSingularTargets_locally_finite
+#print axioms MaximumModulus.finiteSingularTargets_countable
+#print axioms MaximumModulus.finiteSingularSquareRadii_countable
+#print axioms MaximumModulus.positiveProductFiberBound_of_regular_high_count_empty

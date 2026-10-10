@@ -1,0 +1,7 @@
+import MaximumModulus.Audit.OriginalProblem
+
+set_option pp.all true
+#check @IndependentOriginal.original_positive_circle_finiteness
+#print IndependentOriginal.original_positive_circle_finiteness
+set_option pp.universes false in
+#print axioms IndependentOriginal.original_positive_circle_finiteness

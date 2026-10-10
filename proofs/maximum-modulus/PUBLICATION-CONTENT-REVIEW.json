@@ -1,0 +1,44 @@
+{
+  "role": "Static final evidence-publication B content review; not a Lean/kernel execution",
+  "created_utc": "2026-10-10T20:52:20.659229+00:00",
+  "fresh_proof_verification_status": "Passed on exact public source A; report and actual outcomes reviewed before staging",
+  "exact_proof_source_A": "c063e5f83dfa71c97871eabc8b70cf8a8c1e0bc9",
+  "credential_findings": [],
+  "scan_patterns": [
+    "private-key headers",
+    "GitHub access tokens",
+    "AWS access key IDs",
+    "OpenAI key-shaped strings",
+    "Authorization Bearer token-shaped strings"
+  ],
+  "email_strings": [
+    "liyunpeng@cuhk.edu.cn",
+    "liyunpengcn1991@gmail.com"
+  ],
+  "email_scope": "Professional contact in historical privacy record; already-public author Git commit email retained verbatim in public-commit-metadata.json. Unrelated public workflow contributor metadata omitted.",
+  "technical_historical_and_fresh_path_files": 298,
+  "local_link_paths_checked": 73,
+  "local_link_scope": "The three B README overrides plus the fresh report; targets resolve in B or unchanged published source A, represented locally by frozen lean-stage",
+  "broken_local_link_paths": [],
+  "all_53_production_files_still_match_A_and_frozen_source": true,
+  "unchanged_frozen_stage_artifacts": [
+    "STAGE-MANIFEST.json",
+    "SHA256SUMS",
+    "PUBLIC-CONTENT-REVIEW.json"
+  ],
+  "historical_manifest_scope": "Historical frozen stage only; excludes B README overrides and new evidence",
+  "fresh_curation_record": "lean/verification/published-commit-public-curation.json",
+  "excluded_material": [
+    ".git",
+    ".lake",
+    ".tools",
+    "raw giant NDJSON exports and gzip copies",
+    "tool binaries",
+    "redundant local tracked-source archive",
+    "unnecessary unrelated workflow contributor Git metadata",
+    "credential stores",
+    "unrelated private transcripts or identity/payment records"
+  ],
+  "limits": "Static pattern scan and selected content inspection, not an exhaustive security certificate; source checks here are byte comparisons, not new proof execution",
+  "remote_actions_by_curator": false
+}

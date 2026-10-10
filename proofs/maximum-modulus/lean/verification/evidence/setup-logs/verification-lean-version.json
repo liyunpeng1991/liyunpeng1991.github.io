@@ -1,0 +1,10 @@
+{
+  "command": [
+    "lean",
+    "--version"
+  ],
+  "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+  "started_utc": "2026-10-10T19:25:23.547271+00:00",
+  "exit_code": 0,
+  "elapsed_seconds": 0.02827400015667081
+}

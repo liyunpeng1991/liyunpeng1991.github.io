@@ -1,0 +1,10 @@
+--- frozen-audit-snapshot/.gitignore
++++ original-project/.gitignore
+@@ -1,2 +1,6 @@
+ .lake/
+-logs/
++.tools/
++**/*.olean
++**/*.ilean
++**/*.olean.server
++**/*.olean.private

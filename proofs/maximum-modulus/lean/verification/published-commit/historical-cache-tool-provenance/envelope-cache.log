@@ -1,0 +1,18 @@
+Current branch: HEAD
+Using cache from origin: (some leanprover-community/mathlib4)
+Attempting to download 25 file(s) from leanprover-community/mathlib4 cache at https://lakecache.blob.core.windows.net/mathlib4-master
+
+Downloaded: 1 file(s) [attempted 1/25 = 4%, 18 KB/s][K
+Downloaded: 3 file(s) [attempted 3/25 = 12%, 9 KB/s][K
+Downloaded: 4 file(s) [attempted 4/25 = 16%, 5 KB/s][K
+Downloaded: 9 file(s) [attempted 9/25 = 36%, 6 KB/s][K
+Downloaded: 11 file(s) [attempted 11/25 = 44%, 10 KB/s][K
+Downloaded: 15 file(s) [attempted 15/25 = 60%, 12 KB/s][K
+Downloaded: 19 file(s) [attempted 19/25 = 76%, 24 KB/s][K
+Downloaded: 20 file(s) [attempted 20/25 = 80%, 28 KB/s][K
+Downloaded: 22 file(s) [attempted 22/25 = 88%, 24 KB/s][K
+Downloaded: 23 file(s) [attempted 23/25 = 92%, 19 KB/s][K
+Downloaded: 25 file(s) [attempted 25/25 = 100%, 19 KB/s][K
+Still decompressing downloaded files...
+Decompressed 25 file(s)
+Already decompressed 2879 file(s)

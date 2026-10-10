@@ -1,0 +1,8 @@
+'MaximumModulus.bounded_maxPoints_at_arbitrarily_large_radii' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.allRadiiStatement' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.all_radii_growth_impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.finite_maxPoints' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IndependentOriginal.original_problem_solved' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IndependentOriginal.original_all_radii_growth_impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IndependentOriginal.original_count_not_tendsto_atTop' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IndependentOriginal.original_positive_circle_finiteness' depends on axioms: [propext, Classical.choice, Quot.sound]

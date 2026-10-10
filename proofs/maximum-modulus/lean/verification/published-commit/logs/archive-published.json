@@ -1,0 +1,13 @@
+{
+  "argv": [
+    "python3",
+    "/private/tmp/mm-lean-published-20261011/audit/archive_published_evidence.py"
+  ],
+  "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus",
+  "started_observed_utc": "2026-10-10T20:50:49.266Z",
+  "completed_observed_utc": "2026-10-10T20:51:11.182Z",
+  "exit_code": 0,
+  "initial_exec_session_id": 47202,
+  "record_scope": "Trusted local archival only; no proof execution, original-source mutation or remote action",
+  "stdout_log": "archive-published.log"
+}

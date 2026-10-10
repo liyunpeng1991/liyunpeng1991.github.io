@@ -1,0 +1,13 @@
+{
+  "command": [
+    "lake",
+    "env",
+    "leanchecker",
+    "--verbose",
+    "MaximumModulus.InfinityInterior"
+  ],
+  "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+  "started_utc": "2026-10-10T20:39:56.708976+00:00",
+  "exit_code": 0,
+  "elapsed_seconds": 7.550184749998152
+}

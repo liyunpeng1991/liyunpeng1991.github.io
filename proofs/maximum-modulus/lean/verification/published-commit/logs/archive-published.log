@@ -1,0 +1,25 @@
+{
+  "source_commit": "c063e5f83dfa71c97871eabc8b70cf8a8c1e0bc9",
+  "archive": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/publication/v2/verification-published",
+  "files": 343,
+  "exports": [
+    {
+      "label": "challenge",
+      "raw_bytes": 54014504,
+      "raw_sha256": "ac2fe5af1de529ac3607406107429058256542d824ac15bf4590dba2bdde0360",
+      "compressed_file": "raw-exports/challenge.ndjson.gz",
+      "compressed_bytes": 8915343,
+      "compressed_sha256": "7e3582d48b2e3dab573656fc96259fb8e9d177cd11f6c09c62710de4c08af893",
+      "decompressed_sha256_rechecked": "ac2fe5af1de529ac3607406107429058256542d824ac15bf4590dba2bdde0360"
+    },
+    {
+      "label": "solution",
+      "raw_bytes": 360280894,
+      "raw_sha256": "dfc65218ba9d699deaa8ed3191dd66f0a076d528fc36752b2217a13225f0ffd0",
+      "compressed_file": "raw-exports/solution.ndjson.gz",
+      "compressed_bytes": 58667859,
+      "compressed_sha256": "23f252b14da58118a1d3f830db01d5364cb85696208873fb593e3a6756e061a1",
+      "decompressed_sha256_rechecked": "dfc65218ba9d699deaa8ed3191dd66f0a076d528fc36752b2217a13225f0ffd0"
+    }
+  ]
+}

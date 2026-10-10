@@ -1,0 +1,8 @@
+{
+  "outside_read": "[Errno 1] Operation not permitted: '/private/tmp/mm-lean-isolation-read-probe.txt'",
+  "outside_write": "[Errno 1] Operation not permitted: '/private/tmp/mm-lean-isolation-write-probe.txt'",
+  "network": "[Errno 1] Operation not permitted",
+  "lean_exit": 0,
+  "lean_version": "Lean (version 4.35.0-rc4, arm64-apple-darwin24.6.0, commit c29b6dda4f7c20e3eeaa717c4e565663c5cfa364, Release)\n",
+  "lean_stderr": ""
+}

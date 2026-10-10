@@ -1,0 +1,829 @@
+{
+  "created_utc": "2026-10-10T19:38:22.522911+00:00",
+  "method": "Read-only check of actual result files and hashes; no Lean/compiler/checker execution",
+  "target_ids_match_manifest": true,
+  "target_count": 8,
+  "role_counts": {
+    "bridge": 4,
+    "theorem": 4
+  },
+  "workflow_exit_code": 0,
+  "mechanical_status": "standard_axioms_only",
+  "inputs_stable": true,
+  "target_reports": [
+    {
+      "id": "literal-cofinal",
+      "role": "theorem",
+      "declaration": "MaximumModulus.bounded_maxPoints_at_arbitrarily_large_radii",
+      "status": "standard_axioms_only",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "complete_axiom_lines": [
+        "'MaximumModulus.bounded_maxPoints_at_arbitrarily_large_radii' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ],
+      "commands": [
+        {
+          "path": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0000-0.log",
+          "recorded_sha256": "478f6c60461fec07c0690d88db30bf23b6c2c76eae38d6d39c74e42b062529a5",
+          "actual_sha256": "478f6c60461fec07c0690d88db30bf23b6c2c76eae38d6d39c74e42b062529a5",
+          "exit_code": 0
+        },
+        {
+          "path": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0000-1.log",
+          "recorded_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exit_code": 0
+        },
+        {
+          "path": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0000-2.log",
+          "recorded_sha256": "6a84e6415f5f8b053c7dfba6f346893168273cf59c0b1b46e497fef345d91a3e",
+          "actual_sha256": "6a84e6415f5f8b053c7dfba6f346893168273cf59c0b1b46e497fef345d91a3e",
+          "exit_code": 0
+        }
+      ],
+      "audit_hash_matches": true
+    },
+    {
+      "id": "cofinal-statement",
+      "role": "theorem",
+      "declaration": "MaximumModulus.allRadiiStatement",
+      "status": "standard_axioms_only",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "complete_axiom_lines": [
+        "'MaximumModulus.allRadiiStatement' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ],
+      "commands": [
+        {
+          "path": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0001-0.log",
+          "recorded_sha256": "478f6c60461fec07c0690d88db30bf23b6c2c76eae38d6d39c74e42b062529a5",
+          "actual_sha256": "478f6c60461fec07c0690d88db30bf23b6c2c76eae38d6d39c74e42b062529a5",
+          "exit_code": 0
+        },
+        {
+          "path": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0001-1.log",
+          "recorded_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exit_code": 0
+        },
+        {
+          "path": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0001-2.log",
+          "recorded_sha256": "427de9583c6dbf54d6e677d488d9f0cb361e5535b5ec409f86d3f96c3fd5f7bd",
+          "actual_sha256": "427de9583c6dbf54d6e677d488d9f0cb361e5535b5ec409f86d3f96c3fd5f7bd",
+          "exit_code": 0
+        }
+      ],
+      "audit_hash_matches": true
+    },
+    {
+      "id": "negative-all-radii",
+      "role": "theorem",
+      "declaration": "MaximumModulus.all_radii_growth_impossible",
+      "status": "standard_axioms_only",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "complete_axiom_lines": [
+        "'MaximumModulus.all_radii_growth_impossible' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ],
+      "commands": [
+        {
+          "path": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0002-0.log",
+          "recorded_sha256": "478f6c60461fec07c0690d88db30bf23b6c2c76eae38d6d39c74e42b062529a5",
+          "actual_sha256": "478f6c60461fec07c0690d88db30bf23b6c2c76eae38d6d39c74e42b062529a5",
+          "exit_code": 0
+        },
+        {
+          "path": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0002-1.log",
+          "recorded_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exit_code": 0
+        },
+        {
+          "path": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0002-2.log",
+          "recorded_sha256": "cab2d3ee8741543926f2cd24d1c6a62163ac959817c914d7cbc35031dfebf48c",
+          "actual_sha256": "cab2d3ee8741543926f2cd24d1c6a62163ac959817c914d7cbc35031dfebf48c",
+          "exit_code": 0
+        }
+      ],
+      "audit_hash_matches": true
+    },
+    {
+      "id": "positive-finiteness",
+      "role": "theorem",
+      "declaration": "MaximumModulus.finite_maxPoints",
+      "status": "standard_axioms_only",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "complete_axiom_lines": [
+        "'MaximumModulus.finite_maxPoints' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ],
+      "commands": [
+        {
+          "path": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0003-0.log",
+          "recorded_sha256": "03bd0d7c9ccb211fd6da896d781d28a197b3348bee6752dc107e92e91a396da2",
+          "actual_sha256": "03bd0d7c9ccb211fd6da896d781d28a197b3348bee6752dc107e92e91a396da2",
+          "exit_code": 0
+        },
+        {
+          "path": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0003-1.log",
+          "recorded_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exit_code": 0
+        },
+        {
+          "path": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0003-2.log",
+          "recorded_sha256": "ad9dc72afef31b529f97fd4a5a38dc209cccf1298514e4b9887d687812a77764",
+          "actual_sha256": "ad9dc72afef31b529f97fd4a5a38dc209cccf1298514e4b9887d687812a77764",
+          "exit_code": 0
+        }
+      ],
+      "audit_hash_matches": true
+    },
+    {
+      "id": "independent-cofinal",
+      "role": "bridge",
+      "declaration": "IndependentOriginal.original_problem_solved",
+      "status": "standard_axioms_only",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "complete_axiom_lines": [
+        "'IndependentOriginal.original_problem_solved' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ],
+      "commands": [
+        {
+          "path": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0004-0.log",
+          "recorded_sha256": "fd1fd07c8e1c43887b7aa47f25cdc50ead0d2eedc9424814a35fcc9d69773b44",
+          "actual_sha256": "fd1fd07c8e1c43887b7aa47f25cdc50ead0d2eedc9424814a35fcc9d69773b44",
+          "exit_code": 0
+        },
+        {
+          "path": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0004-1.log",
+          "recorded_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exit_code": 0
+        },
+        {
+          "path": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0004-2.log",
+          "recorded_sha256": "fea5a6dca800baa633f8bd8067b3417dd5e61351daefd7ad2d0ac022dbebe18c",
+          "actual_sha256": "fea5a6dca800baa633f8bd8067b3417dd5e61351daefd7ad2d0ac022dbebe18c",
+          "exit_code": 0
+        }
+      ],
+      "audit_hash_matches": true
+    },
+    {
+      "id": "independent-negative",
+      "role": "bridge",
+      "declaration": "IndependentOriginal.original_all_radii_growth_impossible",
+      "status": "standard_axioms_only",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "complete_axiom_lines": [
+        "'IndependentOriginal.original_all_radii_growth_impossible' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ],
+      "commands": [
+        {
+          "path": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0005-0.log",
+          "recorded_sha256": "ef658f54d57ead7f2b935e230986377b53e9db9e2660e648b5df1539d28b1b09",
+          "actual_sha256": "ef658f54d57ead7f2b935e230986377b53e9db9e2660e648b5df1539d28b1b09",
+          "exit_code": 0
+        },
+        {
+          "path": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0005-1.log",
+          "recorded_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exit_code": 0
+        },
+        {
+          "path": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0005-2.log",
+          "recorded_sha256": "6c6bc9d41af8bacf85782539a24e3c77ccde8f8e66419be22b12f4c63c6a595d",
+          "actual_sha256": "6c6bc9d41af8bacf85782539a24e3c77ccde8f8e66419be22b12f4c63c6a595d",
+          "exit_code": 0
+        }
+      ],
+      "audit_hash_matches": true
+    },
+    {
+      "id": "independent-tendsto",
+      "role": "bridge",
+      "declaration": "IndependentOriginal.original_count_not_tendsto_atTop",
+      "status": "standard_axioms_only",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "complete_axiom_lines": [
+        "'IndependentOriginal.original_count_not_tendsto_atTop' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ],
+      "commands": [
+        {
+          "path": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0006-0.log",
+          "recorded_sha256": "ef658f54d57ead7f2b935e230986377b53e9db9e2660e648b5df1539d28b1b09",
+          "actual_sha256": "ef658f54d57ead7f2b935e230986377b53e9db9e2660e648b5df1539d28b1b09",
+          "exit_code": 0
+        },
+        {
+          "path": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0006-1.log",
+          "recorded_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exit_code": 0
+        },
+        {
+          "path": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0006-2.log",
+          "recorded_sha256": "641c4422044e1b4d1eeac0f5eb723327c7f0652b76f9511ff0e5bdde747eef4b",
+          "actual_sha256": "641c4422044e1b4d1eeac0f5eb723327c7f0652b76f9511ff0e5bdde747eef4b",
+          "exit_code": 0
+        }
+      ],
+      "audit_hash_matches": true
+    },
+    {
+      "id": "independent-finiteness",
+      "role": "bridge",
+      "declaration": "IndependentOriginal.original_positive_circle_finiteness",
+      "status": "standard_axioms_only",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "complete_axiom_lines": [
+        "'IndependentOriginal.original_positive_circle_finiteness' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ],
+      "commands": [
+        {
+          "path": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0007-0.log",
+          "recorded_sha256": "ef658f54d57ead7f2b935e230986377b53e9db9e2660e648b5df1539d28b1b09",
+          "actual_sha256": "ef658f54d57ead7f2b935e230986377b53e9db9e2660e648b5df1539d28b1b09",
+          "exit_code": 0
+        },
+        {
+          "path": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0007-1.log",
+          "recorded_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exit_code": 0
+        },
+        {
+          "path": "/private/tmp/mm-lean-verify-20261010/audit/workflow-run-01/0007-2.log",
+          "recorded_sha256": "2c916e505e5143d2a18bb7e611d1805b7b5b4195ea33caf9f3fca9d5bdfde61b",
+          "actual_sha256": "2c916e505e5143d2a18bb7e611d1805b7b5b4195ea33caf9f3fca9d5bdfde61b",
+          "exit_code": 0
+        }
+      ],
+      "audit_hash_matches": true
+    }
+  ],
+  "source_snapshot_file_count": 54,
+  "all_original_and_frozen_hashes_match": false,
+  "source_files": [
+    {
+      "path": "CheckAxioms.lean",
+      "expected_sha256": "4fac820aede4bffa94634b16655a822e52975354a2797c1aa8be3bdde3496afa",
+      "original_sha256": "4fac820aede4bffa94634b16655a822e52975354a2797c1aa8be3bdde3496afa",
+      "frozen_sha256": "4fac820aede4bffa94634b16655a822e52975354a2797c1aa8be3bdde3496afa",
+      "all_match": true
+    },
+    {
+      "path": "lean-toolchain",
+      "expected_sha256": "8f89aa44fccdb1a0b6cc768c7c9f54b94cd40e47a08d582f82d1235f13075cf7",
+      "original_sha256": "8f89aa44fccdb1a0b6cc768c7c9f54b94cd40e47a08d582f82d1235f13075cf7",
+      "frozen_sha256": "8f89aa44fccdb1a0b6cc768c7c9f54b94cd40e47a08d582f82d1235f13075cf7",
+      "all_match": true
+    },
+    {
+      "path": "lake-manifest.json",
+      "expected_sha256": "cb333575666396aefa2ed281978edc586f0535a0079b76012f32db0f18052b38",
+      "original_sha256": "cb333575666396aefa2ed281978edc586f0535a0079b76012f32db0f18052b38",
+      "frozen_sha256": "cb333575666396aefa2ed281978edc586f0535a0079b76012f32db0f18052b38",
+      "all_match": true
+    },
+    {
+      "path": ".gitignore",
+      "expected_sha256": "84cd6e8c4a13d19f68e8ef0d07941cf975ff9698e1a0c38ac45116b0ff1b095d",
+      "original_sha256": "5795541b6c736feb44016b2582a9043840bfb5efc3e77a27e5479e25e42b1046",
+      "frozen_sha256": "84cd6e8c4a13d19f68e8ef0d07941cf975ff9698e1a0c38ac45116b0ff1b095d",
+      "all_match": false
+    },
+    {
+      "path": "MaximumModulus.lean",
+      "expected_sha256": "7711659c615b8d2de7c6eac37b04486ebf620ffafdcced996c491a3ba0151067",
+      "original_sha256": "7711659c615b8d2de7c6eac37b04486ebf620ffafdcced996c491a3ba0151067",
+      "frozen_sha256": "7711659c615b8d2de7c6eac37b04486ebf620ffafdcced996c491a3ba0151067",
+      "all_match": true
+    },
+    {
+      "path": "lakefile.toml",
+      "expected_sha256": "5d8ab5b472f35876f885594bf3cb7b4986303d0f7212593ecb63cef865baea39",
+      "original_sha256": "5d8ab5b472f35876f885594bf3cb7b4986303d0f7212593ecb63cef865baea39",
+      "frozen_sha256": "5d8ab5b472f35876f885594bf3cb7b4986303d0f7212593ecb63cef865baea39",
+      "all_match": true
+    },
+    {
+      "path": "MaximumModulus/MaximumStationarity.lean",
+      "expected_sha256": "08e7c781b9565dbf8ccddf63f2b22827aee3a04fbba860db98d03ad4d3e093b3",
+      "original_sha256": "08e7c781b9565dbf8ccddf63f2b22827aee3a04fbba860db98d03ad4d3e093b3",
+      "frozen_sha256": "08e7c781b9565dbf8ccddf63f2b22827aee3a04fbba860db98d03ad4d3e093b3",
+      "all_match": true
+    },
+    {
+      "path": "MaximumModulus/MeromorphicCorrespondence.lean",
+      "expected_sha256": "fb958b7065c45328a074315baa544df054330434cda908de390667ac74605ea7",
+      "original_sha256": "fb958b7065c45328a074315baa544df054330434cda908de390667ac74605ea7",
+      "frozen_sha256": "fb958b7065c45328a074315baa544df054330434cda908de390667ac74605ea7",
+      "all_match": true
+    },
+    {
+      "path": "MaximumModulus/BranchCollision.lean",
+      "expected_sha256": "7be2e6b7d143154440a27fcef427dbd05bcd38604fe78c75614633d05b7d5fda",
+      "original_sha256": "7be2e6b7d143154440a27fcef427dbd05bcd38604fe78c75614633d05b7d5fda",
+      "frozen_sha256": "7be2e6b7d143154440a27fcef427dbd05bcd38604fe78c75614633d05b7d5fda",
+      "all_match": true
+    },
+    {
+      "path": "MaximumModulus/LocalValence.lean",
+      "expected_sha256": "1bc714f213b1a51760d18cf3f71e21ae56db8d3a30dd5e27112a29277425718a",
+      "original_sha256": "1bc714f213b1a51760d18cf3f71e21ae56db8d3a30dd5e27112a29277425718a",
+      "frozen_sha256": "1bc714f213b1a51760d18cf3f71e21ae56db8d3a30dd5e27112a29277425718a",
+      "all_match": true
+    },
+    {
+      "path": "MaximumModulus/SmallFibers.lean",
+      "expected_sha256": "4c979b871a67cac79515d9f389550f11f2996fe8f431a36d8f93039c11068848",
+      "original_sha256": "4c979b871a67cac79515d9f389550f11f2996fe8f431a36d8f93039c11068848",
+      "frozen_sha256": "4c979b871a67cac79515d9f389550f11f2996fe8f431a36d8f93039c11068848",
+      "all_match": true
+    },
+    {
+      "path": "MaximumModulus/StatementAudit.lean",
+      "expected_sha256": "bb4ae82fa516d338263d4ce361522c4a012ebcf8507064c2d1148edbffcf0cbe",
+      "original_sha256": "bb4ae82fa516d338263d4ce361522c4a012ebcf8507064c2d1148edbffcf0cbe",
+      "frozen_sha256": "bb4ae82fa516d338263d4ce361522c4a012ebcf8507064c2d1148edbffcf0cbe",
+      "all_match": true
+    },
+    {
+      "path": "MaximumModulus/PoleChart.lean",
+      "expected_sha256": "55b48efcb4db00e4436344340e440758d51d4ad4d7797e3db14d25e17d450dd0",
+      "original_sha256": "55b48efcb4db00e4436344340e440758d51d4ad4d7797e3db14d25e17d450dd0",
+      "frozen_sha256": "55b48efcb4db00e4436344340e440758d51d4ad4d7797e3db14d25e17d450dd0",
+      "all_match": true
+    },
+    {
+      "path": "MaximumModulus/Definitions.lean",
+      "expected_sha256": "773671cd9bb474371afb63263c2b4975341ecb6c8bab43894c281bbfd31a7e7d",
+      "original_sha256": "773671cd9bb474371afb63263c2b4975341ecb6c8bab43894c281bbfd31a7e7d",
+      "frozen_sha256": "773671cd9bb474371afb63263c2b4975341ecb6c8bab43894c281bbfd31a7e7d",
+      "all_match": true
+    },
+    {
+      "path": "MaximumModulus/AEBridge.lean",
+      "expected_sha256": "ceeb0a8e8c405504b28b0d9669626532170f6b10b967be171dddebfe8ea67fb3",
+      "original_sha256": "ceeb0a8e8c405504b28b0d9669626532170f6b10b967be171dddebfe8ea67fb3",
+      "frozen_sha256": "ceeb0a8e8c405504b28b0d9669626532170f6b10b967be171dddebfe8ea67fb3",
+      "all_match": true
+    },
+    {
+      "path": "MaximumModulus/MaximumEnvelope.lean",
+      "expected_sha256": "dfbc0c1bf985fa8f4e4476bfc90e2b2657819aa1ed907360c5ce0ed1c5cdbe2f",
+      "original_sha256": "dfbc0c1bf985fa8f4e4476bfc90e2b2657819aa1ed907360c5ce0ed1c5cdbe2f",
+      "frozen_sha256": "dfbc0c1bf985fa8f4e4476bfc90e2b2657819aa1ed907360c5ce0ed1c5cdbe2f",
+      "all_match": true
+    },
+    {
+      "path": "MaximumModulus/InfinityInterior.lean",
+      "expected_sha256": "db687965a8163bd7f45c0e40b7ea66b9ce7c840432f3231818ea383f91eaedc0",
+      "original_sha256": "db687965a8163bd7f45c0e40b7ea66b9ce7c840432f3231818ea383f91eaedc0",
+      "frozen_sha256": "db687965a8163bd7f45c0e40b7ea66b9ce7c840432f3231818ea383f91eaedc0",
+      "all_match": true
+    },
+    {
+      "path": "MaximumModulus/GlobalCharts.lean",
+      "expected_sha256": "07d536809cf97043678f89af214f598793b521c3ff897b414d517b403dbcad6b",
+      "original_sha256": "07d536809cf97043678f89af214f598793b521c3ff897b414d517b403dbcad6b",
+      "frozen_sha256": "07d536809cf97043678f89af214f598793b521c3ff897b414d517b403dbcad6b",
+      "all_match": true
+    },
+    {
+      "path": "MaximumModulus/OmittedTargetCover.lean",
+      "expected_sha256": "92c4880890a9dd7be8d157ea8754704349c727c729a2bdbabc7d6cfcd48c9aa9",
+      "original_sha256": "92c4880890a9dd7be8d157ea8754704349c727c729a2bdbabc7d6cfcd48c9aa9",
+      "frozen_sha256": "92c4880890a9dd7be8d157ea8754704349c727c729a2bdbabc7d6cfcd48c9aa9",
+      "all_match": true
+    },
+    {
+      "path": "MaximumModulus/LocalReciprocal.lean",
+      "expected_sha256": "b480a9d5123c14b8afa5967aba4c560dbc176311ac30f175856ee81d7170cbf1",
+      "original_sha256": "b480a9d5123c14b8afa5967aba4c560dbc176311ac30f175856ee81d7170cbf1",
+      "frozen_sha256": "b480a9d5123c14b8afa5967aba4c560dbc176311ac30f175856ee81d7170cbf1",
+      "all_match": true
+    },
+    {
+      "path": "MaximumModulus/LogDerivative.lean",
+      "expected_sha256": "276604496051dc14d6944a9c0c44010355ecdec077c30064d76346104ac3825e",
+      "original_sha256": "276604496051dc14d6944a9c0c44010355ecdec077c30064d76346104ac3825e",
+      "frozen_sha256": "276604496051dc14d6944a9c0c44010355ecdec077c30064d76346104ac3825e",
+      "all_match": true
+    },
+    {
+      "path": "MaximumModulus/HighCountLocus.lean",
+      "expected_sha256": "db7fb34afd4fc0a2b1a852394ee1bb448eca69902bc01f0497c82e0dd6bfb144",
+      "original_sha256": "db7fb34afd4fc0a2b1a852394ee1bb448eca69902bc01f0497c82e0dd6bfb144",
+      "frozen_sha256": "db7fb34afd4fc0a2b1a852394ee1bb448eca69902bc01f0497c82e0dd6bfb144",
+      "all_match": true
+    },
+    {
+      "path": "MaximumModulus/FiniteImageGraphs.lean",
+      "expected_sha256": "e0e8b33e9b0d2e06abd7b711e22b98f4eb0268468428b525306cc5abb2a27376",
+      "original_sha256": "e0e8b33e9b0d2e06abd7b711e22b98f4eb0268468428b525306cc5abb2a27376",
+      "frozen_sha256": "e0e8b33e9b0d2e06abd7b711e22b98f4eb0268468428b525306cc5abb2a27376",
+      "all_match": true
+    },
+    {
+      "path": "MaximumModulus/Basic.lean",
+      "expected_sha256": "d5630a0d8ff56b433b25051db69a807df6ee1bb2ab0ea4085417e785bcca045c",
+      "original_sha256": "d5630a0d8ff56b433b25051db69a807df6ee1bb2ab0ea4085417e785bcca045c",
+      "frozen_sha256": "d5630a0d8ff56b433b25051db69a807df6ee1bb2ab0ea4085417e785bcca045c",
+      "all_match": true
+    },
+    {
+      "path": "MaximumModulus/BranchContinuation.lean",
+      "expected_sha256": "f83f736cb203ab7a7c8fcd4db9a23ee0348183f38bdb373ad3873f45773553d7",
+      "original_sha256": "f83f736cb203ab7a7c8fcd4db9a23ee0348183f38bdb373ad3873f45773553d7",
+      "frozen_sha256": "f83f736cb203ab7a7c8fcd4db9a23ee0348183f38bdb373ad3873f45773553d7",
+      "all_match": true
+    },
+    {
+      "path": "MaximumModulus/PairNonvertical.lean",
+      "expected_sha256": "f9606ec4951b64f1959ded8a9fd53e272f24ea5da3bd0c10583bc2e7d5d73690",
+      "original_sha256": "f9606ec4951b64f1959ded8a9fd53e272f24ea5da3bd0c10583bc2e7d5d73690",
+      "frozen_sha256": "f9606ec4951b64f1959ded8a9fd53e272f24ea5da3bd0c10583bc2e7d5d73690",
+      "all_match": true
+    },
+    {
+      "path": "MaximumModulus/HighCountCapture.lean",
+      "expected_sha256": "dcca257d6e722145357260aed1acdf58b21929f2d8161eec3c7220b58abf94cc",
+      "original_sha256": "dcca257d6e722145357260aed1acdf58b21929f2d8161eec3c7220b58abf94cc",
+      "frozen_sha256": "dcca257d6e722145357260aed1acdf58b21929f2d8161eec3c7220b58abf94cc",
+      "all_match": true
+    },
+    {
+      "path": "MaximumModulus/HighCountGlobal.lean",
+      "expected_sha256": "4484fc5ece2548ae58c786fecc5bd6bee10b25a7d456775ae3f860025b7bce71",
+      "original_sha256": "4484fc5ece2548ae58c786fecc5bd6bee10b25a7d456775ae3f860025b7bce71",
+      "frozen_sha256": "4484fc5ece2548ae58c786fecc5bd6bee10b25a7d456775ae3f860025b7bce71",
+      "all_match": true
+    },
+    {
+      "path": "MaximumModulus/GlobalDegreeAux.lean",
+      "expected_sha256": "bb9d9fad1ffc1b00e1bda5e02a1c3b96d161ddea2d55c7d224584d6630388d7c",
+      "original_sha256": "bb9d9fad1ffc1b00e1bda5e02a1c3b96d161ddea2d55c7d224584d6630388d7c",
+      "frozen_sha256": "bb9d9fad1ffc1b00e1bda5e02a1c3b96d161ddea2d55c7d224584d6630388d7c",
+      "all_match": true
+    },
+    {
+      "path": "MaximumModulus/InverseRootChart.lean",
+      "expected_sha256": "4f45d67d8b5b72829593638aa833a09bb3fb3a16163d12cbd58492fb7ce9b43f",
+      "original_sha256": "4f45d67d8b5b72829593638aa833a09bb3fb3a16163d12cbd58492fb7ce9b43f",
+      "frozen_sha256": "4f45d67d8b5b72829593638aa833a09bb3fb3a16163d12cbd58492fb7ce9b43f",
+      "all_match": true
+    },
+    {
+      "path": "MaximumModulus/ProductNonconstant.lean",
+      "expected_sha256": "b9fc1ba4687c7aaf2073413344b6de0d30b0908b58ec382d34db1dbaf6223c1f",
+      "original_sha256": "b9fc1ba4687c7aaf2073413344b6de0d30b0908b58ec382d34db1dbaf6223c1f",
+      "frozen_sha256": "b9fc1ba4687c7aaf2073413344b6de0d30b0908b58ec382d34db1dbaf6223c1f",
+      "all_match": true
+    },
+    {
+      "path": "MaximumModulus/LocalImageTopology.lean",
+      "expected_sha256": "5048616e61e9e068f25862923a99be5f067c6a953f1ff6223a2e170acd3d024e",
+      "original_sha256": "5048616e61e9e068f25862923a99be5f067c6a953f1ff6223a2e170acd3d024e",
+      "frozen_sha256": "5048616e61e9e068f25862923a99be5f067c6a953f1ff6223a2e170acd3d024e",
+      "all_match": true
+    },
+    {
+      "path": "MaximumModulus/GeometricReduction.lean",
+      "expected_sha256": "0614e85cb9417f9544134fc0a2fa27c497c7ce23145fcbcf66c75497594e7113",
+      "original_sha256": "0614e85cb9417f9544134fc0a2fa27c497c7ce23145fcbcf66c75497594e7113",
+      "frozen_sha256": "0614e85cb9417f9544134fc0a2fa27c497c7ce23145fcbcf66c75497594e7113",
+      "all_match": true
+    },
+    {
+      "path": "MaximumModulus/FiberCapture.lean",
+      "expected_sha256": "329432a68505235a62ca16ac7f9cb96ef8f699d8ba8e61eb630e0b7c518fe958",
+      "original_sha256": "329432a68505235a62ca16ac7f9cb96ef8f699d8ba8e61eb630e0b7c518fe958",
+      "frozen_sha256": "329432a68505235a62ca16ac7f9cb96ef8f699d8ba8e61eb630e0b7c518fe958",
+      "all_match": true
+    },
+    {
+      "path": "MaximumModulus/AllRadii.lean",
+      "expected_sha256": "6a16ff9d2c62449f637d0eb727d3605b26f37744eb4eb46f7b2fe771c497a9d7",
+      "original_sha256": "6a16ff9d2c62449f637d0eb727d3605b26f37744eb4eb46f7b2fe771c497a9d7",
+      "frozen_sha256": "6a16ff9d2c62449f637d0eb727d3605b26f37744eb4eb46f7b2fe771c497a9d7",
+      "all_match": true
+    },
+    {
+      "path": "MaximumModulus/SphereSmallFibers.lean",
+      "expected_sha256": "cd9945df30d39c17d20540402f141bc621cf1ab886d1cae29ca0122fd0fdcf55",
+      "original_sha256": "cd9945df30d39c17d20540402f141bc621cf1ab886d1cae29ca0122fd0fdcf55",
+      "frozen_sha256": "cd9945df30d39c17d20540402f141bc621cf1ab886d1cae29ca0122fd0fdcf55",
+      "all_match": true
+    },
+    {
+      "path": "MaximumModulus/MaximaToFibers.lean",
+      "expected_sha256": "1d6545874af6c1b07f64520fcc90969475df6d6a7df21504a05abea8ac87c743",
+      "original_sha256": "1d6545874af6c1b07f64520fcc90969475df6d6a7df21504a05abea8ac87c743",
+      "frozen_sha256": "1d6545874af6c1b07f64520fcc90969475df6d6a7df21504a05abea8ac87c743",
+      "all_match": true
+    },
+    {
+      "path": "MaximumModulus/DuplicateSafeCount.lean",
+      "expected_sha256": "19ce299de1437bdb19d9e786c82088f27b27967e0a901853cb10365e29522534",
+      "original_sha256": "19ce299de1437bdb19d9e786c82088f27b27967e0a901853cb10365e29522534",
+      "frozen_sha256": "19ce299de1437bdb19d9e786c82088f27b27967e0a901853cb10365e29522534",
+      "all_match": true
+    },
+    {
+      "path": "MaximumModulus/HighCountInterior.lean",
+      "expected_sha256": "d41d90b40201a0b465c8949db489f99b848ae6e1cfe2711158e59b8b7c7fb9ec",
+      "original_sha256": "d41d90b40201a0b465c8949db489f99b848ae6e1cfe2711158e59b8b7c7fb9ec",
+      "frozen_sha256": "d41d90b40201a0b465c8949db489f99b848ae6e1cfe2711158e59b8b7c7fb9ec",
+      "all_match": true
+    },
+    {
+      "path": "MaximumModulus/FiniteTargetCover.lean",
+      "expected_sha256": "de0c276e63ed5201b191f77d0d8f461b87ccf273186c935ee4156bee23f97563",
+      "original_sha256": "de0c276e63ed5201b191f77d0d8f461b87ccf273186c935ee4156bee23f97563",
+      "frozen_sha256": "de0c276e63ed5201b191f77d0d8f461b87ccf273186c935ee4156bee23f97563",
+      "all_match": true
+    },
+    {
+      "path": "MaximumModulus/FiniteExceptionalSet.lean",
+      "expected_sha256": "c7722d63191e6a1bc3173aaf5d7ffbfe4c23c0398d403eb079ea9c42468140d6",
+      "original_sha256": "c7722d63191e6a1bc3173aaf5d7ffbfe4c23c0398d403eb079ea9c42468140d6",
+      "frozen_sha256": "c7722d63191e6a1bc3173aaf5d7ffbfe4c23c0398d403eb079ea9c42468140d6",
+      "all_match": true
+    },
+    {
+      "path": "MaximumModulus/InfinityCharts.lean",
+      "expected_sha256": "0e364eaa4e737a7ccdafeaeedf89b22fe8b793e4d7de8fe4b1ca61214f205f0e",
+      "original_sha256": "0e364eaa4e737a7ccdafeaeedf89b22fe8b793e4d7de8fe4b1ca61214f205f0e",
+      "frozen_sha256": "0e364eaa4e737a7ccdafeaeedf89b22fe8b793e4d7de8fe4b1ca61214f205f0e",
+      "all_match": true
+    },
+    {
+      "path": "MaximumModulus/Reductions.lean",
+      "expected_sha256": "81095abc9340c0a5ca229f539eca282b85ecfdbd6e07a2f49b6be927f8d4ff76",
+      "original_sha256": "81095abc9340c0a5ca229f539eca282b85ecfdbd6e07a2f49b6be927f8d4ff76",
+      "frozen_sha256": "81095abc9340c0a5ca229f539eca282b85ecfdbd6e07a2f49b6be927f8d4ff76",
+      "all_match": true
+    },
+    {
+      "path": "MaximumModulus/FiniteValueCoordinates.lean",
+      "expected_sha256": "ff2c819ab02822e64a727b44426456cfd569f4ea70a4763de38ebdc322851183",
+      "original_sha256": "ff2c819ab02822e64a727b44426456cfd569f4ea70a4763de38ebdc322851183",
+      "frozen_sha256": "ff2c819ab02822e64a727b44426456cfd569f4ea70a4763de38ebdc322851183",
+      "all_match": true
+    },
+    {
+      "path": "MaximumModulus/BoundaryCharts.lean",
+      "expected_sha256": "337e660ab7b136734531c6cbaf782c3353294b6da69bed62e2a9d7023be87ac4",
+      "original_sha256": "337e660ab7b136734531c6cbaf782c3353294b6da69bed62e2a9d7023be87ac4",
+      "frozen_sha256": "337e660ab7b136734531c6cbaf782c3353294b6da69bed62e2a9d7023be87ac4",
+      "all_match": true
+    },
+    {
+      "path": "MaximumModulus/InversePairFamily.lean",
+      "expected_sha256": "e13cc2e39498732ba5caa56a3233ebf5545576235a1bdf5beaf9b95e7dd556f0",
+      "original_sha256": "e13cc2e39498732ba5caa56a3233ebf5545576235a1bdf5beaf9b95e7dd556f0",
+      "frozen_sha256": "e13cc2e39498732ba5caa56a3233ebf5545576235a1bdf5beaf9b95e7dd556f0",
+      "all_match": true
+    },
+    {
+      "path": "MaximumModulus/Finiteness.lean",
+      "expected_sha256": "990b92706af6a1eb75f3758b32ea36f16cd1781d6748145fd5c050916409dcfb",
+      "original_sha256": "990b92706af6a1eb75f3758b32ea36f16cd1781d6748145fd5c050916409dcfb",
+      "frozen_sha256": "990b92706af6a1eb75f3758b32ea36f16cd1781d6748145fd5c050916409dcfb",
+      "all_match": true
+    },
+    {
+      "path": "MaximumModulus/ExceptionalRadii.lean",
+      "expected_sha256": "9daba9dc313c1c781c27c3ceb5dfa716ed7aa706d407df0b9a4f7bf9b27db356",
+      "original_sha256": "9daba9dc313c1c781c27c3ceb5dfa716ed7aa706d407df0b9a4f7bf9b27db356",
+      "frozen_sha256": "9daba9dc313c1c781c27c3ceb5dfa716ed7aa706d407df0b9a4f7bf9b27db356",
+      "all_match": true
+    },
+    {
+      "path": "scripts/source_integrity.py",
+      "expected_sha256": "6ab892c4e81d1103f4ac6e58259e2a953b591f0b599509acbe0e6e2c84ad07b3",
+      "original_sha256": "6ab892c4e81d1103f4ac6e58259e2a953b591f0b599509acbe0e6e2c84ad07b3",
+      "frozen_sha256": "6ab892c4e81d1103f4ac6e58259e2a953b591f0b599509acbe0e6e2c84ad07b3",
+      "all_match": true
+    },
+    {
+      "path": "scripts/verify.sh",
+      "expected_sha256": "bf0aec9545c27fda02d61be6421fc4b1b4d17565c9821831ff5a1a0279b148a3",
+      "original_sha256": "bf0aec9545c27fda02d61be6421fc4b1b4d17565c9821831ff5a1a0279b148a3",
+      "frozen_sha256": "bf0aec9545c27fda02d61be6421fc4b1b4d17565c9821831ff5a1a0279b148a3",
+      "all_match": true
+    },
+    {
+      "path": "scripts/summarize_verification.py",
+      "expected_sha256": "31aa021db27f03b39d17882826cf27388c80e13d7e25b0906034fecd8a5fc473",
+      "original_sha256": "31aa021db27f03b39d17882826cf27388c80e13d7e25b0906034fecd8a5fc473",
+      "frozen_sha256": "31aa021db27f03b39d17882826cf27388c80e13d7e25b0906034fecd8a5fc473",
+      "all_match": true
+    },
+    {
+      "path": "scripts/fetch_cache.py",
+      "expected_sha256": "42327e06bbca544fc620c6e29c30648c2306bd879378cf7e7f817754ed88ba13",
+      "original_sha256": "42327e06bbca544fc620c6e29c30648c2306bd879378cf7e7f817754ed88ba13",
+      "frozen_sha256": "42327e06bbca544fc620c6e29c30648c2306bd879378cf7e7f817754ed88ba13",
+      "all_match": true
+    },
+    {
+      "path": "scripts/run_logged.py",
+      "expected_sha256": "f2b253d125b1c49ba1554096a4a423fdffcff8268011445f66f0e04a9052eb6e",
+      "original_sha256": "f2b253d125b1c49ba1554096a4a423fdffcff8268011445f66f0e04a9052eb6e",
+      "frozen_sha256": "f2b253d125b1c49ba1554096a4a423fdffcff8268011445f66f0e04a9052eb6e",
+      "all_match": true
+    },
+    {
+      "path": "scripts/audit-mathlib.py",
+      "expected_sha256": "da835bc0272e50ee0c902cdbf0595ef81c294d310e004dc67b3d7478a4569a6d",
+      "original_sha256": "da835bc0272e50ee0c902cdbf0595ef81c294d310e004dc67b3d7478a4569a6d",
+      "frozen_sha256": "da835bc0272e50ee0c902cdbf0595ef81c294d310e004dc67b3d7478a4569a6d",
+      "all_match": true
+    }
+  ],
+  "manuscript": {
+    "path": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/maximum_modulus_points.tex",
+    "expected_sha256": "bc951c3ffa7d3579b2f39a0949e38db27338ac32ac050e3f5359d4452573a7b1",
+    "actual_sha256": "bc951c3ffa7d3579b2f39a0949e38db27338ac32ac050e3f5359d4452573a7b1",
+    "unchanged": true
+  },
+  "frozen_git_status": {
+    "exit_code": 0,
+    "stdout": "?? MaximumModulus/Audit/\n",
+    "stderr": ""
+  },
+  "original_clean_verification": {
+    "summary_check_count": 91,
+    "all_checks_exit_zero": true,
+    "kernel_replay_count": 42,
+    "source_recheck_count": 43,
+    "axiom_declaration_count": 126,
+    "observed_axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "scope": "Each project module sequentially, relative to pinned imports; no fresh replay of all mathlib or independent external checker claimed.",
+    "copied_logs_directory": "/private/tmp/mm-lean-verify-20261010/evidence/original-clean-verification/logs"
+  },
+  "exports_commands": [
+    {
+      "argv": [
+        "lake",
+        "build",
+        "+MaximumModulus.Audit.ComparatorChallenge"
+      ],
+      "cwd": "/private/tmp/mm-lean-verify-20261010/sources/proof",
+      "exit_code": 0,
+      "elapsed_seconds": 6.579120500013232
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "leanexport",
+        "MaximumModulus.Audit.ComparatorChallenge",
+        "--",
+        "Quot",
+        "Quot.mk",
+        "Quot.lift",
+        "Quot.ind",
+        "MaximumModulus.bounded_maxPoints_at_arbitrarily_large_radii",
+        "propext",
+        "Classical.choice",
+        "Quot.sound",
+        "Nat.add",
+        "Nat.sub",
+        "Nat.mul",
+        "Nat.pow",
+        "Nat.gcd",
+        "Nat.div",
+        "Nat.mod",
+        "Nat.beq",
+        "Nat.ble",
+        "Nat.land",
+        "Nat.lor",
+        "Nat.xor",
+        "Nat.shiftLeft",
+        "Nat.shiftRight",
+        "String.ofList",
+        "Char.ofNat",
+        "List",
+        "eagerReduce",
+        "Nat",
+        "String",
+        "String.mk",
+        "Char",
+        "optParam",
+        "autoParam",
+        "semiOutParam",
+        "outParam"
+      ],
+      "cwd": "/private/tmp/mm-lean-verify-20261010/sources/proof",
+      "exit_code": 0,
+      "elapsed_seconds": 8.670322458259761,
+      "bytes": 54014504,
+      "sha256": "ac2fe5af1de529ac3607406107429058256542d824ac15bf4590dba2bdde0360",
+      "module": "MaximumModulus.Audit.ComparatorChallenge"
+    },
+    {
+      "argv": [
+        "lake",
+        "build",
+        "+MaximumModulus.AllRadii"
+      ],
+      "cwd": "/private/tmp/mm-lean-verify-20261010/sources/proof",
+      "exit_code": 0,
+      "elapsed_seconds": 4.134245290886611
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "leanexport",
+        "MaximumModulus.AllRadii",
+        "--",
+        "Quot",
+        "Quot.mk",
+        "Quot.lift",
+        "Quot.ind",
+        "MaximumModulus.bounded_maxPoints_at_arbitrarily_large_radii",
+        "propext",
+        "Classical.choice",
+        "Quot.sound",
+        "Nat.add",
+        "Nat.sub",
+        "Nat.mul",
+        "Nat.pow",
+        "Nat.gcd",
+        "Nat.div",
+        "Nat.mod",
+        "Nat.beq",
+        "Nat.ble",
+        "Nat.land",
+        "Nat.lor",
+        "Nat.xor",
+        "Nat.shiftLeft",
+        "Nat.shiftRight",
+        "String.ofList",
+        "Char.ofNat",
+        "List",
+        "eagerReduce",
+        "Nat",
+        "String",
+        "String.mk",
+        "Char",
+        "optParam",
+        "autoParam",
+        "semiOutParam",
+        "outParam"
+      ],
+      "cwd": "/private/tmp/mm-lean-verify-20261010/sources/proof",
+      "exit_code": 0,
+      "elapsed_seconds": 21.71034858422354,
+      "bytes": 360280894,
+      "sha256": "dfc65218ba9d699deaa8ed3191dd66f0a076d528fc36752b2217a13225f0ffd0",
+      "module": "MaximumModulus.AllRadii"
+    }
+  ],
+  "original_source_copies_exact_count": 53,
+  "all_production_sources_configs_scripts_match": true,
+  "snapshot_specific_gitignore": {
+    "confirmed_by": "root verifier, 2026-10-10 UTC",
+    "role": "Root intentionally wrote snapshot-specific .gitignore before committing the temporary audit snapshot; original .gitignore was never changed. Cache/output packaging only; no Lean/Lake/proof/script changes.",
+    "diff": "evidence/snapshot-gitignore.diff"
+  }
+}

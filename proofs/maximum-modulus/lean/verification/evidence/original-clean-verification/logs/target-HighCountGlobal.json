@@ -1,0 +1,12 @@
+{
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "MaximumModulus/HighCountGlobal.lean"
+  ],
+  "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+  "started_utc": "2026-10-10T19:27:18.094613+00:00",
+  "exit_code": 0,
+  "elapsed_seconds": 5.266338875051588
+}

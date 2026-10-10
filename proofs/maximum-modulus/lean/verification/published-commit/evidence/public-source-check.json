@@ -1,0 +1,368 @@
+{
+  "created_utc": "2026-10-10T20:30:48.331036+00:00",
+  "selected_public_commit": "c063e5f83dfa71c97871eabc8b70cf8a8c1e0bc9",
+  "repository": "https://github.com/liyunpeng1991/liyunpeng1991.github.io",
+  "project_subdirectory": "proofs/maximum-modulus/lean",
+  "source_scope": "All 53 production proof/config/script files; prior snapshot .gitignore deliberately excluded; no synthetic commit",
+  "production_files": [
+    {
+      "path": "CheckAxioms.lean",
+      "sha256": "4fac820aede4bffa94634b16655a822e52975354a2797c1aa8be3bdde3496afa",
+      "verified_snapshot_sha256": "4fac820aede4bffa94634b16655a822e52975354a2797c1aa8be3bdde3496afa",
+      "public_commit_blob_matches_worktree": true
+    },
+    {
+      "path": "MaximumModulus.lean",
+      "sha256": "7711659c615b8d2de7c6eac37b04486ebf620ffafdcced996c491a3ba0151067",
+      "verified_snapshot_sha256": "7711659c615b8d2de7c6eac37b04486ebf620ffafdcced996c491a3ba0151067",
+      "public_commit_blob_matches_worktree": true
+    },
+    {
+      "path": "MaximumModulus/AEBridge.lean",
+      "sha256": "ceeb0a8e8c405504b28b0d9669626532170f6b10b967be171dddebfe8ea67fb3",
+      "verified_snapshot_sha256": "ceeb0a8e8c405504b28b0d9669626532170f6b10b967be171dddebfe8ea67fb3",
+      "public_commit_blob_matches_worktree": true
+    },
+    {
+      "path": "MaximumModulus/AllRadii.lean",
+      "sha256": "6a16ff9d2c62449f637d0eb727d3605b26f37744eb4eb46f7b2fe771c497a9d7",
+      "verified_snapshot_sha256": "6a16ff9d2c62449f637d0eb727d3605b26f37744eb4eb46f7b2fe771c497a9d7",
+      "public_commit_blob_matches_worktree": true
+    },
+    {
+      "path": "MaximumModulus/Basic.lean",
+      "sha256": "d5630a0d8ff56b433b25051db69a807df6ee1bb2ab0ea4085417e785bcca045c",
+      "verified_snapshot_sha256": "d5630a0d8ff56b433b25051db69a807df6ee1bb2ab0ea4085417e785bcca045c",
+      "public_commit_blob_matches_worktree": true
+    },
+    {
+      "path": "MaximumModulus/BoundaryCharts.lean",
+      "sha256": "337e660ab7b136734531c6cbaf782c3353294b6da69bed62e2a9d7023be87ac4",
+      "verified_snapshot_sha256": "337e660ab7b136734531c6cbaf782c3353294b6da69bed62e2a9d7023be87ac4",
+      "public_commit_blob_matches_worktree": true
+    },
+    {
+      "path": "MaximumModulus/BranchCollision.lean",
+      "sha256": "7be2e6b7d143154440a27fcef427dbd05bcd38604fe78c75614633d05b7d5fda",
+      "verified_snapshot_sha256": "7be2e6b7d143154440a27fcef427dbd05bcd38604fe78c75614633d05b7d5fda",
+      "public_commit_blob_matches_worktree": true
+    },
+    {
+      "path": "MaximumModulus/BranchContinuation.lean",
+      "sha256": "f83f736cb203ab7a7c8fcd4db9a23ee0348183f38bdb373ad3873f45773553d7",
+      "verified_snapshot_sha256": "f83f736cb203ab7a7c8fcd4db9a23ee0348183f38bdb373ad3873f45773553d7",
+      "public_commit_blob_matches_worktree": true
+    },
+    {
+      "path": "MaximumModulus/Definitions.lean",
+      "sha256": "773671cd9bb474371afb63263c2b4975341ecb6c8bab43894c281bbfd31a7e7d",
+      "verified_snapshot_sha256": "773671cd9bb474371afb63263c2b4975341ecb6c8bab43894c281bbfd31a7e7d",
+      "public_commit_blob_matches_worktree": true
+    },
+    {
+      "path": "MaximumModulus/DuplicateSafeCount.lean",
+      "sha256": "19ce299de1437bdb19d9e786c82088f27b27967e0a901853cb10365e29522534",
+      "verified_snapshot_sha256": "19ce299de1437bdb19d9e786c82088f27b27967e0a901853cb10365e29522534",
+      "public_commit_blob_matches_worktree": true
+    },
+    {
+      "path": "MaximumModulus/ExceptionalRadii.lean",
+      "sha256": "9daba9dc313c1c781c27c3ceb5dfa716ed7aa706d407df0b9a4f7bf9b27db356",
+      "verified_snapshot_sha256": "9daba9dc313c1c781c27c3ceb5dfa716ed7aa706d407df0b9a4f7bf9b27db356",
+      "public_commit_blob_matches_worktree": true
+    },
+    {
+      "path": "MaximumModulus/FiberCapture.lean",
+      "sha256": "329432a68505235a62ca16ac7f9cb96ef8f699d8ba8e61eb630e0b7c518fe958",
+      "verified_snapshot_sha256": "329432a68505235a62ca16ac7f9cb96ef8f699d8ba8e61eb630e0b7c518fe958",
+      "public_commit_blob_matches_worktree": true
+    },
+    {
+      "path": "MaximumModulus/FiniteExceptionalSet.lean",
+      "sha256": "c7722d63191e6a1bc3173aaf5d7ffbfe4c23c0398d403eb079ea9c42468140d6",
+      "verified_snapshot_sha256": "c7722d63191e6a1bc3173aaf5d7ffbfe4c23c0398d403eb079ea9c42468140d6",
+      "public_commit_blob_matches_worktree": true
+    },
+    {
+      "path": "MaximumModulus/FiniteImageGraphs.lean",
+      "sha256": "e0e8b33e9b0d2e06abd7b711e22b98f4eb0268468428b525306cc5abb2a27376",
+      "verified_snapshot_sha256": "e0e8b33e9b0d2e06abd7b711e22b98f4eb0268468428b525306cc5abb2a27376",
+      "public_commit_blob_matches_worktree": true
+    },
+    {
+      "path": "MaximumModulus/FiniteTargetCover.lean",
+      "sha256": "de0c276e63ed5201b191f77d0d8f461b87ccf273186c935ee4156bee23f97563",
+      "verified_snapshot_sha256": "de0c276e63ed5201b191f77d0d8f461b87ccf273186c935ee4156bee23f97563",
+      "public_commit_blob_matches_worktree": true
+    },
+    {
+      "path": "MaximumModulus/FiniteValueCoordinates.lean",
+      "sha256": "ff2c819ab02822e64a727b44426456cfd569f4ea70a4763de38ebdc322851183",
+      "verified_snapshot_sha256": "ff2c819ab02822e64a727b44426456cfd569f4ea70a4763de38ebdc322851183",
+      "public_commit_blob_matches_worktree": true
+    },
+    {
+      "path": "MaximumModulus/Finiteness.lean",
+      "sha256": "990b92706af6a1eb75f3758b32ea36f16cd1781d6748145fd5c050916409dcfb",
+      "verified_snapshot_sha256": "990b92706af6a1eb75f3758b32ea36f16cd1781d6748145fd5c050916409dcfb",
+      "public_commit_blob_matches_worktree": true
+    },
+    {
+      "path": "MaximumModulus/GeometricReduction.lean",
+      "sha256": "0614e85cb9417f9544134fc0a2fa27c497c7ce23145fcbcf66c75497594e7113",
+      "verified_snapshot_sha256": "0614e85cb9417f9544134fc0a2fa27c497c7ce23145fcbcf66c75497594e7113",
+      "public_commit_blob_matches_worktree": true
+    },
+    {
+      "path": "MaximumModulus/GlobalCharts.lean",
+      "sha256": "07d536809cf97043678f89af214f598793b521c3ff897b414d517b403dbcad6b",
+      "verified_snapshot_sha256": "07d536809cf97043678f89af214f598793b521c3ff897b414d517b403dbcad6b",
+      "public_commit_blob_matches_worktree": true
+    },
+    {
+      "path": "MaximumModulus/GlobalDegreeAux.lean",
+      "sha256": "bb9d9fad1ffc1b00e1bda5e02a1c3b96d161ddea2d55c7d224584d6630388d7c",
+      "verified_snapshot_sha256": "bb9d9fad1ffc1b00e1bda5e02a1c3b96d161ddea2d55c7d224584d6630388d7c",
+      "public_commit_blob_matches_worktree": true
+    },
+    {
+      "path": "MaximumModulus/HighCountCapture.lean",
+      "sha256": "dcca257d6e722145357260aed1acdf58b21929f2d8161eec3c7220b58abf94cc",
+      "verified_snapshot_sha256": "dcca257d6e722145357260aed1acdf58b21929f2d8161eec3c7220b58abf94cc",
+      "public_commit_blob_matches_worktree": true
+    },
+    {
+      "path": "MaximumModulus/HighCountGlobal.lean",
+      "sha256": "4484fc5ece2548ae58c786fecc5bd6bee10b25a7d456775ae3f860025b7bce71",
+      "verified_snapshot_sha256": "4484fc5ece2548ae58c786fecc5bd6bee10b25a7d456775ae3f860025b7bce71",
+      "public_commit_blob_matches_worktree": true
+    },
+    {
+      "path": "MaximumModulus/HighCountInterior.lean",
+      "sha256": "d41d90b40201a0b465c8949db489f99b848ae6e1cfe2711158e59b8b7c7fb9ec",
+      "verified_snapshot_sha256": "d41d90b40201a0b465c8949db489f99b848ae6e1cfe2711158e59b8b7c7fb9ec",
+      "public_commit_blob_matches_worktree": true
+    },
+    {
+      "path": "MaximumModulus/HighCountLocus.lean",
+      "sha256": "db7fb34afd4fc0a2b1a852394ee1bb448eca69902bc01f0497c82e0dd6bfb144",
+      "verified_snapshot_sha256": "db7fb34afd4fc0a2b1a852394ee1bb448eca69902bc01f0497c82e0dd6bfb144",
+      "public_commit_blob_matches_worktree": true
+    },
+    {
+      "path": "MaximumModulus/InfinityCharts.lean",
+      "sha256": "0e364eaa4e737a7ccdafeaeedf89b22fe8b793e4d7de8fe4b1ca61214f205f0e",
+      "verified_snapshot_sha256": "0e364eaa4e737a7ccdafeaeedf89b22fe8b793e4d7de8fe4b1ca61214f205f0e",
+      "public_commit_blob_matches_worktree": true
+    },
+    {
+      "path": "MaximumModulus/InfinityInterior.lean",
+      "sha256": "db687965a8163bd7f45c0e40b7ea66b9ce7c840432f3231818ea383f91eaedc0",
+      "verified_snapshot_sha256": "db687965a8163bd7f45c0e40b7ea66b9ce7c840432f3231818ea383f91eaedc0",
+      "public_commit_blob_matches_worktree": true
+    },
+    {
+      "path": "MaximumModulus/InversePairFamily.lean",
+      "sha256": "e13cc2e39498732ba5caa56a3233ebf5545576235a1bdf5beaf9b95e7dd556f0",
+      "verified_snapshot_sha256": "e13cc2e39498732ba5caa56a3233ebf5545576235a1bdf5beaf9b95e7dd556f0",
+      "public_commit_blob_matches_worktree": true
+    },
+    {
+      "path": "MaximumModulus/InverseRootChart.lean",
+      "sha256": "4f45d67d8b5b72829593638aa833a09bb3fb3a16163d12cbd58492fb7ce9b43f",
+      "verified_snapshot_sha256": "4f45d67d8b5b72829593638aa833a09bb3fb3a16163d12cbd58492fb7ce9b43f",
+      "public_commit_blob_matches_worktree": true
+    },
+    {
+      "path": "MaximumModulus/LocalImageTopology.lean",
+      "sha256": "5048616e61e9e068f25862923a99be5f067c6a953f1ff6223a2e170acd3d024e",
+      "verified_snapshot_sha256": "5048616e61e9e068f25862923a99be5f067c6a953f1ff6223a2e170acd3d024e",
+      "public_commit_blob_matches_worktree": true
+    },
+    {
+      "path": "MaximumModulus/LocalReciprocal.lean",
+      "sha256": "b480a9d5123c14b8afa5967aba4c560dbc176311ac30f175856ee81d7170cbf1",
+      "verified_snapshot_sha256": "b480a9d5123c14b8afa5967aba4c560dbc176311ac30f175856ee81d7170cbf1",
+      "public_commit_blob_matches_worktree": true
+    },
+    {
+      "path": "MaximumModulus/LocalValence.lean",
+      "sha256": "1bc714f213b1a51760d18cf3f71e21ae56db8d3a30dd5e27112a29277425718a",
+      "verified_snapshot_sha256": "1bc714f213b1a51760d18cf3f71e21ae56db8d3a30dd5e27112a29277425718a",
+      "public_commit_blob_matches_worktree": true
+    },
+    {
+      "path": "MaximumModulus/LogDerivative.lean",
+      "sha256": "276604496051dc14d6944a9c0c44010355ecdec077c30064d76346104ac3825e",
+      "verified_snapshot_sha256": "276604496051dc14d6944a9c0c44010355ecdec077c30064d76346104ac3825e",
+      "public_commit_blob_matches_worktree": true
+    },
+    {
+      "path": "MaximumModulus/MaximaToFibers.lean",
+      "sha256": "1d6545874af6c1b07f64520fcc90969475df6d6a7df21504a05abea8ac87c743",
+      "verified_snapshot_sha256": "1d6545874af6c1b07f64520fcc90969475df6d6a7df21504a05abea8ac87c743",
+      "public_commit_blob_matches_worktree": true
+    },
+    {
+      "path": "MaximumModulus/MaximumEnvelope.lean",
+      "sha256": "dfbc0c1bf985fa8f4e4476bfc90e2b2657819aa1ed907360c5ce0ed1c5cdbe2f",
+      "verified_snapshot_sha256": "dfbc0c1bf985fa8f4e4476bfc90e2b2657819aa1ed907360c5ce0ed1c5cdbe2f",
+      "public_commit_blob_matches_worktree": true
+    },
+    {
+      "path": "MaximumModulus/MaximumStationarity.lean",
+      "sha256": "08e7c781b9565dbf8ccddf63f2b22827aee3a04fbba860db98d03ad4d3e093b3",
+      "verified_snapshot_sha256": "08e7c781b9565dbf8ccddf63f2b22827aee3a04fbba860db98d03ad4d3e093b3",
+      "public_commit_blob_matches_worktree": true
+    },
+    {
+      "path": "MaximumModulus/MeromorphicCorrespondence.lean",
+      "sha256": "fb958b7065c45328a074315baa544df054330434cda908de390667ac74605ea7",
+      "verified_snapshot_sha256": "fb958b7065c45328a074315baa544df054330434cda908de390667ac74605ea7",
+      "public_commit_blob_matches_worktree": true
+    },
+    {
+      "path": "MaximumModulus/OmittedTargetCover.lean",
+      "sha256": "92c4880890a9dd7be8d157ea8754704349c727c729a2bdbabc7d6cfcd48c9aa9",
+      "verified_snapshot_sha256": "92c4880890a9dd7be8d157ea8754704349c727c729a2bdbabc7d6cfcd48c9aa9",
+      "public_commit_blob_matches_worktree": true
+    },
+    {
+      "path": "MaximumModulus/PairNonvertical.lean",
+      "sha256": "f9606ec4951b64f1959ded8a9fd53e272f24ea5da3bd0c10583bc2e7d5d73690",
+      "verified_snapshot_sha256": "f9606ec4951b64f1959ded8a9fd53e272f24ea5da3bd0c10583bc2e7d5d73690",
+      "public_commit_blob_matches_worktree": true
+    },
+    {
+      "path": "MaximumModulus/PoleChart.lean",
+      "sha256": "55b48efcb4db00e4436344340e440758d51d4ad4d7797e3db14d25e17d450dd0",
+      "verified_snapshot_sha256": "55b48efcb4db00e4436344340e440758d51d4ad4d7797e3db14d25e17d450dd0",
+      "public_commit_blob_matches_worktree": true
+    },
+    {
+      "path": "MaximumModulus/ProductNonconstant.lean",
+      "sha256": "b9fc1ba4687c7aaf2073413344b6de0d30b0908b58ec382d34db1dbaf6223c1f",
+      "verified_snapshot_sha256": "b9fc1ba4687c7aaf2073413344b6de0d30b0908b58ec382d34db1dbaf6223c1f",
+      "public_commit_blob_matches_worktree": true
+    },
+    {
+      "path": "MaximumModulus/Reductions.lean",
+      "sha256": "81095abc9340c0a5ca229f539eca282b85ecfdbd6e07a2f49b6be927f8d4ff76",
+      "verified_snapshot_sha256": "81095abc9340c0a5ca229f539eca282b85ecfdbd6e07a2f49b6be927f8d4ff76",
+      "public_commit_blob_matches_worktree": true
+    },
+    {
+      "path": "MaximumModulus/SmallFibers.lean",
+      "sha256": "4c979b871a67cac79515d9f389550f11f2996fe8f431a36d8f93039c11068848",
+      "verified_snapshot_sha256": "4c979b871a67cac79515d9f389550f11f2996fe8f431a36d8f93039c11068848",
+      "public_commit_blob_matches_worktree": true
+    },
+    {
+      "path": "MaximumModulus/SphereSmallFibers.lean",
+      "sha256": "cd9945df30d39c17d20540402f141bc621cf1ab886d1cae29ca0122fd0fdcf55",
+      "verified_snapshot_sha256": "cd9945df30d39c17d20540402f141bc621cf1ab886d1cae29ca0122fd0fdcf55",
+      "public_commit_blob_matches_worktree": true
+    },
+    {
+      "path": "MaximumModulus/StatementAudit.lean",
+      "sha256": "bb4ae82fa516d338263d4ce361522c4a012ebcf8507064c2d1148edbffcf0cbe",
+      "verified_snapshot_sha256": "bb4ae82fa516d338263d4ce361522c4a012ebcf8507064c2d1148edbffcf0cbe",
+      "public_commit_blob_matches_worktree": true
+    },
+    {
+      "path": "lake-manifest.json",
+      "sha256": "cb333575666396aefa2ed281978edc586f0535a0079b76012f32db0f18052b38",
+      "verified_snapshot_sha256": "cb333575666396aefa2ed281978edc586f0535a0079b76012f32db0f18052b38",
+      "public_commit_blob_matches_worktree": true
+    },
+    {
+      "path": "lakefile.toml",
+      "sha256": "5d8ab5b472f35876f885594bf3cb7b4986303d0f7212593ecb63cef865baea39",
+      "verified_snapshot_sha256": "5d8ab5b472f35876f885594bf3cb7b4986303d0f7212593ecb63cef865baea39",
+      "public_commit_blob_matches_worktree": true
+    },
+    {
+      "path": "lean-toolchain",
+      "sha256": "8f89aa44fccdb1a0b6cc768c7c9f54b94cd40e47a08d582f82d1235f13075cf7",
+      "verified_snapshot_sha256": "8f89aa44fccdb1a0b6cc768c7c9f54b94cd40e47a08d582f82d1235f13075cf7",
+      "public_commit_blob_matches_worktree": true
+    },
+    {
+      "path": "scripts/audit-mathlib.py",
+      "sha256": "da835bc0272e50ee0c902cdbf0595ef81c294d310e004dc67b3d7478a4569a6d",
+      "verified_snapshot_sha256": "da835bc0272e50ee0c902cdbf0595ef81c294d310e004dc67b3d7478a4569a6d",
+      "public_commit_blob_matches_worktree": true
+    },
+    {
+      "path": "scripts/fetch_cache.py",
+      "sha256": "42327e06bbca544fc620c6e29c30648c2306bd879378cf7e7f817754ed88ba13",
+      "verified_snapshot_sha256": "42327e06bbca544fc620c6e29c30648c2306bd879378cf7e7f817754ed88ba13",
+      "public_commit_blob_matches_worktree": true
+    },
+    {
+      "path": "scripts/run_logged.py",
+      "sha256": "f2b253d125b1c49ba1554096a4a423fdffcff8268011445f66f0e04a9052eb6e",
+      "verified_snapshot_sha256": "f2b253d125b1c49ba1554096a4a423fdffcff8268011445f66f0e04a9052eb6e",
+      "public_commit_blob_matches_worktree": true
+    },
+    {
+      "path": "scripts/source_integrity.py",
+      "sha256": "6ab892c4e81d1103f4ac6e58259e2a953b591f0b599509acbe0e6e2c84ad07b3",
+      "verified_snapshot_sha256": "6ab892c4e81d1103f4ac6e58259e2a953b591f0b599509acbe0e6e2c84ad07b3",
+      "public_commit_blob_matches_worktree": true
+    },
+    {
+      "path": "scripts/summarize_verification.py",
+      "sha256": "31aa021db27f03b39d17882826cf27388c80e13d7e25b0906034fecd8a5fc473",
+      "verified_snapshot_sha256": "31aa021db27f03b39d17882826cf27388c80e13d7e25b0906034fecd8a5fc473",
+      "public_commit_blob_matches_worktree": true
+    },
+    {
+      "path": "scripts/verify.sh",
+      "sha256": "bf0aec9545c27fda02d61be6421fc4b1b4d17565c9821831ff5a1a0279b148a3",
+      "verified_snapshot_sha256": "bf0aec9545c27fda02d61be6421fc4b1b4d17565c9821831ff5a1a0279b148a3",
+      "public_commit_blob_matches_worktree": true
+    }
+  ],
+  "count": 53,
+  "all_match_prior_verified_snapshot": true,
+  "production_module_count": 42,
+  "head_command": {
+    "argv": [
+      "/usr/bin/git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "cwd": "/private/tmp/mm-lean-published-20261011/sources/site",
+    "exit_code": 0,
+    "stdout": "c063e5f83dfa71c97871eabc8b70cf8a8c1e0bc9\n",
+    "stderr": "git: error: couldn't create cache file '/var/folders/79/vg1hhkl54ln4sbxmwfwgjj880000gn/T/xcrun_db-uR2lv6il' (errno=Operation not permitted)\ngit: error: couldn't create cache file '/var/folders/79/vg1hhkl54ln4sbxmwfwgjj880000gn/T/xcrun_db-TdeKtkOn' (errno=Operation not permitted)\n"
+  },
+  "status_command": {
+    "argv": [
+      "/usr/bin/git",
+      "status",
+      "--porcelain=v1",
+      "--untracked-files=all"
+    ],
+    "cwd": "/private/tmp/mm-lean-published-20261011/sources/site",
+    "exit_code": 0,
+    "stdout": "?? proofs/maximum-modulus/lean/MaximumModulus/Audit/ComparatorChallenge.lean\n?? proofs/maximum-modulus/lean/MaximumModulus/Audit/OriginalProblem.lean\n",
+    "stderr": "git: error: couldn't create cache file '/var/folders/79/vg1hhkl54ln4sbxmwfwgjj880000gn/T/xcrun_db-okFVWSx4' (errno=Operation not permitted)\ngit: error: couldn't create cache file '/var/folders/79/vg1hhkl54ln4sbxmwfwgjj880000gn/T/xcrun_db-2GdunO31' (errno=Operation not permitted)\n"
+  },
+  "tracked_source_list_command": {
+    "argv": [
+      "/usr/bin/git",
+      "ls-files",
+      "--",
+      "proofs/maximum-modulus/lean/"
+    ],
+    "cwd": "/private/tmp/mm-lean-published-20261011/sources/site",
+    "exit_code": 0,
+    "stdout": "proofs/maximum-modulus/lean/.gitignore\nproofs/maximum-modulus/lean/CheckAxioms.lean\nproofs/maximum-modulus/lean/MaximumModulus.lean\nproofs/maximum-modulus/lean/MaximumModulus/AEBridge.lean\nproofs/maximum-modulus/lean/MaximumModulus/AllRadii.lean\nproofs/maximum-modulus/lean/MaximumModulus/Basic.lean\nproofs/maximum-modulus/lean/MaximumModulus/BoundaryCharts.lean\nproofs/maximum-modulus/lean/MaximumModulus/BranchCollision.lean\nproofs/maximum-modulus/lean/MaximumModulus/BranchContinuation.lean\nproofs/maximum-modulus/lean/MaximumModulus/Definitions.lean\nproofs/maximum-modulus/lean/MaximumModulus/DuplicateSafeCount.lean\nproofs/maximum-modulus/lean/MaximumModulus/ExceptionalRadii.lean\nproofs/maximum-modulus/lean/MaximumModulus/FiberCapture.lean\nproofs/maximum-modulus/lean/MaximumModulus/FiniteExceptionalSet.lean\nproofs/maximum-modulus/lean/MaximumModulus/FiniteImageGraphs.lean\nproofs/maximum-modulus/lean/MaximumModulus/FiniteTargetCover.lean\nproofs/maximum-modulus/lean/MaximumModulus/FiniteValueCoordinates.lean\nproofs/maximum-modulus/lean/MaximumModulus/Finiteness.lean\nproofs/maximum-modulus/lean/MaximumModulus/GeometricReduction.lean\nproofs/maximum-modulus/lean/MaximumModulus/GlobalCharts.lean\nproofs/maximum-modulus/lean/MaximumModulus/GlobalDegreeAux.lean\nproofs/maximum-modulus/lean/MaximumModulus/HighCountCapture.lean\nproofs/maximum-modulus/lean/MaximumModulus/HighCountGlobal.lean\nproofs/maximum-modulus/lean/MaximumModulus/HighCountInterior.lean\nproofs/maximum-modulus/lean/MaximumModulus/HighCountLocus.lean\nproofs/maximum-modulus/lean/MaximumModulus/InfinityCharts.lean\nproofs/maximum-modulus/lean/MaximumModulus/InfinityInterior.lean\nproofs/maximum-modulus/lean/MaximumModulus/InversePairFamily.lean\nproofs/maximum-modulus/lean/MaximumModulus/InverseRootChart.lean\nproofs/maximum-modulus/lean/MaximumModulus/LocalImageTopology.lean\nproofs/maximum-modulus/lean/MaximumModulus/LocalReciprocal.lean\nproofs/maximum-modulus/lean/MaximumModulus/LocalValence.lean\nproofs/maximum-modulus/lean/MaximumModulus/LogDerivative.lean\nproofs/maximum-modulus/lean/MaximumModulus/MaximaToFibers.lean\nproofs/maximum-modulus/lean/MaximumModulus/MaximumEnvelope.lean\nproofs/maximum-modulus/lean/MaximumModulus/MaximumStationarity.lean\nproofs/maximum-modulus/lean/MaximumModulus/MeromorphicCorrespondence.lean\nproofs/maximum-modulus/lean/MaximumModulus/OmittedTargetCover.lean\nproofs/maximum-modulus/lean/MaximumModulus/PairNonvertical.lean\nproofs/maximum-modulus/lean/MaximumModulus/PoleChart.lean\nproofs/maximum-modulus/lean/MaximumModulus/ProductNonconstant.lean\nproofs/maximum-modulus/lean/MaximumModulus/Reductions.lean\nproofs/maximum-modulus/lean/MaximumModulus/SmallFibers.lean\nproofs/maximum-modulus/lean/MaximumModulus/SphereSmallFibers.lean\nproofs/maximum-modulus/lean/MaximumModulus/StatementAudit.lean\nproofs/maximum-modulus/lean/README.md\nproofs/maximum-modulus/lean/docs/continuation-formal-review.md\nproofs/maximum-modulus/lean/docs/continuation_expansion.tex\nproofs/maximum-modulus/lean/docs/dependency-map.md\nproofs/maximum-modulus/lean/docs/final-proof-review.md\nproofs/maximum-modulus/lean/docs/report.md\nproofs/maximum-modulus/lean/docs/sources.md\nproofs/maximum-modulus/lean/lake-manifest.json\nproofs/maximum-modulus/lean/lakefile.toml\nproofs/maximum-modulus/lean/lean-toolchain\nproofs/maximum-modulus/lean/scripts/audit-mathlib.py\nproofs/maximum-modulus/lean/scripts/fetch_cache.py\nproofs/maximum-modulus/lean/scripts/run_logged.py\nproofs/maximum-modulus/lean/scripts/source_integrity.py\nproofs/maximum-modulus/lean/scripts/summarize_verification.py\nproofs/maximum-modulus/lean/scripts/verify.sh\n",
+    "stderr": "git: error: couldn't create cache file '/var/folders/79/vg1hhkl54ln4sbxmwfwgjj880000gn/T/xcrun_db-vKmEzZCN' (errno=Operation not permitted)\ngit: error: couldn't create cache file '/var/folders/79/vg1hhkl54ln4sbxmwfwgjj880000gn/T/xcrun_db-4QbaC6lF' (errno=Operation not permitted)\n"
+  },
+  "tracked_precompiled_project_artifacts": [],
+  "preserved_original_manuscript_sha256": "bc951c3ffa7d3579b2f39a0949e38db27338ac32ac050e3f5359d4452573a7b1",
+  "public_project_gitignore_sha256": "5795541b6c736feb44016b2582a9043840bfb5efc3e77a27e5479e25e42b1046"
+}

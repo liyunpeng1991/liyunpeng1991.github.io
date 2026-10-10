@@ -1,0 +1,13 @@
+{
+  "command": [
+    "lake",
+    "env",
+    "leanchecker",
+    "--verbose",
+    "MaximumModulus.LogDerivative"
+  ],
+  "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+  "started_utc": "2026-10-10T20:40:46.310470+00:00",
+  "exit_code": 0,
+  "elapsed_seconds": 7.271366874687374
+}

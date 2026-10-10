@@ -1,0 +1,160 @@
+[
+  {
+    "argv": [
+      "/usr/bin/git",
+      "-c",
+      "credential.helper=",
+      "-c",
+      "core.hooksPath=/dev/null",
+      "clone",
+      "--no-checkout",
+      "--depth",
+      "1",
+      "--filter=blob:none",
+      "--",
+      "https://github.com/liyunpeng1991/liyunpeng1991.github.io.git",
+      "/private/tmp/mm-lean-published-20261011/sources/site"
+    ],
+    "cwd": "/private/tmp/mm-lean-published-20261011",
+    "environment": {
+      "PATH": "/usr/bin:/bin:/usr/sbin:/sbin",
+      "GIT_CONFIG_NOSYSTEM": "1",
+      "GIT_CONFIG_GLOBAL": "/dev/null",
+      "GIT_TERMINAL_PROMPT": "0",
+      "LANG": "C.UTF-8"
+    },
+    "started_utc": "2026-10-10T20:30:06.894844+00:00",
+    "exit_code": 0,
+    "elapsed_seconds": 0.9937537917867303,
+    "log": "logs/fetch-clone.log"
+  },
+  {
+    "argv": [
+      "/usr/bin/git",
+      "-c",
+      "credential.helper=",
+      "-c",
+      "core.hooksPath=/dev/null",
+      "-C",
+      "/private/tmp/mm-lean-published-20261011/sources/site",
+      "cat-file",
+      "-t",
+      "c063e5f83dfa71c97871eabc8b70cf8a8c1e0bc9"
+    ],
+    "cwd": "/private/tmp/mm-lean-published-20261011",
+    "environment": {
+      "PATH": "/usr/bin:/bin:/usr/sbin:/sbin",
+      "GIT_CONFIG_NOSYSTEM": "1",
+      "GIT_CONFIG_GLOBAL": "/dev/null",
+      "GIT_TERMINAL_PROMPT": "0",
+      "LANG": "C.UTF-8"
+    },
+    "started_utc": "2026-10-10T20:30:07.889131+00:00",
+    "exit_code": 0,
+    "elapsed_seconds": 0.01910241600126028,
+    "log": "logs/fetch-object-before.log"
+  },
+  {
+    "argv": [
+      "/usr/bin/git",
+      "-c",
+      "credential.helper=",
+      "-c",
+      "core.hooksPath=/dev/null",
+      "-C",
+      "/private/tmp/mm-lean-published-20261011/sources/site",
+      "cat-file",
+      "-t",
+      "c063e5f83dfa71c97871eabc8b70cf8a8c1e0bc9"
+    ],
+    "cwd": "/private/tmp/mm-lean-published-20261011",
+    "environment": {
+      "PATH": "/usr/bin:/bin:/usr/sbin:/sbin",
+      "GIT_CONFIG_NOSYSTEM": "1",
+      "GIT_CONFIG_GLOBAL": "/dev/null",
+      "GIT_TERMINAL_PROMPT": "0",
+      "LANG": "C.UTF-8"
+    },
+    "started_utc": "2026-10-10T20:30:07.908496+00:00",
+    "exit_code": 0,
+    "elapsed_seconds": 0.012245291844010353,
+    "log": "logs/fetch-object.log"
+  },
+  {
+    "argv": [
+      "/usr/bin/git",
+      "-c",
+      "credential.helper=",
+      "-c",
+      "core.hooksPath=/dev/null",
+      "-C",
+      "/private/tmp/mm-lean-published-20261011/sources/site",
+      "checkout",
+      "--detach",
+      "c063e5f83dfa71c97871eabc8b70cf8a8c1e0bc9"
+    ],
+    "cwd": "/private/tmp/mm-lean-published-20261011",
+    "environment": {
+      "PATH": "/usr/bin:/bin:/usr/sbin:/sbin",
+      "GIT_CONFIG_NOSYSTEM": "1",
+      "GIT_CONFIG_GLOBAL": "/dev/null",
+      "GIT_TERMINAL_PROMPT": "0",
+      "LANG": "C.UTF-8"
+    },
+    "started_utc": "2026-10-10T20:30:07.921018+00:00",
+    "exit_code": 0,
+    "elapsed_seconds": 1.21209462499246,
+    "log": "logs/fetch-checkout.log"
+  },
+  {
+    "argv": [
+      "/usr/bin/git",
+      "-c",
+      "credential.helper=",
+      "-c",
+      "core.hooksPath=/dev/null",
+      "-C",
+      "/private/tmp/mm-lean-published-20261011/sources/site",
+      "rev-parse",
+      "HEAD"
+    ],
+    "cwd": "/private/tmp/mm-lean-published-20261011",
+    "environment": {
+      "PATH": "/usr/bin:/bin:/usr/sbin:/sbin",
+      "GIT_CONFIG_NOSYSTEM": "1",
+      "GIT_CONFIG_GLOBAL": "/dev/null",
+      "GIT_TERMINAL_PROMPT": "0",
+      "LANG": "C.UTF-8"
+    },
+    "started_utc": "2026-10-10T20:30:09.133360+00:00",
+    "exit_code": 0,
+    "elapsed_seconds": 0.009415749926120043,
+    "log": "logs/fetch-head.log"
+  },
+  {
+    "argv": [
+      "/usr/bin/git",
+      "-c",
+      "credential.helper=",
+      "-c",
+      "core.hooksPath=/dev/null",
+      "-C",
+      "/private/tmp/mm-lean-published-20261011/sources/site",
+      "status",
+      "--porcelain=v1",
+      "--untracked-files=all"
+    ],
+    "cwd": "/private/tmp/mm-lean-published-20261011",
+    "environment": {
+      "PATH": "/usr/bin:/bin:/usr/sbin:/sbin",
+      "GIT_CONFIG_NOSYSTEM": "1",
+      "GIT_CONFIG_GLOBAL": "/dev/null",
+      "GIT_TERMINAL_PROMPT": "0",
+      "LANG": "C.UTF-8"
+    },
+    "started_utc": "2026-10-10T20:30:09.143011+00:00",
+    "exit_code": 0,
+    "elapsed_seconds": 0.011996624991297722,
+    "log": "logs/fetch-status.log"
+  }
+]

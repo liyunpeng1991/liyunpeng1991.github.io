@@ -1,0 +1,53 @@
+{
+  "createdUtc": "2026-10-10T20:28:05.580595+00:00",
+  "status": "Preparation only; public SHA not yet supplied; no theorem checks executed",
+  "runRoot": "/private/tmp/mm-lean-published-20261011",
+  "projectRootPendingCheckout": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+  "trustedToolchain": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/.tools/lean-4.35.0-rc4-darwin_aarch64",
+  "workflowRoot": "/private/tmp/mm-lean-verify-workflow-20261010",
+  "workflowCommit": "16877004910734cecca83cc5af0fec2f5a4125b3",
+  "workflowFileHashes": {
+    "SKILL.md": "d04655e0d5694eda09f22b9d51a7969674d670f83f0ad9b7aad7d64c51c921ff",
+    "assets/targets.example.json": "7059777e3939ddf52bd9721d3620bda65e759add1dd46d694d4f07e60da5d338",
+    "download-manifest.json": "f55392be51b88bbf9855231b20bf8674db2430a701146b5a6c8381ec3ffa3994",
+    "main-commit.json": "ed3918f403cb769805ebdfe66d7dd2495ee00b91805602098456b567b715bd96",
+    "references/automation.md": "94a7acf59bb47b2ec57a6913125601b64253cbc78e671cd681793c824d14e6ad",
+    "references/input-routing.md": "b481395774be36f4a6ad5257ece24cc351cedbfec6ddb87c34273f2308a00197",
+    "references/report-template.md": "6cc8ed08e13670f6b250cfdc5fbcd3457675d2772d3a3d326794085609945afa",
+    "references/reproduction.md": "a3507ad37f5075a8b0c0ca3296420da262ae3d04d08e8c9e64168b38ec97501d",
+    "references/statement-audit.md": "581b815edfa1b1ab7361727b2e2107379856d299a0a6f7add6cc9801ea0d6197",
+    "scripts/audit.py": "5db45dddcb4d588bc27e7c7161fbca5cedaa3e73e1c40843d21f5a214323cd07",
+    "workflow-commit.txt": "31018a630a0d07e023724a47c0965bc9714890f74bcce79ed11bcb9b9e66f862"
+  },
+  "auditorFiles": {
+    "audit/ComparatorChallenge.lean": "b51e5b557b2c057251c00629b327ca5417ecf91bc6319464c3097eece0c634bf",
+    "audit/OriginalProblem.lean": "4be4fb7093e9dd1176de51aed1b3a755507c14ea7ac60e236c7e122e3fc992e7",
+    "audit/check_public_sources.py": "2fb2557c05dae66baa8c36fd1ac59e4a072431e3d539338ed43afbc4657079ac",
+    "audit/collect_provenance.py": "7cedb503c50651da174c687968f13b48d2b2ae82f6d6c65a31238db8a73098f7",
+    "audit/comparator.json": "264ba026cc3b363eb8141dac7715dc66d47ede31c4d14eeae20e07ff05e11b3d",
+    "audit/export_proof.py": "c40e5dc80c54613c10c9893933ce84c31477aea46374640335ea507aa6f36bf6",
+    "audit/fetch_public.py": "e5c8b20e0a0828c5d41f34edf2895b62c6734b57acf94d17f3d4597a42bffc97",
+    "audit/isolation.sb": "5ad952904a0f11da5076eb61118da8aad4cf2fa6ffe76a6f2e6ccc0edf957589",
+    "audit/probe_isolation.py": "44440cef12d93547809de8fe2ff1410ee1a55a4378d605b8948868597ec21ca7",
+    "audit/run_isolated.py": "cab627068389a73a5d8f898a9a9d91f93c5e73766db19eebdb65c84e47435024"
+  },
+  "resources": {
+    "RSSbytes": 10737418240,
+    "CPUSeconds": 1200,
+    "fileBytes": 2147483648,
+    "wallSeconds": 1800,
+    "addressSpaceCap": null,
+    "stackCap": "inherited; native macOS setter compatibility previously rejected"
+  },
+  "dependencyCacheCopy": {
+    "command": [
+      "cp",
+      "-cR",
+      "/private/tmp/mm-lean-verify-20261010/sources/proof/.lake/packages",
+      "/private/tmp/mm-lean-published-20261011/runtime/packages"
+    ],
+    "actual_exit_code": 0,
+    "sourceProvenance": "Copied original pinned mathlib/package checkouts and cached artifacts used by the completed previous audit; exact revisions will be independently rechecked after placement",
+    "copyMechanism": "macOS APFS copy-on-write clones; independent inode files, no hardlink sharing"
+  }
+}

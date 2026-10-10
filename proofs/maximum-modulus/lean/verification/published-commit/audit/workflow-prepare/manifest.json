@@ -1,0 +1,157 @@
+{
+  "schema_version": 1,
+  "project": {
+    "root": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+    "repository": "https://github.com/liyunpeng1991/liyunpeng1991.github.io",
+    "commit": "c063e5f83dfa71c97871eabc8b70cf8a8c1e0bc9",
+    "toolchain": "leanprover/lean4:v4.35.0-rc4"
+  },
+  "problems": [
+    {
+      "id": "maximum-modulus-all-radii",
+      "source": "https://arxiv.org/pdf/1809.07200v2#page=30 ; https://arxiv.org/html/2208.11154v2#S1 ; https://arxiv.org/html/2607.09462v1#S1",
+      "requirements": [
+        {
+          "id": "actual-values",
+          "description": "Maximum points use the actual entire function values on the entire circle: norm(z)=r and forall w on the same circle, norm(f(w)) <= norm(f(z)).",
+          "targets": [
+            "literal-cofinal",
+            "independent-cofinal"
+          ],
+          "coverage": "full",
+          "evidence": "audit/OriginalProblem.lean; evidence/public-verification-independent-review.md; evidence/previous-statement-coverage.md (retained statement mapping, fresh mechanical results recorded separately); original sources fixed at arXiv 1809.07200v2 Problem 2.16(b), 2208.11154v2 Question 1.1(b), and 2607.09462v1 introduction."
+        },
+        {
+          "id": "entire-class",
+          "description": "The theorem ranges over every complex entire f, excludes the zero function and every nonzero monomial c*z^m with natural exponent, and adds no extra analytic or geometric premise.",
+          "targets": [
+            "literal-cofinal",
+            "cofinal-statement",
+            "independent-cofinal"
+          ],
+          "coverage": "full",
+          "evidence": "audit/OriginalProblem.lean; evidence/public-verification-independent-review.md; evidence/previous-statement-coverage.md (retained statement mapping, fresh mechanical results recorded separately); original sources fixed at arXiv 1809.07200v2 Problem 2.16(b), 2208.11154v2 Question 1.1(b), and 2607.09462v1 introduction."
+        },
+        {
+          "id": "uniform-bound",
+          "description": "For each such f there exists one natural B before the quantification over R; B does not depend on R or the selected radius.",
+          "targets": [
+            "literal-cofinal",
+            "cofinal-statement",
+            "independent-cofinal"
+          ],
+          "coverage": "full",
+          "evidence": "audit/OriginalProblem.lean; evidence/public-verification-independent-review.md; evidence/previous-statement-coverage.md (retained statement mapping, fresh mechanical results recorded separately); original sources fixed at arXiv 1809.07200v2 Problem 2.16(b), 2208.11154v2 Question 1.1(b), and 2607.09462v1 introduction."
+        },
+        {
+          "id": "cofinal-radii",
+          "description": "For every positive real R there exists a real r > R satisfying the finite bounded maximum-set conclusion.",
+          "targets": [
+            "literal-cofinal",
+            "independent-cofinal"
+          ],
+          "coverage": "full",
+          "evidence": "audit/OriginalProblem.lean; evidence/public-verification-independent-review.md; evidence/previous-statement-coverage.md (retained statement mapping, fresh mechanical results recorded separately); original sources fixed at arXiv 1809.07200v2 Problem 2.16(b), 2208.11154v2 Question 1.1(b), and 2607.09462v1 introduction."
+        },
+        {
+          "id": "explicit-finiteness",
+          "description": "The selected actual maximum-point set is explicitly finite wherever its ncard is bounded; every positive circle is also proved finite for the stated function class.",
+          "targets": [
+            "literal-cofinal",
+            "positive-finiteness",
+            "independent-finiteness"
+          ],
+          "coverage": "full",
+          "evidence": "audit/OriginalProblem.lean; evidence/public-verification-independent-review.md; evidence/previous-statement-coverage.md (retained statement mapping, fresh mechanical results recorded separately); original sources fixed at arXiv 1809.07200v2 Problem 2.16(b), 2208.11154v2 Question 1.1(b), and 2607.09462v1 introduction."
+        },
+        {
+          "id": "cardinality-bound",
+          "description": "The natural cardinality of the actual finite selected maximum-point set is at most the fixed B.",
+          "targets": [
+            "literal-cofinal",
+            "independent-cofinal"
+          ],
+          "coverage": "full",
+          "evidence": "audit/OriginalProblem.lean; evidence/public-verification-independent-review.md; evidence/previous-statement-coverage.md (retained statement mapping, fresh mechanical results recorded separately); original sources fixed at arXiv 1809.07200v2 Problem 2.16(b), 2208.11154v2 Question 1.1(b), and 2607.09462v1 introduction."
+        },
+        {
+          "id": "negative-original-question",
+          "description": "The cofinal bound rules out the number of actual maximum-modulus points tending to infinity on all radii, including an infinity-aware cardinality formulation. Selected-radii limsup unboundedness is a separate question and is not refuted.",
+          "targets": [
+            "negative-all-radii",
+            "independent-negative",
+            "independent-tendsto"
+          ],
+          "coverage": "full",
+          "evidence": "audit/OriginalProblem.lean; evidence/public-verification-independent-review.md; evidence/previous-statement-coverage.md (retained statement mapping, fresh mechanical results recorded separately); original sources fixed at arXiv 1809.07200v2 Problem 2.16(b), 2208.11154v2 Question 1.1(b), and 2607.09462v1 introduction."
+        }
+      ]
+    }
+  ],
+  "targets": [
+    {
+      "id": "literal-cofinal",
+      "problem": "maximum-modulus-all-radii",
+      "role": "theorem",
+      "module": "MaximumModulus.AllRadii",
+      "source": "MaximumModulus/AllRadii.lean",
+      "declaration": "MaximumModulus.bounded_maxPoints_at_arbitrarily_large_radii"
+    },
+    {
+      "id": "cofinal-statement",
+      "problem": "maximum-modulus-all-radii",
+      "role": "theorem",
+      "module": "MaximumModulus.AllRadii",
+      "source": "MaximumModulus/AllRadii.lean",
+      "declaration": "MaximumModulus.allRadiiStatement"
+    },
+    {
+      "id": "negative-all-radii",
+      "problem": "maximum-modulus-all-radii",
+      "role": "theorem",
+      "module": "MaximumModulus.AllRadii",
+      "source": "MaximumModulus/AllRadii.lean",
+      "declaration": "MaximumModulus.all_radii_growth_impossible"
+    },
+    {
+      "id": "positive-finiteness",
+      "problem": "maximum-modulus-all-radii",
+      "role": "theorem",
+      "module": "MaximumModulus.Finiteness",
+      "source": "MaximumModulus/Finiteness.lean",
+      "declaration": "MaximumModulus.finite_maxPoints"
+    },
+    {
+      "id": "independent-cofinal",
+      "problem": "maximum-modulus-all-radii",
+      "role": "bridge",
+      "module": "MaximumModulus.Audit.OriginalProblem",
+      "source": "MaximumModulus/Audit/OriginalProblem.lean",
+      "declaration": "IndependentOriginal.original_problem_solved"
+    },
+    {
+      "id": "independent-negative",
+      "problem": "maximum-modulus-all-radii",
+      "role": "bridge",
+      "module": "MaximumModulus.Audit.OriginalProblem",
+      "source": "MaximumModulus/Audit/OriginalProblem.lean",
+      "declaration": "IndependentOriginal.original_all_radii_growth_impossible"
+    },
+    {
+      "id": "independent-tendsto",
+      "problem": "maximum-modulus-all-radii",
+      "role": "bridge",
+      "module": "MaximumModulus.Audit.OriginalProblem",
+      "source": "MaximumModulus/Audit/OriginalProblem.lean",
+      "declaration": "IndependentOriginal.original_count_not_tendsto_atTop"
+    },
+    {
+      "id": "independent-finiteness",
+      "problem": "maximum-modulus-all-radii",
+      "role": "bridge",
+      "module": "MaximumModulus.Audit.OriginalProblem",
+      "source": "MaximumModulus/Audit/OriginalProblem.lean",
+      "declaration": "IndependentOriginal.original_positive_circle_finiteness"
+    }
+  ]
+}

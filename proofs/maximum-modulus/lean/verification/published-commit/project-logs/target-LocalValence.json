@@ -1,0 +1,12 @@
+{
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "MaximumModulus/LocalValence.lean"
+  ],
+  "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+  "started_utc": "2026-10-10T20:33:58.998622+00:00",
+  "exit_code": 0,
+  "elapsed_seconds": 4.268308583181351
+}

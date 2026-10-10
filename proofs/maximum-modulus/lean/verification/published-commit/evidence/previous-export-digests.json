@@ -1,0 +1,17 @@
+{
+  "scope": "Historical digests only, not fresh checker execution",
+  "previous_source_snapshot": "8b731b51dcb0ed3d7e8c6463b6266c35d8099c85",
+  "previous_commands_path": "/private/tmp/mm-lean-verify-20261010/audit/exports/commands.json",
+  "exports": [
+    {
+      "module": "MaximumModulus.Audit.ComparatorChallenge",
+      "bytes": 54014504,
+      "sha256": "ac2fe5af1de529ac3607406107429058256542d824ac15bf4590dba2bdde0360"
+    },
+    {
+      "module": "MaximumModulus.AllRadii",
+      "bytes": 360280894,
+      "sha256": "dfc65218ba9d699deaa8ed3191dd66f0a076d528fc36752b2217a13225f0ffd0"
+    }
+  ]
+}

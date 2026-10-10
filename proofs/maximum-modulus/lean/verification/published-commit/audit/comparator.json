@@ -1,0 +1,14 @@
+{
+  "challenge_module": "MaximumModulus.Audit.ComparatorChallenge",
+  "solution_module": "MaximumModulus.AllRadii",
+  "theorem_names": [
+    "MaximumModulus.bounded_maxPoints_at_arbitrarily_large_radii"
+  ],
+  "definition_names": [],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "enable_nanoda": false
+}

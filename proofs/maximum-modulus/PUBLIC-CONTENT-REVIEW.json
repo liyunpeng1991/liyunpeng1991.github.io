@@ -1,0 +1,21 @@
+{
+  "review_role": "Static public-distribution content scan and selected-file review; not a Lean or kernel check",
+  "text_files_scanned_excluding_this_review_and_manifests": 401,
+  "credential_pattern_findings": [],
+  "email_strings_observed": [
+    "liyunpeng@cuhk.edu.cn"
+  ],
+  "historical_local_path_file_count": 144,
+  "historical_local_paths": "Actual technical provenance paths in unchanged executed evidence are retained, not rewritten as future public executions.",
+  "intentional_public_contact": "The author professional address already present in the published v1 manuscript is retained in the archival manuscript and revised paper.",
+  "removed_unnecessary_metadata": "GitHub API main-commit.json omitted because it contained unrelated author email addresses. The workflow pinned revision and source hashes remain recorded.",
+  "excluded_private_or_generated_material": [
+    "No .git directory",
+    "No .lake or .tools directory",
+    "No credentials/configuration stores",
+    "No private identity/contact/payment submission data",
+    "No screenshots or conversation transcripts",
+    "No raw NDJSON proof exports"
+  ],
+  "limits": "Static pattern scanning supplements reviewed file selection; it is not an exhaustive security certificate. No remote action was performed."
+}

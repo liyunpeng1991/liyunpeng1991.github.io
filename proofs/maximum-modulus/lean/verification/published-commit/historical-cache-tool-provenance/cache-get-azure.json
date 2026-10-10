@@ -1,0 +1,33 @@
+{
+  "command": [
+    "lake",
+    "exe",
+    "cache",
+    "get",
+    "Mathlib.Analysis.Complex.Basic",
+    "Mathlib.Analysis.Calculus.FDeriv.Basic",
+    "Mathlib.Data.Set.Card",
+    "Mathlib.Order.Filter.AtTopBot.Tendsto",
+    "Mathlib.MeasureTheory.Measure.Lebesgue.Basic",
+    "Mathlib.Order.Interval.Set.Infinite",
+    "Mathlib.Tactic.Linarith",
+    "Mathlib.Analysis.Analytic.IsolatedZeros",
+    "Mathlib.Analysis.Complex.Liouville",
+    "Mathlib.Analysis.Complex.RemovableSingularity",
+    "Mathlib.Analysis.Calculus.Deriv.Star",
+    "Mathlib.Analysis.Normed.Module.Connected",
+    "Mathlib.LinearAlgebra.Complex.FiniteDimensional",
+    "Mathlib.Topology.Order.Compact",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Tactic.FieldSimp",
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Analysis.Analytic.Order",
+    "Mathlib.Analysis.SpecialFunctions.Complex.Analytic",
+    "Mathlib.Analysis.Calculus.InverseFunctionTheorem.Analytic",
+    "Mathlib.Algebra.Polynomial.Roots"
+  ],
+  "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+  "started_utc": "2026-10-10T17:46:36.455582+00:00",
+  "exit_code": 0,
+  "elapsed_seconds": 36.8506103749387
+}

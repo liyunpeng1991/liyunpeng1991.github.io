@@ -1,0 +1,331 @@
+IndependentOriginal.original_count_not_tendsto_atTop : ∀ (f : Complex → Complex)
+  (hf :
+    @Differentiable.{0, 0, 0} Complex
+      (@DenselyNormedField.toNontriviallyNormedField.{0} Complex Complex.instDenselyNormedField) Complex
+      Complex.addCommGroup
+      (@Semiring.toModule.{0} Complex
+        (@CommSemiring.toSemiring.{0} Complex
+          (@Semifield.toCommSemiring.{0} Complex
+            (@Field.toSemifield.{0} Complex
+              (@NormedField.toField.{0} Complex
+                (@NontriviallyNormedField.toNormedField.{0} Complex
+                  (@DenselyNormedField.toNontriviallyNormedField.{0} Complex Complex.instDenselyNormedField)))))))
+      (@UniformSpace.toTopologicalSpace.{0} Complex
+        (@PseudoMetricSpace.toUniformSpace.{0} Complex
+          (@SeminormedRing.toPseudoMetricSpace.{0} Complex
+            (@SeminormedCommRing.toSeminormedRing.{0} Complex
+              (@NormedCommRing.toSeminormedCommRing.{0} Complex
+                (@NormedField.toNormedCommRing.{0} Complex Complex.instNormedField))))))
+      Complex Complex.addCommGroup
+      (@Semiring.toModule.{0} Complex
+        (@CommSemiring.toSemiring.{0} Complex
+          (@Semifield.toCommSemiring.{0} Complex
+            (@Field.toSemifield.{0} Complex
+              (@NormedField.toField.{0} Complex
+                (@NontriviallyNormedField.toNormedField.{0} Complex
+                  (@DenselyNormedField.toNontriviallyNormedField.{0} Complex Complex.instDenselyNormedField)))))))
+      (@UniformSpace.toTopologicalSpace.{0} Complex
+        (@PseudoMetricSpace.toUniformSpace.{0} Complex
+          (@SeminormedRing.toPseudoMetricSpace.{0} Complex
+            (@SeminormedCommRing.toSeminormedRing.{0} Complex
+              (@NormedCommRing.toSeminormedCommRing.{0} Complex
+                (@NormedField.toNormedCommRing.{0} Complex Complex.instNormedField))))))
+      f)
+  (hnonzero :
+    @Ne.{1} (Complex → Complex) f
+      (@OfNat.ofNat.{0} (Complex → Complex) (nat_lit 0)
+        (@Zero.toOfNat0.{0} (Complex → Complex)
+          (@Pi.instZero.{0, 0} Complex (fun (a : Complex) => Complex) fun (i : Complex) => Complex.instZero))))
+  (hnonmonomial :
+    Not
+      (@Exists.{1} Complex fun (c : Complex) =>
+        @Exists.{1} Nat fun (m : Nat) =>
+          And (@Ne.{1} Complex c (@OfNat.ofNat.{0} Complex (nat_lit 0) (@Zero.toOfNat0.{0} Complex Complex.instZero)))
+            (∀ (z : Complex),
+              @Eq.{1} Complex (f z)
+                (@HMul.hMul.{0, 0, 0} Complex Complex Complex (@instHMul.{0} Complex Complex.instMul) c
+                  (@HPow.hPow.{0, 0, 0} Complex Nat Complex
+                    (@instHPow.{0, 0} Complex Nat
+                      (@NPow.toPow.{0} Complex
+                        (@Monoid.toNPow.{0} Complex (@Semiring.toMonoid.{0} Complex Complex.instSemiring))))
+                    z m))))),
+  Not
+    (@Filter.Tendsto.{0, 0} Real Nat
+      (fun (r : Real) => @Set.ncard.{0} Complex (IndependentOriginal.CircleMaximizers f r))
+      (@Filter.atTop.{0} Real Real.instPreorder) (@Filter.atTop.{0} Nat Nat.instPreorder))
+theorem IndependentOriginal.original_count_not_tendsto_atTop : ∀ (f : Complex → Complex)
+  (hf :
+    @Differentiable.{0, 0, 0} Complex
+      (@DenselyNormedField.toNontriviallyNormedField.{0} Complex Complex.instDenselyNormedField) Complex
+      Complex.addCommGroup
+      (@Semiring.toModule.{0} Complex
+        (@CommSemiring.toSemiring.{0} Complex
+          (@Semifield.toCommSemiring.{0} Complex
+            (@Field.toSemifield.{0} Complex
+              (@NormedField.toField.{0} Complex
+                (@NontriviallyNormedField.toNormedField.{0} Complex
+                  (@DenselyNormedField.toNontriviallyNormedField.{0} Complex Complex.instDenselyNormedField)))))))
+      (@UniformSpace.toTopologicalSpace.{0} Complex
+        (@PseudoMetricSpace.toUniformSpace.{0} Complex
+          (@SeminormedRing.toPseudoMetricSpace.{0} Complex
+            (@SeminormedCommRing.toSeminormedRing.{0} Complex
+              (@NormedCommRing.toSeminormedCommRing.{0} Complex
+                (@NormedField.toNormedCommRing.{0} Complex Complex.instNormedField))))))
+      Complex Complex.addCommGroup
+      (@Semiring.toModule.{0} Complex
+        (@CommSemiring.toSemiring.{0} Complex
+          (@Semifield.toCommSemiring.{0} Complex
+            (@Field.toSemifield.{0} Complex
+              (@NormedField.toField.{0} Complex
+                (@NontriviallyNormedField.toNormedField.{0} Complex
+                  (@DenselyNormedField.toNontriviallyNormedField.{0} Complex Complex.instDenselyNormedField)))))))
+      (@UniformSpace.toTopologicalSpace.{0} Complex
+        (@PseudoMetricSpace.toUniformSpace.{0} Complex
+          (@SeminormedRing.toPseudoMetricSpace.{0} Complex
+            (@SeminormedCommRing.toSeminormedRing.{0} Complex
+              (@NormedCommRing.toSeminormedCommRing.{0} Complex
+                (@NormedField.toNormedCommRing.{0} Complex Complex.instNormedField))))))
+      f)
+  (hnonzero :
+    @Ne.{1} (Complex → Complex) f
+      (@OfNat.ofNat.{0} (Complex → Complex) (nat_lit 0)
+        (@Zero.toOfNat0.{0} (Complex → Complex)
+          (@Pi.instZero.{0, 0} Complex (fun (a : Complex) => Complex) fun (i : Complex) => Complex.instZero))))
+  (hnonmonomial :
+    Not
+      (@Exists.{1} Complex fun (c : Complex) =>
+        @Exists.{1} Nat fun (m : Nat) =>
+          And (@Ne.{1} Complex c (@OfNat.ofNat.{0} Complex (nat_lit 0) (@Zero.toOfNat0.{0} Complex Complex.instZero)))
+            (∀ (z : Complex),
+              @Eq.{1} Complex (f z)
+                (@HMul.hMul.{0, 0, 0} Complex Complex Complex (@instHMul.{0} Complex Complex.instMul) c
+                  (@HPow.hPow.{0, 0, 0} Complex Nat Complex
+                    (@instHPow.{0, 0} Complex Nat
+                      (@NPow.toPow.{0} Complex
+                        (@Monoid.toNPow.{0} Complex (@Semiring.toMonoid.{0} Complex Complex.instSemiring))))
+                    z m))))),
+  Not
+    (@Filter.Tendsto.{0, 0} Real Nat
+      (fun (r : Real) => @Set.ncard.{0} Complex (IndependentOriginal.CircleMaximizers f r))
+      (@Filter.atTop.{0} Real Real.instPreorder) (@Filter.atTop.{0} Nat Nat.instPreorder)) :=
+fun (f : Complex → Complex)
+    (hf :
+      @Differentiable.{0, 0, 0} Complex
+        (@DenselyNormedField.toNontriviallyNormedField.{0} Complex Complex.instDenselyNormedField) Complex
+        Complex.addCommGroup
+        (@Semiring.toModule.{0} Complex
+          (@CommSemiring.toSemiring.{0} Complex
+            (@Semifield.toCommSemiring.{0} Complex
+              (@Field.toSemifield.{0} Complex
+                (@NormedField.toField.{0} Complex
+                  (@NontriviallyNormedField.toNormedField.{0} Complex
+                    (@DenselyNormedField.toNontriviallyNormedField.{0} Complex Complex.instDenselyNormedField)))))))
+        (@UniformSpace.toTopologicalSpace.{0} Complex
+          (@PseudoMetricSpace.toUniformSpace.{0} Complex
+            (@SeminormedRing.toPseudoMetricSpace.{0} Complex
+              (@SeminormedCommRing.toSeminormedRing.{0} Complex
+                (@NormedCommRing.toSeminormedCommRing.{0} Complex
+                  (@NormedField.toNormedCommRing.{0} Complex Complex.instNormedField))))))
+        Complex Complex.addCommGroup
+        (@Semiring.toModule.{0} Complex
+          (@CommSemiring.toSemiring.{0} Complex
+            (@Semifield.toCommSemiring.{0} Complex
+              (@Field.toSemifield.{0} Complex
+                (@NormedField.toField.{0} Complex
+                  (@NontriviallyNormedField.toNormedField.{0} Complex
+                    (@DenselyNormedField.toNontriviallyNormedField.{0} Complex Complex.instDenselyNormedField)))))))
+        (@UniformSpace.toTopologicalSpace.{0} Complex
+          (@PseudoMetricSpace.toUniformSpace.{0} Complex
+            (@SeminormedRing.toPseudoMetricSpace.{0} Complex
+              (@SeminormedCommRing.toSeminormedRing.{0} Complex
+                (@NormedCommRing.toSeminormedCommRing.{0} Complex
+                  (@NormedField.toNormedCommRing.{0} Complex Complex.instNormedField))))))
+        f)
+    (hnonzero :
+      @Ne.{1} (Complex → Complex) f
+        (@OfNat.ofNat.{0} (Complex → Complex) (nat_lit 0)
+          (@Zero.toOfNat0.{0} (Complex → Complex)
+            (@Pi.instZero.{0, 0} Complex (fun (a : Complex) => Complex) fun (i : Complex) => Complex.instZero))))
+    (hnonmonomial :
+      Not
+        (@Exists.{1} Complex fun (c : Complex) =>
+          @Exists.{1} Nat fun (m : Nat) =>
+            And (@Ne.{1} Complex c (@OfNat.ofNat.{0} Complex (nat_lit 0) (@Zero.toOfNat0.{0} Complex Complex.instZero)))
+              (∀ (z : Complex),
+                @Eq.{1} Complex (f z)
+                  (@HMul.hMul.{0, 0, 0} Complex Complex Complex (@instHMul.{0} Complex Complex.instMul) c
+                    (@HPow.hPow.{0, 0, 0} Complex Nat Complex
+                      (@instHPow.{0, 0} Complex Nat
+                        (@NPow.toPow.{0} Complex
+                          (@Monoid.toNPow.{0} Complex (@Semiring.toMonoid.{0} Complex Complex.instSemiring))))
+                      z m))))) =>
+  @Exists.casesOn.{1} Nat
+    (fun (B : Nat) =>
+      ∀ (R : Real),
+        @LT.lt.{0} Real Real.instLT (@OfNat.ofNat.{0} Real (nat_lit 0) (@Zero.toOfNat0.{0} Real Real.instZero)) R →
+          @Exists.{1} Real fun (r : Real) =>
+            And (@LT.lt.{0} Real Real.instLT R r)
+              (And (@Set.Finite.{0} Complex (IndependentOriginal.CircleMaximizers f r))
+                (@LE.le.{0} Nat instLENat (@Set.ncard.{0} Complex (IndependentOriginal.CircleMaximizers f r)) B)))
+    (fun
+        (x :
+          @Exists.{1} Nat fun (B : Nat) =>
+            ∀ (R : Real),
+              @LT.lt.{0} Real Real.instLT (@OfNat.ofNat.{0} Real (nat_lit 0) (@Zero.toOfNat0.{0} Real Real.instZero))
+                  R →
+                @Exists.{1} Real fun (r : Real) =>
+                  And (@LT.lt.{0} Real Real.instLT R r)
+                    (And (@Set.Finite.{0} Complex (IndependentOriginal.CircleMaximizers f r))
+                      (@LE.le.{0} Nat instLENat (@Set.ncard.{0} Complex (IndependentOriginal.CircleMaximizers f r))
+                        B))) =>
+      Not
+        (@Filter.Tendsto.{0, 0} Real Nat
+          (fun (r : Real) => @Set.ncard.{0} Complex (IndependentOriginal.CircleMaximizers f r))
+          (@Filter.atTop.{0} Real Real.instPreorder) (@Filter.atTop.{0} Nat Nat.instPreorder)))
+    (IndependentOriginal.original_problem_solved f hf hnonzero hnonmonomial)
+    fun (B : Nat)
+      (hB :
+        ∀ (R : Real),
+          @LT.lt.{0} Real Real.instLT (@OfNat.ofNat.{0} Real (nat_lit 0) (@Zero.toOfNat0.{0} Real Real.instZero)) R →
+            @Exists.{1} Real fun (r : Real) =>
+              And (@LT.lt.{0} Real Real.instLT R r)
+                (And (@Set.Finite.{0} Complex (IndependentOriginal.CircleMaximizers f r))
+                  (@LE.le.{0} Nat instLENat (@Set.ncard.{0} Complex (IndependentOriginal.CircleMaximizers f r)) B)))
+      (hgrowth :
+        @Filter.Tendsto.{0, 0} Real Nat
+          (fun (r : Real) => @Set.ncard.{0} Complex (IndependentOriginal.CircleMaximizers f r))
+          (@Filter.atTop.{0} Real Real.instPreorder) (@Filter.atTop.{0} Nat Nat.instPreorder)) =>
+    @Exists.casesOn.{1} Real
+      (fun (a : Real) =>
+        ∀ (b : Real),
+          @LE.le.{0} Real (@Preorder.toLE.{0} Real Real.instPreorder) a b →
+            @LT.lt.{0} Nat (@Preorder.toLT.{0} Nat Nat.instPreorder) B
+              (@Set.ncard.{0} Complex (IndependentOriginal.CircleMaximizers f b)))
+      (fun
+          (x :
+            @Exists.{1} Real fun (a : Real) =>
+              ∀ (b : Real),
+                @LE.le.{0} Real (@Preorder.toLE.{0} Real Real.instPreorder) a b →
+                  @LT.lt.{0} Nat (@Preorder.toLT.{0} Nat Nat.instPreorder) B
+                    (@Set.ncard.{0} Complex (IndependentOriginal.CircleMaximizers f b))) =>
+        False)
+      (@Iff.mp
+        (@Filter.Eventually.{0} Real
+          (fun (x : Real) =>
+            @LT.lt.{0} Nat (@Preorder.toLT.{0} Nat Nat.instPreorder) B
+              (@Set.ncard.{0} Complex (IndependentOriginal.CircleMaximizers f x)))
+          (@Filter.atTop.{0} Real Real.instPreorder))
+        (@Exists.{1} Real fun (a : Real) =>
+          ∀ (b : Real),
+            @LE.le.{0} Real (@Preorder.toLE.{0} Real Real.instPreorder) a b →
+              @LT.lt.{0} Nat (@Preorder.toLT.{0} Nat Nat.instPreorder) B
+                (@Set.ncard.{0} Complex (IndependentOriginal.CircleMaximizers f b)))
+        (@Filter.eventually_atTop.{0} Real Real.instPreorder
+          (@instIsDirectedOrder.{0} Real Real.semiring Real.partialOrder Real.instIsOrderedRing Real.instArchimedean)
+          (fun (x : Real) =>
+            @LT.lt.{0} Nat (@Preorder.toLT.{0} Nat Nat.instPreorder) B
+              (@Set.ncard.{0} Complex (IndependentOriginal.CircleMaximizers f x)))
+          (@instNonemptyOfInhabited.{1} Real Real.instInhabited))
+        (@Filter.Tendsto.eventually_gt_atTop.{0, 0} Real Nat Nat.instPreorder
+          (@instNoTopOrderOfNoMaxOrder.{0} Nat Nat.instPreorder Nat.instNoMaxOrder)
+          (fun (r : Real) => @Set.ncard.{0} Complex (IndependentOriginal.CircleMaximizers f r))
+          (@Filter.atTop.{0} Real Real.instPreorder) hgrowth B))
+      fun (R : Real)
+        (hR :
+          ∀ (b : Real),
+            @LE.le.{0} Real (@Preorder.toLE.{0} Real Real.instPreorder) R b →
+              @LT.lt.{0} Nat (@Preorder.toLT.{0} Nat Nat.instPreorder) B
+                (@Set.ncard.{0} Complex (IndependentOriginal.CircleMaximizers f b))) =>
+      @Exists.casesOn.{1} Real
+        (fun (r : Real) =>
+          And
+            (@LT.lt.{0} Real Real.instLT
+              (@Max.max.{0} Real Real.instMax R
+                (@OfNat.ofNat.{0} Real (nat_lit 1) (@One.toOfNat1.{0} Real Real.instOne)))
+              r)
+            (And (@Set.Finite.{0} Complex (IndependentOriginal.CircleMaximizers f r))
+              (@LE.le.{0} Nat instLENat (@Set.ncard.{0} Complex (IndependentOriginal.CircleMaximizers f r)) B)))
+        (fun
+            (x :
+              @Exists.{1} Real fun (r : Real) =>
+                And
+                  (@LT.lt.{0} Real Real.instLT
+                    (@Max.max.{0} Real Real.instMax R
+                      (@OfNat.ofNat.{0} Real (nat_lit 1) (@One.toOfNat1.{0} Real Real.instOne)))
+                    r)
+                  (And (@Set.Finite.{0} Complex (IndependentOriginal.CircleMaximizers f r))
+                    (@LE.le.{0} Nat instLENat (@Set.ncard.{0} Complex (IndependentOriginal.CircleMaximizers f r))
+                      B))) =>
+          False)
+        (hB (@Max.max.{0} Real Real.instMax R (@OfNat.ofNat.{0} Real (nat_lit 1) (@One.toOfNat1.{0} Real Real.instOne)))
+          (@lt_of_lt_of_le.{0} Real Real.instPreorder
+            (@OfNat.ofNat.{0} Real (nat_lit 0) (@Zero.toOfNat0.{0} Real Real.instZero))
+            (@OfNat.ofNat.{0} Real (nat_lit 1) (@One.toOfNat1.{0} Real Real.instOne))
+            (@Max.max.{0} Real Real.instMax R (@OfNat.ofNat.{0} Real (nat_lit 1) (@One.toOfNat1.{0} Real Real.instOne)))
+            (@zero_lt_one.{0} Real Real.instZero Real.instOne Real.partialOrder Real.instZeroLEOneClass
+              (@NeZero.charZero_one.{0} Real
+                (@AddGroupWithOne.toAddMonoidWithOne.{0} Real (@Ring.toAddGroupWithOne.{0} Real Real.instRing))
+                (@FloorSemiring.instCharZero.{0} Real (@Ring.toSemiring.{0} Real Real.instRing) Real.partialOrder
+                  (@FloorRing.toFloorSemiring.{0} Real Real.instRing Real.linearOrder Real.instFloorRing))))
+            (@le_max_right.{0} Real Real.linearOrder R
+              (@OfNat.ofNat.{0} Real (nat_lit 1) (@One.toOfNat1.{0} Real Real.instOne)))))
+        fun (r : Real)
+          (h :
+            And
+              (@LT.lt.{0} Real Real.instLT
+                (@Max.max.{0} Real Real.instMax R
+                  (@OfNat.ofNat.{0} Real (nat_lit 1) (@One.toOfNat1.{0} Real Real.instOne)))
+                r)
+              (And (@Set.Finite.{0} Complex (IndependentOriginal.CircleMaximizers f r))
+                (@LE.le.{0} Nat instLENat (@Set.ncard.{0} Complex (IndependentOriginal.CircleMaximizers f r)) B))) =>
+        @And.casesOn.{0}
+          (@LT.lt.{0} Real Real.instLT
+            (@Max.max.{0} Real Real.instMax R (@OfNat.ofNat.{0} Real (nat_lit 1) (@One.toOfNat1.{0} Real Real.instOne)))
+            r)
+          (And (@Set.Finite.{0} Complex (IndependentOriginal.CircleMaximizers f r))
+            (@LE.le.{0} Nat instLENat (@Set.ncard.{0} Complex (IndependentOriginal.CircleMaximizers f r)) B))
+          (fun
+              (x :
+                And
+                  (@LT.lt.{0} Real Real.instLT
+                    (@Max.max.{0} Real Real.instMax R
+                      (@OfNat.ofNat.{0} Real (nat_lit 1) (@One.toOfNat1.{0} Real Real.instOne)))
+                    r)
+                  (And (@Set.Finite.{0} Complex (IndependentOriginal.CircleMaximizers f r))
+                    (@LE.le.{0} Nat instLENat (@Set.ncard.{0} Complex (IndependentOriginal.CircleMaximizers f r))
+                      B))) =>
+            False)
+          h
+          fun
+            (hRr :
+              @LT.lt.{0} Real Real.instLT
+                (@Max.max.{0} Real Real.instMax R
+                  (@OfNat.ofNat.{0} Real (nat_lit 1) (@One.toOfNat1.{0} Real Real.instOne)))
+                r)
+            (right :
+              And (@Set.Finite.{0} Complex (IndependentOriginal.CircleMaximizers f r))
+                (@LE.le.{0} Nat instLENat (@Set.ncard.{0} Complex (IndependentOriginal.CircleMaximizers f r)) B)) =>
+          @And.casesOn.{0} (@Set.Finite.{0} Complex (IndependentOriginal.CircleMaximizers f r))
+            (@LE.le.{0} Nat instLENat (@Set.ncard.{0} Complex (IndependentOriginal.CircleMaximizers f r)) B)
+            (fun
+                (x :
+                  And (@Set.Finite.{0} Complex (IndependentOriginal.CircleMaximizers f r))
+                    (@LE.le.{0} Nat instLENat (@Set.ncard.{0} Complex (IndependentOriginal.CircleMaximizers f r)) B)) =>
+              False)
+            right
+            fun (left : @Set.Finite.{0} Complex (IndependentOriginal.CircleMaximizers f r))
+              (hbound :
+                @LE.le.{0} Nat instLENat (@Set.ncard.{0} Complex (IndependentOriginal.CircleMaximizers f r)) B) =>
+            have hr : @LE.le.{0} Real Real.instLE R r :=
+              @LE.le.trans.{0} Real Real.instPreorder R
+                (@Max.max.{0} Real (@LinearOrder.toMax.{0} Real Real.linearOrder) R
+                  (@OfNat.ofNat.{0} Real (nat_lit 1) (@One.toOfNat1.{0} Real Real.instOne)))
+                r
+                (@le_max_left.{0} Real Real.linearOrder R
+                  (@OfNat.ofNat.{0} Real (nat_lit 1) (@One.toOfNat1.{0} Real Real.instOne)))
+                (@LT.lt.le.{0} Real Real.instPreorder
+                  (@Max.max.{0} Real Real.instMax R
+                    (@OfNat.ofNat.{0} Real (nat_lit 1) (@One.toOfNat1.{0} Real Real.instOne)))
+                  r hRr);
+            @Nat.not_lt_of_ge (@Set.ncard.{0} Complex (IndependentOriginal.CircleMaximizers f r)) B hbound (hR r hr)
+'IndependentOriginal.original_count_not_tendsto_atTop' depends on axioms: [propext, Classical.choice, Quot.sound]

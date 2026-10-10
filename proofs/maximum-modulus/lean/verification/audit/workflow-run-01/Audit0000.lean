@@ -1,0 +1,7 @@
+import MaximumModulus.AllRadii
+
+set_option pp.all true
+#check @MaximumModulus.bounded_maxPoints_at_arbitrarily_large_radii
+#print MaximumModulus.bounded_maxPoints_at_arbitrarily_large_radii
+set_option pp.universes false in
+#print axioms MaximumModulus.bounded_maxPoints_at_arbitrarily_large_radii

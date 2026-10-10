@@ -1,0 +1,53 @@
+@MaximumModulus.finite_maxPoints : ∀ {f : Complex → Complex} (hf : MaximumModulus.Entire f)
+  (hne :
+    @Ne.{1} (Complex → Complex) f
+      (@OfNat.ofNat.{0} (Complex → Complex) (nat_lit 0)
+        (@Zero.toOfNat0.{0} (Complex → Complex)
+          (@Pi.instZero.{0, 0} Complex (fun (a : Complex) => Complex) fun (i : Complex) => Complex.instZero))))
+  (hnm : Not (MaximumModulus.IsMonomial f)) {r : Real}
+  (hr : @LT.lt.{0} Real Real.instLT (@OfNat.ofNat.{0} Real (nat_lit 0) (@Zero.toOfNat0.{0} Real Real.instZero)) r),
+  @Set.Finite.{0} Complex (MaximumModulus.MaxPoints f r)
+theorem MaximumModulus.finite_maxPoints : ∀ {f : Complex → Complex} (hf : MaximumModulus.Entire f)
+  (hne :
+    @Ne.{1} (Complex → Complex) f
+      (@OfNat.ofNat.{0} (Complex → Complex) (nat_lit 0)
+        (@Zero.toOfNat0.{0} (Complex → Complex)
+          (@Pi.instZero.{0, 0} Complex (fun (a : Complex) => Complex) fun (i : Complex) => Complex.instZero))))
+  (hnm : Not (MaximumModulus.IsMonomial f)) {r : Real}
+  (hr : @LT.lt.{0} Real Real.instLT (@OfNat.ofNat.{0} Real (nat_lit 0) (@Zero.toOfNat0.{0} Real Real.instZero)) r),
+  @Set.Finite.{0} Complex (MaximumModulus.MaxPoints f r) :=
+fun {f : Complex → Complex} (hf : MaximumModulus.Entire f)
+    (hne :
+      @Ne.{1} (Complex → Complex) f
+        (@OfNat.ofNat.{0} (Complex → Complex) (nat_lit 0)
+          (@Zero.toOfNat0.{0} (Complex → Complex)
+            (@Pi.instZero.{0, 0} Complex (fun (a : Complex) => Complex) fun (i : Complex) => Complex.instZero))))
+    (hnm : Not (MaximumModulus.IsMonomial f)) {r : Real}
+    (hr : @LT.lt.{0} Real Real.instLT (@OfNat.ofNat.{0} Real (nat_lit 0) (@Zero.toOfNat0.{0} Real Real.instZero)) r) =>
+  @MaximumModulus.finite_maxPoints_of_reflectionProduct_not_constant f hf r hr
+    fun
+      (a :
+        @Exists.{1} Complex fun (C : Complex) =>
+          ∀ (z : Complex),
+            @Ne.{1} Complex z (@OfNat.ofNat.{0} Complex (nat_lit 0) (@Zero.toOfNat0.{0} Complex Complex.instZero)) →
+              @Eq.{1} Complex (MaximumModulus.reflectionProduct f r z) C) =>
+    @Exists.casesOn.{1} Complex
+      (fun (C : Complex) =>
+        ∀ (z : Complex),
+          @Ne.{1} Complex z (@OfNat.ofNat.{0} Complex (nat_lit 0) (@Zero.toOfNat0.{0} Complex Complex.instZero)) →
+            @Eq.{1} Complex (MaximumModulus.reflectionProduct f r z) C)
+      (fun
+          (x :
+            @Exists.{1} Complex fun (C : Complex) =>
+              ∀ (z : Complex),
+                @Ne.{1} Complex z (@OfNat.ofNat.{0} Complex (nat_lit 0) (@Zero.toOfNat0.{0} Complex Complex.instZero)) →
+                  @Eq.{1} Complex (MaximumModulus.reflectionProduct f r z) C) =>
+        False)
+      a
+      fun (C : Complex)
+        (hC :
+          ∀ (z : Complex),
+            @Ne.{1} Complex z (@OfNat.ofNat.{0} Complex (nat_lit 0) (@Zero.toOfNat0.{0} Complex Complex.instZero)) →
+              @Eq.{1} Complex (MaximumModulus.reflectionProduct f r z) C) =>
+      hnm (@MaximumModulus.isMonomial_of_reflectionProduct_constant f hf hne r hr C hC)
+'MaximumModulus.finite_maxPoints' depends on axioms: [propext, Classical.choice, Quot.sound]

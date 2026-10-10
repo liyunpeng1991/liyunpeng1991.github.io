@@ -1,0 +1,13 @@
+{
+  "created_utc": "2026-10-10T20:30:48.331036+00:00",
+  "selected_public_commit": "c063e5f83dfa71c97871eabc8b70cf8a8c1e0bc9",
+  "repository": "https://github.com/liyunpeng1991/liyunpeng1991.github.io",
+  "project_subdirectory": "proofs/maximum-modulus/lean",
+  "source_scope": "All 53 production proof/config/script files; prior snapshot .gitignore deliberately excluded; no synthetic commit",
+  "count": 53,
+  "all_match_prior_verified_snapshot": true,
+  "production_module_count": 42,
+  "tracked_precompiled_project_artifacts": [],
+  "preserved_original_manuscript_sha256": "bc951c3ffa7d3579b2f39a0949e38db27338ac32ac050e3f5359d4452573a7b1",
+  "public_project_gitignore_sha256": "5795541b6c736feb44016b2582a9043840bfb5efc3e77a27e5479e25e42b1046"
+}

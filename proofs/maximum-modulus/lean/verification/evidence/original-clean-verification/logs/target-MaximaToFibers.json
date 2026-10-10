@@ -1,0 +1,12 @@
+{
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "MaximumModulus/MaximaToFibers.lean"
+  ],
+  "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+  "started_utc": "2026-10-10T19:28:09.854303+00:00",
+  "exit_code": 0,
+  "elapsed_seconds": 4.168169375043362
+}

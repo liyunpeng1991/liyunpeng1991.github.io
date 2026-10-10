@@ -1,0 +1,11 @@
+{
+  "command": [
+    "python3",
+    "-c",
+    "import shutil; shutil.rmtree(\".lake/build\", ignore_errors=True)"
+  ],
+  "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+  "started_utc": "2026-10-10T20:31:14.880748+00:00",
+  "exit_code": 0,
+  "elapsed_seconds": 0.020527500193566084
+}

@@ -1,0 +1,30 @@
+MaximumModulus.all_radii_growth_impossible : ∀ (f : Complex → Complex) (hf : MaximumModulus.Entire f)
+  (hne :
+    @Ne.{1} (Complex → Complex) f
+      (@OfNat.ofNat.{0} (Complex → Complex) (nat_lit 0)
+        (@Zero.toOfNat0.{0} (Complex → Complex)
+          (@Pi.instZero.{0, 0} Complex (fun (a : Complex) => Complex) fun (i : Complex) => Complex.instZero))))
+  (hnm : Not (MaximumModulus.IsMonomial f)),
+  And (Not (MaximumModulus.CountTendsToInfinity f)) (Not (MaximumModulus.MaximaGrowOnAllRadii f))
+theorem MaximumModulus.all_radii_growth_impossible : ∀ (f : Complex → Complex) (hf : MaximumModulus.Entire f)
+  (hne :
+    @Ne.{1} (Complex → Complex) f
+      (@OfNat.ofNat.{0} (Complex → Complex) (nat_lit 0)
+        (@Zero.toOfNat0.{0} (Complex → Complex)
+          (@Pi.instZero.{0, 0} Complex (fun (a : Complex) => Complex) fun (i : Complex) => Complex.instZero))))
+  (hnm : Not (MaximumModulus.IsMonomial f)),
+  And (Not (MaximumModulus.CountTendsToInfinity f)) (Not (MaximumModulus.MaximaGrowOnAllRadii f)) :=
+fun (f : Complex → Complex) (hf : MaximumModulus.Entire f)
+    (hne :
+      @Ne.{1} (Complex → Complex) f
+        (@OfNat.ofNat.{0} (Complex → Complex) (nat_lit 0)
+          (@Zero.toOfNat0.{0} (Complex → Complex)
+            (@Pi.instZero.{0, 0} Complex (fun (a : Complex) => Complex) fun (i : Complex) => Complex.instZero))))
+    (hnm : Not (MaximumModulus.IsMonomial f)) =>
+  @Exists.casesOn.{1} Nat (fun (B : Nat) => MaximumModulus.CofinalBound f B)
+    (fun (x : @Exists.{1} Nat fun (B : Nat) => MaximumModulus.CofinalBound f B) =>
+      And (Not (MaximumModulus.CountTendsToInfinity f)) (Not (MaximumModulus.MaximaGrowOnAllRadii f)))
+    (MaximumModulus.allRadiiStatement f hf hne hnm) fun (B : Nat) (hB : MaximumModulus.CofinalBound f B) =>
+    @And.intro (Not (MaximumModulus.CountTendsToInfinity f)) (Not (MaximumModulus.MaximaGrowOnAllRadii f))
+      (@MaximumModulus.cofinalBound_not_tendsto f B hB) (@MaximumModulus.cofinalBound_not_growth f B hB)
+'MaximumModulus.all_radii_growth_impossible' depends on axioms: [propext, Classical.choice, Quot.sound]

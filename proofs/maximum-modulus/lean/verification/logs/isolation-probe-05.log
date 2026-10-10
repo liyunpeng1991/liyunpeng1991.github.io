@@ -1,0 +1,13 @@
+{
+  "outside_read": "[Errno 1] Operation not permitted: '/private/tmp/mm-lean-isolation-read-probe.txt'",
+  "outside_write": "[Errno 1] Operation not permitted: '/private/tmp/mm-lean-isolation-write-probe.txt'",
+  "network": "[Errno 1] Operation not permitted",
+  "lean_exit": 1,
+  "lean_version": "",
+  "lean_stderr": "error: failed to resolve symbolic links when locating application\n"
+}
+Traceback (most recent call last):
+  File "/private/tmp/mm-lean-verify-20261010/audit/probe_isolation.py", line 14, in <module>
+    assert r.returncode==0
+           ^^^^^^^^^^^^^^^
+AssertionError

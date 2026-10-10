@@ -1,0 +1,51 @@
+✔ [1/5] Built Cache.Cli (305ms)
+✔ [2/5] Built Cache.Lean (355ms)
+✔ [7/42] Built Cache.Env (373ms)
+✔ [8/42] Built Cache.Infra (911ms)
+✔ [9/42] Built Cache.Location (604ms)
+✔ [10/42] Built Cache.IO (1.9s)
+✔ [11/42] Built Cache.Cli:c.o (2.3s)
+✔ [12/42] Built Cache.Lean:c.o (2.3s)
+✔ [13/42] Built Cache.Env:c.o (2.0s)
+✔ [14/42] Built Cache.Infra:c.o (1.1s)
+✔ [15/42] Built Cache.Location:c.o (544ms)
+✔ [16/42] Built Cache.Hashing (547ms)
+✔ [17/42] Built Batteries.Tactic.OpenPrivate:c.o (2.6s)
+✔ [18/42] Built Cache.Hashing:c.o (309ms)
+✔ [19/42] Built Cache.IO:c.o (1.1s)
+✔ [20/42] Built Cache.Requests (921ms)
+✔ [21/42] Built Cache.Marker (333ms)
+✔ [22/42] Built Cache.Marker:c.o (215ms)
+✔ [23/42] Built Cache.Upload.Curl (378ms)
+✔ [24/42] Built Cache.Upload.Rclone (519ms)
+✔ [25/42] Built Cache.Query (606ms)
+✔ [26/42] Built Cache.Upload.Curl:c.o (277ms)
+✔ [27/42] Built Cache.Upload.Azure (410ms)
+✔ [28/42] Built Cache.Upload.Rclone:c.o (268ms)
+✔ [29/42] Built Cache.Requests:c.o (1.2s)
+✔ [30/42] Built Cache.Query:c.o (236ms)
+✔ [31/42] Built Cache.Upload.S3 (512ms)
+✔ [32/42] Built Cache.Upload.Azure:c.o (172ms)
+✔ [33/42] Built Cache.Warning (507ms)
+✔ [34/42] Built Cache.Upload.S3:c.o (210ms)
+✔ [35/42] Built Cache.Upload.Defs (373ms)
+✔ [36/42] Built Cache.Warning:c.o (202ms)
+✔ [37/42] Built Cache.Upload.Defs:c.o (136ms)
+✔ [38/42] Built Cache.Upload (377ms)
+✔ [39/42] Built Cache.Upload:c.o (278ms)
+✔ [40/42] Built Cache.Main (692ms)
+✔ [41/42] Built Cache.Main:c.o (564ms)
+✔ [42/42] Built cache:exe (1.5s)
+Current branch: HEAD
+Using cache from origin: (some leanprover-community/mathlib4)
+Attempting to download 2839 file(s) from leanprover-community/mathlib4 cache at https://cache.mathlib.org/mathlib4-master
+Warning: 2839 file(s) were not found in the cache.
+This usually means that your local checkout of mathlib4 has diverged from upstream.
+
+  * If you push your commits to a PR to the mathlib4 repository
+    (use a draft PR if it is not ready for review),
+    then CI will build the oleans and they will be available later.
+  * If you have already opened a PR, this may mean
+    the CI build has failed part-way through building.
+Decompressed 0 file(s)
+No cache files to decompress

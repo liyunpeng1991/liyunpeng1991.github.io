@@ -1,0 +1,13 @@
+{
+  "command": [
+    "lake",
+    "exe",
+    "cache",
+    "get",
+    "Mathlib.Analysis.Meromorphic.Basic"
+  ],
+  "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+  "started_utc": "2026-10-10T18:22:48.803226+00:00",
+  "exit_code": 0,
+  "elapsed_seconds": 6.756766624748707
+}

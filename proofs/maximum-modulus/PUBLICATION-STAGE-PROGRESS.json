@@ -1,0 +1,14 @@
+{
+  "role": "Completed local evidence publication B staging; not a new proof execution",
+  "source_repository": "https://github.com/liyunpeng1991/liyunpeng1991.github.io",
+  "branch": "main",
+  "exact_proof_source_A": "c063e5f83dfa71c97871eabc8b70cf8a8c1e0bc9",
+  "historical_snapshot": "8b731b51dcb0ed3d7e8c6463b6266c35d8099c85",
+  "fresh_verification_status": "Passed; actual completed report, command outcomes, target axioms and comparator output reviewed",
+  "proof_source_changed": false,
+  "historical_stage_untouched": true,
+  "network_actions_by_this_agent": false,
+  "updated_utc": "2026-10-10T20:51:46.004352+00:00",
+  "fresh_report_path": "lean/verification/public-commit-report.md",
+  "fresh_report_sha256": "6cac167a456416dd08c1a2e4f9993df976726802fff1a57ff506a396b666a378"
+}

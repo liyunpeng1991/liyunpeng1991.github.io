@@ -1,0 +1,28 @@
+{
+  "argv": [
+    "/usr/bin/sandbox-exec",
+    "-f",
+    "/private/tmp/mm-lean-published-20261011/audit/isolation.sb",
+    "python3",
+    "/private/tmp/mm-lean-published-20261011/audit/probe_isolation.py"
+  ],
+  "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+  "environment": {
+    "PATH": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/.tools/lean-4.35.0-rc4-darwin_aarch64/bin:/Library/Frameworks/Python.framework/Versions/3.13/bin:/usr/bin:/bin:/usr/sbin",
+    "TMPDIR": "/private/tmp/mm-lean-published-20261011/tmp",
+    "LANG": "C.UTF-8",
+    "GIT_CONFIG_NOSYSTEM": "1",
+    "GIT_CONFIG_GLOBAL": "/dev/null"
+  },
+  "started_utc": "2026-10-10T20:30:33.191217+00:00",
+  "limits": {
+    "monitored_descendant_RSS_bytes": 10737418240,
+    "per_process_CPU_seconds": 1200,
+    "per_file_bytes": 2147483648,
+    "inherited_stack_limit_bytes": 8372224,
+    "wall_seconds": 1800
+  },
+  "exit_code": 1,
+  "peak_monitored_descendant_RSS_bytes": 3964928,
+  "elapsed_seconds": 1.0199475418776274
+}

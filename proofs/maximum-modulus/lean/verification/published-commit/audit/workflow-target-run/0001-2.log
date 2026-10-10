@@ -1,0 +1,234 @@
+MaximumModulus.allRadiiStatement : MaximumModulus.AllRadiiStatement
+theorem MaximumModulus.allRadiiStatement : MaximumModulus.AllRadiiStatement :=
+fun (f : Complex → Complex) (hf : MaximumModulus.Entire f)
+    (hne :
+      @Ne.{1} (Complex → Complex) f
+        (@OfNat.ofNat.{0} (Complex → Complex) (nat_lit 0)
+          (@Zero.toOfNat0.{0} (Complex → Complex)
+            (@Pi.instZero.{0, 0} Complex (fun (a : Complex) => Complex) fun (i : Complex) => Complex.instZero))))
+    (hnm : Not (MaximumModulus.IsMonomial f)) =>
+  @Exists.casesOn.{1} Nat
+    (fun (m : Nat) =>
+      @Exists.{1} (Complex → Complex) fun (g : Complex → Complex) =>
+        And (MaximumModulus.Entire g)
+          (And
+            (@Ne.{1} Complex (g (@OfNat.ofNat.{0} Complex (nat_lit 0) (@Zero.toOfNat0.{0} Complex Complex.instZero)))
+              (@OfNat.ofNat.{0} Complex (nat_lit 0) (@Zero.toOfNat0.{0} Complex Complex.instZero)))
+            (∀ (z : Complex),
+              @Eq.{1} Complex (f z)
+                (@HMul.hMul.{0, 0, 0} Complex Complex Complex (@instHMul.{0} Complex Complex.instMul)
+                  (@HPow.hPow.{0, 0, 0} Complex Nat Complex
+                    (@instHPow.{0, 0} Complex Nat
+                      (@NPow.toPow.{0} Complex
+                        (@Monoid.toNPow.{0} Complex (@Semiring.toMonoid.{0} Complex Complex.instSemiring))))
+                    z m)
+                  (g z)))))
+    (fun
+        (x :
+          @Exists.{1} Nat fun (m : Nat) =>
+            @Exists.{1} (Complex → Complex) fun (g : Complex → Complex) =>
+              And (MaximumModulus.Entire g)
+                (And
+                  (@Ne.{1} Complex
+                    (g (@OfNat.ofNat.{0} Complex (nat_lit 0) (@Zero.toOfNat0.{0} Complex Complex.instZero)))
+                    (@OfNat.ofNat.{0} Complex (nat_lit 0) (@Zero.toOfNat0.{0} Complex Complex.instZero)))
+                  (∀ (z : Complex),
+                    @Eq.{1} Complex (f z)
+                      (@HMul.hMul.{0, 0, 0} Complex Complex Complex (@instHMul.{0} Complex Complex.instMul)
+                        (@HPow.hPow.{0, 0, 0} Complex Nat Complex
+                          (@instHPow.{0, 0} Complex Nat
+                            (@NPow.toPow.{0} Complex
+                              (@Monoid.toNPow.{0} Complex (@Semiring.toMonoid.{0} Complex Complex.instSemiring))))
+                          z m)
+                        (g z))))) =>
+      @Exists.{1} Nat fun (B : Nat) => MaximumModulus.CofinalBound f B)
+    (@MaximumModulus.entire_factor_at_zero f hf hne)
+    fun (m : Nat)
+      (h :
+        @Exists.{1} (Complex → Complex) fun (g : Complex → Complex) =>
+          And (MaximumModulus.Entire g)
+            (And
+              (@Ne.{1} Complex (g (@OfNat.ofNat.{0} Complex (nat_lit 0) (@Zero.toOfNat0.{0} Complex Complex.instZero)))
+                (@OfNat.ofNat.{0} Complex (nat_lit 0) (@Zero.toOfNat0.{0} Complex Complex.instZero)))
+              (∀ (z : Complex),
+                @Eq.{1} Complex (f z)
+                  (@HMul.hMul.{0, 0, 0} Complex Complex Complex (@instHMul.{0} Complex Complex.instMul)
+                    (@HPow.hPow.{0, 0, 0} Complex Nat Complex
+                      (@instHPow.{0, 0} Complex Nat
+                        (@NPow.toPow.{0} Complex
+                          (@Monoid.toNPow.{0} Complex (@Semiring.toMonoid.{0} Complex Complex.instSemiring))))
+                      z m)
+                    (g z))))) =>
+    @Exists.casesOn.{1} (Complex → Complex)
+      (fun (g : Complex → Complex) =>
+        And (MaximumModulus.Entire g)
+          (And
+            (@Ne.{1} Complex (g (@OfNat.ofNat.{0} Complex (nat_lit 0) (@Zero.toOfNat0.{0} Complex Complex.instZero)))
+              (@OfNat.ofNat.{0} Complex (nat_lit 0) (@Zero.toOfNat0.{0} Complex Complex.instZero)))
+            (∀ (z : Complex),
+              @Eq.{1} Complex (f z)
+                (@HMul.hMul.{0, 0, 0} Complex Complex Complex (@instHMul.{0} Complex Complex.instMul)
+                  (@HPow.hPow.{0, 0, 0} Complex Nat Complex
+                    (@instHPow.{0, 0} Complex Nat
+                      (@NPow.toPow.{0} Complex
+                        (@Monoid.toNPow.{0} Complex (@Semiring.toMonoid.{0} Complex Complex.instSemiring))))
+                    z m)
+                  (g z)))))
+      (fun
+          (x :
+            @Exists.{1} (Complex → Complex) fun (g : Complex → Complex) =>
+              And (MaximumModulus.Entire g)
+                (And
+                  (@Ne.{1} Complex
+                    (g (@OfNat.ofNat.{0} Complex (nat_lit 0) (@Zero.toOfNat0.{0} Complex Complex.instZero)))
+                    (@OfNat.ofNat.{0} Complex (nat_lit 0) (@Zero.toOfNat0.{0} Complex Complex.instZero)))
+                  (∀ (z : Complex),
+                    @Eq.{1} Complex (f z)
+                      (@HMul.hMul.{0, 0, 0} Complex Complex Complex (@instHMul.{0} Complex Complex.instMul)
+                        (@HPow.hPow.{0, 0, 0} Complex Nat Complex
+                          (@instHPow.{0, 0} Complex Nat
+                            (@NPow.toPow.{0} Complex
+                              (@Monoid.toNPow.{0} Complex (@Semiring.toMonoid.{0} Complex Complex.instSemiring))))
+                          z m)
+                        (g z))))) =>
+        @Exists.{1} Nat fun (B : Nat) => MaximumModulus.CofinalBound f B)
+      h
+      fun (g : Complex → Complex)
+        (h :
+          And (MaximumModulus.Entire g)
+            (And
+              (@Ne.{1} Complex (g (@OfNat.ofNat.{0} Complex (nat_lit 0) (@Zero.toOfNat0.{0} Complex Complex.instZero)))
+                (@OfNat.ofNat.{0} Complex (nat_lit 0) (@Zero.toOfNat0.{0} Complex Complex.instZero)))
+              (∀ (z : Complex),
+                @Eq.{1} Complex (f z)
+                  (@HMul.hMul.{0, 0, 0} Complex Complex Complex (@instHMul.{0} Complex Complex.instMul)
+                    (@HPow.hPow.{0, 0, 0} Complex Nat Complex
+                      (@instHPow.{0, 0} Complex Nat
+                        (@NPow.toPow.{0} Complex
+                          (@Monoid.toNPow.{0} Complex (@Semiring.toMonoid.{0} Complex Complex.instSemiring))))
+                      z m)
+                    (g z))))) =>
+      @And.casesOn.{0} (MaximumModulus.Entire g)
+        (And
+          (@Ne.{1} Complex (g (@OfNat.ofNat.{0} Complex (nat_lit 0) (@Zero.toOfNat0.{0} Complex Complex.instZero)))
+            (@OfNat.ofNat.{0} Complex (nat_lit 0) (@Zero.toOfNat0.{0} Complex Complex.instZero)))
+          (∀ (z : Complex),
+            @Eq.{1} Complex (f z)
+              (@HMul.hMul.{0, 0, 0} Complex Complex Complex (@instHMul.{0} Complex Complex.instMul)
+                (@HPow.hPow.{0, 0, 0} Complex Nat Complex
+                  (@instHPow.{0, 0} Complex Nat
+                    (@NPow.toPow.{0} Complex
+                      (@Monoid.toNPow.{0} Complex (@Semiring.toMonoid.{0} Complex Complex.instSemiring))))
+                  z m)
+                (g z))))
+        (fun
+            (x :
+              And (MaximumModulus.Entire g)
+                (And
+                  (@Ne.{1} Complex
+                    (g (@OfNat.ofNat.{0} Complex (nat_lit 0) (@Zero.toOfNat0.{0} Complex Complex.instZero)))
+                    (@OfNat.ofNat.{0} Complex (nat_lit 0) (@Zero.toOfNat0.{0} Complex Complex.instZero)))
+                  (∀ (z : Complex),
+                    @Eq.{1} Complex (f z)
+                      (@HMul.hMul.{0, 0, 0} Complex Complex Complex (@instHMul.{0} Complex Complex.instMul)
+                        (@HPow.hPow.{0, 0, 0} Complex Nat Complex
+                          (@instHPow.{0, 0} Complex Nat
+                            (@NPow.toPow.{0} Complex
+                              (@Monoid.toNPow.{0} Complex (@Semiring.toMonoid.{0} Complex Complex.instSemiring))))
+                          z m)
+                        (g z))))) =>
+          @Exists.{1} Nat fun (B : Nat) => MaximumModulus.CofinalBound f B)
+        h
+        fun (hg : MaximumModulus.Entire g)
+          (right :
+            And
+              (@Ne.{1} Complex (g (@OfNat.ofNat.{0} Complex (nat_lit 0) (@Zero.toOfNat0.{0} Complex Complex.instZero)))
+                (@OfNat.ofNat.{0} Complex (nat_lit 0) (@Zero.toOfNat0.{0} Complex Complex.instZero)))
+              (∀ (z : Complex),
+                @Eq.{1} Complex (f z)
+                  (@HMul.hMul.{0, 0, 0} Complex Complex Complex (@instHMul.{0} Complex Complex.instMul)
+                    (@HPow.hPow.{0, 0, 0} Complex Nat Complex
+                      (@instHPow.{0, 0} Complex Nat
+                        (@NPow.toPow.{0} Complex
+                          (@Monoid.toNPow.{0} Complex (@Semiring.toMonoid.{0} Complex Complex.instSemiring))))
+                      z m)
+                    (g z)))) =>
+        @And.casesOn.{0}
+          (@Ne.{1} Complex (g (@OfNat.ofNat.{0} Complex (nat_lit 0) (@Zero.toOfNat0.{0} Complex Complex.instZero)))
+            (@OfNat.ofNat.{0} Complex (nat_lit 0) (@Zero.toOfNat0.{0} Complex Complex.instZero)))
+          (∀ (z : Complex),
+            @Eq.{1} Complex (f z)
+              (@HMul.hMul.{0, 0, 0} Complex Complex Complex (@instHMul.{0} Complex Complex.instMul)
+                (@HPow.hPow.{0, 0, 0} Complex Nat Complex
+                  (@instHPow.{0, 0} Complex Nat
+                    (@NPow.toPow.{0} Complex
+                      (@Monoid.toNPow.{0} Complex (@Semiring.toMonoid.{0} Complex Complex.instSemiring))))
+                  z m)
+                (g z)))
+          (fun
+              (x :
+                And
+                  (@Ne.{1} Complex
+                    (g (@OfNat.ofNat.{0} Complex (nat_lit 0) (@Zero.toOfNat0.{0} Complex Complex.instZero)))
+                    (@OfNat.ofNat.{0} Complex (nat_lit 0) (@Zero.toOfNat0.{0} Complex Complex.instZero)))
+                  (∀ (z : Complex),
+                    @Eq.{1} Complex (f z)
+                      (@HMul.hMul.{0, 0, 0} Complex Complex Complex (@instHMul.{0} Complex Complex.instMul)
+                        (@HPow.hPow.{0, 0, 0} Complex Nat Complex
+                          (@instHPow.{0, 0} Complex Nat
+                            (@NPow.toPow.{0} Complex
+                              (@Monoid.toNPow.{0} Complex (@Semiring.toMonoid.{0} Complex Complex.instSemiring))))
+                          z m)
+                        (g z)))) =>
+            @Exists.{1} Nat fun (B : Nat) => MaximumModulus.CofinalBound f B)
+          right
+          fun
+            (hg0 :
+              @Ne.{1} Complex (g (@OfNat.ofNat.{0} Complex (nat_lit 0) (@Zero.toOfNat0.{0} Complex Complex.instZero)))
+                (@OfNat.ofNat.{0} Complex (nat_lit 0) (@Zero.toOfNat0.{0} Complex Complex.instZero)))
+            (hfactor :
+              ∀ (z : Complex),
+                @Eq.{1} Complex (f z)
+                  (@HMul.hMul.{0, 0, 0} Complex Complex Complex (@instHMul.{0} Complex Complex.instMul)
+                    (@HPow.hPow.{0, 0, 0} Complex Nat Complex
+                      (@instHPow.{0, 0} Complex Nat
+                        (@NPow.toPow.{0} Complex
+                          (@Monoid.toNPow.{0} Complex (@Semiring.toMonoid.{0} Complex Complex.instSemiring))))
+                      z m)
+                    (g z))) =>
+          let B : Nat :=
+            @HMul.hMul.{0, 0, 0} Nat Nat Nat (@instHMul.{0} Nat instMulNat)
+              (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))
+              (@analyticOrderNatAt.{0, 0} Complex Complex
+                (@DenselyNormedField.toNontriviallyNormedField.{0} Complex Complex.instDenselyNormedField)
+                Complex.instNormedAddCommGroup
+                (@InnerProductSpace.toNormedSpace.{0, 0} Complex Complex Complex.instRCLike
+                  (@NormedAddCommGroup.toSeminormedAddCommGroup.{0} Complex Complex.instNormedAddCommGroup)
+                  (@RCLike.innerProductSpace.{0} Complex Complex.instRCLike))
+                (fun (z : Complex) =>
+                  @HSub.hSub.{0, 0, 0} Complex Complex Complex (@instHSub.{0} Complex Complex.instSub)
+                    (MaximumModulus.normalizedLogDerivative m g z) (@Nat.cast.{0} Complex Complex.instNatCast m))
+                (@OfNat.ofNat.{0} Complex (nat_lit 0) (@Zero.toOfNat0.{0} Complex Complex.instZero)));
+          have hempty :
+            @Eq.{1} (Set.{0} (Prod.{0, 0} Complex (OnePoint.{0} Complex)))
+              (MaximumModulus.RegularLogDerivativeHighCount m g
+                (@HMul.hMul.{0, 0, 0} Nat Nat Nat (@instHMul.{0} Nat instMulNat)
+                  (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))
+                  (@analyticOrderNatAt.{0, 0} Complex Complex
+                    (@DenselyNormedField.toNontriviallyNormedField.{0} Complex Complex.instDenselyNormedField)
+                    Complex.instNormedAddCommGroup
+                    (@InnerProductSpace.toNormedSpace.{0, 0} Complex Complex Complex.instRCLike
+                      (@NormedAddCommGroup.toSeminormedAddCommGroup.{0} Complex Complex.instNormedAddCommGroup)
+                      (@RCLike.innerProductSpace.{0} Complex Complex.instRCLike))
+                    (fun (z : Complex) =>
+                      @HSub.hSub.{0, 0, 0} Complex Complex Complex (@instHSub.{0} Complex Complex.instSub)
+                        (MaximumModulus.normalizedLogDerivative m g z) (@Nat.cast.{0} Complex Complex.instNatCast m))
+                    (@OfNat.ofNat.{0} Complex (nat_lit 0) (@Zero.toOfNat0.{0} Complex Complex.instZero)))))
+              (@EmptyCollection.emptyCollection.{0} (Set.{0} (Prod.{0, 0} Complex (OnePoint.{0} Complex)))
+                (@Set.instEmptyCollection.{0} (Prod.{0, 0} Complex (OnePoint.{0} Complex)))) :=
+            @MaximumModulus.regularLogDerivativeHighCount_empty f g m hg hg0 hnm hfactor;
+          have hbound : MaximumModulus.PositiveProductFiberBound (MaximumModulus.normalizedLogDerivative m g) m B :=
+            @MaximumModulus.positiveProductFiberBound_of_regular_high_count_empty f g m B hg hg0 hnm hfactor hempty;
+          @Exists.intro.{1} Nat (fun (B : Nat) => MaximumModulus.CofinalBound f B) B
+            (@MaximumModulus.cofinalBound_of_positiveProductFiberBound f g m B hg hg0 hnm hfactor hbound)
+'MaximumModulus.allRadiiStatement' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,805 @@
+{
+  "created_utc": "2026-10-10T19:40:48.942449+00:00",
+  "scope": "Read-only post-comparator hashes and Git metadata; no proof/checker execution",
+  "all_frozen_files_match": true,
+  "all_original_production_files_match": true,
+  "original_snapshot_gitignore_difference_intentional": true,
+  "source_files": [
+    {
+      "path": "CheckAxioms.lean",
+      "expected_sha256": "4fac820aede4bffa94634b16655a822e52975354a2797c1aa8be3bdde3496afa",
+      "original_sha256": "4fac820aede4bffa94634b16655a822e52975354a2797c1aa8be3bdde3496afa",
+      "frozen_sha256": "4fac820aede4bffa94634b16655a822e52975354a2797c1aa8be3bdde3496afa",
+      "frozen_matches": true,
+      "original_matches": true,
+      "snapshot_packaging_only": false
+    },
+    {
+      "path": "lean-toolchain",
+      "expected_sha256": "8f89aa44fccdb1a0b6cc768c7c9f54b94cd40e47a08d582f82d1235f13075cf7",
+      "original_sha256": "8f89aa44fccdb1a0b6cc768c7c9f54b94cd40e47a08d582f82d1235f13075cf7",
+      "frozen_sha256": "8f89aa44fccdb1a0b6cc768c7c9f54b94cd40e47a08d582f82d1235f13075cf7",
+      "frozen_matches": true,
+      "original_matches": true,
+      "snapshot_packaging_only": false
+    },
+    {
+      "path": "lake-manifest.json",
+      "expected_sha256": "cb333575666396aefa2ed281978edc586f0535a0079b76012f32db0f18052b38",
+      "original_sha256": "cb333575666396aefa2ed281978edc586f0535a0079b76012f32db0f18052b38",
+      "frozen_sha256": "cb333575666396aefa2ed281978edc586f0535a0079b76012f32db0f18052b38",
+      "frozen_matches": true,
+      "original_matches": true,
+      "snapshot_packaging_only": false
+    },
+    {
+      "path": ".gitignore",
+      "expected_sha256": "84cd6e8c4a13d19f68e8ef0d07941cf975ff9698e1a0c38ac45116b0ff1b095d",
+      "original_sha256": "5795541b6c736feb44016b2582a9043840bfb5efc3e77a27e5479e25e42b1046",
+      "frozen_sha256": "84cd6e8c4a13d19f68e8ef0d07941cf975ff9698e1a0c38ac45116b0ff1b095d",
+      "frozen_matches": true,
+      "original_matches": false,
+      "snapshot_packaging_only": true
+    },
+    {
+      "path": "MaximumModulus.lean",
+      "expected_sha256": "7711659c615b8d2de7c6eac37b04486ebf620ffafdcced996c491a3ba0151067",
+      "original_sha256": "7711659c615b8d2de7c6eac37b04486ebf620ffafdcced996c491a3ba0151067",
+      "frozen_sha256": "7711659c615b8d2de7c6eac37b04486ebf620ffafdcced996c491a3ba0151067",
+      "frozen_matches": true,
+      "original_matches": true,
+      "snapshot_packaging_only": false
+    },
+    {
+      "path": "lakefile.toml",
+      "expected_sha256": "5d8ab5b472f35876f885594bf3cb7b4986303d0f7212593ecb63cef865baea39",
+      "original_sha256": "5d8ab5b472f35876f885594bf3cb7b4986303d0f7212593ecb63cef865baea39",
+      "frozen_sha256": "5d8ab5b472f35876f885594bf3cb7b4986303d0f7212593ecb63cef865baea39",
+      "frozen_matches": true,
+      "original_matches": true,
+      "snapshot_packaging_only": false
+    },
+    {
+      "path": "MaximumModulus/MaximumStationarity.lean",
+      "expected_sha256": "08e7c781b9565dbf8ccddf63f2b22827aee3a04fbba860db98d03ad4d3e093b3",
+      "original_sha256": "08e7c781b9565dbf8ccddf63f2b22827aee3a04fbba860db98d03ad4d3e093b3",
+      "frozen_sha256": "08e7c781b9565dbf8ccddf63f2b22827aee3a04fbba860db98d03ad4d3e093b3",
+      "frozen_matches": true,
+      "original_matches": true,
+      "snapshot_packaging_only": false
+    },
+    {
+      "path": "MaximumModulus/MeromorphicCorrespondence.lean",
+      "expected_sha256": "fb958b7065c45328a074315baa544df054330434cda908de390667ac74605ea7",
+      "original_sha256": "fb958b7065c45328a074315baa544df054330434cda908de390667ac74605ea7",
+      "frozen_sha256": "fb958b7065c45328a074315baa544df054330434cda908de390667ac74605ea7",
+      "frozen_matches": true,
+      "original_matches": true,
+      "snapshot_packaging_only": false
+    },
+    {
+      "path": "MaximumModulus/BranchCollision.lean",
+      "expected_sha256": "7be2e6b7d143154440a27fcef427dbd05bcd38604fe78c75614633d05b7d5fda",
+      "original_sha256": "7be2e6b7d143154440a27fcef427dbd05bcd38604fe78c75614633d05b7d5fda",
+      "frozen_sha256": "7be2e6b7d143154440a27fcef427dbd05bcd38604fe78c75614633d05b7d5fda",
+      "frozen_matches": true,
+      "original_matches": true,
+      "snapshot_packaging_only": false
+    },
+    {
+      "path": "MaximumModulus/LocalValence.lean",
+      "expected_sha256": "1bc714f213b1a51760d18cf3f71e21ae56db8d3a30dd5e27112a29277425718a",
+      "original_sha256": "1bc714f213b1a51760d18cf3f71e21ae56db8d3a30dd5e27112a29277425718a",
+      "frozen_sha256": "1bc714f213b1a51760d18cf3f71e21ae56db8d3a30dd5e27112a29277425718a",
+      "frozen_matches": true,
+      "original_matches": true,
+      "snapshot_packaging_only": false
+    },
+    {
+      "path": "MaximumModulus/SmallFibers.lean",
+      "expected_sha256": "4c979b871a67cac79515d9f389550f11f2996fe8f431a36d8f93039c11068848",
+      "original_sha256": "4c979b871a67cac79515d9f389550f11f2996fe8f431a36d8f93039c11068848",
+      "frozen_sha256": "4c979b871a67cac79515d9f389550f11f2996fe8f431a36d8f93039c11068848",
+      "frozen_matches": true,
+      "original_matches": true,
+      "snapshot_packaging_only": false
+    },
+    {
+      "path": "MaximumModulus/StatementAudit.lean",
+      "expected_sha256": "bb4ae82fa516d338263d4ce361522c4a012ebcf8507064c2d1148edbffcf0cbe",
+      "original_sha256": "bb4ae82fa516d338263d4ce361522c4a012ebcf8507064c2d1148edbffcf0cbe",
+      "frozen_sha256": "bb4ae82fa516d338263d4ce361522c4a012ebcf8507064c2d1148edbffcf0cbe",
+      "frozen_matches": true,
+      "original_matches": true,
+      "snapshot_packaging_only": false
+    },
+    {
+      "path": "MaximumModulus/PoleChart.lean",
+      "expected_sha256": "55b48efcb4db00e4436344340e440758d51d4ad4d7797e3db14d25e17d450dd0",
+      "original_sha256": "55b48efcb4db00e4436344340e440758d51d4ad4d7797e3db14d25e17d450dd0",
+      "frozen_sha256": "55b48efcb4db00e4436344340e440758d51d4ad4d7797e3db14d25e17d450dd0",
+      "frozen_matches": true,
+      "original_matches": true,
+      "snapshot_packaging_only": false
+    },
+    {
+      "path": "MaximumModulus/Definitions.lean",
+      "expected_sha256": "773671cd9bb474371afb63263c2b4975341ecb6c8bab43894c281bbfd31a7e7d",
+      "original_sha256": "773671cd9bb474371afb63263c2b4975341ecb6c8bab43894c281bbfd31a7e7d",
+      "frozen_sha256": "773671cd9bb474371afb63263c2b4975341ecb6c8bab43894c281bbfd31a7e7d",
+      "frozen_matches": true,
+      "original_matches": true,
+      "snapshot_packaging_only": false
+    },
+    {
+      "path": "MaximumModulus/AEBridge.lean",
+      "expected_sha256": "ceeb0a8e8c405504b28b0d9669626532170f6b10b967be171dddebfe8ea67fb3",
+      "original_sha256": "ceeb0a8e8c405504b28b0d9669626532170f6b10b967be171dddebfe8ea67fb3",
+      "frozen_sha256": "ceeb0a8e8c405504b28b0d9669626532170f6b10b967be171dddebfe8ea67fb3",
+      "frozen_matches": true,
+      "original_matches": true,
+      "snapshot_packaging_only": false
+    },
+    {
+      "path": "MaximumModulus/MaximumEnvelope.lean",
+      "expected_sha256": "dfbc0c1bf985fa8f4e4476bfc90e2b2657819aa1ed907360c5ce0ed1c5cdbe2f",
+      "original_sha256": "dfbc0c1bf985fa8f4e4476bfc90e2b2657819aa1ed907360c5ce0ed1c5cdbe2f",
+      "frozen_sha256": "dfbc0c1bf985fa8f4e4476bfc90e2b2657819aa1ed907360c5ce0ed1c5cdbe2f",
+      "frozen_matches": true,
+      "original_matches": true,
+      "snapshot_packaging_only": false
+    },
+    {
+      "path": "MaximumModulus/InfinityInterior.lean",
+      "expected_sha256": "db687965a8163bd7f45c0e40b7ea66b9ce7c840432f3231818ea383f91eaedc0",
+      "original_sha256": "db687965a8163bd7f45c0e40b7ea66b9ce7c840432f3231818ea383f91eaedc0",
+      "frozen_sha256": "db687965a8163bd7f45c0e40b7ea66b9ce7c840432f3231818ea383f91eaedc0",
+      "frozen_matches": true,
+      "original_matches": true,
+      "snapshot_packaging_only": false
+    },
+    {
+      "path": "MaximumModulus/GlobalCharts.lean",
+      "expected_sha256": "07d536809cf97043678f89af214f598793b521c3ff897b414d517b403dbcad6b",
+      "original_sha256": "07d536809cf97043678f89af214f598793b521c3ff897b414d517b403dbcad6b",
+      "frozen_sha256": "07d536809cf97043678f89af214f598793b521c3ff897b414d517b403dbcad6b",
+      "frozen_matches": true,
+      "original_matches": true,
+      "snapshot_packaging_only": false
+    },
+    {
+      "path": "MaximumModulus/OmittedTargetCover.lean",
+      "expected_sha256": "92c4880890a9dd7be8d157ea8754704349c727c729a2bdbabc7d6cfcd48c9aa9",
+      "original_sha256": "92c4880890a9dd7be8d157ea8754704349c727c729a2bdbabc7d6cfcd48c9aa9",
+      "frozen_sha256": "92c4880890a9dd7be8d157ea8754704349c727c729a2bdbabc7d6cfcd48c9aa9",
+      "frozen_matches": true,
+      "original_matches": true,
+      "snapshot_packaging_only": false
+    },
+    {
+      "path": "MaximumModulus/LocalReciprocal.lean",
+      "expected_sha256": "b480a9d5123c14b8afa5967aba4c560dbc176311ac30f175856ee81d7170cbf1",
+      "original_sha256": "b480a9d5123c14b8afa5967aba4c560dbc176311ac30f175856ee81d7170cbf1",
+      "frozen_sha256": "b480a9d5123c14b8afa5967aba4c560dbc176311ac30f175856ee81d7170cbf1",
+      "frozen_matches": true,
+      "original_matches": true,
+      "snapshot_packaging_only": false
+    },
+    {
+      "path": "MaximumModulus/LogDerivative.lean",
+      "expected_sha256": "276604496051dc14d6944a9c0c44010355ecdec077c30064d76346104ac3825e",
+      "original_sha256": "276604496051dc14d6944a9c0c44010355ecdec077c30064d76346104ac3825e",
+      "frozen_sha256": "276604496051dc14d6944a9c0c44010355ecdec077c30064d76346104ac3825e",
+      "frozen_matches": true,
+      "original_matches": true,
+      "snapshot_packaging_only": false
+    },
+    {
+      "path": "MaximumModulus/HighCountLocus.lean",
+      "expected_sha256": "db7fb34afd4fc0a2b1a852394ee1bb448eca69902bc01f0497c82e0dd6bfb144",
+      "original_sha256": "db7fb34afd4fc0a2b1a852394ee1bb448eca69902bc01f0497c82e0dd6bfb144",
+      "frozen_sha256": "db7fb34afd4fc0a2b1a852394ee1bb448eca69902bc01f0497c82e0dd6bfb144",
+      "frozen_matches": true,
+      "original_matches": true,
+      "snapshot_packaging_only": false
+    },
+    {
+      "path": "MaximumModulus/FiniteImageGraphs.lean",
+      "expected_sha256": "e0e8b33e9b0d2e06abd7b711e22b98f4eb0268468428b525306cc5abb2a27376",
+      "original_sha256": "e0e8b33e9b0d2e06abd7b711e22b98f4eb0268468428b525306cc5abb2a27376",
+      "frozen_sha256": "e0e8b33e9b0d2e06abd7b711e22b98f4eb0268468428b525306cc5abb2a27376",
+      "frozen_matches": true,
+      "original_matches": true,
+      "snapshot_packaging_only": false
+    },
+    {
+      "path": "MaximumModulus/Basic.lean",
+      "expected_sha256": "d5630a0d8ff56b433b25051db69a807df6ee1bb2ab0ea4085417e785bcca045c",
+      "original_sha256": "d5630a0d8ff56b433b25051db69a807df6ee1bb2ab0ea4085417e785bcca045c",
+      "frozen_sha256": "d5630a0d8ff56b433b25051db69a807df6ee1bb2ab0ea4085417e785bcca045c",
+      "frozen_matches": true,
+      "original_matches": true,
+      "snapshot_packaging_only": false
+    },
+    {
+      "path": "MaximumModulus/BranchContinuation.lean",
+      "expected_sha256": "f83f736cb203ab7a7c8fcd4db9a23ee0348183f38bdb373ad3873f45773553d7",
+      "original_sha256": "f83f736cb203ab7a7c8fcd4db9a23ee0348183f38bdb373ad3873f45773553d7",
+      "frozen_sha256": "f83f736cb203ab7a7c8fcd4db9a23ee0348183f38bdb373ad3873f45773553d7",
+      "frozen_matches": true,
+      "original_matches": true,
+      "snapshot_packaging_only": false
+    },
+    {
+      "path": "MaximumModulus/PairNonvertical.lean",
+      "expected_sha256": "f9606ec4951b64f1959ded8a9fd53e272f24ea5da3bd0c10583bc2e7d5d73690",
+      "original_sha256": "f9606ec4951b64f1959ded8a9fd53e272f24ea5da3bd0c10583bc2e7d5d73690",
+      "frozen_sha256": "f9606ec4951b64f1959ded8a9fd53e272f24ea5da3bd0c10583bc2e7d5d73690",
+      "frozen_matches": true,
+      "original_matches": true,
+      "snapshot_packaging_only": false
+    },
+    {
+      "path": "MaximumModulus/HighCountCapture.lean",
+      "expected_sha256": "dcca257d6e722145357260aed1acdf58b21929f2d8161eec3c7220b58abf94cc",
+      "original_sha256": "dcca257d6e722145357260aed1acdf58b21929f2d8161eec3c7220b58abf94cc",
+      "frozen_sha256": "dcca257d6e722145357260aed1acdf58b21929f2d8161eec3c7220b58abf94cc",
+      "frozen_matches": true,
+      "original_matches": true,
+      "snapshot_packaging_only": false
+    },
+    {
+      "path": "MaximumModulus/HighCountGlobal.lean",
+      "expected_sha256": "4484fc5ece2548ae58c786fecc5bd6bee10b25a7d456775ae3f860025b7bce71",
+      "original_sha256": "4484fc5ece2548ae58c786fecc5bd6bee10b25a7d456775ae3f860025b7bce71",
+      "frozen_sha256": "4484fc5ece2548ae58c786fecc5bd6bee10b25a7d456775ae3f860025b7bce71",
+      "frozen_matches": true,
+      "original_matches": true,
+      "snapshot_packaging_only": false
+    },
+    {
+      "path": "MaximumModulus/GlobalDegreeAux.lean",
+      "expected_sha256": "bb9d9fad1ffc1b00e1bda5e02a1c3b96d161ddea2d55c7d224584d6630388d7c",
+      "original_sha256": "bb9d9fad1ffc1b00e1bda5e02a1c3b96d161ddea2d55c7d224584d6630388d7c",
+      "frozen_sha256": "bb9d9fad1ffc1b00e1bda5e02a1c3b96d161ddea2d55c7d224584d6630388d7c",
+      "frozen_matches": true,
+      "original_matches": true,
+      "snapshot_packaging_only": false
+    },
+    {
+      "path": "MaximumModulus/InverseRootChart.lean",
+      "expected_sha256": "4f45d67d8b5b72829593638aa833a09bb3fb3a16163d12cbd58492fb7ce9b43f",
+      "original_sha256": "4f45d67d8b5b72829593638aa833a09bb3fb3a16163d12cbd58492fb7ce9b43f",
+      "frozen_sha256": "4f45d67d8b5b72829593638aa833a09bb3fb3a16163d12cbd58492fb7ce9b43f",
+      "frozen_matches": true,
+      "original_matches": true,
+      "snapshot_packaging_only": false
+    },
+    {
+      "path": "MaximumModulus/ProductNonconstant.lean",
+      "expected_sha256": "b9fc1ba4687c7aaf2073413344b6de0d30b0908b58ec382d34db1dbaf6223c1f",
+      "original_sha256": "b9fc1ba4687c7aaf2073413344b6de0d30b0908b58ec382d34db1dbaf6223c1f",
+      "frozen_sha256": "b9fc1ba4687c7aaf2073413344b6de0d30b0908b58ec382d34db1dbaf6223c1f",
+      "frozen_matches": true,
+      "original_matches": true,
+      "snapshot_packaging_only": false
+    },
+    {
+      "path": "MaximumModulus/LocalImageTopology.lean",
+      "expected_sha256": "5048616e61e9e068f25862923a99be5f067c6a953f1ff6223a2e170acd3d024e",
+      "original_sha256": "5048616e61e9e068f25862923a99be5f067c6a953f1ff6223a2e170acd3d024e",
+      "frozen_sha256": "5048616e61e9e068f25862923a99be5f067c6a953f1ff6223a2e170acd3d024e",
+      "frozen_matches": true,
+      "original_matches": true,
+      "snapshot_packaging_only": false
+    },
+    {
+      "path": "MaximumModulus/GeometricReduction.lean",
+      "expected_sha256": "0614e85cb9417f9544134fc0a2fa27c497c7ce23145fcbcf66c75497594e7113",
+      "original_sha256": "0614e85cb9417f9544134fc0a2fa27c497c7ce23145fcbcf66c75497594e7113",
+      "frozen_sha256": "0614e85cb9417f9544134fc0a2fa27c497c7ce23145fcbcf66c75497594e7113",
+      "frozen_matches": true,
+      "original_matches": true,
+      "snapshot_packaging_only": false
+    },
+    {
+      "path": "MaximumModulus/FiberCapture.lean",
+      "expected_sha256": "329432a68505235a62ca16ac7f9cb96ef8f699d8ba8e61eb630e0b7c518fe958",
+      "original_sha256": "329432a68505235a62ca16ac7f9cb96ef8f699d8ba8e61eb630e0b7c518fe958",
+      "frozen_sha256": "329432a68505235a62ca16ac7f9cb96ef8f699d8ba8e61eb630e0b7c518fe958",
+      "frozen_matches": true,
+      "original_matches": true,
+      "snapshot_packaging_only": false
+    },
+    {
+      "path": "MaximumModulus/AllRadii.lean",
+      "expected_sha256": "6a16ff9d2c62449f637d0eb727d3605b26f37744eb4eb46f7b2fe771c497a9d7",
+      "original_sha256": "6a16ff9d2c62449f637d0eb727d3605b26f37744eb4eb46f7b2fe771c497a9d7",
+      "frozen_sha256": "6a16ff9d2c62449f637d0eb727d3605b26f37744eb4eb46f7b2fe771c497a9d7",
+      "frozen_matches": true,
+      "original_matches": true,
+      "snapshot_packaging_only": false
+    },
+    {
+      "path": "MaximumModulus/SphereSmallFibers.lean",
+      "expected_sha256": "cd9945df30d39c17d20540402f141bc621cf1ab886d1cae29ca0122fd0fdcf55",
+      "original_sha256": "cd9945df30d39c17d20540402f141bc621cf1ab886d1cae29ca0122fd0fdcf55",
+      "frozen_sha256": "cd9945df30d39c17d20540402f141bc621cf1ab886d1cae29ca0122fd0fdcf55",
+      "frozen_matches": true,
+      "original_matches": true,
+      "snapshot_packaging_only": false
+    },
+    {
+      "path": "MaximumModulus/MaximaToFibers.lean",
+      "expected_sha256": "1d6545874af6c1b07f64520fcc90969475df6d6a7df21504a05abea8ac87c743",
+      "original_sha256": "1d6545874af6c1b07f64520fcc90969475df6d6a7df21504a05abea8ac87c743",
+      "frozen_sha256": "1d6545874af6c1b07f64520fcc90969475df6d6a7df21504a05abea8ac87c743",
+      "frozen_matches": true,
+      "original_matches": true,
+      "snapshot_packaging_only": false
+    },
+    {
+      "path": "MaximumModulus/DuplicateSafeCount.lean",
+      "expected_sha256": "19ce299de1437bdb19d9e786c82088f27b27967e0a901853cb10365e29522534",
+      "original_sha256": "19ce299de1437bdb19d9e786c82088f27b27967e0a901853cb10365e29522534",
+      "frozen_sha256": "19ce299de1437bdb19d9e786c82088f27b27967e0a901853cb10365e29522534",
+      "frozen_matches": true,
+      "original_matches": true,
+      "snapshot_packaging_only": false
+    },
+    {
+      "path": "MaximumModulus/HighCountInterior.lean",
+      "expected_sha256": "d41d90b40201a0b465c8949db489f99b848ae6e1cfe2711158e59b8b7c7fb9ec",
+      "original_sha256": "d41d90b40201a0b465c8949db489f99b848ae6e1cfe2711158e59b8b7c7fb9ec",
+      "frozen_sha256": "d41d90b40201a0b465c8949db489f99b848ae6e1cfe2711158e59b8b7c7fb9ec",
+      "frozen_matches": true,
+      "original_matches": true,
+      "snapshot_packaging_only": false
+    },
+    {
+      "path": "MaximumModulus/FiniteTargetCover.lean",
+      "expected_sha256": "de0c276e63ed5201b191f77d0d8f461b87ccf273186c935ee4156bee23f97563",
+      "original_sha256": "de0c276e63ed5201b191f77d0d8f461b87ccf273186c935ee4156bee23f97563",
+      "frozen_sha256": "de0c276e63ed5201b191f77d0d8f461b87ccf273186c935ee4156bee23f97563",
+      "frozen_matches": true,
+      "original_matches": true,
+      "snapshot_packaging_only": false
+    },
+    {
+      "path": "MaximumModulus/FiniteExceptionalSet.lean",
+      "expected_sha256": "c7722d63191e6a1bc3173aaf5d7ffbfe4c23c0398d403eb079ea9c42468140d6",
+      "original_sha256": "c7722d63191e6a1bc3173aaf5d7ffbfe4c23c0398d403eb079ea9c42468140d6",
+      "frozen_sha256": "c7722d63191e6a1bc3173aaf5d7ffbfe4c23c0398d403eb079ea9c42468140d6",
+      "frozen_matches": true,
+      "original_matches": true,
+      "snapshot_packaging_only": false
+    },
+    {
+      "path": "MaximumModulus/InfinityCharts.lean",
+      "expected_sha256": "0e364eaa4e737a7ccdafeaeedf89b22fe8b793e4d7de8fe4b1ca61214f205f0e",
+      "original_sha256": "0e364eaa4e737a7ccdafeaeedf89b22fe8b793e4d7de8fe4b1ca61214f205f0e",
+      "frozen_sha256": "0e364eaa4e737a7ccdafeaeedf89b22fe8b793e4d7de8fe4b1ca61214f205f0e",
+      "frozen_matches": true,
+      "original_matches": true,
+      "snapshot_packaging_only": false
+    },
+    {
+      "path": "MaximumModulus/Reductions.lean",
+      "expected_sha256": "81095abc9340c0a5ca229f539eca282b85ecfdbd6e07a2f49b6be927f8d4ff76",
+      "original_sha256": "81095abc9340c0a5ca229f539eca282b85ecfdbd6e07a2f49b6be927f8d4ff76",
+      "frozen_sha256": "81095abc9340c0a5ca229f539eca282b85ecfdbd6e07a2f49b6be927f8d4ff76",
+      "frozen_matches": true,
+      "original_matches": true,
+      "snapshot_packaging_only": false
+    },
+    {
+      "path": "MaximumModulus/FiniteValueCoordinates.lean",
+      "expected_sha256": "ff2c819ab02822e64a727b44426456cfd569f4ea70a4763de38ebdc322851183",
+      "original_sha256": "ff2c819ab02822e64a727b44426456cfd569f4ea70a4763de38ebdc322851183",
+      "frozen_sha256": "ff2c819ab02822e64a727b44426456cfd569f4ea70a4763de38ebdc322851183",
+      "frozen_matches": true,
+      "original_matches": true,
+      "snapshot_packaging_only": false
+    },
+    {
+      "path": "MaximumModulus/BoundaryCharts.lean",
+      "expected_sha256": "337e660ab7b136734531c6cbaf782c3353294b6da69bed62e2a9d7023be87ac4",
+      "original_sha256": "337e660ab7b136734531c6cbaf782c3353294b6da69bed62e2a9d7023be87ac4",
+      "frozen_sha256": "337e660ab7b136734531c6cbaf782c3353294b6da69bed62e2a9d7023be87ac4",
+      "frozen_matches": true,
+      "original_matches": true,
+      "snapshot_packaging_only": false
+    },
+    {
+      "path": "MaximumModulus/InversePairFamily.lean",
+      "expected_sha256": "e13cc2e39498732ba5caa56a3233ebf5545576235a1bdf5beaf9b95e7dd556f0",
+      "original_sha256": "e13cc2e39498732ba5caa56a3233ebf5545576235a1bdf5beaf9b95e7dd556f0",
+      "frozen_sha256": "e13cc2e39498732ba5caa56a3233ebf5545576235a1bdf5beaf9b95e7dd556f0",
+      "frozen_matches": true,
+      "original_matches": true,
+      "snapshot_packaging_only": false
+    },
+    {
+      "path": "MaximumModulus/Finiteness.lean",
+      "expected_sha256": "990b92706af6a1eb75f3758b32ea36f16cd1781d6748145fd5c050916409dcfb",
+      "original_sha256": "990b92706af6a1eb75f3758b32ea36f16cd1781d6748145fd5c050916409dcfb",
+      "frozen_sha256": "990b92706af6a1eb75f3758b32ea36f16cd1781d6748145fd5c050916409dcfb",
+      "frozen_matches": true,
+      "original_matches": true,
+      "snapshot_packaging_only": false
+    },
+    {
+      "path": "MaximumModulus/ExceptionalRadii.lean",
+      "expected_sha256": "9daba9dc313c1c781c27c3ceb5dfa716ed7aa706d407df0b9a4f7bf9b27db356",
+      "original_sha256": "9daba9dc313c1c781c27c3ceb5dfa716ed7aa706d407df0b9a4f7bf9b27db356",
+      "frozen_sha256": "9daba9dc313c1c781c27c3ceb5dfa716ed7aa706d407df0b9a4f7bf9b27db356",
+      "frozen_matches": true,
+      "original_matches": true,
+      "snapshot_packaging_only": false
+    },
+    {
+      "path": "scripts/source_integrity.py",
+      "expected_sha256": "6ab892c4e81d1103f4ac6e58259e2a953b591f0b599509acbe0e6e2c84ad07b3",
+      "original_sha256": "6ab892c4e81d1103f4ac6e58259e2a953b591f0b599509acbe0e6e2c84ad07b3",
+      "frozen_sha256": "6ab892c4e81d1103f4ac6e58259e2a953b591f0b599509acbe0e6e2c84ad07b3",
+      "frozen_matches": true,
+      "original_matches": true,
+      "snapshot_packaging_only": false
+    },
+    {
+      "path": "scripts/verify.sh",
+      "expected_sha256": "bf0aec9545c27fda02d61be6421fc4b1b4d17565c9821831ff5a1a0279b148a3",
+      "original_sha256": "bf0aec9545c27fda02d61be6421fc4b1b4d17565c9821831ff5a1a0279b148a3",
+      "frozen_sha256": "bf0aec9545c27fda02d61be6421fc4b1b4d17565c9821831ff5a1a0279b148a3",
+      "frozen_matches": true,
+      "original_matches": true,
+      "snapshot_packaging_only": false
+    },
+    {
+      "path": "scripts/summarize_verification.py",
+      "expected_sha256": "31aa021db27f03b39d17882826cf27388c80e13d7e25b0906034fecd8a5fc473",
+      "original_sha256": "31aa021db27f03b39d17882826cf27388c80e13d7e25b0906034fecd8a5fc473",
+      "frozen_sha256": "31aa021db27f03b39d17882826cf27388c80e13d7e25b0906034fecd8a5fc473",
+      "frozen_matches": true,
+      "original_matches": true,
+      "snapshot_packaging_only": false
+    },
+    {
+      "path": "scripts/fetch_cache.py",
+      "expected_sha256": "42327e06bbca544fc620c6e29c30648c2306bd879378cf7e7f817754ed88ba13",
+      "original_sha256": "42327e06bbca544fc620c6e29c30648c2306bd879378cf7e7f817754ed88ba13",
+      "frozen_sha256": "42327e06bbca544fc620c6e29c30648c2306bd879378cf7e7f817754ed88ba13",
+      "frozen_matches": true,
+      "original_matches": true,
+      "snapshot_packaging_only": false
+    },
+    {
+      "path": "scripts/run_logged.py",
+      "expected_sha256": "f2b253d125b1c49ba1554096a4a423fdffcff8268011445f66f0e04a9052eb6e",
+      "original_sha256": "f2b253d125b1c49ba1554096a4a423fdffcff8268011445f66f0e04a9052eb6e",
+      "frozen_sha256": "f2b253d125b1c49ba1554096a4a423fdffcff8268011445f66f0e04a9052eb6e",
+      "frozen_matches": true,
+      "original_matches": true,
+      "snapshot_packaging_only": false
+    },
+    {
+      "path": "scripts/audit-mathlib.py",
+      "expected_sha256": "da835bc0272e50ee0c902cdbf0595ef81c294d310e004dc67b3d7478a4569a6d",
+      "original_sha256": "da835bc0272e50ee0c902cdbf0595ef81c294d310e004dc67b3d7478a4569a6d",
+      "frozen_sha256": "da835bc0272e50ee0c902cdbf0595ef81c294d310e004dc67b3d7478a4569a6d",
+      "frozen_matches": true,
+      "original_matches": true,
+      "snapshot_packaging_only": false
+    }
+  ],
+  "exports": [
+    {
+      "name": "challenge",
+      "path": "/private/tmp/mm-lean-verify-20261010/audit/exports/challenge.ndjson",
+      "bytes": 54014504,
+      "recorded_bytes": 54014504,
+      "sha256": "ac2fe5af1de529ac3607406107429058256542d824ac15bf4590dba2bdde0360",
+      "recorded_sha256": "ac2fe5af1de529ac3607406107429058256542d824ac15bf4590dba2bdde0360",
+      "matches": true
+    },
+    {
+      "name": "solution",
+      "path": "/private/tmp/mm-lean-verify-20261010/audit/exports/solution.ndjson",
+      "bytes": 360280894,
+      "recorded_bytes": 360280894,
+      "sha256": "dfc65218ba9d699deaa8ed3191dd66f0a076d528fc36752b2217a13225f0ffd0",
+      "recorded_sha256": "dfc65218ba9d699deaa8ed3191dd66f0a076d528fc36752b2217a13225f0ffd0",
+      "matches": true
+    }
+  ],
+  "all_export_hashes_match": true,
+  "auditor_input_sha256": {
+    "targets.json": "ff4f6eac020fcbe484fee97c64fda93eb14822f8a1ead5fc6f9b9b9c81e22eb5",
+    "comparator.json": "264ba026cc3b363eb8141dac7715dc66d47ede31c4d14eeae20e07ff05e11b3d",
+    "OriginalProblem.lean": "4be4fb7093e9dd1176de51aed1b3a755507c14ea7ac60e236c7e122e3fc992e7",
+    "ComparatorChallenge.lean": "b51e5b557b2c057251c00629b327ca5417ecf91bc6319464c3097eece0c634bf",
+    "isolation.sb": "111302aa5401b351554d7c1c2500107fadccfb975a4f0917512f52e0e4c24fa5",
+    "run_isolated.py": "0100af170b5dd741708dfb81a4b3de7ef20cadebc1e18aa9663016980a2831c4",
+    "installed_OriginalProblem.lean": "4be4fb7093e9dd1176de51aed1b3a755507c14ea7ac60e236c7e122e3fc992e7",
+    "installed_ComparatorChallenge.lean": "b51e5b557b2c057251c00629b327ca5417ecf91bc6319464c3097eece0c634bf"
+  },
+  "manifest_and_config_current": {
+    "targets": {
+      "schema_version": 1,
+      "project": {
+        "root": "/private/tmp/mm-lean-verify-20261010/sources/proof",
+        "repository": "local source snapshot of /Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+        "commit": "8b731b51dcb0ed3d7e8c6463b6266c35d8099c85",
+        "toolchain": "leanprover/lean4:v4.35.0-rc4"
+      },
+      "problems": [
+        {
+          "id": "maximum-modulus-all-radii",
+          "source": "https://arxiv.org/pdf/1809.07200v2#page=30 ; https://arxiv.org/html/2208.11154v2#S1 ; https://arxiv.org/html/2607.09462v1#S1",
+          "requirements": [
+            {
+              "id": "actual-values",
+              "description": "Maximum points use the actual entire function values on the entire circle: norm(z)=r and forall w on the same circle, norm(f(w)) <= norm(f(z)).",
+              "targets": [
+                "literal-cofinal",
+                "independent-cofinal"
+              ],
+              "coverage": "full",
+              "evidence": "audit/OriginalProblem.lean; evidence/statement-coverage.md; original sources fixed at arXiv 1809.07200v2 Problem 2.16(b), 2208.11154v2 Question 1.1(b), and 2607.09462v1 introduction. Mechanical results are recorded separately after execution."
+            },
+            {
+              "id": "entire-class",
+              "description": "The theorem ranges over every complex entire f, excludes the zero function and every nonzero monomial c*z^m with natural exponent, and adds no extra analytic or geometric premise.",
+              "targets": [
+                "literal-cofinal",
+                "cofinal-statement",
+                "independent-cofinal"
+              ],
+              "coverage": "full",
+              "evidence": "audit/OriginalProblem.lean; evidence/statement-coverage.md; original sources fixed at arXiv 1809.07200v2 Problem 2.16(b), 2208.11154v2 Question 1.1(b), and 2607.09462v1 introduction. Mechanical results are recorded separately after execution."
+            },
+            {
+              "id": "uniform-bound",
+              "description": "For each such f there exists one natural B before the quantification over R; B does not depend on R or the selected radius.",
+              "targets": [
+                "literal-cofinal",
+                "cofinal-statement",
+                "independent-cofinal"
+              ],
+              "coverage": "full",
+              "evidence": "audit/OriginalProblem.lean; evidence/statement-coverage.md; original sources fixed at arXiv 1809.07200v2 Problem 2.16(b), 2208.11154v2 Question 1.1(b), and 2607.09462v1 introduction. Mechanical results are recorded separately after execution."
+            },
+            {
+              "id": "cofinal-radii",
+              "description": "For every positive real R there exists a real r > R satisfying the finite bounded maximum-set conclusion.",
+              "targets": [
+                "literal-cofinal",
+                "independent-cofinal"
+              ],
+              "coverage": "full",
+              "evidence": "audit/OriginalProblem.lean; evidence/statement-coverage.md; original sources fixed at arXiv 1809.07200v2 Problem 2.16(b), 2208.11154v2 Question 1.1(b), and 2607.09462v1 introduction. Mechanical results are recorded separately after execution."
+            },
+            {
+              "id": "explicit-finiteness",
+              "description": "The selected actual maximum-point set is explicitly finite wherever its ncard is bounded; every positive circle is also proved finite for the stated function class.",
+              "targets": [
+                "literal-cofinal",
+                "positive-finiteness",
+                "independent-finiteness"
+              ],
+              "coverage": "full",
+              "evidence": "audit/OriginalProblem.lean; evidence/statement-coverage.md; original sources fixed at arXiv 1809.07200v2 Problem 2.16(b), 2208.11154v2 Question 1.1(b), and 2607.09462v1 introduction. Mechanical results are recorded separately after execution."
+            },
+            {
+              "id": "cardinality-bound",
+              "description": "The natural cardinality of the actual finite selected maximum-point set is at most the fixed B.",
+              "targets": [
+                "literal-cofinal",
+                "independent-cofinal"
+              ],
+              "coverage": "full",
+              "evidence": "audit/OriginalProblem.lean; evidence/statement-coverage.md; original sources fixed at arXiv 1809.07200v2 Problem 2.16(b), 2208.11154v2 Question 1.1(b), and 2607.09462v1 introduction. Mechanical results are recorded separately after execution."
+            },
+            {
+              "id": "negative-original-question",
+              "description": "The cofinal bound rules out the number of actual maximum-modulus points tending to infinity on all radii, including an infinity-aware cardinality formulation. Selected-radii limsup unboundedness is a separate question and is not refuted.",
+              "targets": [
+                "negative-all-radii",
+                "independent-negative",
+                "independent-tendsto"
+              ],
+              "coverage": "full",
+              "evidence": "audit/OriginalProblem.lean; evidence/statement-coverage.md; original sources fixed at arXiv 1809.07200v2 Problem 2.16(b), 2208.11154v2 Question 1.1(b), and 2607.09462v1 introduction. Mechanical results are recorded separately after execution."
+            }
+          ]
+        }
+      ],
+      "targets": [
+        {
+          "id": "literal-cofinal",
+          "problem": "maximum-modulus-all-radii",
+          "role": "theorem",
+          "module": "MaximumModulus.AllRadii",
+          "source": "MaximumModulus/AllRadii.lean",
+          "declaration": "MaximumModulus.bounded_maxPoints_at_arbitrarily_large_radii"
+        },
+        {
+          "id": "cofinal-statement",
+          "problem": "maximum-modulus-all-radii",
+          "role": "theorem",
+          "module": "MaximumModulus.AllRadii",
+          "source": "MaximumModulus/AllRadii.lean",
+          "declaration": "MaximumModulus.allRadiiStatement"
+        },
+        {
+          "id": "negative-all-radii",
+          "problem": "maximum-modulus-all-radii",
+          "role": "theorem",
+          "module": "MaximumModulus.AllRadii",
+          "source": "MaximumModulus/AllRadii.lean",
+          "declaration": "MaximumModulus.all_radii_growth_impossible"
+        },
+        {
+          "id": "positive-finiteness",
+          "problem": "maximum-modulus-all-radii",
+          "role": "theorem",
+          "module": "MaximumModulus.Finiteness",
+          "source": "MaximumModulus/Finiteness.lean",
+          "declaration": "MaximumModulus.finite_maxPoints"
+        },
+        {
+          "id": "independent-cofinal",
+          "problem": "maximum-modulus-all-radii",
+          "role": "bridge",
+          "module": "MaximumModulus.Audit.OriginalProblem",
+          "source": "MaximumModulus/Audit/OriginalProblem.lean",
+          "declaration": "IndependentOriginal.original_problem_solved"
+        },
+        {
+          "id": "independent-negative",
+          "problem": "maximum-modulus-all-radii",
+          "role": "bridge",
+          "module": "MaximumModulus.Audit.OriginalProblem",
+          "source": "MaximumModulus/Audit/OriginalProblem.lean",
+          "declaration": "IndependentOriginal.original_all_radii_growth_impossible"
+        },
+        {
+          "id": "independent-tendsto",
+          "problem": "maximum-modulus-all-radii",
+          "role": "bridge",
+          "module": "MaximumModulus.Audit.OriginalProblem",
+          "source": "MaximumModulus/Audit/OriginalProblem.lean",
+          "declaration": "IndependentOriginal.original_count_not_tendsto_atTop"
+        },
+        {
+          "id": "independent-finiteness",
+          "problem": "maximum-modulus-all-radii",
+          "role": "bridge",
+          "module": "MaximumModulus.Audit.OriginalProblem",
+          "source": "MaximumModulus/Audit/OriginalProblem.lean",
+          "declaration": "IndependentOriginal.original_positive_circle_finiteness"
+        }
+      ]
+    },
+    "comparator": {
+      "challenge_module": "MaximumModulus.Audit.ComparatorChallenge",
+      "solution_module": "MaximumModulus.AllRadii",
+      "theorem_names": [
+        "MaximumModulus.bounded_maxPoints_at_arbitrarily_large_radii"
+      ],
+      "definition_names": [],
+      "permitted_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "enable_nanoda": false
+    }
+  },
+  "frozen_head": "8b731b51dcb0ed3d7e8c6463b6266c35d8099c85",
+  "frozen_git_status": "?? MaximumModulus/Audit/ComparatorChallenge.lean\n?? MaximumModulus/Audit/OriginalProblem.lean\n",
+  "dependencies": [
+    {
+      "name": "mathlib",
+      "expected": "81d17696471311f5e3e2f034236df7a781449f7e",
+      "actual": "81d17696471311f5e3e2f034236df7a781449f7e",
+      "matches": true,
+      "status": ""
+    },
+    {
+      "name": "plausible",
+      "expected": "aef59637faa9e85fa2486acaaf906ce3f572af7c",
+      "actual": "aef59637faa9e85fa2486acaaf906ce3f572af7c",
+      "matches": true,
+      "status": ""
+    },
+    {
+      "name": "LeanSearchClient",
+      "expected": "234d9e074fbd6e911b920baf32db5291c3125be0",
+      "actual": "234d9e074fbd6e911b920baf32db5291c3125be0",
+      "matches": true,
+      "status": ""
+    },
+    {
+      "name": "importGraph",
+      "expected": "579f558774c4ac6840e715ba60dabf3030619349",
+      "actual": "579f558774c4ac6840e715ba60dabf3030619349",
+      "matches": true,
+      "status": ""
+    },
+    {
+      "name": "proofwidgets",
+      "expected": "d5ad4a0b79fa7f9818fe1380d05a3f6143823c09",
+      "actual": "d5ad4a0b79fa7f9818fe1380d05a3f6143823c09",
+      "matches": true,
+      "status": ""
+    },
+    {
+      "name": "aesop",
+      "expected": "04879b1e1de744d5c9777c8cf63fa55a8f652e5e",
+      "actual": "04879b1e1de744d5c9777c8cf63fa55a8f652e5e",
+      "matches": true,
+      "status": ""
+    },
+    {
+      "name": "Qq",
+      "expected": "e7c4cdd2f1bf9df361ef7f621b4d6867012ab65e",
+      "actual": "e7c4cdd2f1bf9df361ef7f621b4d6867012ab65e",
+      "matches": true,
+      "status": ""
+    },
+    {
+      "name": "batteries",
+      "expected": "b71aaf60877e673fdb921f06f20987d12ee8a290",
+      "actual": "b71aaf60877e673fdb921f06f20987d12ee8a290",
+      "matches": true,
+      "status": ""
+    },
+    {
+      "name": "Cli",
+      "expected": "82c11b9717083154aefc5fe8d4cba4bbf046298f",
+      "actual": "82c11b9717083154aefc5fe8d4cba4bbf046298f",
+      "matches": true,
+      "status": ""
+    }
+  ],
+  "all_dependency_revisions_match_and_clean": true,
+  "manuscript_sha256": "bc951c3ffa7d3579b2f39a0949e38db27338ac32ac050e3f5359d4452573a7b1",
+  "manuscript_unchanged": true,
+  "comparator": {
+    "argv": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/private/tmp/mm-lean-verify-20261010/audit/isolation.sb",
+      "lake",
+      "comparator",
+      "--config",
+      "/private/tmp/mm-lean-verify-20261010/audit/comparator.json",
+      "--challenge-from-export",
+      "/private/tmp/mm-lean-verify-20261010/audit/exports/challenge.ndjson",
+      "--solution-from-export",
+      "/private/tmp/mm-lean-verify-20261010/audit/exports/solution.ndjson",
+      "--paranoid",
+      "--inadvisably-no-sandbox"
+    ],
+    "cwd": "/private/tmp/mm-lean-verify-20261010/sources/proof",
+    "environment": {
+      "PATH": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean/.tools/lean-4.35.0-rc4-darwin_aarch64/bin:/Library/Frameworks/Python.framework/Versions/3.13/bin:/usr/bin:/bin:/usr/sbin",
+      "TMPDIR": "/private/tmp/mm-lean-verify-20261010/tmp",
+      "LANG": "C.UTF-8",
+      "GIT_CONFIG_NOSYSTEM": "1",
+      "GIT_CONFIG_GLOBAL": "/dev/null"
+    },
+    "started_utc": "2026-10-10T19:37:17.145883+00:00",
+    "limits": {
+      "monitored_descendant_RSS_bytes": 10737418240,
+      "per_process_CPU_seconds": 1200,
+      "per_file_bytes": 2147483648,
+      "inherited_stack_limit_bytes": 8372224,
+      "wall_seconds": 1800
+    },
+    "exit_code": 0,
+    "peak_monitored_descendant_RSS_bytes": 1422491648,
+    "elapsed_seconds": 137.12721020868048
+  }
+}

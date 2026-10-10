@@ -1,0 +1,12 @@
+{
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "MaximumModulus/FiniteExceptionalSet.lean"
+  ],
+  "cwd": "/private/tmp/mm-lean-published-20261011/sources/site/proofs/maximum-modulus/lean",
+  "started_utc": "2026-10-10T20:32:38.824705+00:00",
+  "exit_code": 0,
+  "elapsed_seconds": 4.553606000263244
+}

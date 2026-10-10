@@ -1,0 +1,10 @@
+{
+  "command": [
+    "python3",
+    "scripts/summarize_verification.py"
+  ],
+  "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+  "started_utc": "2026-10-10T19:36:23.996794+00:00",
+  "exit_code": 0,
+  "elapsed_seconds": 0.032547291833907366
+}

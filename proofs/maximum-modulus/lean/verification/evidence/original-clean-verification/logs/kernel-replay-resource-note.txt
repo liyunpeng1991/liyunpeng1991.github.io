@@ -1,0 +1,8 @@
+The first command, `lake env leanchecker --verbose MaximumModulus`, was interrupted
+by the root agent with SIGTERM after the checker loaded project modules concurrently
+and caused severe memory pressure. The host reported 16 GiB physical memory and
+approximately 19 GiB swap use. The command's actual exit/output are retained in
+kernel-replay.json and kernel-replay.log. It is not counted as a successful check.
+
+Subsequent verification uses one explicit project module per checker invocation,
+in sequence. An interrupted resource-heavy check does not establish a theorem error.

@@ -1,0 +1,28 @@
+{
+  "outside-user-data": {
+    "blocked": true,
+    "error": "PermissionError(1, 'Operation not permitted')"
+  },
+  "outside-tmp-data": {
+    "blocked": true,
+    "error": "PermissionError(1, 'Operation not permitted')"
+  },
+  "outside-tmp-write": {
+    "blocked": true,
+    "error": "PermissionError(1, 'Operation not permitted')"
+  },
+  "network": {
+    "blocked": false,
+    "error": "URLError(gaierror(8, 'nodename nor servname provided, or not known'))"
+  },
+  "trusted-toolchain": {
+    "exit_code": 0,
+    "stdout": "Lean (version 4.35.0-rc4, arm64-apple-darwin24.6.0, commit c29b6dda4f7c20e3eeaa717c4e565663c5cfa364, Release)\n",
+    "stderr": ""
+  }
+}
+Traceback (most recent call last):
+  File "/private/tmp/mm-lean-published-20261011/audit/probe_isolation.py", line 17, in <module>
+    assert all(v['blocked'] for k,v in tests.items() if k!='trusted-toolchain')
+           ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

@@ -1,0 +1,334 @@
+MaximumModulus.AllRadiiStatement : Prop
+MaximumModulus.allRadiiStatement : MaximumModulus.AllRadiiStatement
+MaximumModulus.bounded_maxPoints_at_arbitrarily_large_radii : ∀ (f : ℂ → ℂ),
+  Differentiable ℂ f →
+    f ≠ 0 →
+      (¬∃ c m, c ≠ 0 ∧ ∀ (z : ℂ), f z = c * z ^ m) →
+        ∃ B,
+          ∀ (R : ℝ),
+            0 < R →
+              ∃ r,
+                R < r ∧
+                  {z | ‖z‖ = r ∧ ∀ (w : ℂ), ‖w‖ = r → ‖f w‖ ≤ ‖f z‖}.Finite ∧
+                    {z | ‖z‖ = r ∧ ∀ (w : ℂ), ‖w‖ = r → ‖f w‖ ≤ ‖f z‖}.ncard ≤ B
+MaximumModulus.all_radii_growth_impossible : ∀ (f : ℂ → ℂ),
+  MaximumModulus.Entire f →
+    f ≠ 0 →
+      ¬MaximumModulus.IsMonomial f → ¬MaximumModulus.CountTendsToInfinity f ∧ ¬MaximumModulus.MaximaGrowOnAllRadii f
+theorem MaximumModulus.allRadiiStatement : MaximumModulus.AllRadiiStatement :=
+<not imported>
+theorem MaximumModulus.bounded_maxPoints_at_arbitrarily_large_radii : ∀ (f : ℂ → ℂ),
+  Differentiable ℂ f →
+    f ≠ 0 →
+      (¬∃ c m, c ≠ 0 ∧ ∀ (z : ℂ), f z = c * z ^ m) →
+        ∃ B,
+          ∀ (R : ℝ),
+            0 < R →
+              ∃ r,
+                R < r ∧
+                  {z | ‖z‖ = r ∧ ∀ (w : ℂ), ‖w‖ = r → ‖f w‖ ≤ ‖f z‖}.Finite ∧
+                    {z | ‖z‖ = r ∧ ∀ (w : ℂ), ‖w‖ = r → ‖f w‖ ≤ ‖f z‖}.ncard ≤ B :=
+<not imported>
+theorem MaximumModulus.all_radii_growth_impossible : ∀ (f : ℂ → ℂ),
+  MaximumModulus.Entire f →
+    f ≠ 0 →
+      ¬MaximumModulus.IsMonomial f → ¬MaximumModulus.CountTendsToInfinity f ∧ ¬MaximumModulus.MaximaGrowOnAllRadii f :=
+<not imported>
+'MaximumModulus.allRadiiStatement' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.bounded_maxPoints_at_arbitrarily_large_radii' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.all_radii_growth_impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.regularLogDerivativeHighCount_open_closure_projection' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MaximumModulus.regularLogDerivativeHighCount_empty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.omittedHighCountBranchCover_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.OmittedHighCountBranchCover.actual_closure_branches' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MaximumModulus.regular_high_count_closure_omitted_local_projection_isOpen' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MaximumModulus.InfinityTargetBranchCover.product_germ_nonconstant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MaximumModulus.InfinityTargetBranchCover.high_count_selected_sandwich' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MaximumModulus.regularLogDerivativeHighCount_open_local_projection_at_infinity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+@[expose] def MaximumModulus.Entire : (ℂ → ℂ) → Prop :=
+fun f => Differentiable ℂ f
+@[expose] def MaximumModulus.IsMonomial : (ℂ → ℂ) → Prop :=
+fun f => ∃ c m, c ≠ 0 ∧ ∀ (z : ℂ), f z = c * z ^ m
+@[expose] def MaximumModulus.MaxPoints : (ℂ → ℂ) → ℝ → Set ℂ :=
+fun f r => {z | ‖z‖ = r ∧ ∀ (w : ℂ), ‖w‖ = r → ‖f w‖ ≤ ‖f z‖}
+@[expose] def MaximumModulus.GoodRadius : (ℂ → ℂ) → ℕ → ℝ → Prop :=
+fun f B r => (MaximumModulus.MaxPoints f r).Finite ∧ (MaximumModulus.MaxPoints f r).ncard ≤ B
+@[expose] def MaximumModulus.CofinalBound : (ℂ → ℂ) → ℕ → Prop :=
+fun f B => ∀ (R : ℝ), 0 < R → ∃ r, R < r ∧ MaximumModulus.GoodRadius f B r
+@[expose] def MaximumModulus.AllRadiiStatement : Prop :=
+∀ (f : ℂ → ℂ), MaximumModulus.Entire f → f ≠ 0 → ¬MaximumModulus.IsMonomial f → ∃ B, MaximumModulus.CofinalBound f B
+@[expose] def MaximumModulus.AlmostEverywhereBoundStatement : Prop :=
+∀ (f : ℂ → ℂ),
+  MaximumModulus.Entire f →
+    f ≠ 0 → ¬MaximumModulus.IsMonomial f → ∃ B, ∀ᵐ (r : ℝ), 0 < r → (MaximumModulus.MaxPoints f r).ncard ≤ B
+theorem MaximumModulus.finite_maxPoints : ∀ {f : ℂ → ℂ},
+  MaximumModulus.Entire f →
+    f ≠ 0 → ¬MaximumModulus.IsMonomial f → ∀ {r : ℝ}, 0 < r → (MaximumModulus.MaxPoints f r).Finite :=
+<not imported>
+theorem MaximumModulus.cofinalBound_of_ae_ncard : ∀ {f : ℂ → ℂ},
+  MaximumModulus.Entire f →
+    f ≠ 0 →
+      ¬MaximumModulus.IsMonomial f →
+        ∀ {B : ℕ}, (∀ᵐ (r : ℝ), 0 < r → (MaximumModulus.MaxPoints f r).ncard ≤ B) → MaximumModulus.CofinalBound f B :=
+<not imported>
+theorem MaximumModulus.almostEverywhereStatement_implies_allRadiiStatement : MaximumModulus.AlmostEverywhereBoundStatement →
+  MaximumModulus.AllRadiiStatement :=
+<not imported>
+theorem MaximumModulus.allRadiiStatement_implies_negative : MaximumModulus.AllRadiiStatement →
+  ∀ (f : ℂ → ℂ),
+    MaximumModulus.Entire f → f ≠ 0 → ¬MaximumModulus.IsMonomial f → ¬MaximumModulus.MaximaGrowOnAllRadii f :=
+<not imported>
+@[expose] def MaximumModulus.StatementAudit.OriginalRequiredStatement : Prop :=
+∀ (f : ℂ → ℂ),
+  Differentiable ℂ f →
+    f ≠ 0 →
+      (¬∃ c m, c ≠ 0 ∧ ∀ (z : ℂ), f z = c * z ^ m) →
+        ∃ B,
+          ∀ (R : ℝ),
+            0 < R →
+              ∃ r,
+                R < r ∧
+                  (MaximumModulus.StatementAudit.OriginalMaxPoints f r).Finite ∧
+                    (MaximumModulus.StatementAudit.OriginalMaxPoints f r).ncard ≤ B
+'MaximumModulus.maxPoints_nonempty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.closure_continues_through_finite_imageBranches' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MaximumModulus.finite_imageBranches_local_projection_isOpen' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.finiteValueEmbedding_preimage_closure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.logarithmic_pair_product_germ_nonconstant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.finiteTargetBranchCover_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.FiniteTargetBranchCover.regular_at_punctured_branch' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MaximumModulus.FiniteTargetBranchCover.physical_count_radius' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MaximumModulus.finiteSingularTargets_locally_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.finiteSingularTargets_countable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.finiteSingularSquareRadii_countable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.positiveProductFiberBound_of_regular_high_count_empty' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MaximumModulus.logDerivative_high_count_omitted_finite_image_cover' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MaximumModulus.FiniteTargetBranchCover.central_fiber_count_le_branch' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MaximumModulus.FiniteTargetBranchCover.high_count_selected_sandwich' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MaximumModulus.finite_regular_high_count_closure_contains_analytic_branch' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MaximumModulus.regular_high_count_closure_finite_local_projection_isOpen' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MaximumModulus.infinityValueEmbedding_preimage_closure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.infinityTargetBranchCover_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.regularLogDerivativeHighCount_closure_product_ne_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MaximumModulus.maxPoints_eq_norm_level' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.entire_reflection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.analyticOnNhd_reflectionProduct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.reflectionProduct_eq_sq_norm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.reflectionProduct_constant_of_infinite_maxPoints' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MaximumModulus.entire_factor_at_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.eq_zero_value_of_reflectionProduct_constant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.isMonomial_of_reflectionProduct_constant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.finite_maxPoints' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.cofinalBound_not_growth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.cofinalBound_not_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.cofinalBound_of_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.cofinalBound_of_locallyFinite_exceptions' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.allRadiiStatement_implies_negative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.cofinalBound_of_ae_ncard' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.almostEverywhereStatement_implies_allRadiiStatement' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MaximumModulus.small_inverse_pairs_finite_ncard_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.inverse_pairs_eq_small_of_norm_lt_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.inverse_pairs_finite_ncard_le_of_norm_lt_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+theorem MaximumModulus.analytic_local_valence : ∀ {A : ℂ → ℂ},
+  AnalyticAt ℂ A 0 →
+    analyticOrderAt (fun z => A z - A 0) 0 ≠ ⊤ →
+      0 < analyticOrderNatAt (fun z => A z - A 0) 0 ∧
+        ∃ ε,
+          0 < ε ∧
+            ∀ (p : ℂ),
+              {z | ‖z‖ < ε ∧ A z = p}.Finite ∧
+                {z | ‖z‖ < ε ∧ A z = p}.ncard ≤ analyticOrderNatAt (fun z => A z - A 0) 0 :=
+<not imported>
+'MaximumModulus.power_fiber_finite_ncard_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.analytic_germ_root' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.local_power_coordinate_valence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.analytic_local_valence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.maxPoints_mapsTo_inversePairs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.maxPoints_finite_ncard_le_inversePairs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.StatementAudit.statement_correspondence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.StatementAudit.original_finiteness' depends on axioms: [propext, Classical.choice, Quot.sound]
+@[expose] def MaximumModulus.PositiveProductFiberBound : (ℂ → ℂ) → ℕ → ℕ → Prop :=
+fun q m B =>
+  ∃ S,
+    S.Countable ∧
+      ∀ (r : ℝ),
+        0 < r →
+          r ∉ S →
+            ∀ (p : ℝ),
+              ↑m < p →
+                (MaximumModulus.InversePairs q (MaximumModulus.reflection q) (↑r ^ 2) ↑p).Finite ∧
+                  (MaximumModulus.InversePairs q (MaximumModulus.reflection q) (↑r ^ 2) ↑p).ncard ≤ B
+theorem MaximumModulus.cofinalBound_of_positiveProductFiberBound : ∀ {f g : ℂ → ℂ} {m B : ℕ},
+  MaximumModulus.Entire g →
+    g 0 ≠ 0 →
+      ¬MaximumModulus.IsMonomial f →
+        (∀ (z : ℂ), f z = z ^ m * g z) →
+          MaximumModulus.PositiveProductFiberBound (MaximumModulus.normalizedLogDerivative m g) m B →
+            MaximumModulus.CofinalBound f B :=
+<not imported>
+theorem MaximumModulus.normalizedLogDerivative_small_product_bound : ∀ {f g : ℂ → ℂ} {m : ℕ},
+  MaximumModulus.Entire g →
+    g 0 ≠ 0 →
+      ¬MaximumModulus.IsMonomial f →
+        (∀ (z : ℂ), f z = z ^ m * g z) →
+          ∃ ε,
+            0 < ε ∧
+              ∀ (s p : ℂ),
+                s ≠ 0 →
+                  ‖s‖ < ε ^ 2 →
+                    (MaximumModulus.InversePairs (MaximumModulus.normalizedLogDerivative m g)
+                          (MaximumModulus.reflection (MaximumModulus.normalizedLogDerivative m g)) s p).Finite ∧
+                      (MaximumModulus.InversePairs (MaximumModulus.normalizedLogDerivative m g)
+                            (MaximumModulus.reflection (MaximumModulus.normalizedLogDerivative m g)) s p).ncard ≤
+                        2 * analyticOrderNatAt (fun z => MaximumModulus.normalizedLogDerivative m g z - ↑m) 0 :=
+<not imported>
+theorem MaximumModulus.exists_positive_envelope_derivative_off_countable : ∀ {f : ℂ → ℂ},
+  MaximumModulus.Entire f →
+    (¬∃ c, ∀ (z : ℂ), f z = c) →
+      ∀ {a b : ℝ},
+        0 < a →
+          a < b →
+            ∀ {S : Set ℝ},
+              S.Countable →
+                ∃ r ∈ Set.Ioo a b,
+                  r ∉ S ∧
+                    DifferentiableAt ℝ (MaximumModulus.squaredMaximum f) r ∧
+                      0 < deriv (MaximumModulus.squaredMaximum f) r :=
+<not imported>
+'MaximumModulus.imageBranch_fibers_radius' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.finite_imageBranch_comparisons_radius' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.analytic_inverseRoot_chart' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.analytic_inverseRoot_capture' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.analytic_inverseRoot_family' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.analytic_inverseRoot_pair_family' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.analytic_inverseRoot_local_fiber_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.weightedLogDerivative_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.normalizedLogDerivative_finite_order' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.normalizedLogDerivative_no_reciprocal_symmetry' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MaximumModulus.normalizedLogDerivative_small_product_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.no_local_normalized_reciprocity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.continuous_sphereLogDerivative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.normalizedLogDerivative_finite_inverse_pairs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.compact_sphereLogDerivative_inverse_image' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.isProperMap_sphereCorrespondenceMap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.sphereCorrespondenceMap_finite_fiber' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.angular_stationarity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.value_ne_zero_of_maxPoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.common_logarithmic_derivative_at_maxPoints' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.actual_maxPoints_mapsTo_inversePairs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.squaredMaximum_strictMonoOn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.squaredMaximum_lipschitzOn_Icc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.exists_positive_envelope_derivative_off_countable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MaximumModulus.cofinalBound_of_positiveProductFiberBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.bad_locus_empty_of_open_closure_projection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.analytic_imageBranch_locally_closed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.imageBranch_full_branch_of_clopen_membership' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.isOpen_product_projection_of_analytic_charts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.compact_fiber_capture' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.closedMap_fiber_capture' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.normalizedLogDerivative_finite_order_regular' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.reciprocalSphereLogDerivative_pole_germ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.sphereLogDerivative_pole_inverse_chart' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.sphereLogDerivative_regular_inverse_chart' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.finite_entire_zeros_in_compact_of_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.finite_sphereLogDerivative_omitted_roots_in_compact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MaximumModulus.sphereLogDerivative_small_product_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.imageBranch_noncentral_image_is_graph' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.selected_imageBranches_punctured_closure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.imageBranch_full_branch_of_captured_subbranches' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MaximumModulus.closure_of_local_selected_imageBranches' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.local_selected_imageBranches_closure_projection_isOpen' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MaximumModulus.logDerivative_high_count_has_bounded_survivor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MaximumModulus.logDerivative_high_count_omitted_value_capture' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MaximumModulus.finite_omitted_roots_in_coordinate_annulus' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.imageBranches_eq_or_disjoint_of_stable_comparisons' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MaximumModulus.finite_imageBranches_noncentral_image_is_graph' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MaximumModulus.inverseRoot_branch_germ_nonconstant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.no_constant_product_regular_pair_germ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.no_constant_product_spherical_regular_pair_germ' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MaximumModulus.sphereCorrespondence_regular_chart_capture' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.finite_orders_common_power' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.RegularSpherePairChart.capture_rootPair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.sphereCorrespondence_regular_root_capture' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.RegularSpherePairChart.rootPair_values_radius' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MaximumModulus.regularSphereRootFamily_values_radius' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.regularSphereRootPair_analytic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.sphereCorrespondence_regular_finite_family' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.countable_exceptional_sphere_targets' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.countable_exceptional_sphere_radii' depends on axioms: [propext, Classical.choice, Quot.sound]
+@[expose] def MaximumModulus.RegularLogDerivativeHighCount : ℕ → (ℂ → ℂ) → ℕ → Set (ℂ × OnePoint ℂ) :=
+fun m g L =>
+  {y | y ∈ MaximumModulus.LogDerivativeHighCount m g L ∧ ∃ p, y.2 = ↑p ∧ MaximumModulus.IsSingleValueGraph m g (y.1, p)}
+'MaximumModulus.regularLogDerivativeHighCount_closure_avoids_small_products' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MaximumModulus.regularLogDerivativeHighCount_empty_of_open_closure_projection' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MaximumModulus.sphere_inversePairs_eq_normalized' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.normalized_inversePairs_bound_at_regular_target' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MaximumModulus.finite_analytic_physical_inversePairs_count_radius' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MaximumModulus.productGermClass_eq_univ_of_total_graph' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximumModulus.central_fiber_count_le_of_total_graph' depends on axioms: [propext, Classical.choice, Quot.sound]

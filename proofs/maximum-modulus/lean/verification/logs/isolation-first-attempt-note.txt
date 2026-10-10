@@ -1,0 +1,1 @@
+The first run_isolated.py launch failed in preexec_fn before sandbox-exec. The requested 256 MiB stack limit exceeded the observed macOS hard limit 67092480 bytes. No submission command executed. The runner was corrected to that observed hard limit before continuing. RLIMIT_AS/CPU/FSIZE hard limits were unlimited.

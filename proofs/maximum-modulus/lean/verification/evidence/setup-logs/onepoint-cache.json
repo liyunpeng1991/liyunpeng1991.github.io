@@ -1,0 +1,13 @@
+{
+  "command": [
+    "lake",
+    "exe",
+    "cache",
+    "get",
+    "Mathlib.Topology.Compactification.OnePoint.Basic"
+  ],
+  "cwd": "/Users/gluon/Documents/ChatGPT/Maximum Modulus/lean",
+  "started_utc": "2026-10-10T18:25:57.919058+00:00",
+  "exit_code": 0,
+  "elapsed_seconds": 6.318672999739647
+}

@@ -1,0 +1,18 @@
+{
+  "retrieved_utc": "2026-10-10T19:24:03.988833+00:00",
+  "repository": "https://github.com/TheJustinSunPrize/awards",
+  "commit": "16877004910734cecca83cc5af0fec2f5a4125b3",
+  "source": "https://github.com/TheJustinSunPrize/awards/blob/main/skills/lean-verify/SKILL.md",
+  "files": {
+    "main-commit.json": "ed3918f403cb769805ebdfe66d7dd2495ee00b91805602098456b567b715bd96",
+    "SKILL.md": "d04655e0d5694eda09f22b9d51a7969674d670f83f0ad9b7aad7d64c51c921ff",
+    "workflow-commit.txt": "31018a630a0d07e023724a47c0965bc9714890f74bcce79ed11bcb9b9e66f862",
+    "references/statement-audit.md": "581b815edfa1b1ab7361727b2e2107379856d299a0a6f7add6cc9801ea0d6197",
+    "references/report-template.md": "6cc8ed08e13670f6b250cfdc5fbcd3457675d2772d3a3d326794085609945afa",
+    "references/reproduction.md": "a3507ad37f5075a8b0c0ca3296420da262ae3d04d08e8c9e64168b38ec97501d",
+    "references/input-routing.md": "b481395774be36f4a6ad5257ece24cc351cedbfec6ddb87c34273f2308a00197",
+    "references/automation.md": "94a7acf59bb47b2ec57a6913125601b64253cbc78e671cd681793c824d14e6ad",
+    "scripts/audit.py": "5db45dddcb4d588bc27e7c7161fbca5cedaa3e73e1c40843d21f5a214323cd07",
+    "assets/targets.example.json": "7059777e3939ddf52bd9721d3620bda65e759add1dd46d694d4f07e60da5d338"
+  }
+}

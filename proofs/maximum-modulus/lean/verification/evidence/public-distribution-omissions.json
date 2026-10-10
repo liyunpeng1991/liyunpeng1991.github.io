@@ -1,0 +1,964 @@
+{
+  "omitted": [
+    {
+      "path": "lean/verification/README.md",
+      "bytes": 2096,
+      "reason": "Replaced by public-distribution-specific README; source and evidence files are unchanged."
+    },
+    {
+      "path": "lean/verification/archive-index.json",
+      "bytes": 89060,
+      "reason": "Original full local archive packaging; source identity is supplied directly in this public distribution."
+    },
+    {
+      "path": "lean/verification/audit/exports/challenge.ndjson",
+      "bytes": 54014504,
+      "reason": "Large raw proof export; hashes and generating commands retained."
+    },
+    {
+      "path": "lean/verification/audit/exports/solution.ndjson",
+      "bytes": 360280894,
+      "reason": "Large raw proof export; hashes and generating commands retained."
+    },
+    {
+      "path": "lean/verification/bundle-create.log",
+      "bytes": 0,
+      "reason": "Original full local archive packaging; source identity is supplied directly in this public distribution."
+    },
+    {
+      "path": "lean/verification/bundle-verify.log",
+      "bytes": 252,
+      "reason": "Original full local archive packaging; source identity is supplied directly in this public distribution."
+    },
+    {
+      "path": "lean/verification/project-checks/axioms.json",
+      "bytes": 256,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/axioms.log",
+      "bytes": 22017,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/clean-build.json",
+      "bytes": 223,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/clean-build.log",
+      "bytes": 2600,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/clean-project.json",
+      "bytes": 295,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/clean-project.log",
+      "bytes": 0,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-AEBridge.json",
+      "bytes": 288,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-AEBridge.log",
+      "bytes": 34,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-AllRadii.json",
+      "bytes": 286,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-AllRadii.log",
+      "bytes": 34,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-Basic.json",
+      "bytes": 284,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-Basic.log",
+      "bytes": 31,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-BoundaryCharts.json",
+      "bytes": 293,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-BoundaryCharts.log",
+      "bytes": 40,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-BranchCollision.json",
+      "bytes": 293,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-BranchCollision.log",
+      "bytes": 41,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-BranchContinuation.json",
+      "bytes": 297,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-BranchContinuation.log",
+      "bytes": 44,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-Definitions.json",
+      "bytes": 290,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-Definitions.log",
+      "bytes": 37,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-DuplicateSafeCount.json",
+      "bytes": 297,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-DuplicateSafeCount.log",
+      "bytes": 44,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-ExceptionalRadii.json",
+      "bytes": 294,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-ExceptionalRadii.log",
+      "bytes": 42,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-FiberCapture.json",
+      "bytes": 291,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-FiberCapture.log",
+      "bytes": 38,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-FiniteExceptionalSet.json",
+      "bytes": 300,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-FiniteExceptionalSet.log",
+      "bytes": 46,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-FiniteImageGraphs.json",
+      "bytes": 297,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-FiniteImageGraphs.log",
+      "bytes": 43,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-FiniteTargetCover.json",
+      "bytes": 296,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-FiniteTargetCover.log",
+      "bytes": 43,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-FiniteValueCoordinates.json",
+      "bytes": 301,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-FiniteValueCoordinates.log",
+      "bytes": 48,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-Finiteness.json",
+      "bytes": 288,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-Finiteness.log",
+      "bytes": 36,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-GeometricReduction.json",
+      "bytes": 297,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-GeometricReduction.log",
+      "bytes": 44,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-GlobalCharts.json",
+      "bytes": 291,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-GlobalCharts.log",
+      "bytes": 38,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-GlobalDegreeAux.json",
+      "bytes": 294,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-GlobalDegreeAux.log",
+      "bytes": 41,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-HighCountCapture.json",
+      "bytes": 295,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-HighCountCapture.log",
+      "bytes": 42,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-HighCountGlobal.json",
+      "bytes": 294,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-HighCountGlobal.log",
+      "bytes": 41,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-HighCountInterior.json",
+      "bytes": 296,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-HighCountInterior.log",
+      "bytes": 43,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-HighCountLocus.json",
+      "bytes": 293,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-HighCountLocus.log",
+      "bytes": 40,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-InfinityCharts.json",
+      "bytes": 294,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-InfinityCharts.log",
+      "bytes": 40,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-InfinityInterior.json",
+      "bytes": 295,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-InfinityInterior.log",
+      "bytes": 42,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-InversePairFamily.json",
+      "bytes": 297,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-InversePairFamily.log",
+      "bytes": 43,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-InverseRootChart.json",
+      "bytes": 295,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-InverseRootChart.log",
+      "bytes": 42,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-LocalImageTopology.json",
+      "bytes": 298,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-LocalImageTopology.log",
+      "bytes": 44,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-LocalReciprocal.json",
+      "bytes": 294,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-LocalReciprocal.log",
+      "bytes": 41,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-LocalValence.json",
+      "bytes": 292,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-LocalValence.log",
+      "bytes": 38,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-LogDerivative.json",
+      "bytes": 292,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-LogDerivative.log",
+      "bytes": 39,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-MaximaToFibers.json",
+      "bytes": 293,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-MaximaToFibers.log",
+      "bytes": 40,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-MaximumEnvelope.json",
+      "bytes": 295,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-MaximumEnvelope.log",
+      "bytes": 41,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-MaximumStationarity.json",
+      "bytes": 299,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-MaximumStationarity.log",
+      "bytes": 45,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-MeromorphicCorrespondence.json",
+      "bytes": 303,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-MeromorphicCorrespondence.log",
+      "bytes": 51,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-OmittedTargetCover.json",
+      "bytes": 298,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-OmittedTargetCover.log",
+      "bytes": 44,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-PairNonvertical.json",
+      "bytes": 295,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-PairNonvertical.log",
+      "bytes": 41,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-PoleChart.json",
+      "bytes": 289,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-PoleChart.log",
+      "bytes": 35,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-ProductNonconstant.json",
+      "bytes": 298,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-ProductNonconstant.log",
+      "bytes": 44,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-Reductions.json",
+      "bytes": 288,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-Reductions.log",
+      "bytes": 36,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-SmallFibers.json",
+      "bytes": 291,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-SmallFibers.log",
+      "bytes": 37,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-SphereSmallFibers.json",
+      "bytes": 296,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-SphereSmallFibers.log",
+      "bytes": 43,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-StatementAudit.json",
+      "bytes": 293,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/kernel-StatementAudit.log",
+      "bytes": 40,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/source-integrity-data.json",
+      "bytes": 7772,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/source-integrity.json",
+      "bytes": 249,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/source-integrity.log",
+      "bytes": 7772,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-AEBridge.json",
+      "bytes": 268,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-AEBridge.log",
+      "bytes": 0,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-AllRadii.json",
+      "bytes": 268,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-AllRadii.log",
+      "bytes": 0,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-Basic.json",
+      "bytes": 265,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-Basic.log",
+      "bytes": 0,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-BoundaryCharts.json",
+      "bytes": 274,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-BoundaryCharts.log",
+      "bytes": 0,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-BranchCollision.json",
+      "bytes": 275,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-BranchCollision.log",
+      "bytes": 0,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-BranchContinuation.json",
+      "bytes": 279,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-BranchContinuation.log",
+      "bytes": 0,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-Definitions.json",
+      "bytes": 271,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-Definitions.log",
+      "bytes": 0,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-DuplicateSafeCount.json",
+      "bytes": 278,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-DuplicateSafeCount.log",
+      "bytes": 0,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-ExceptionalRadii.json",
+      "bytes": 276,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-ExceptionalRadii.log",
+      "bytes": 0,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-FiberCapture.json",
+      "bytes": 273,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-FiberCapture.log",
+      "bytes": 0,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-FiniteExceptionalSet.json",
+      "bytes": 280,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-FiniteExceptionalSet.log",
+      "bytes": 0,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-FiniteImageGraphs.json",
+      "bytes": 277,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-FiniteImageGraphs.log",
+      "bytes": 0,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-FiniteTargetCover.json",
+      "bytes": 278,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-FiniteTargetCover.log",
+      "bytes": 0,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-FiniteValueCoordinates.json",
+      "bytes": 282,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-FiniteValueCoordinates.log",
+      "bytes": 0,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-Finiteness.json",
+      "bytes": 270,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-Finiteness.log",
+      "bytes": 0,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-GeometricReduction.json",
+      "bytes": 277,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-GeometricReduction.log",
+      "bytes": 0,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-GlobalCharts.json",
+      "bytes": 272,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-GlobalCharts.log",
+      "bytes": 0,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-GlobalDegreeAux.json",
+      "bytes": 275,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-GlobalDegreeAux.log",
+      "bytes": 0,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-HighCountCapture.json",
+      "bytes": 276,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-HighCountCapture.log",
+      "bytes": 0,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-HighCountGlobal.json",
+      "bytes": 275,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-HighCountGlobal.log",
+      "bytes": 0,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-HighCountInterior.json",
+      "bytes": 277,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-HighCountInterior.log",
+      "bytes": 0,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-HighCountLocus.json",
+      "bytes": 274,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-HighCountLocus.log",
+      "bytes": 0,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-InfinityCharts.json",
+      "bytes": 274,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-InfinityCharts.log",
+      "bytes": 0,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-InfinityInterior.json",
+      "bytes": 276,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-InfinityInterior.log",
+      "bytes": 0,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-InversePairFamily.json",
+      "bytes": 277,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-InversePairFamily.log",
+      "bytes": 0,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-InverseRootChart.json",
+      "bytes": 276,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-InverseRootChart.log",
+      "bytes": 0,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-LocalImageTopology.json",
+      "bytes": 278,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-LocalImageTopology.log",
+      "bytes": 0,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-LocalReciprocal.json",
+      "bytes": 275,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-LocalReciprocal.log",
+      "bytes": 0,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-LocalValence.json",
+      "bytes": 272,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-LocalValence.log",
+      "bytes": 0,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-LogDerivative.json",
+      "bytes": 273,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-LogDerivative.log",
+      "bytes": 0,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-MaximaToFibers.json",
+      "bytes": 274,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-MaximaToFibers.log",
+      "bytes": 0,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-MaximumEnvelope.json",
+      "bytes": 275,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-MaximumEnvelope.log",
+      "bytes": 0,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-MaximumModulus.json",
+      "bytes": 259,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-MaximumModulus.log",
+      "bytes": 0,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-MaximumStationarity.json",
+      "bytes": 279,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-MaximumStationarity.log",
+      "bytes": 0,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-MeromorphicCorrespondence.json",
+      "bytes": 285,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-MeromorphicCorrespondence.log",
+      "bytes": 0,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-OmittedTargetCover.json",
+      "bytes": 278,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-OmittedTargetCover.log",
+      "bytes": 0,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-PairNonvertical.json",
+      "bytes": 275,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-PairNonvertical.log",
+      "bytes": 0,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-PoleChart.json",
+      "bytes": 269,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-PoleChart.log",
+      "bytes": 0,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-ProductNonconstant.json",
+      "bytes": 278,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-ProductNonconstant.log",
+      "bytes": 0,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-Reductions.json",
+      "bytes": 270,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-Reductions.log",
+      "bytes": 0,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-SmallFibers.json",
+      "bytes": 272,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-SmallFibers.log",
+      "bytes": 0,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-SphereSmallFibers.json",
+      "bytes": 277,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-SphereSmallFibers.log",
+      "bytes": 0,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-StatementAudit.json",
+      "bytes": 274,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/target-StatementAudit.log",
+      "bytes": 0,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/verification-lake-version.json",
+      "bytes": 229,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/verification-lake-version.log",
+      "bytes": 57,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/verification-lean-version.json",
+      "bytes": 228,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/verification-lean-version.log",
+      "bytes": 110,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/project-checks/verification-summary.json",
+      "bytes": 58003,
+      "reason": "Duplicate of retained original-clean-verification evidence."
+    },
+    {
+      "path": "lean/verification/proof-snapshot.bundle",
+      "bytes": 124794,
+      "reason": "Original full local archive packaging; source identity is supplied directly in this public distribution."
+    },
+    {
+      "path": "lean/verification/workflow/main-commit.json",
+      "bytes": 104881,
+      "reason": "Unnecessary GitHub API commit metadata contains unrelated public author email addresses; workflow revision and source hashes are retained in the report and pinned workflow files."
+    }
+  ]
+}
