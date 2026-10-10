@@ -1,0 +1,11 @@
+name = "maximum_modulus"
+version = "0.1.0"
+defaultTargets = ["MaximumModulus"]
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "81d17696471311f5e3e2f034236df7a781449f7e"
+
+[[lean_lib]]
+name = "MaximumModulus"

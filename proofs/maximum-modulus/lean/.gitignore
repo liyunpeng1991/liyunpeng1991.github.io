@@ -1,0 +1,6 @@
+.lake/
+.tools/
+**/*.olean
+**/*.ilean
+**/*.olean.server
+**/*.olean.private

@@ -1,0 +1,720 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=27mm]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{array}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue,
+ pdftitle={A cofinal bound for maximum-modulus points of entire functions},
+ pdfauthor={Yunpeng Li}}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\numberwithin{equation}{section}
+\newcommand{\C}{\mathbb C}
+\newcommand{\N}{\mathbb N}
+\newcommand{\R}{\mathbb R}
+\newcommand{\Cs}{\C^{\times}}
+\newcommand{\Chat}{\widehat{\C}}
+\newcommand{\Max}{\operatorname{MaxPoints}}
+\newcommand{\card}{\operatorname{card}}
+\newcommand{\ord}{\operatorname{ord}}
+\newcommand{\cl}{\operatorname{cl}}
+\title{A cofinal bound for maximum-modulus points of entire functions}
+\author{Yunpeng Li\\[3pt]
+ \small School of Data Science, The Chinese University of Hong Kong, Shenzhen, China\\
+ \small\texttt{liyunpeng@cuhk.edu.cn}}
+\date{11 October 2026}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+For every nonzero entire function which is not a monomial, we prove that
+the number of its exact maximum-modulus points is bounded by a fixed finite
+integer at arbitrarily large radii. This gives a negative answer to the
+all-radii maximum-modulus question. After removing the zero at the origin,
+one may take the bound to be twice the order at zero of the normalized
+logarithmic derivative minus its constant term. The proof uses finite local
+inverse-root families and continuation of the closure of regular targets
+with large fibers. It handles the omitted logarithmic-derivative value and
+the value at infinity without assuming global normalization or a generic
+component degree. A complete Lean~4 formalization accompanies the proof.
+\end{abstract}
+
+\section{The problem and the result}\label{sec:introduction}
+
+Throughout, $\N=\{0,1,2,\ldots\}$, so the monomials excluded below include
+nonzero constant functions.
+
+For an entire function $f$ and a positive radius $r$, write
+\[
+ M_f(r)=\max_{|z|=r}|f(z)|.
+\]
+\[
+ \Max(f,r)=\{z\in\C:|z|=r\text{ and }
+             |f(w)|\le |f(z)|\text{ for every }w\text{ with }|w|=r\}.
+\]
+Thus the maximum-point set is defined by actual function values. The maximum
+exists by compactness. For a nonzero non-monomial entire function, we prove
+below that this set is finite at every positive radius; its cardinality
+$\nu_f(r)$ consequently has its ordinary finite meaning.
+
+Hayman--Lingham's Problem~2.16(b), on printed page~29 of
+\cite{HL}, asks whether a single entire function can have
+$\liminf_{r\to\infty}\nu_f(r)=\infty$. The non-monomial formulation is
+explicit in Gl\"ucksam--Pardo-Sim\'on's Question~1.1(b) \cite{GP} and in
+the introduction of Pardo-Sim\'on--Sixsmith \cite{PS}. In contrast,
+Herzog--Piranian \cite{HP} answered the selected-radii question
+$\limsup_{r\to\infty}\nu_f(r)=\infty$ affirmatively in 1968. These two
+questions have different quantifiers. The recent finite-order result
+\cite{PS} concerns the latter question. Approximate maximum points,
+as studied in \cite{GP}, also differ from the exact set used here.
+
+\begin{theorem}\label{thm:main}
+Let $f$ be a nonzero entire function which is not $cz^m$ for any
+$c\ne0$ and $m\in\N$. There is an integer $B\in\N$ such that, for every
+$R>0$, there is an $r>R$ for which $\Max(f,r)$ is finite and
+$\card\Max(f,r)\le B$.
+In fact, write $f(z)=z^m g(z)$ with $g(0)\ne0$. One may take
+\[
+ B=2k,\qquad k=\ord_0\left(\frac{zg'(z)}{g(z)}\right).
+\]
+Here $k$ is a positive finite integer.
+\end{theorem}
+
+\begin{corollary}\label{cor:negative}
+No nonzero non-monomial entire function has
+$\nu_f(r)\to\infty$ as $r\to\infty$ along all positive radii.
+\end{corollary}
+
+\begin{proof}[Deduction from Theorem~\ref{thm:main}]
+Fix the bound $B$ supplied by the theorem. If the count tended to infinity,
+there would be a threshold $R_0$ beyond which it was at least $B+1$.
+Choose $R>\max\{0,R_0\}$ and then the radius $r>R$ supplied by the theorem.
+Its maximum-point set is finite and has cardinality at most $B$, a
+contradiction. The same argument rules out a formulation which treats an
+infinite maximum-point set as having infinite cardinality.
+\end{proof}
+
+The proof first bounds fibers with a small coordinate. It then constructs
+finite local covers of the actual logarithmic-derivative correspondence,
+counting physical pairs rather than inverse-root indices. The closure of
+the regular targets with too many pairs continues across every spherical
+value, including an omitted value. Its product projection would be both
+open and closed in the plane, contradicting the small-coordinate bound.
+A countable exceptional set and the radial maximum envelope then give a
+good radius in every positive interval.
+
+\section{Factorization and finiteness on each circle}\label{sec:finiteness}
+
+Factor $f(z)=z^m g(z)$, where $m\in\N$, $g$ is entire, and $g(0)\ne0$.
+The factor $g$ is nonconstant, since otherwise $f$ is a monomial. Put
+\[
+ g^\sharp(z)=\overline{g(\bar z)}.
+\]
+This reflection is entire. On every positive circle,
+$|f(z)|=r^m|g(z)|$, so $f$ and $g$ have the same maximum-point set.
+
+\begin{lemma}\label{lem:product}
+For each $s\in\Cs$, the function
+$P_s(z)=g(z)g^\sharp(s/z)$ is holomorphic and nonconstant on $\Cs$.
+\end{lemma}
+
+\begin{proof}
+Holomorphy follows by composition and multiplication. If $P_s$ were a
+constant $C$, then, as $z\to\infty$, the factor $g^\sharp(s/z)$ would tend
+to $g^\sharp(0)\ne0$. Outside a sufficiently large disk it would be
+bounded away from zero, and the identity
+$g(z)=C/g^\sharp(s/z)$ would bound $g$. Continuity bounds $g$ on the
+remaining compact disk. Liouville's theorem would make $g$ constant,
+contrary to its choice.
+\end{proof}
+
+\begin{lemma}\label{lem:circle-finite}
+The set $\Max(f,r)$ is finite for every $r>0$.
+\end{lemma}
+
+\begin{proof}
+It suffices to consider $g$. If its maximum-point set on the compact
+circle were infinite, it would have an accumulation point on that circle,
+hence in $\Cs$. For every maximum point $z$, the identity
+$r^2/z=\bar z$ gives
+\[
+ P_{r^2}(z)=g(z)g^\sharp(\bar z)=|g(z)|^2=M_g(r)^2.
+\]
+The identity theorem on the connected domain $\Cs$ would make
+$P_{r^2}$ constant. This contradicts Lemma~\ref{lem:product}.
+\end{proof}
+
+This proves finiteness independently of the subsequent fiber bound and
+justifies using $\nu_f(r)=\card\Max(f,r)$ throughout the positive domain.
+
+\section{Logarithmic derivatives and the small-coordinate bound}
+\label{sec:small}
+
+Define
+\[
+ A(z)=m+\frac{zg'(z)}{g(z)},\qquad B(z)=A^\sharp(z).
+\]
+These are meromorphic functions interpreted as continuous functions into
+$\Chat$. The point zero is regular and $A(0)=B(0)=m$. At a zero
+$\alpha\ne0$ of $g$ of multiplicity $n$, write
+$g(z)=(z-\alpha)^n h(z)$ with $h(\alpha)\ne0$. Then
+\[
+ A(z)=\frac{n\alpha}{z-\alpha}+m+n+\frac{zh'(z)}{h(z)}.
+\]
+Thus every pole is genuine and simple, and its spherical value is
+$\infty$. The same holds for $B$.
+
+The function $A-m$ is analytic near zero and not identically zero. Indeed,
+if it vanished on a neighborhood, $g'$ would vanish on a punctured
+neighborhood where $g\ne0$, and the identity theorem would make $g$
+constant. Let
+\[
+ k=\ord_0(A-m)>0,\qquad L=2k.
+\]
+Reflection gives the same positive finite order for $B-m$.
+
+For any product $s$ and spherical common value $p$, let
+\[
+ F(s,p)=\{(z,w)\in\C^2:zw=s,\ A(z)=B(w)=p\}.
+\]
+We count distinct actual ordered pairs.
+
+We will repeatedly use the following local power coordinate. If a
+nonconstant analytic function $h$ satisfies $h(\alpha)=p_0$, write
+\[
+ h(z)-p_0=(z-\alpha)^d u(z),\qquad u(\alpha)\ne0.
+\]
+After shrinking to a simply connected neighborhood, $u$ has an analytic
+$d$th root. The coordinate $e(z)=(z-\alpha)u(z)^{1/d}$ has
+$e'(\alpha)\ne0$, so the inverse function theorem makes it conformal and
+$h=p_0+e^d$. In that coordinate, each value has at most $d$ distinct
+inverse roots. Apply this to $A-m$ and $B-m$ at zero. Choose
+$\varepsilon>0$ such that both coordinate disks have this $k$-root bound
+and contain no poles.
+
+For $s\ne0$, a pair in $F(s,p)$ is determined by either coordinate, since
+$w=s/z$ and $z=s/w$. Thus at most $k$ pairs have $|z|<\varepsilon$, and
+at most $k$ pairs have $|w|<\varepsilon$. Their union has at most $L$ pairs,
+also when $p=\infty$. In particular,
+\begin{equation}\label{eq:small}
+ 0<|s|<\varepsilon^2\quad\Longrightarrow\quad
+ F(s,p)\text{ is finite and }\card F(s,p)\le L
+ \quad\text{for every }p\in\Chat.
+\end{equation}
+Indeed, a pair whose two coordinate norms were at least $\varepsilon$
+would have $|zw|\ge\varepsilon^2$.
+
+\section{Properness and exact finite local covers}\label{sec:covers}
+
+Consider the actual correspondence
+\[
+ X=\{(z,w)\in\Cs\times\Cs:A(z)=B(w)\ne m\}
+\]
+over
+\[
+ \Omega=\Cs\times(\Chat\setminus\{m\}),
+\]
+and the map $\Phi:X\to\Omega$, $\Phi(z,w)=(zw,A(z))$.
+It is proper with finite fibers. Indeed, on a compact target set the common
+values stay away from $m$. Continuity of $A,B$ at zero gives $\eta>0$
+bounding both coordinate norms below. A bound $|zw|\le S$ then bounds
+both norms above by $S/\eta$. The inverse image is a closed subset of the
+resulting compact annulus product. For a fixed finite value the inverse
+roots are discrete, by nonconstancy and the identity theorem; at infinity
+they are isolated poles. Hence there are finitely many in the compact
+annulus, and the product fixes the other coordinate. Denote the actual
+target image in $\Omega$ by $Y$. Properness makes $Y$ closed in $\Omega$.
+
+All local target neighborhoods in this section lie inside $\Omega$.
+Fix $y_0=(s_0,p_0)\in\Omega$. Its actual central fiber is finite.
+If it is empty, properness gives a target neighborhood disjoint from $Y$,
+so the local cover there is empty. Otherwise, properness captures every
+nearby pair in a finite collection of chart products around the central
+pairs. To see this, an uncaptured sequence over targets tending to $y_0$
+would have a subsequence converging to a central pair inside one of those
+chart products.
+
+In a finite-value chart, the analytic power-coordinate construction gives
+\[
+ A(z)=p_0+e_A(z)^{d_A},\qquad
+ B(w)=p_0+e_B(w)^{d_B},
+\]
+where $e_A,e_B$ are conformal coordinates centered at their physical roots.
+Choose one positive common multiple $N$ of the finitely many orders.
+For $p=p_0+t^N$, every local inverse root is of the form
+\[
+ z=e_A^{-1}(\zeta t^{N/d_A}),\qquad
+ w=e_B^{-1}(\xi t^{N/d_B}),\qquad
+ \zeta^{d_A}=\xi^{d_B}=1.
+\]
+This constructs a finite analytic physical family $P_i(t)=(z_i(t),w_i(t))$,
+with product functions $S_i(t)=z_i(t)w_i(t)$ and raw image maps
+\begin{equation}\label{eq:raw}
+ \gamma_i(t)=(S_i(t),p_0+t^N).
+\end{equation}
+All displayed pairs have the actual common values. Every nearby actual
+pair is represented by an index at that same $t$, because the roots of each
+power equation are exactly the displayed root-of-unity multiples. At zero
+every central physical pair is represented. Indices need not be injective.
+
+Localize this capture in the target as follows. Choose a product disk about
+$s_0$ and a value disk whose product lies in the capture neighborhood.
+Choose $\delta>0$ small enough that all raw product images on $|t|<\delta$
+lie in that product disk and $\delta^N$ is smaller than the initial value
+radius. Use the value radius $\delta^N$ in the final neighborhood $W$.
+The full raw open-disk images then lie in $W$, and every target in $W$
+has all its parameter roots inside that same disk. Consequently
+\begin{equation}\label{eq:cover}
+ Y\cap W=\bigcup_i\gamma_i(\{|t|<\delta\}).
+\end{equation}
+This is an exact cover of the total actual image.
+
+At $p_0=\infty$, use $\lambda=1/p$. Every pole of $A$ and $B$ is simple,
+so $1/A$ and $1/B$ have simple zeros at the corresponding physical roots.
+They are conformal coordinates, and the physical roots are analytic
+functions of $t=\lambda$ itself. Here take $N=1$ and $p(t)=1/t$ for
+$t\ne0$, with $p(0)=\infty$. Properness and the same target shrinking give
+the exact cover. Its punctured points have finite common value. In either
+chart type, if $v$ is the centered value coordinate, then
+$|v(p(t))|=|t|^N$.
+
+\section{Stabilized branches and distinct physical counts}
+\label{sec:stabilization}
+
+For finitely many indices $i,j$ and $N$th roots of unity $\omega$, the
+functions
+\[
+ S_i(\omega t)-S_j(t)
+\]
+are analytic at zero. By the isolated-zero theorem, after a common shrinking
+each is either identically zero as a germ or nonzero for every nonzero
+parameter. Stabilize the comparisons of both physical coordinates as well.
+Repeat the matched target shrinking above after this change of radius.
+These finite comparisons give the following facts.
+
+\begin{enumerate}
+\item Two punctured raw image representatives are equal or disjoint.
+An intersection has parameter roots related by $t\mapsto\omega t$;
+the comparison is therefore a persistent identity. Rotation preserves
+the parameter disk.
+
+\item Every noncentral point of the finite raw image union has a
+neighborhood where the whole union is one analytic graph over the common
+value coordinate. The map $t\mapsto t^N$ has nonzero derivative there.
+Coincident rotated roots give the same graph germ by the persistent
+comparison. Noncoincident roots and the other disjoint branches are absent
+after shrinking the neighborhood. Relative closedness, proved below,
+also excludes limits from those other branches.
+
+\item Each punctured image branch has a constant physical fiber cardinal
+$K$. Exact capture at the same parameter gives, for each index $j$,
+\begin{equation}\label{eq:exact-fiber}
+ F(S_j(t),p(t))=\{P_i(t):S_i(t)=S_j(t)\}.
+\end{equation}
+The product filter and the equivalence relation given by physical equality
+$P_i(t)=P_{i'}(t)$ are constant on the punctured disk, by the stabilized
+comparisons. This finite image therefore has constant cardinality. It
+counts distinct pairs even when several indices represent the same pair.
+
+\item The finite raw image union, and any subunion of its branches, is
+relatively closed in its open value cylinder. If targets converge inside
+that cylinder, $|v(p)|=|t|^N$ bounds their parameters strictly inside the
+disk. Passing to a fixed index and then to a convergent parameter
+subsequence supplies the target limit, including at the center.
+\end{enumerate}
+
+There is an essential central-cardinality comparison. Suppose the entire
+actual image at a finite center is locally a single graph $s=\psi(p)$.
+Forward validity forces every product germ to be $\psi(p_0+t^N)$, so all
+indices belong to one persistent product class. Choose index representatives
+of distinct central physical pairs. If two representatives coincide at a
+small nonzero parameter, stabilized physical equality makes their germs
+equal, and hence their central pairs equal. The distinct chosen central
+representatives thus remain distinct at that parameter. Therefore
+\begin{equation}\label{eq:centralcount}
+ \card F(s_0,p_0)\le K.
+\end{equation}
+This uses the graph property of the total image and the exact cover.
+
+\section{The regular high-count closure}\label{sec:high-count}
+
+Call a point $(s_0,p_0)\in Y$ \emph{regular} if in some product
+neighborhood $U_s\times U_p$ the total image satisfies
+\[
+ Y\cap(U_s\times U_p)=\{(\psi(p),p):p\in U_p\}
+\]
+for an analytic function $\psi$ with values in $U_s$. The value coordinate
+is spherical when needed. This is equality for the whole local image.
+
+Let $E$ be the set of regular finite-valued targets in $Y$ whose actual
+fiber has more than $L$ distinct pairs, and let
+\[
+ H=\cl E\quad\text{in }\C\times\Chat.
+\]
+By \eqref{eq:small}, $E$ misses the full open cylinder
+$\{|s|<\varepsilon^2\}\times\Chat$: its first coordinate is nonzero by
+definition, and every nonzero product in that cylinder has at most $L$
+pairs. The same open cylinder is disjoint from $H$. In particular, every
+point of $H$ has nonzero product coordinate. Closedness of $Y$ in $\Omega$
+also gives $H\subset Y$ locally away from $p=m$.
+
+In a stabilized local finite family, select the branches whose punctured
+physical count $K$ exceeds $L$. On the matched neighborhood $W$,
+\[
+ \text{selected punctured union}\ \subset\ E\cap W\
+ \subset\ \text{selected full union}.
+\]
+Away from the center this follows from the exact whole-image graph and
+count. A finite central point of $E$ belongs to a selected branch by
+\eqref{eq:centralcount}; it cannot contribute an isolated point.
+At infinity the center itself is not in $E$, but the punctured pole-chart
+points are finite-valued and satisfy the same selection rule.
+Relative closedness and density of each punctured branch in its full
+image give
+\begin{equation}\label{eq:interiorH}
+ H\cap W=\text{selected full union}\qquad(p_0\ne m).
+\end{equation}
+Closure is localized inside the open neighborhood: every sequence tending
+to a point of $W$ is eventually in $W$. Each point of $H$ away from $m$
+therefore lies on a complete local analytic branch contained in $H$,
+including when its value is infinity.
+
+\section{Continuation across the omitted value}\label{sec:omitted}
+
+Fix $y_0=(s_0,m)\in H$; the preceding exclusion gives $s_0\ne0$.
+Choose a target neighborhood with $|s|\le S$.
+A point of $E$ there has more than $L$ pairs, of which at most $L$
+have a small coordinate. At least one surviving actual pair satisfies
+\begin{equation}\label{eq:survivor}
+ \varepsilon\le |z|,|w|\le S/\varepsilon.
+\end{equation}
+The upper bounds follow from the product bound and the lower bounds.
+The surviving pair can change from target to target; no persistent choice
+of it is needed.
+
+The roots of $A-m$ and $B-m$ in this compact annulus are finite.
+Finite-value power charts at these roots construct a finite common-power
+family across $p=m$. Compactness captures all pairs satisfying
+\eqref{eq:survivor} in the chosen chart neighborhoods when $p$ is
+sufficiently close to $m$: a contrary sequence would have a subsequence
+converging to a captured central root. Hence every nearby point of $E$
+lies in this finite raw image union $Z$. This family need not enumerate
+escaping pairs. One bounded surviving pair per target gives the containment.
+
+Discard germs whose central product differs from $s_0$. If there are any,
+let $d>0$ be the minimum of their finitely many distances $|S_i(0)-s_0|$.
+Shrink the parameter disk so $|S_i(t)-S_i(0)|<d/3$ and restrict the target
+product to $|s-s_0|<d/3$. None of those germs can represent a target in
+that product disk. If there are no discarded germs, the step is vacuous.
+Every retained branch has center $y_0$.
+
+Stabilize these finitely many product comparisons as before, with parameter
+radius $\delta_0$. Shrink the capture neighborhood $U$ into
+$\{|p-m|<\delta_0^N\}$. Then
+\[
+ E\cap U\subset Z_0,\qquad
+ Z_0=\bigcup_j\gamma_j(\{|t|<\delta_0\}),
+\]
+because every represented parameter over $U$ has $|t|<\delta_0$.
+Choose $0<\delta<\delta_0$ so every retained full raw $\delta$-image lies
+in $U$, and put
+\[
+ W=U\cap\{|p-m|<\delta^N\},\qquad
+ Z_j=\gamma_j(\{|t|<\delta\}).
+\]
+Each $Z_j$ lies in $W$. Conversely, a target in $W$ represented in an old
+$\delta_0$-image has $|t|^N<\delta^N$, hence $|t|<\delta$.
+Using relative closedness in the old value cylinder and the localized
+containment $E\cap U\subset Z_0$, we obtain
+\begin{equation}\label{eq:boundarycontainment}
+ H\cap W\subset\bigcup_j Z_j,\qquad Z_j\subset W.
+\end{equation}
+Indeed, a sequence from $E$ converging to a point of $W$ is eventually in
+$U$, and its represented parameters have a subsequence strictly inside
+the old disk. The limit's value then places its parameter inside the
+new disk. Matching the value radius with $\delta^N$ is essential to
+retain each whole raw $\delta$-image inside $W$.
+
+Write $Z_j^*=\gamma_j(\{0<|t|<\delta\})$.
+These punctured images are connected, pairwise equal or disjoint,
+and locally smooth graphs over the value. They avoid $p=m$.
+Their intersections with $H$ are closed relative to $Z_j^*$.
+They are also open, as follows.
+
+At a point $y\in H\cap Z_j^*$, \eqref{eq:interiorH} supplies a complete
+analytic subbranch through $y$ contained in $H$. Shrink it inside $W$.
+By \eqref{eq:boundarycontainment} and the local single-graph description
+of the finite $Z$ union, it is contained in the graph of $Z_j^*$ near $y$.
+Its value coordinate is nonconstant. The open mapping theorem makes its
+value image a neighborhood of the value at $y$; the graph has one product
+coordinate per value, so the subbranch fills a neighborhood of $y$ in
+$Z_j^*$. This proves openness of membership in $H$.
+
+Connectedness now gives $Z_j^*\subset H$ or $Z_j^*\cap H=\varnothing$.
+All representatives lie inside $W$, so the capture remains valid along
+the whole connected punctured image. Since $y_0\in\cl E$ and $E$ contains
+no point of value $m$, at least one of the finitely many punctured
+branches meets $E$ arbitrarily close to $y_0$. Its punctured image is
+contained in $H$, and closedness includes its center.
+This selection uses membership in $H$, not a count attached to the
+partial bounded-survivor family. Every omitted-value point of $H$
+therefore lies on a complete branch contained in $H$; no isolated center
+is added.
+
+\section{Nonconstant product coordinates and the global contradiction}
+\label{sec:global}
+
+No actual image germ used above has a nonzero constant product.
+Suppose $z(t)w(t)=s_0\ne0$ on such a germ. The common-value coordinate
+makes $z(t)$ nonconstant: a constant physical coordinate would have
+constant common value, whereas the value parameter is nonconstant.
+Choose a noncentral parameter with finite common value. Both physical
+coordinates then avoid zeros of the respective entire factors.
+The open mapping theorem applied to $z(t)$ gives
+\[
+ A(z)=B(s_0/z)
+\]
+on an open set where both factors are nonzero. There,
+\[
+ \frac{zP_{s_0}'(z)}{P_{s_0}(z)}
+ =\frac{zg'(z)}{g(z)}
+  -\frac{(s_0/z)(g^\sharp)'(s_0/z)}{g^\sharp(s_0/z)}
+ =A(z)-B(s_0/z)=0.
+\]
+The identity theorem makes $P_{s_0}'$ vanish throughout $\Cs$.
+This contradicts Lemma~\ref{lem:product}. For a germ centered at poles,
+its noncentral common values are finite, so the same argument applies.
+No regularity of the total image at that parameter is required.
+
+The complete branches in $H$ at ordinary finite, omitted, and infinite
+values therefore have nonconstant analytic product coordinates.
+The open mapping theorem makes the product projection of $H$ open,
+including at branch centers. The projection is closed because $H$ is
+closed in $\C\times\Chat$ and $\Chat$ is compact.
+If $E$ were nonempty, this projection would be a nonempty open-and-closed
+subset of the connected plane, hence the whole plane.
+But the cylinder $|s|<\varepsilon^2$ is disjoint from $H$.
+This contradiction proves the following assertion.
+
+\begin{proposition}\label{prop:empty}
+Every regular finite-valued target in $Y$ has at most $L$ distinct
+physical pairs in its fiber; equivalently, $E=\varnothing$.
+\end{proposition}
+
+\section{Countable exceptions and arbitrarily large good radii}
+\label{sec:radii}
+
+Let $D$ consist of the nonregular actual image targets in
+$\Cs\times(\C\setminus\{m\})$. The finite local family shows that $D$ is
+locally finite: all noncentral points in a small local image cover are
+single-graph points. At an empty central fiber, properness supplies a
+neighborhood outside the image. The ambient space is second countable;
+a countable cover by neighborhoods meeting $D$ finitely shows that $D$
+is countable. Its product projection is countable, although that projection
+need not be locally finite.
+
+Let $Q$ be the positive radii $r$ for which $(r^2,p)\in D$ for some finite
+$p$. This is countable since $D$ is countable and $r\mapsto r^2$ is
+injective on positive radii. For $r>0$ outside $Q$ and any real $p>m$,
+a nonempty fiber $F(r^2,p)$ lies at a regular finite target.
+Properness proves it finite, and Proposition~\ref{prop:empty} bounds
+its cardinality by $L$. An empty fiber is finite with cardinality zero.
+No convention for the cardinality of an infinite set is used.
+
+Set $G(r)=\max_{|z|=r}|g(z)|^2$ for $r>0$.
+The maximum principle makes $G$ strictly increasing: equality at two
+radii would put a maximum point from the smaller circle in the interior
+of the larger disk, forcing $g$ to be constant.
+Also $G(r)\ge |g(0)|^2>0$.
+
+Local Lipschitz continuity has a direct uniform estimate.
+Fix $0<a<b$. On $[a,b]$, the gradient norm of $|g|^2$ is
+$2|g||g'|$, bounded by a constant $C$ on $|z|\le b$.
+If $z$ is a maximum point at radius $r\in[a,b]$, compare it with
+$(u/r)z$ at radius $u\in[a,b]$. Their distance is $|r-u|$, and the segment
+between them lies in that disk. The gradient bound gives
+$G(r)\le G(u)+C|r-u|$. Reversing the radii gives
+$|G(r)-G(u)|\le C|r-u|$.
+
+Thus $G$ is absolutely continuous on every compact positive interval,
+and
+\[
+ \int_a^bG'(u)\,du=G(b)-G(a)>0.
+\]
+Monotonicity gives $G'\ge0$ almost everywhere. The set of radii inside
+$(a,b)$ where $G$ is differentiable and $G'>0$ therefore has positive
+measure. Removing the countable set $Q$ leaves such a radius $r\notin Q$.
+
+At every maximum point $z$ of $g$ on this circle, $g(z)\ne0$.
+Differentiating $\theta\mapsto |g(e^{i\theta}z)|^2$ at its maximum gives
+angular stationarity. The smooth supporting function
+$h_z(u)=|g(uz/r)|^2$ satisfies $h_z(u)\le G(u)$ and $h_z(r)=G(r)$.
+Since both functions are differentiable at $r$, their derivatives agree
+there. This applies to every maximizing $z$, even when the maximum is tied.
+Consequently
+\[
+ \operatorname{Im}\frac{zg'(z)}{g(z)}=0,\qquad
+ \operatorname{Re}\frac{zg'(z)}{g(z)}=\frac{rG'(r)}{2G(r)}>0.
+\]
+All maximum points therefore have the same real actual value
+\[
+ A(z)=p=m+\frac{rG'(r)}{2G(r)}>m.
+\]
+The injective map $z\mapsto(z,\bar z)$ sends them into the explicitly
+finite fiber $F(r^2,p)$, because
+$B(\bar z)=\overline{A(z)}=p$.
+Their cardinality is at most $L=2k$.
+The maximum-point sets of $f$ and $g$ coincide, so the same bound holds
+for $f$. Choosing the interval $(R,R+1)$ proves Theorem~\ref{thm:main}.
+
+\section{Formalization and verification}\label{sec:lean}
+
+The accompanying Lean~4 project proves the theorem with the original
+entire, nonzero, and non-monomial hypotheses. Its final declaration is
+\begin{center}
+\small\nolinkurl{MaximumModulus.bounded_maxPoints_at_arbitrarily_large_radii}
+\end{center}
+in \path{MaximumModulus/AllRadii.lean}, line~26. The statement spells out
+the set using the norm equality and all actual function-value comparisons.
+It has one $B:\N$ before the universal quantifier over $R:\R$, and
+explicitly supplies finiteness together with the bound on
+\texttt{Set.ncard}. Thus the convention for \texttt{Set.ncard} on an
+infinite set cannot make the result vacuous. Independent finiteness on
+every positive circle is in \path{MaximumModulus/Finiteness.lean},
+line~187. The negative-growth implication is in
+\path{MaximumModulus/AllRadii.lean}, line~36.
+
+The principal correspondence between the proof and project modules is
+as follows. All filenames in the table are relative to
+\path{MaximumModulus/}.
+\begin{center}
+\small
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.35\textwidth}
+                >{\raggedright\arraybackslash}p{0.57\textwidth}}
+Mathematical step & Lean source modules\\[3pt]
+Circle finiteness and logarithmic derivative &
+\nolinkurl{Finiteness.lean}, \nolinkurl{LogDerivative.lean}\\[3pt]
+Local power coordinates and small fibers &
+\nolinkurl{LocalValence.lean}, \nolinkurl{SmallFibers.lean}\\[3pt]
+Exact finite covers and distinct-pair counts &
+\nolinkurl{FiniteTargetCover.lean}, \nolinkurl{DuplicateSafeCount.lean}\\[3pt]
+Ordinary finite values and infinity &
+\nolinkurl{HighCountInterior.lean}, \nolinkurl{InfinityInterior.lean}\\[3pt]
+Omitted-value capture and continuation &
+\nolinkurl{BoundaryCharts.lean}, \nolinkurl{BranchContinuation.lean},
+\nolinkurl{OmittedTargetCover.lean}\\[3pt]
+Global empty high-count locus & \nolinkurl{HighCountGlobal.lean}\\[3pt]
+Countable exceptions and radial envelope &
+\nolinkurl{FiniteExceptionalSet.lean}, \nolinkurl{MaximumEnvelope.lean}\\[3pt]
+Final statement and negative implication & \nolinkurl{AllRadii.lean}
+\end{tabular}
+\end{center}
+
+The crucial exact-cover, central-count, and omitted-value assertions are
+proved by the declarations
+\begin{quote}\small
+\nolinkurl{sphereCorrespondence_regular_finite_family},\\
+\nolinkurl{central_fiber_count_le_of_total_graph},\\
+\nolinkurl{omittedHighCountBranchCover_exists},\\
+\nolinkurl{OmittedHighCountBranchCover.actual_closure_branches},\\
+\nolinkurl{regular_high_count_closure_omitted_local_projection_isOpen},\\
+\nolinkurl{regularLogDerivativeHighCount_empty}.
+\end{quote}
+
+The exact toolchain and dependency revisions are
+\begin{quote}\small
+Lean toolchain: \nolinkurl{leanprover/lean4:v4.35.0-rc4}\\
+Lean commit: \nolinkurl{c29b6dda4f7c20e3eeaa717c4e565663c5cfa364}\\
+mathlib commit: \nolinkurl{81d17696471311f5e3e2f034236df7a781449f7e}.
+\end{quote}
+All transitive dependency revisions are pinned in \path{lake-manifest.json}.
+Build and verification instructions are in the project \path{README.md};
+\texttt{sh scripts/verify.sh} performs the recorded project checks.
+
+A clean project build, direct checks of all project sources, sequential
+kernel replays of the 42 project modules relative to their pinned imports,
+and explicit target axiom inspections have been executed successfully.
+The final theorem and its transitive dependencies use only
+\texttt{propext}, \texttt{Classical.choice}, and \texttt{Quot.sound}.
+They contain no proof placeholders or unproved custom mathematical axioms.
+The requested prize verification workflow was also executed locally on a
+frozen audit snapshot. Eight theorem and independent bridge targets passed;
+the independently specified final statement and exported solution closure
+were accepted by the configured comparison and external checker runs.
+These checks concern the formal theorem; they do not constitute a
+publication or prize decision.
+
+Full commands, logs, axiom reports, pins, comparison outputs, and isolation
+details are preserved in \path{verification/prize-report.md} and its linked
+evidence. The audit snapshot commit
+\nolinkurl{8b731b51dcb0ed3d7e8c6463b6266c35d8099c85} is a temporary local
+verification record, not a published repository revision.
+The mathematical exposition here was revised after those checks without
+changing the verified Lean source, dependency lock, or build scripts.
+
+\section{Scope and differences from the earlier manuscript}\label{sec:scope}
+
+The result proved here is the cofinal finite bound in
+Theorem~\ref{thm:main}, which suffices for the original all-radii question.
+It remains compatible with unbounded counts along selected radii.
+The earlier manuscript also proposed a locally finite exceptional set of
+radii for a $2k$ bound and sharpness examples. Those stronger assertions
+are outside the verified scope of this paper and its final Lean theorem.
+In particular, local finiteness of the nonregular \emph{target} set $D$
+does not by itself imply local finiteness of its projection onto radii.
+The argument in Section~\ref{sec:radii} uses countability and a
+positive-measure set of radii; it is not an assertion of an almost-everywhere
+maximum-point bound.
+
+The continuation proof replaces the earlier proposed propagation of global
+irreducible-component degrees by the closure of actual regular high-count
+targets. The replacement makes explicit the total-image graph condition,
+the exact finite cover, the central distinct-pair inequality, simultaneous
+target and parameter shrinking, and the reciprocal coordinate at infinity.
+At the omitted value it captures a bounded surviving pair for each target
+and derives branch selection from closed and open membership in $H$.
+It never assumes that the partial family counts escaping pairs.
+The original manuscript has been preserved separately without alteration.
+
+\paragraph{Assistance disclosure.}
+OpenAI's ChatGPT and Codex (GPT-6) were used to develop the proof and
+prepare the manuscript. The human author takes full responsibility for
+the mathematical arguments and the final manuscript.
+Codex also assisted with the Lean formalization.
+The accompanying verification records describe the checks actually
+performed and their scope.
+
+\begin{thebibliography}{9}
+\raggedright
+
+\bibitem{HL}
+W.~K.~Hayman and E.~F.~Lingham,
+\emph{Research Problems in Function Theory},
+arXiv:1809.07200v2 (2018), Problem~2.16, printed p.~29.
+\url{https://arxiv.org/pdf/1809.07200v2#page=30}.
+
+\bibitem{HP}
+F.~Herzog and G.~Piranian,
+\emph{The counting function for points of maximum modulus},
+in \emph{Entire Functions and Related Parts of Analysis}
+(Proc. Sympos. Pure Math., La Jolla, 1966),
+American Mathematical Society, Providence, RI, 1968, pp.~240--243.
+
+\bibitem{GP}
+Adi Gl\"ucksam and Leticia Pardo-Sim\'on,
+\emph{An approximate solution to Erd\H{o}s' maximum modulus points problem},
+arXiv:2208.11154v2 (2023), Question~1.1.
+\url{https://arxiv.org/html/2208.11154v2#S1}.
+
+\bibitem{PS}
+Leticia Pardo-Sim\'on and David J.~Sixsmith,
+\emph{A finite-order answer to a problem of Erd\H{o}s on maximum modulus points},
+arXiv:2607.09462v1 (2026), introduction.
+\url{https://arxiv.org/html/2607.09462v1#S1}.
+
+\end{thebibliography}
+
+\end{document}

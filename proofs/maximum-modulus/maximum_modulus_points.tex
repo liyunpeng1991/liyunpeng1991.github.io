@@ -1,0 +1,1093 @@
+\documentclass[11pt,reqno]{amsart}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{microtype}
+\usepackage{needspace}
+\usepackage[margin=1.05in]{geometry}
+\usepackage[hidelinks,unicode]{hyperref}
+\urlstyle{same}
+\hypersetup{pdftitle={Maximum-modulus points on concentric circles},
+ pdfauthor={Yunpeng Li},
+ pdfsubject={A locally finite exceptional-set bound for entire functions},
+ pdfkeywords={entire function; maximum modulus; analytic curve; multiplicative correspondence}}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{example}[theorem]{Example}
+\numberwithin{equation}{section}
+\newcommand{\C}{\mathbb C}
+\newcommand{\R}{\mathbb R}
+\newcommand{\N}{\mathbb N}
+\newcommand{\Cs}{\C^*}
+\newcommand{\Ps}{\widehat{\C}}
+\newcommand{\ord}{\operatorname{ord}}
+\newcommand{\reg}{\mathrm{reg}}
+\newcommand{\sing}{\mathrm{sing}}
+\newcommand{\red}{\mathrm{red}}
+\DeclareMathOperator{\Rea}{Re}
+\DeclareMathOperator{\Ima}{Im}
+\DeclareMathOperator{\Res}{Res}
+\allowdisplaybreaks[1]
+
+\title[Maximum-modulus points on circles]{Maximum-modulus points on concentric circles}
+\author{Yunpeng Li}
+\address{School of Data Science, The Chinese University of Hong Kong,
+Shenzhen, China}
+\email{liyunpeng@cuhk.edu.cn}
+\date{October 11, 2026}
+\subjclass[2020]{Primary 30D15; Secondary 30D20, 32B10}
+\keywords{Entire function, maximum modulus, analytic curve, finite holomorphic map, multiplicative correspondence}
+
+\begin{document}
+\begin{abstract}
+Let $f$ be a nonzero, non-monomial entire function, and let $\nu_f(r)$ count the
+points at which $f$ attains its maximum modulus on $|z|=r$.
+Write $f(z)=z^m(a_0+a_kz^k+O(z^{k+1}))$, where $a_0a_k\ne0$.
+We prove that $\nu_f(r)\le 2k$ outside a locally finite subset of
+$(0,\infty)$. The constant $2k$ is sharp. In particular,
+$\liminf_{r\to\infty}\nu_f(r)<\infty$, so the number of maximum-modulus
+points of a fixed non-monomial entire function cannot tend to infinity
+on all sufficiently large circles. The proof associates the logarithmic
+derivative $q=zf'/f$ with its reflection $q^*(w)=\overline{q(\bar w)}$
+through the correspondence $q(z)=q^*(w)$ and the map
+$(z,w)\mapsto(zw,q(z))$.
+Local valence at the origin bounds the number of inverse pairs that can
+escape. A local elimination argument then bounds the generic degree of
+each nonvertical image component. The residue structure of $f'/f$
+excludes vertical components.
+\end{abstract}
+\maketitle
+
+\section{Introduction}
+For a nonzero entire function $f$, let
+\[
+ M_f(r)=\max_{|z|=r}|f(z)|,
+ \qquad
+ \nu_f(r)=\#\{z:|z|=r,\ |f(z)|=M_f(r)\},\qquad r>0.
+\]
+If $f(z)=cz^m$, with $c\ne0$ and $m\ge0$, every point of each circle is
+a maximum-modulus point. Throughout this paper, a non-monomial entire
+function means a nonzero entire function that is not of this form.
+For such a function, $\nu_f(r)$ is finite for every $r>0$, as proved
+in Lemma~\ref{lem:finite-maxima}.
+
+A question of Erd\H{o}s, recorded in Hayman's problem collection
+\cite{Hayman1967}, distinguishes two possibilities for a single
+non-monomial entire function: unbounded values of $\nu_f$ along a
+sequence of radii, and divergence of $\nu_f(r)$ as $r\to\infty$.
+The all-radii version has also been attributed to Clunie; see the
+historical discussion in \cite{GlucksamPardo2024}.
+Herzog and Piranian \cite{HerzogPiranian1968} constructed an entire
+function with $\nu_f(n)=n$ for every positive integer $n$.
+Pardo-Sim\'on and Sixsmith \cite{PardoSixsmith2026} subsequently obtained
+unbounded selected-radius multiplicity for a finite-order entire
+function in the Eremenko--Lyubich class $\mathcal B$.
+Neither assertion controls the intervening radii.
+
+Gl\"ucksam and Pardo-Sim\'on \cite{GlucksamPardo2024} proved an approximate
+all-radii result: for every fixed $\varepsilon>0$, the number of
+components of
+\[
+ \{z:|z|=r,\ |f(z)|>M_f(r)-\varepsilon\}
+\]
+tends to infinity for one entire function. The components need not all
+contain exact maximum-modulus points. Marchenko
+\cite[p.~215, Conjecture~1]{Marchenko2012} conjectured that
+$\liminf_{r\to\infty}\nu_f(r)<\infty$ for every non-monomial entire
+function of finite lower order. We prove this conclusion without a
+growth assumption, together with a sharp quantitative bound.
+
+\Needspace{9\baselineskip}
+\begin{theorem}\label{thm:main}
+Let $f$ be a non-monomial entire function. Write
+\begin{equation}\label{eq:firstgap}
+ f(z)=z^m\bigl(a_0+a_kz^k+O(z^{k+1})\bigr),
+ \qquad m\ge0,\quad k\ge1,\quad a_0a_k\ne0.
+\end{equation}
+Then the set
+\[
+ E_f=\{r>0:\nu_f(r)>2k\}
+\]
+is locally finite in $(0,\infty)$. The constant $2k$ is sharp.
+\end{theorem}
+
+Here $m=\ord_0 f$ and $k=\ord_0(g-g(0))$, where $g=z^{-m}f$.
+Thus $k$ is the first positive exponent occurring in $g$.
+This definition differs from the inner degree, which is the greatest
+common divisor of the positive exponents occurring in $g$; the two
+integers can coincide. See \cite{EvdoridouPardoSixsmith2021}.
+Local finiteness means that $E_f$ meets every compact subinterval of
+$(0,\infty)$ in finitely many points.
+
+\begin{corollary}\label{cor:negative}
+For every non-monomial entire function satisfying \eqref{eq:firstgap},
+\[
+ \liminf_{r\to\infty}\nu_f(r)\le2k.
+\]
+In particular, no non-monomial entire function satisfies
+$\nu_f(r)\to\infty$ as $r\to\infty$.
+\end{corollary}
+
+\begin{proof}
+Each interval $(n,n+1)$ contains a radius outside $E_f$. Choosing one
+such radius for every positive integer $n$ proves the assertion.
+\end{proof}
+
+Local finiteness permits an unbounded sequence of exceptional radii.
+Thus Theorem~\ref{thm:main} is consistent with the selected-radius
+constructions above. Section~\ref{sec:examples} gives elementary
+examples showing both sharpness of the bound and the necessity of
+allowing exceptional radii.
+
+\subsection*{Outline of the proof}
+Set $q=zf'/f$ and $q^*(w)=\overline{q(\bar w)}$.
+At a differentiability point of $H(x)=\log M_f(e^x)$, all maxima on the
+circle $|z|=e^x$ satisfy $q(z)=H'(x)\in\R$. They therefore determine
+inverse pairs of
+\[
+ (z,w)\longmapsto (zw,q(z)),\qquad q(z)=q^*(w),
+\]
+over the single point $(e^{2x},H'(x))$.
+This map is proper away from the value $q(0)$ in its second coordinate.
+Its image is a complex-analytic curve, constructed locally from finite
+products of inverse roots.
+
+A component whose generic fiber has more than $2k$ pairs cannot lose
+all its pairs through zero or infinity as the second coordinate tends
+to $q(0)$. At least one bounded pair survives. This supplies a local
+polynomial equation across the omitted value, and the image component
+extends analytically. Its projection to the product coordinate is
+proper. Unless the component is vertical, it must reach arbitrarily
+small nonzero products, where local valence gives at most $2k$ pairs.
+Vertical components are incompatible with the positive residues of
+$f'/f$. This proves the bound outside a null set of radii. A local
+parametrization of stationary arcs then makes the exceptional set
+locally finite.
+
+\section{A multiplicative correspondence}\label{sec:correspondence}
+We first separate the analytic argument from the entire-function
+application. Let $A$ and $B$ be nonconstant meromorphic functions on
+$\C$, holomorphic at zero, such that
+\begin{equation}\label{eq:generalorigin}
+ A(0)=B(0)=c\in\C,
+ \qquad k_A=\ord_0(A-c),\quad k_B=\ord_0(B-c).
+\end{equation}
+Let $L=k_A+k_B$, and write $\Cs=\C\setminus\{0\}$.
+All equalities of meromorphic functions below are understood as
+equalities of maps to the Riemann sphere $\Ps$.
+An inverse pair over $(s,p)$ means an ordered pair $(z,w)\in(\Cs)^2$
+with $zw=s$ and $A(z)=B(w)=p$.
+All fiber cardinalities count distinct inverse pairs; root
+multiplicities enter only in the local polynomials and mapping degrees.
+
+Consider the reduced analytic curve
+\[
+ \mathcal C=\{(z,w)\in(\Cs)^2:A(z)=B(w)\},
+\]
+and the holomorphic map
+\begin{equation}\label{eq:Phi}
+ \Phi:\mathcal C\longrightarrow\Cs\times\Ps,
+ \qquad \Phi(z,w)=(zw,A(z)).
+\end{equation}
+Put
+\[
+ \Omega=\Cs\times(\Ps\setminus\{c\}),
+ \qquad \mathcal C^\circ=\Phi^{-1}(\Omega),
+ \qquad Y=\Phi(\mathcal C^\circ).
+\]
+The source has pure complex dimension one. Indeed, near a pair
+$(z_0,w_0)$ with finite common value $p_0$, write
+\[
+ A(z)-p_0=(z-z_0)^a h_A(z),\qquad
+ B(w)-p_0=(w-w_0)^b h_B(w),
+\]
+where $a,b\ge1$ and the two holomorphic factors are nonvanishing.
+Choosing local holomorphic roots of these factors gives conformal
+coordinates
+\[
+ u=(z-z_0)h_A(z)^{1/a},\qquad
+ v=(w-w_0)h_B(w)^{1/b},
+\]
+in which the correspondence is $u^a=v^b$. If $d=\gcd(a,b)$, its
+$d$ local branches admit parametrizations
+\[
+ u=\zeta t^{b/d},\qquad v=t^{a/d},\qquad
+ \zeta^{a/d}=\omega,\quad \omega^d=1.
+\]
+One choice of $\zeta$ for each $\omega$ suffices. These are
+one-to-one parametrizations of the respective curve germs, because
+$a/d$ and $b/d$ are coprime. At a common pole, apply the same
+argument to $1/A$ and $1/B$, whose common value is zero.
+
+\begin{lemma}[Small-coordinate fibers]\label{lem:small}
+There exists $\varepsilon>0$ such that, for every
+$(s,p)\in\Cs\times\Ps$, at most $L$
+pairs satisfying
+\begin{equation}\label{eq:pairs}
+ zw=s,\qquad A(z)=B(w)=p
+\end{equation}
+have $\min(|z|,|w|)<\varepsilon$. In particular, if
+$0<|s|<\varepsilon^2$, the whole fiber has at most $L$ distinct pairs.
+We may also choose $\varepsilon$ so that neither $A$ nor $B$ takes the
+value $c$ in $0<|z|<\varepsilon$.
+\end{lemma}
+
+\begin{proof}
+Write $A(z)-c=z^{k_A}h_A(z)$ with $h_A(0)\ne0$, and choose a
+holomorphic $k_A$th root of $h_A$ in a small disk. Then
+\[
+ \tau_A(z)=z h_A(z)^{1/k_A},\qquad
+ \tau_A'(0)=h_A(0)^{1/k_A}\ne0,\qquad
+ A(z)-c=\tau_A(z)^{k_A}.
+\]
+Shrink the disk until $\tau_A$ is injective and $A$ has no poles
+there. For finite $p$, the equation $\tau_A(z)^{k_A}=p-c$ has at
+most $k_A$ distinct solutions, even if some $k_A$th roots of $p-c$
+lie outside the coordinate image. For $p=\infty$ there are no
+solutions in the disk. Repeat this for $B$, and take a common disk
+$|z|<\varepsilon$ on which both conclusions hold.
+For fixed $s\ne0$, choosing either coordinate determines the other.
+There are therefore at most $k_A$ pairs with small first coordinate and
+at most $k_B$ with small second coordinate. If
+$|s|<\varepsilon^2$, every pair has a small coordinate. The assertion
+about the value $c$ follows from the same local coordinates.
+\end{proof}
+
+\subsection{Local product equations}
+The elementary elimination fact used in both the image and extension
+arguments is stated explicitly.
+
+\begin{lemma}[Local product polynomial]\label{lem:product}
+Let $A$ and $B$ be holomorphic on neighborhoods of finite unions of
+closed, pairwise disjoint disks $U_i$ and $V_j$, respectively. Suppose
+$A-p_0$ and $B-p_0$ have no zeros on the disk boundaries. List the roots
+of $A(z)=p$ in the $U_i$ as $\alpha_1(p),\ldots,\alpha_N(p)$, and the
+roots of $B(w)=p$ in the $V_j$ as $\beta_1(p),\ldots,\beta_M(p)$,
+with multiplicity. For $p$ near $p_0$,
+\begin{equation}\label{eq:productpolynomial}
+ P(s,p)=\prod_{i=1}^N\prod_{j=1}^M
+       \bigl(s-\alpha_i(p)\beta_j(p)\bigr)
+\end{equation}
+is a monic polynomial in $s$ with holomorphic coefficients in $p$.
+Its zero set consists exactly of the products of these local inverse
+roots. In particular, $P(s,p_0)$ is not identically zero as a
+polynomial in $s$.
+\end{lemma}
+
+\begin{proof}
+If either union of disks is empty, the assertion holds with $P=1$.
+Assume that both unions are nonempty.
+The minimum of $|A-p_0|$ over the finitely many boundaries
+$\partial U_i$ is positive, and similarly for $B-p_0$ on the
+$\partial V_j$. Choose a parameter disk smaller than both minima.
+Rouch\'e's theorem makes the total root counts $N$ and $M$ constant
+on that disk. If either count is zero, then again $P=1$; hence assume
+$NM\ge1$. For $n\ge1$, the argument principle gives holomorphic
+power sums
+\[
+ u_n(p)=\frac{1}{2\pi i}\sum_i
+ \int_{\partial U_i}\frac{z^n A'(z)}{A(z)-p}\,dz,
+ \qquad
+ v_n(p)=\frac{1}{2\pi i}\sum_j
+ \int_{\partial V_j}\frac{w^n B'(w)}{B(w)-p}\,dw.
+\]
+The denominators stay nonzero on the fixed contours, so the
+integrals depend holomorphically on $p$. The residue at a root
+$\alpha$ of multiplicity $r$ is $r\alpha^n$. Consequently,
+\[
+ u_n(p)=\sum_{i=1}^N\alpha_i(p)^n,\qquad
+ v_n(p)=\sum_{j=1}^M\beta_j(p)^n,
+\]
+without any need to choose single-valued inverse branches. The
+$n$th power sum of the $NM$ product roots is
+\[
+ T_n(p)=\sum_{i=1}^N\sum_{j=1}^M
+          (\alpha_i(p)\beta_j(p))^n=u_n(p)v_n(p).
+\]
+Put $n_P=NM$ and write
+\[
+ P(s,p)=s^{n_P}+c_1(p)s^{n_P-1}+\cdots+c_{n_P}(p),\qquad c_0(p)=1.
+\]
+Newton's identities give the explicit recursion
+\begin{equation}\label{eq:newtonrecursion}
+ \ell c_\ell(p)+
+ \sum_{n=1}^{\ell}c_{\ell-n}(p)T_n(p)=0,
+ \qquad 1\le\ell\le n_P.
+\end{equation}
+Induction on $\ell$ proves that every $c_\ell$ is holomorphic.
+For example, $c_1=-T_1$ when $n_P\ge1$, and
+$c_2=(T_1^2-T_2)/2$ when $n_P\ge2$.
+At each fixed $p$, the same identities recover the coefficients of
+the actual finite product in \eqref{eq:productpolynomial}. Thus its
+roots are exactly the products of the local inverse roots, including
+at coalescence values. At $p=p_0$ the polynomial specializes to
+\[
+ P(s,p_0)=\prod_{\alpha,\beta}
+ (s-\alpha\beta)^{\ord_\alpha(A-p_0)\,\ord_\beta(B-p_0)},
+\]
+where the product runs over the central roots in the chosen disks.
+This polynomial is monic, so it cannot vanish identically in $s$.
+\end{proof}
+
+Individual inverse roots in Lemma~\ref{lem:product} may ramify; no
+single-valued labeling is asserted. If one collection is empty,
+the empty product is $P=1$. Near a common pole use the holomorphic
+functions $1/A$, $1/B$ and the parameter $\lambda=1/p$. Their local
+root products give $P(s,\lambda)$ by exactly the same recursion.
+
+\begin{lemma}[Properness and the analytic image]\label{lem:properimage}
+The map $\Phi:\mathcal C^\circ\to\Omega$ is proper with finite
+fibers. Its image $Y$, with the reduced structure, is a closed pure
+one-dimensional analytic subset of $\Omega$.
+\end{lemma}
+
+\begin{proof}
+Let $K\subset\Omega$ be compact. Its $p$-projection is a compact
+subset of $\Ps$ avoiding $c$. Continuity of $A$ and $B$ at zero gives
+$\eta>0$ such that every inverse pair over $K$ has
+$|z|,|w|\ge\eta$. If $|s|\le S$ on $K$, then
+\begin{equation}\label{eq:properbounds}
+ \eta\le|z|,|w|\le S/\eta.
+\end{equation}
+The inverse image of $K$ is closed in this compact annulus product,
+and is therefore compact. For a fixed $(s,p)$, the equation $A(z)=p$
+has finitely many roots in that annulus, and $w=s/z$ is determined.
+This includes $p=\infty$.
+
+Properness makes $Y$ closed. To obtain its local equations, fix
+$y_0=(s_0,p_0)\in Y$ and take small disjoint disks around every first
+and second coordinate occurring in its finite fiber. For finite $p_0$
+the disks avoid poles; for $p_0=\infty$ use reciprocal value
+coordinates. Properness implies that every inverse pair over a
+sufficiently small target neighborhood lies in the products of these
+disks. Otherwise a sequence of inverse pairs outside them would have
+a subsequence converging to the central fiber.
+
+Apply Lemma~\ref{lem:product} to the coordinate disks. Every nearby
+point of $Y$ satisfies $P(s,p)=0$. Conversely, each nearby zero of $P$
+is the product of actual inverse roots, so it belongs to $Y$. Thus
+$Y=\{P=0\}_{\red}$ locally. The monic polynomial is nonzero and gives
+a hypersurface in a two-dimensional coordinate neighborhood, hence a
+pure analytic curve. No source component is contracted, since all
+fibers are finite.
+\end{proof}
+
+\subsection{Generic degrees}
+We use the standard local structure of reduced analytic curves: finite
+irreducible decomposition, one-to-one disk parametrizations of
+irreducible curve germs, connected punctured branches, and a locally
+finite singular set. The regular locus of a globally irreducible
+curve is connected. These facts, and the local finite-covering
+statement, can be found in
+\cite[\S6.7: Proposition~6.7.3, Theorems~6.7.4 and~6.7.6,
+and Exercise~6.7.3]{Lebl2026}.
+For clarity, a normalization separates the finitely many branches
+at a singular curve point: each local branch is represented by its
+own holomorphic disk parameter. The resulting Riemann surface is
+connected for an irreducible curve.
+
+For an irreducible component $\Gamma$ of $Y$, define $d_\Gamma$ to be
+the generic number of distinct pairs in a fiber over $\Gamma$,
+including all source components above it.
+
+\begin{lemma}[Generic degree and smooth fibers]\label{lem:degree}
+The integer $d_\Gamma$ is finite and well defined. If $y\in\Gamma$ is
+a smooth point of the total reduced image $Y$, then
+\begin{equation}\label{eq:smoothfiber}
+ \#\Phi^{-1}(y)\le d_\Gamma.
+\end{equation}
+Generic points with exactly $d_\Gamma$ distinct inverse pairs are
+dense in $\Gamma$.
+\end{lemma}
+
+\begin{proof}
+Fix a smooth point $y_0\in\Gamma$ of the total image $Y$, and choose a
+holomorphic coordinate $u$ on a target disk in $Y$, with $u(y_0)=0$.
+The inverse fiber is finite. Parametrize every local source branch
+above its points by a disk map $\gamma_\ell(t)$, with
+$\gamma_\ell(0)$ in that fiber. Each parametrization is one-to-one
+away from its central singular point. In a sufficiently small
+neighborhood the only image branch is the target disk. Hence
+\[
+ h_\ell(t)=u\bigl(\Phi(\gamma_\ell(t))\bigr)
+\]
+is holomorphic. It is nonconstant: otherwise a whole source branch
+would lie in one fiber, contrary to Lemma~\ref{lem:properimage}.
+Write
+\[
+ h_\ell(t)=a_\ell t^{e_\ell}(1+t b_\ell(t)),
+ \qquad a_\ell\ne0,\quad e_\ell\ge1.
+\]
+The change of coordinate
+\[
+ v_\ell=t\bigl[a_\ell(1+t b_\ell(t))\bigr]^{1/e_\ell}
+\]
+is conformal near zero and gives $h_\ell=v_\ell^{e_\ell}$.
+Thus this normalized source branch contributes exactly $e_\ell$
+preimages to each sufficiently small nonzero target value, and
+one normalized preimage to the central value.
+
+Choose disjoint neighborhoods of the distinct source points and
+small representatives of all their branches. Properness ensures
+that every inverse pair over a sufficiently small target disk is
+in these neighborhoods. Indeed, omitted pairs over a sequence
+tending to $y_0$ would have a convergent subsequence in the
+central fiber. No inverse pairs are therefore missing from the
+local count. For generic nearby values the branch preimages are
+also distinct as source points: two distinct local branches
+intersect only at their center. The total local degree is
+\begin{equation}\label{eq:localsumdegree}
+ D(y_0)=\sum_\ell e_\ell.
+\end{equation}
+At any point of this target disk the number of normalized
+preimages, counted without multiplicity, is at most $D(y_0)$.
+The number of actual source points is no larger, since different
+normalized points can represent the same singular source point.
+This proves the local form of \eqref{eq:smoothfiber}.
+
+The degrees in \eqref{eq:localsumdegree} agree on overlapping
+target disks: both equal the actual fiber cardinality at a generic
+point of their overlap. The regular locus of $\Gamma$ is
+connected. Deleting its intersections with other image components
+deletes a locally finite set; a connected Riemann surface remains
+connected after such a deletion. The local degrees therefore give
+one finite positive integer $d_\Gamma$ on all smooth points of the
+total image belonging to $\Gamma$.
+
+The same local normal forms show that, after shrinking a smooth
+target disk centered at $y_0$, every point other than its center
+has exactly $D(y_0)=d_\Gamma$ distinct inverse pairs. Thus the
+exceptional fibers form a locally finite set within the smooth
+locus of $Y$. The singular locus of $Y$ is also locally finite,
+and each branch at a singular point has a punctured smooth
+representative. Generic points are therefore dense in the whole
+of $\Gamma$, as asserted.
+\end{proof}
+
+The smoothness requirement in \eqref{eq:smoothfiber} concerns the
+\emph{total} image $Y$, not merely one component. At a singular image
+point, pairs belonging to several local image branches may occur in
+the same fiber.
+Also, $d_\Gamma$ is a degree of the source-to-image map. The degree
+$NM$ of a local product polynomial in the variable $s$ counts
+products of local inverse roots, with multiplicity. These are
+different quantities, and no equality between them is used.
+
+\subsection{Continuation at the omitted value}
+The following lemma is the main continuation step.
+
+\begin{lemma}[Continuation across the omitted value]\label{lem:closure}
+If $d_\Gamma>L$, then the closure of $\Gamma$ in
+$\Cs\times\Ps$ is a closed irreducible analytic curve. Moreover, if
+\[
+ \Sigma=\{\alpha\beta:\alpha,\beta\ne0,
+                    \ A(\alpha)=B(\beta)=c\},
+\]
+then
+\begin{equation}\label{eq:boundary}
+ \overline\Gamma\cap(\Cs\times\{c\})
+ \subset\Sigma\times\{c\}.
+\end{equation}
+The set $\Sigma$ is locally finite and contains no $s$ with
+$0<|s|<\varepsilon^2$.
+\end{lemma}
+
+\begin{proof}
+The roots of $A-c$ and $B-c$ in $\Cs$ avoid the disk
+$|z|<\varepsilon$, by Lemma~\ref{lem:small}. A bound
+$|\alpha\beta|\le S$ therefore bounds both root coordinates between
+$\varepsilon$ and $S/\varepsilon$. Only finitely many roots occur in
+that compact annulus. This proves the assertions about $\Sigma$.
+
+Fix a boundary point $y_0=(s_0,c)$ of $\Gamma$, with $s_0\ne0$, and
+choose a target neighborhood on which $|s|\le S$. Every generic point
+of $\Gamma$ in this neighborhood has more than $L$ distinct inverse
+pairs. At most $L$ have a coordinate smaller than $\varepsilon$.
+Consequently, at least one pair satisfies
+\begin{equation}\label{eq:survivingpair}
+ \varepsilon\le |z|,|w|\le S/\varepsilon.
+\end{equation}
+A sequence of such pairs over generic points tending to $y_0$ has a
+convergent subsequence. Its limit $(\alpha,\beta)$ satisfies
+$A(\alpha)=B(\beta)=c$ and $\alpha\beta=s_0$.
+This proves \eqref{eq:boundary}. The chosen pair may change from one
+target point to the next.
+
+We next obtain one analytic equation containing the whole nearby
+component. There are finitely many roots of $A-c$ and $B-c$ in an
+enlarged compact annulus containing \eqref{eq:survivingpair}. Choose
+small coordinate disks around all of them. For $p$ sufficiently close
+to $c$, every pair satisfying \eqref{eq:survivingpair} has its
+coordinates in those disks. This follows from compactness and
+continuity; a contrary sequence would converge to an omitted root
+of $A-c$ or $B-c$.
+
+Lemma~\ref{lem:product} now supplies a polynomial $P_0(s,p)$, monic
+in $s$ and holomorphic in $p$ across $c$, from the inverse roots in
+these disks. Every generic point of $\Gamma$ sufficiently near $y_0$
+satisfies $P_0(s,p)=0$, because one bounded inverse pair is available.
+Generic points are dense, and $P_0$ is continuous, so there is a
+neighborhood $U$ of $y_0$ for which
+\begin{equation}\label{eq:componentcontainment}
+ \Gamma\cap U\subset
+ Z:=\{(s,p)\in U:P_0(s,p)=0\}_{\red}.
+\end{equation}
+Only one bounded inverse pair per generic target point was needed
+for this containment; the other inverse pairs may escape. The
+central specialization is
+\begin{equation}\label{eq:centralP}
+ P_0(s,c)=\prod_{\alpha,\beta}
+ (s-\alpha\beta)^{\ord_\alpha(A-c)\,\ord_\beta(B-c)},
+\end{equation}
+which is not identically zero.
+
+Since $P_0(s,c)$ is a nonzero polynomial, choose a small $s$-disk
+around $s_0$ in which $s_0$ is its only root and whose boundary
+contains no root. After shrinking the $p$-disk around $c$, $P_0$
+is still nonzero on that $s$-boundary. The local curve $Z$ thus
+has finitely many irreducible branches at $y_0$, none contained
+in $p=c$. For each branch choose a one-to-one normalized disk
+parametrization $\gamma_j(t)$ centered at $y_0$. Its $p$-coordinate
+satisfies
+\[
+ p(\gamma_j(t))-c=a_jt^{n_j}(1+O(t)),\qquad a_j\ne0.
+\]
+A holomorphic change of parameter reduces this to
+$p(\gamma_j(t))-c=t^{n_j}$. In particular, the branch meets
+$p=c$ only at its center, and its punctured representative is
+connected. Shrink the representatives further so that they are
+smooth and pairwise disjoint away from $y_0$.
+
+On each punctured branch $Z_j^*$, the set $\Gamma\cap Z_j^*$
+is closed, because $\Gamma$ is closed in $\Omega$ and
+$Z_j^*\subset\Omega$. It is also open. To verify this, let
+$y\in\Gamma\cap Z_j^*$. By \eqref{eq:componentcontainment},
+the germ of $\Gamma$ at $y$ is a one-dimensional analytic subset
+of the smooth one-dimensional germ of $Z_j^*$. In a disk
+coordinate, a proper analytic subset is discrete; it cannot
+have dimension one. Hence $\Gamma$ contains a neighborhood of
+$y$ in $Z_j^*$. Connectedness now gives
+\[
+ \Gamma\cap Z_j^*=Z_j^*\quad\hbox{or}\quad
+ \Gamma\cap Z_j^*=\varnothing.
+\]
+
+It follows that the closure of $\Gamma$ near $y_0$ is a union of a
+subset of the finitely many full local branches of $Z$, and is
+analytic. At points of $p=c$ not in the closure there is nothing to
+extend. This gives a closed analytic curve globally. It remains
+irreducible because $\Gamma$ is dense and irreducible. Indeed, a
+decomposition of the closure into two proper closed analytic subsets
+would restrict to such a decomposition of $\Gamma$: neither subset
+could contain all of $\Gamma$, since it would then contain its
+closure. No curve component is added inside
+$p=c$, by \eqref{eq:centralP}.
+\end{proof}
+
+\begin{theorem}[Degree bound]\label{thm:correspondence}
+For every irreducible component $\Gamma$ of $Y$ on which the product
+coordinate $s$ is nonconstant,
+\[
+ d_\Gamma\le k_A+k_B.
+\]
+\end{theorem}
+
+\begin{proof}
+Suppose $d_\Gamma>L$. By Lemma~\ref{lem:closure}, the analytic closure
+$\overline\Gamma$ lies in $\Cs\times\Ps$. Its projection
+\[
+ \pi:\overline\Gamma\longrightarrow\Cs,\qquad \pi(s,p)=s,
+\]
+is proper: for compact $K\subset\Cs$, its inverse image is a closed
+subset of the compact set $K\times\Ps$. In particular, its image is
+closed.
+
+The projection is also open. Pull $s$ back to the connected
+normalization of the irreducible curve $\overline\Gamma$.
+It is a holomorphic function there. If $s$ were constant on one
+local branch, this pullback would be constant on an open disk,
+and hence constant everywhere by the identity theorem. That
+would make $s$ constant on $\Gamma$, contrary to the hypothesis.
+Thus $s$ is nonconstant on every parametrizing disk. The open
+mapping theorem applies at its center even when its derivative
+vanishes, and shows that the image of every neighborhood of
+every point contains a neighborhood of that point's $s$-value.
+Thus $\pi(\overline\Gamma)$ is nonempty, open, and closed in
+$\Cs$, and equals $\Cs$.
+
+In particular, $\overline\Gamma$ has points with
+$0<|s|<\varepsilon^2$. Such points cannot have $p=c$, by
+Lemma~\ref{lem:closure}, and therefore lie in $\Gamma$. This nonempty
+open part of $\Gamma$ contains generic points with $d_\Gamma>L$
+inverse pairs. Lemma~\ref{lem:small} bounds every fiber there by $L$,
+a contradiction.
+\end{proof}
+
+\begin{remark}\label{rem:vertical}
+The nonconstant-product hypothesis is necessary for general
+meromorphic functions. For
+\[
+ A(z)=B(z)=\frac{z+z^3}{1+z^4},
+\]
+one has $A(0)=0$, $A'(0)=1$, and $A(z)=A(1/z)$.
+The image component $s=1$ has four inverse pairs over a generic $p$,
+although $k_A+k_B=2$. The entire-function application excludes these
+vertical components by a residue argument.
+Indeed, $A(z)=p$ is equivalent to
+\[
+ pz^4-z^3-z+p=0.
+\]
+For a generic nonzero $p$ this quartic has four distinct nonzero
+roots, producing four distinct pairs $(z,1/z)$ over $(1,p)$.
+\end{remark}
+
+\section{Maximum-modulus points}\label{sec:application}
+Let $f$ satisfy \eqref{eq:firstgap}, and set
+\begin{equation}\label{eq:q}
+ q(z)=\frac{zf'(z)}{f(z)},\qquad
+ q^*(w)=\overline{q(\bar w)}.
+\end{equation}
+To compute the expansion explicitly, write $f=z^m g$. Then
+\[
+ q(z)=m+\frac{zg'(z)}{g(z)},\qquad
+ g(z)=a_0+a_kz^k+O(z^{k+1}),\qquad
+ zg'(z)=ka_kz^k+O(z^{k+1}).
+\]
+Since $1/g(z)=a_0^{-1}+O(z^k)$, the removable value at zero
+and the first nonconstant term are
+\begin{equation}\label{eq:qexpansion}
+ q(0)=q^*(0)=m,\qquad
+ q(z)=m+\frac{k a_k}{a_0}z^k+O(z^{k+1}).
+\end{equation}
+Apply Section~\ref{sec:correspondence} with $A=q$, $B=q^*$, and $c=m$.
+
+\begin{lemma}[Exclusion of reciprocal symmetry]\label{lem:reciprocal}
+There is no $s_0\in\Cs$ for which
+\begin{equation}\label{eq:reciprocal}
+ q(z)=q^*(s_0/z)\qquad(z\in\Cs).
+\end{equation}
+Consequently, no irreducible component of $Y$ has constant product
+coordinate.
+\end{lemma}
+
+\begin{proof}
+If \eqref{eq:reciprocal} held, the right side would tend to $m$ at
+infinity. Hence $q$ would extend holomorphically at infinity and be
+rational, with $q(\infty)=q(0)=m$.
+The rational differential
+\[
+ \frac{q(z)}z\,dz=\frac{f'(z)}{f(z)}\,dz
+\]
+has residue $m$ at zero. At infinity, set $\zeta=1/z$. Then
+\[
+ \frac{q(z)}{z}\,dz=-\frac{q(1/\zeta)}{\zeta}\,d\zeta,
+\]
+so the residue is $-m$. If $a\ne0$ is a zero of $f$ of
+multiplicity $n_a$, write $f(z)=(z-a)^{n_a}u(z)$ with
+$u(a)\ne0$. Locally,
+\[
+ \frac{f'(z)}{f(z)}
+ =\frac{n_a}{z-a}+\frac{u'(z)}{u(z)}.
+\]
+Thus every remaining pole has a positive integer residue $n_a$.
+The residue theorem on the sphere gives
+\[
+ 0=m-m+\sum_{a\ne0:\,f(a)=0}n_a.
+\]
+The sum is finite because the differential is rational. Since
+all its summands are positive, there are no nonzero zeros of
+$f$ and no other poles of $q$. The rational function $q$ is
+therefore holomorphic on the sphere, hence constant $m$.
+Finally, $q=m+zg'/g$ for $g=z^{-m}f$ gives $g'=0$, and
+$f(z)=Cz^m$, a contradiction.
+
+If an image component had $s=s_0$, a nonconstant source branch above
+it would satisfy $w=s_0/z$. Its $z$-coordinate is nonconstant,
+otherwise both coordinates would be constant. Its image contains an
+open set of $z$-values, on which \eqref{eq:reciprocal} holds. The
+meromorphic identity theorem gives \eqref{eq:reciprocal} on $\Cs$,
+which has just been excluded.
+\end{proof}
+
+\begin{lemma}[Finiteness on each circle]\label{lem:finite-maxima}
+A non-monomial entire function has finitely many maximum-modulus
+points on each circle of positive radius.
+\end{lemma}
+
+\begin{proof}
+The function $\theta\mapsto|f(re^{i\theta})|^2$ is real analytic.
+If its maximum set were infinite, compactness would give an
+accumulation point of the zeros of
+$|f(re^{i\theta})|^2-M_f(r)^2$. The real-analytic identity theorem
+would then make the modulus constant on the circle. In that case,
+with $f^*(w)=\overline{f(\bar w)}$, the identity theorem gives
+\[
+ f(z)f^*(r^2/z)=M_f(r)^2\qquad(z\in\Cs).
+\]
+Indeed, the product is holomorphic on $\Cs$ and equals the positive
+constant $M_f(r)^2$ on the circle, which has accumulation points in
+that domain. The displayed identity excludes any nonzero zero of
+$f$. Thus $g=z^{-m}f$ is a zero-free entire function and has constant
+modulus $M_f(r)/r^m$ on the circle. The maximum-modulus principle
+applied to both $g$ and $1/g$ gives, for $|z|<r$,
+\[
+ |g(z)|\le\frac{M_f(r)}{r^m},
+ \qquad
+ |g(z)|\ge\frac{M_f(r)}{r^m}.
+\]
+So $g$ is constant on the disk, hence everywhere, and $f$ is a
+monomial. This contradiction proves that the original maximum
+set is finite.
+\end{proof}
+
+\subsection{The almost-everywhere bound}
+\begin{proposition}[The almost-everywhere bound]\label{prop:ae}
+One has $\nu_f(r)\le2k$ for Lebesgue-almost every $r>0$.
+\end{proposition}
+
+\begin{proof}
+Put $H(x)=\log M_f(e^x)$. Hadamard's three-circle theorem makes $H$
+convex, hence locally Lipschitz and differentiable almost everywhere.
+Fix a differentiability point $x$ and a global maximum
+$z=e^{x+i\theta}$. Its value is nonzero, because $M_f(e^x)>0$.
+Choose a holomorphic logarithm
+$F(w)=\log f(e^w)$ near $w=x+i\theta$. Its derivatives satisfy
+\begin{equation}\label{eq:logpartials}
+ F'(w)=q(e^w),\qquad
+ \frac{\partial}{\partial x}\Rea F(x+i\theta)=\Rea q(z),
+ \qquad
+ \frac{\partial}{\partial\theta}\Rea F(x+i\theta)=-\Ima q(z).
+\end{equation}
+Angular stationarity gives $\Ima q(z)=0$. On a neighborhood of $x$,
+the nonnegative function
+\[
+ t\longmapsto H(t)-\log|f(e^{t+i\theta})|
+\]
+is differentiable at $x$ and has a local minimum zero there.
+Its derivative at $x$ therefore vanishes. By
+\eqref{eq:logpartials}, $H'(x)-\Rea q(z)=0$, so
+\begin{equation}\label{eq:slope}
+ q(z)=H'(x)\in\R.
+\end{equation}
+Thus each distinct global maximum gives a distinct pair $(z,\bar z)$
+over
+\begin{equation}\label{eq:maxtarget}
+ (s,p)=(e^{2x},H'(x)).
+\end{equation}
+Here $z\bar z=e^{2x}$ and
+$q^*(\bar z)=\overline{q(z)}=H'(x)$.
+
+These targets stay away from the omitted value $p=m$ on each compact
+$x$-interval. Indeed, write $f=z^m g$, where $g(0)\ne0$ and $g$ is
+nonconstant. The function $J(x)=\log M_g(e^x)$ is convex and strictly
+increasing. Strict increase follows from the maximum-modulus
+principle applied to two concentric disks: if $M_g(r_1)=M_g(r_2)$
+for $0<r_1<r_2$, a point on the inner circle attains the maximum
+inside the outer disk, forcing $g$ to be constant. For a convex
+function, slopes of successive secants are ordered, and the
+increments $J(t+1)-J(t)$ are nondecreasing in $t$. Hence at a
+differentiability point $x\in[a,b]$,
+\[
+ \begin{split}
+ J(a)-J(a-1)
+ &\le J(x)-J(x-1)\le J'(x)\\
+ &\le J(x+1)-J(x)\le J(b+1)-J(b).
+ \end{split}
+\]
+Strict increase makes the first increment positive. We obtain
+\begin{equation}\label{eq:slopebounds}
+ 0<\delta_a:=J(a)-J(a-1)\le J'(x)
+ \le C_b:=J(b+1)-J(b)<\infty.
+\end{equation}
+Since $H'=m+J'$, the targets in \eqref{eq:maxtarget} lie in the compact set
+\[
+ K_{a,b}=[e^{2a},e^{2b}]\times[m+\delta_a,m+C_b]\subset\Omega.
+\]
+
+The singular locus of the reduced curve $Y$ is locally finite, so
+only finitely many singular image points lie in this compact set.
+Their product coordinates exclude only finitely many radii. At every
+remaining differentiability radius the target is smooth in the total
+image, and Lemma~\ref{lem:degree}, Theorem~\ref{thm:correspondence}, and
+Lemma~\ref{lem:reciprocal} give
+\[
+ \nu_f(e^x)
+ \le\#\Phi^{-1}(e^{2x},H'(x))
+ \le d_\Gamma\le2k.
+\]
+This excludes only a null set on each compact $x$-interval.
+Exponentiation preserves null sets on such intervals, proving the
+assertion for $r>0$.
+\end{proof}
+
+\subsection{Local constancy on either side of a radius}
+The next elementary local argument turns the almost-everywhere
+conclusion into the stated exceptional-set theorem. It allows angular
+degeneracies and does not assume that $H$ is analytic through the
+central radius.
+
+\begin{lemma}[One-sided local constancy]\label{lem:onesided}
+For every $r_0>0$, there exists $\delta>0$ such that $\nu_f$ is
+constant on each of $(r_0-\delta,r_0)$ and $(r_0,r_0+\delta)$,
+with $\delta<r_0$.
+The two constants need not agree with each other or with $\nu_f(r_0)$.
+\end{lemma}
+
+\begin{proof}
+By Lemma~\ref{lem:finite-maxima}, the central circle has finitely many
+maxima. We first describe the stationary set near each of them, and
+then show that these local descriptions cover all nearby maxima.
+
+Fix one central maximum and choose a logarithmic coordinate $w$ near
+it. Put $Q(w)=q(e^w)$ and let $w_0$ be the central point, with
+$x_0=\Rea w_0=\log r_0$. The function $Q$ is holomorphic near
+$w_0$ and nonconstant: constancy there would make $q$ constant
+everywhere and $f$ a monomial. Angular stationarity gives
+$p_0=Q(w_0)\in\R$. Factor
+\[
+ Q(w)-p_0=(w-w_0)^d h(w),\qquad d\ge1,\quad h(w_0)\ne0.
+\]
+Choosing a local holomorphic $d$th root of $h$ gives the conformal
+coordinate $\chi(w)=(w-w_0)h(w)^{1/d}$, in which
+\[
+ Q(w)-p_0=\chi(w)^d,\qquad \chi(w_0)=0.
+\]
+Angular stationarity is $\Ima Q(w)=0$, so its local set consists of
+the finitely many real-analytic half-arcs
+\begin{equation}\label{eq:stationaryarcs}
+ w_j(t)=\chi^{-1}(e^{i\pi j/d}t),
+ \qquad t\ge0,\quad j=0,\ldots,2d-1.
+\end{equation}
+All half-arcs are restricted to sufficiently small $t$.
+
+Choose disjoint angular windows $I_1,\ldots,I_{n_0}$ about the central
+maxima so that their thin radial neighborhoods are contained in
+the coordinate neighborhoods just constructed and avoid zeros of
+$f$. Put $M_0=M_f(r_0)$. Compactness gives $\eta>0$ such that
+\[
+ |f(r_0e^{i\theta})|^2\le M_0^2-3\eta
+ \qquad\left(\theta\notin\bigcup_{j=1}^{n_0} I_j\right).
+\]
+For $r$ sufficiently close to $r_0$, uniform continuity bounds the
+left side with $r_0$ replaced by $r$ by $M_0^2-2\eta$ on this
+complement. At any fixed central maximizing angle, the squared
+modulus is greater than $M_0^2-\eta$. Every nearby global maximum
+therefore lies in a window and belongs to one of the stationary
+half-arcs in \eqref{eq:stationaryarcs}.
+
+For each stationary half-arc, put $x_j(t)=\Rea w_j(t)$.
+This function cannot be identically $x_0$.
+Otherwise the stationary set would contain an open angular arc on
+$|z|=r_0$. The modulus would be constant on that arc, hence on the
+circle by real analyticity, contradicting
+Lemma~\ref{lem:finite-maxima}. Therefore
+\begin{equation}\label{eq:radialarc}
+ x_j(t)-x_0=c_j t^{\ell_j}(1+t a_j(t)),
+ \qquad c_j\in\R\setminus\{0\},\quad \ell_j\ge1.
+\end{equation}
+Here $a_j$ is real analytic near zero. Shrink the parameter interval
+so that $1+t a_j(t)>0$, put $\sigma_j=\operatorname{sign}(c_j)$,
+and define
+\begin{equation}\label{eq:radialroot}
+ \rho_j(t)=t\bigl[|c_j|(1+t a_j(t))\bigr]^{1/\ell_j}.
+\end{equation}
+The root is chosen positive for real $t$ near zero.
+This is a real-analytic function with
+$\rho_j'(0)=|c_j|^{1/\ell_j}>0$. The real-analytic inverse
+function theorem gives its inverse $T_j=\rho_j^{-1}$, and
+\[
+ x_j(t)=x_0+\sigma_j\rho_j(t)^{\ell_j}.
+\]
+Thus the arc lies on the side $\sigma_j$ for small positive $t$
+and intersects each sufficiently close radius on that side once.
+
+Now include all half-arcs from all central windows, relabel them by
+one finite index set, and choose $\ell_*$ to be a common multiple of
+their finitely many exponents
+$\ell_j$. Fix a side $\sigma\in\{-1,1\}$ and put
+$x=x_0+\sigma v^{\ell_*}$ with $v>0$. Exactly the arcs with
+$\sigma_j=\sigma$ contribute candidate points. Their parameters
+and squared moduli are
+\begin{equation}\label{eq:commonparameter}
+ \begin{split}
+ t_j(v)&=T_j\bigl(v^{\ell_*/\ell_j}\bigr),\\
+ z_j(v)&=\exp\bigl(w_j(t_j(v))\bigr),\\
+ b_j(v)&=|f(z_j(v))|^2.
+ \end{split}
+\end{equation}
+Because $\ell_*/\ell_j$ is an integer, these functions are real
+analytic at $v=0$. For small positive $v$ the points are
+distinct: half-arcs in one window meet only at their center,
+and the logarithmic coordinate is injective in each window;
+different windows are disjoint. All nearby global maxima occur
+among these finitely many candidates. Each side has at least one
+candidate, since every nearby circle has a global maximum.
+
+For any two applicable indices $i,j$, the real-analytic
+difference $b_i(v)-b_j(v)$ either vanishes identically near zero
+or has an expansion $a v^n+O(v^{n+1})$ with $a\ne0$.
+Its sign is therefore fixed for all sufficiently small $v>0$.
+There are only finitely many such differences, so one parameter
+interval makes every comparison fixed. Consequently the set
+of indices attaining the largest squared modulus is fixed
+on that interval, and its cardinality is $\nu_f(e^x)$.
+Do this separately on both sides and exponentiate. Reducing
+$\delta$ so that $\delta<r_0$ proves the lemma.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:main}]
+Fix $r_0>0$ and apply Lemma~\ref{lem:onesided}. Neither of its two
+constant punctured-side values can exceed $2k$, by
+Proposition~\ref{prop:ae}. Hence $r_0$ has a punctured neighborhood
+containing no point of $E_f$. This holds at every positive radius,
+so $E_f$ has no accumulation point in $(0,\infty)$ and is locally
+finite. Sharpness is shown in Example~\ref{ex:sharp} below.
+\end{proof}
+
+\section{Sharpness and exceptional circles}\label{sec:examples}
+\begin{example}[Sharpness]\label{ex:sharp}
+For $k\ge1$, let
+\[
+ f_k(z)=\exp\!\left(z^k-\frac{z^{2k}}4\right).
+\]
+Its first coefficient gap is $k$, since $f_k(z)=1+z^k+O(z^{2k})$.
+Set $\xi=z^k$, $|\xi|=R=r^k$, and
+$T=\cos(\arg\xi)\in[-1,1]$.
+Using $\cos(2\arg\xi)=2T^2-1$, complete the square:
+\[
+ \begin{split}
+ \log|f_k(z)|
+ &=\Rea\!\left(\xi-\frac{\xi^2}{4}\right)
+ =RT-\frac{R^2}{4}(2T^2-1)\\
+ &=\frac{R^2}{4}+\frac12-\frac12(RT-1)^2.
+ \end{split}
+\]
+For $0<R\le1$, the square is minimized uniquely at $T=1$,
+so the unique maximizing $\xi$-value is $\xi=R$. For $R>1$,
+the minimum is zero at $T=1/R$, giving exactly the two values
+$\xi=1\pm i\sqrt{R^2-1}$. At $R=1$ these two values coincide.
+Every nonzero $\xi$ has exactly $k$ distinct preimages under
+$z\mapsto z^k$, all of modulus $r$. Consequently,
+\[
+ \nu_{f_k}(r)=
+ \begin{cases}
+ k,&0<r\le1,\\
+ 2k,&r>1.
+ \end{cases}
+\]
+Thus the constant $2k$ is attained on an entire tail.
+It is also possible to see the degree bound directly in this
+example. Here $q(z)=kz^k-\frac{k}{2}z^{2k}$ has real coefficients,
+so $q^*=q$. Writing
+$u=z^k$ and $v=w^k$, the correspondence factors as
+\[
+ q(z)-q(w)=k(u-v)\left(1-\frac{u+v}{2}\right).
+\]
+On the part $u+v=2$, one has $uv=s^k$ and
+$p=k(u-u^2/2)=\frac{k}{2}s^k$.
+For generic $s$, the equation $u(2-u)=s^k$ has two distinct
+nonzero roots. Each root has $k$ choices of $z$, after which
+$w=s/z$ is determined. The other factor $u=v$ meets this
+image graph only when $u=v=1$ and $s^k=1$, so it contributes
+no additional generic pairs. Hence this image component has
+generic degree $2k$, exactly the bound of
+Theorem~\ref{thm:correspondence}.
+\end{example}
+
+\begin{example}[Large multiplicity at an exceptional radius]\label{ex:exception}
+Fix $N\ge3$ and $0<\tau<1/8$, and put
+\[
+ F(z)=\exp\!\left(z^N+\tau z(1-z^N)^4\right).
+\]
+Then $F(0)=1$, $F'(0)=\tau$, and the first coefficient gap is one.
+Nevertheless, $\nu_F(1)=N$. To see this, let $d=|1-z^N|$ on $|z|=1$.
+Since $|z^N|=1$, one has
+$1-\Rea(z^N)=|1-z^N|^2/2=d^2/2$. Also,
+$|\tau z(1-z^N)^4|=\tau d^4$ and $d\le2$, so
+\[
+ 1-\Rea\bigl(z^N+\tau z(1-z^N)^4\bigr)
+ \ge \frac{d^2}{2}-\tau d^4
+ \ge\left(\frac12-4\tau\right)d^2.
+\]
+The coefficient $\frac12-4\tau$ is positive. Thus the real part
+of the exponent is strictly below $1$ when $z^N\ne1$, and
+equals $1$ at every $N$th root of unity. These are precisely
+the $N$ maximum-modulus points. Differentiating the exponent
+gives the logarithmic derivative
+\[
+ q(z)=Nz^N+\tau z(1-z^N)^4
+             -4N\tau z^{N+1}(1-z^N)^3.
+\]
+Hence $F(\zeta)=e$ and $q(\zeta)=N$ for $\zeta^N=1$.
+The fiber over $(s,p)=(1,N)$ therefore contains at least
+$N$ distinct physical pairs $(\zeta,\bar\zeta)$.
+
+This target point is singular in the total reduced image $Y$: at a
+smooth point, Lemma~\ref{lem:degree} and
+Theorem~\ref{thm:correspondence} would bound the fiber by two.
+Several local image branches can meet at a singular point even when
+they belong to the same global irreducible component. This is why
+the proof removes singular image points before counting fibers.
+\end{example}
+
+Theorem~\ref{thm:main} bounds persistent multiplicity, not every
+singular fiber. The examples above exhibit this distinction directly.
+In particular, large values on isolated circles are compatible with
+the theorem, whereas a lower bound tending to infinity on every
+sufficiently large circle is not.
+
+\subsection*{Disclosure of AI assistance}
+OpenAI's ChatGPT and Codex (GPT-6) were used to develop the proof and
+prepare the manuscript. The human author takes full responsibility for
+the mathematical arguments and the final manuscript.
+
+\begin{thebibliography}{99}
+
+\bibitem{EvdoridouPardoSixsmith2021}
+V.~Evdoridou, L.~Pardo-Sim\'on, and D.~J.~Sixsmith,
+\emph{On a result of Hayman concerning the maximum modulus set},
+Comput. Methods Funct. Theory \textbf{21} (2021), no.~4, 779--795.
+\href{https://arxiv.org/abs/2012.07409}{arXiv:2012.07409}.
+
+\bibitem{GlucksamPardo2024}
+A.~Gl\"ucksam and L.~Pardo-Sim\'on,
+\emph{An approximate solution to Erd\H{o}s' maximum modulus points problem},
+J. Math. Anal. Appl. \textbf{531} (2024), no.~1, Paper No.~127768, 20~pp.
+\href{https://arxiv.org/abs/2208.11154}{arXiv:2208.11154}.
+
+\bibitem{Hayman1967}
+W.~K.~Hayman, \emph{Research Problems in Function Theory},
+The Athlone Press, University of London, London, 1967.
+
+\bibitem{HerzogPiranian1968}
+F.~Herzog and G.~Piranian,
+\emph{The counting function for points of maximum modulus},
+Entire Functions and Related Parts of Analysis,
+Proc. Sympos. Pure Math., vol.~11,
+Amer. Math. Soc., Providence, RI, 1968, pp.~240--243.
+
+\bibitem{Lebl2026}
+J.~Lebl, \emph{Tasty Bits of Several Complex Variables:
+A Whirlwind Tour of the Subject}, version~4.4, May~31, 2026.
+\url{https://www.jirka.org/scv/}.
+
+\bibitem{Marchenko2012}
+I.~I.~Marchenko,
+\emph{On the maximum modulus points of entire and meromorphic functions
+and a problem of Erd\H{o}s},
+Mat. Stud. \textbf{38} (2012), no.~2, 212--215.
+\href{https://doi.org/10.30970/ms.38.2.212-215}{doi:10.30970/ms.38.2.212-215}.
+
+\bibitem{PardoSixsmith2026}
+L.~Pardo-Sim\'on and D.~J.~Sixsmith,
+\emph{A finite-order answer to a problem of Erd\H{o}s on maximum modulus points},
+preprint, 2026.
+\href{https://arxiv.org/abs/2607.09462v1}{arXiv:2607.09462v1}.
+
+\end{thebibliography}
+\end{document}

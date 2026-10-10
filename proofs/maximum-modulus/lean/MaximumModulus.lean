@@ -1,0 +1,46 @@
+module
+
+public import MaximumModulus.Definitions
+public import MaximumModulus.Basic
+public import MaximumModulus.Reductions
+public import MaximumModulus.Finiteness
+public import MaximumModulus.AEBridge
+public import MaximumModulus.SmallFibers
+public import MaximumModulus.LocalValence
+public import MaximumModulus.MaximaToFibers
+public import MaximumModulus.StatementAudit
+public import MaximumModulus.BranchCollision
+public import MaximumModulus.InverseRootChart
+public import MaximumModulus.InversePairFamily
+public import MaximumModulus.LogDerivative
+public import MaximumModulus.LocalReciprocal
+public import MaximumModulus.MeromorphicCorrespondence
+public import MaximumModulus.MaximumStationarity
+public import MaximumModulus.MaximumEnvelope
+public import MaximumModulus.GeometricReduction
+public import MaximumModulus.GlobalDegreeAux
+public import MaximumModulus.LocalImageTopology
+public import MaximumModulus.FiberCapture
+public import MaximumModulus.PoleChart
+public import MaximumModulus.SphereSmallFibers
+public import MaximumModulus.HighCountCapture
+public import MaximumModulus.FiniteImageGraphs
+public import MaximumModulus.PairNonvertical
+public import MaximumModulus.GlobalCharts
+public import MaximumModulus.ExceptionalRadii
+public import MaximumModulus.HighCountLocus
+public import MaximumModulus.DuplicateSafeCount
+public import MaximumModulus.BranchContinuation
+public import MaximumModulus.FiniteValueCoordinates
+public import MaximumModulus.ProductNonconstant
+public import MaximumModulus.FiniteTargetCover
+public import MaximumModulus.FiniteExceptionalSet
+public import MaximumModulus.BoundaryCharts
+public import MaximumModulus.HighCountInterior
+public import MaximumModulus.InfinityCharts
+public import MaximumModulus.HighCountGlobal
+public import MaximumModulus.InfinityInterior
+public import MaximumModulus.OmittedTargetCover
+public import MaximumModulus.AllRadii
+
+@[expose] public section
